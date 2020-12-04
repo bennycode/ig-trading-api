@@ -1,0 +1,88 @@
+{
+  "bugs": {
+    "url": "https://github.com/bennycode/ig-trading-api/issues"
+  },
+  "dependencies": {
+    "@types/node": "14.14.10",
+    "axios": "0.21.0"
+  },
+  "description": "IG Trading API for Node.js, written in TypeScript.",
+  "devDependencies": {
+    "@types/jasmine": "3.6.2",
+    "@typescript-eslint/eslint-plugin": "4.9.0",
+    "@typescript-eslint/parser": "4.9.0",
+    "cross-env": "7.0.3",
+    "dotenv-defaults": "2.0.1",
+    "eslint": "7.14.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.2.0",
+    "eslint-plugin-typescript-sort-keys": "1.5.0",
+    "generate-changelog": "1.8.0",
+    "husky": "4.3.0",
+    "jasmine": "3.6.3",
+    "lint-staged": "10.5.3",
+    "nock": "13.0.5",
+    "nyc": "15.1.0",
+    "prettier": "2.2.1",
+    "pretty-quick": "3.1.0",
+    "rimraf": "3.0.2",
+    "ts-node": "9.1.0",
+    "typedoc": "0.19.2",
+    "typedoc-plugin-markdown": "3.0.11",
+    "typescript": "4.1.2"
+  },
+  "engines": {
+    "node": ">= 10.9",
+    "yarn": ">= 1"
+  },
+  "files": [
+    "dist",
+    "!/dist/demo",
+    "!/dist/test"
+  ],
+  "keywords": [
+    "API",
+    "CFD",
+    "finance",
+    "fintech",
+    "derivatives",
+    "IG",
+    "trading",
+    "TypeScript"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "ig-trading-api",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennycode/ig-trading-api.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "changelog:commit": "git add CHANGELOG.md && git commit -m \"docs: Updated changelog\"",
+    "clean": "rimraf .nyc_output coverage dist",
+    "demo:login": "ts-node ./src/demo/login.ts",
+    "docs": "yarn docs:build && yarn docs:start",
+    "docs:build": "yarn typedoc",
+    "docs:release": "yarn docs:build && git add docs/* && git commit -m \"docs: Updated API\"",
+    "docs:start": "docsify serve docs",
+    "dist": "yarn clean && yarn build",
+    "fix": "yarn fix:other && yarn fix:code",
+    "fix:code": "yarn lint:code --fix",
+    "fix:other": "yarn prettier --write",
+    "lint": "yarn lint:types && yarn lint:code && yarn lint:other",
+    "lint:code": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
+    "lint:other": "yarn prettier --list-different",
+    "lint:types": "tsc --noEmit",
+    "postversion": "git push origin && git push origin --tags && npm publish",
+    "prettier": "prettier --ignore-path .gitignore --loglevel silent \"**/*.{html,json,scss,yml}\"",
+    "preversion": "git checkout main && git pull && yarn install && yarn lint && yarn test && yarn dist",
+    "release:major": "generate-changelog -M && yarn changelog:commit && yarn docs:release && npm version major",
+    "release:minor": "generate-changelog -m && yarn changelog:commit && yarn docs:release && npm version minor",
+    "release:patch": "generate-changelog -p && yarn changelog:commit && yarn docs:release && npm version patch",
+    "test": "exit 0 && nyc --nycrc-path=nyc.config.coverage.json jasmine --config=jasmine.json",
+    "test:dev": "exit 0 && nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json"
+  },
+  "version": "0.0.0"
+}
