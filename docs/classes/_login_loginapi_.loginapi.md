@@ -14,11 +14,6 @@
 
 * [constructor](_login_loginapi_.loginapi.md#constructor)
 
-### Properties
-
-* [apiClient](_login_loginapi_.loginapi.md#apiclient)
-* [auth](_login_loginapi_.loginapi.md#auth)
-
 ### Methods
 
 * [createSession](_login_loginapi_.loginapi.md#createsession)
@@ -33,7 +28,7 @@
 
 \+ **new LoginAPI**(`apiClient`: AxiosInstance, `auth`: [Authorization](../interfaces/_client_restclient_.authorization.md)): [LoginAPI](_login_loginapi_.loginapi.md)
 
-*Defined in [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/6ef211b/src/login/LoginAPI.ts#L38)*
+*Defined in [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L40)*
 
 #### Parameters:
 
@@ -44,29 +39,13 @@ Name | Type |
 
 **Returns:** [LoginAPI](_login_loginapi_.loginapi.md)
 
-## Properties
-
-### apiClient
-
-• `Private` `Readonly` **apiClient**: AxiosInstance
-
-*Defined in [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/6ef211b/src/login/LoginAPI.ts#L40)*
-
-___
-
-### auth
-
-• `Private` **auth**: [Authorization](../interfaces/_client_restclient_.authorization.md)
-
-*Defined in [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/6ef211b/src/login/LoginAPI.ts#L40)*
-
 ## Methods
 
 ### createSession
 
 ▸ **createSession**(`username`: string, `password`: string): Promise\<[TradingSession](../interfaces/_login_loginapi_.tradingsession.md)>
 
-*Defined in [login/LoginAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/6ef211b/src/login/LoginAPI.ts#L49)*
+*Defined in [login/LoginAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L51)*
 
 Creates a trading session, obtaining session tokens for subsequent API access.
 
@@ -87,7 +66,7 @@ Name | Type | Description |
 
 ▪ `Static` `Readonly` **URL**: object
 
-*Defined in [login/LoginAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/6ef211b/src/login/LoginAPI.ts#L36)*
+*Defined in [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L38)*
 
 #### Properties:
 
