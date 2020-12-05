@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: weekly
+    pull-request-branch-name:
+      separator: '-'
+    target-branch: main
+    commit-message:
+      prefix: chore
+      include: scope
+    labels:
+      - "type: chore \U0001F9F9"
+    open-pull-requests-limit: 10
