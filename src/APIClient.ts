@@ -3,8 +3,10 @@ import {RESTClient} from './client/RESTClient';
 export class APIClient {
   readonly rest: RESTClient;
 
-  constructor(apiKey: string) {
-    const url = 'https://api.ig.com/gateway/deal/';
-    this.rest = new RESTClient(url, apiKey);
+  static URL_DEMO = 'https://demo-api.ig.com/gateway/deal/';
+  static URL_LIVE = 'https://api.ig.com/gateway/deal/';
+
+  constructor(baseUrl: string, apiKey: string) {
+    this.rest = new RESTClient(baseUrl, apiKey);
   }
 }

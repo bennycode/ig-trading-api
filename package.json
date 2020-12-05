@@ -82,8 +82,8 @@
     "release:major": "generate-changelog -M && yarn changelog:commit && yarn docs:release && npm version major",
     "release:minor": "generate-changelog -m && yarn changelog:commit && yarn docs:release && npm version minor",
     "release:patch": "generate-changelog -p && yarn changelog:commit && yarn docs:release && npm version patch",
-    "test": "exit 0 && nyc --nycrc-path=nyc.config.coverage.json jasmine --config=jasmine.json",
-    "test:dev": "exit 0 && nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json"
+    "test": "nyc --nycrc-path=nyc.config.coverage.json jasmine --config=jasmine.json",
+    "test:dev": "nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json"
   },
   "version": "0.0.1"
 }

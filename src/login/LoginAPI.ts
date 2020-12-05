@@ -1,6 +1,8 @@
 import {AxiosInstance} from 'axios';
 import {Authorization} from '../client';
 
+export type ReroutingEnvironment = 'DEMO' | 'LIVE' | 'TEST' | 'UAT';
+
 export interface AccountInfo {
   available: number;
   balance: number;
@@ -27,7 +29,7 @@ export interface TradingSession {
   hasActiveDemoAccounts: boolean;
   hasActiveLiveAccounts: boolean;
   lightstreamerEndpoint: string;
-  reroutingEnvironment: null;
+  reroutingEnvironment?: ReroutingEnvironment;
   timezoneOffset: number;
   trailingStopsEnabled: boolean;
 }
