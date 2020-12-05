@@ -40,6 +40,7 @@
     "!/dist/demo",
     "!/dist/test"
   ],
+  "homepage": "https://bennycode.com/ig-trading-api",
   "keywords": [
     "API",
     "CFD",
