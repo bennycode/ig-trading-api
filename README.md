@@ -1,8 +1,15 @@
 # IG Trading API
 
-![Language Details](https://img.shields.io/github/languages/top/bennycode/ig-trading-api) ![License](https://img.shields.io/npm/l/ig-trading-api.svg) ![Package Version](https://img.shields.io/npm/v/ig-trading-api.svg) ![Dependency Updates](https://img.shields.io/david/bennycode/ig-trading-api.svg)
+![Language Details](https://img.shields.io/github/languages/top/bennycode/ig-trading-api) ![Code Coverage](https://img.shields.io/codecov/c/github/bennycode/ig-trading-api/main) ![License](https://img.shields.io/npm/l/ig-trading-api.svg) ![Package Version](https://img.shields.io/npm/v/ig-trading-api.svg) ![Dependency Updates](https://img.shields.io/david/bennycode/ig-trading-api.svg)
 
 Unofficial [IG Trading API](https://labs.ig.com/rest-trading-api-guide) for Node.js, written in TypeScript and covered by tests.
+
+## Features
+
+- **Typed.** Source code is 100% TypeScript. No need to install external typings.
+- **Tested.** Code coverage is 100%. No surprises when using [ig-trading-api][1].
+- **Maintained.** Automated security updates. No threats from outdated dependencies.
+- **Documented.** Get started with the [generated documentation][2].
 
 ## Installation
 
@@ -49,3 +56,6 @@ console.info(`Your client ID is "${session.clientId}".`);
 
 - [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
 - [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
+
+[1]: https://www.npmjs.com/package/ig-trading-api
+[2]: https://bennycode.com/ig-trading-api
