@@ -1,0 +1,13 @@
+{
+  "disableOutputCheck": true,
+  "exclude": ["**/demo/**/*", "**/payload/**/*", "**/test/**/*", "**/*+(index|.test*).ts"],
+  "excludeExternals": true,
+  "excludeNotExported": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "includeDeclarations": false,
+  "inputFiles": ["src"],
+  "mode": "modules",
+  "out": "docs",
+  "theme": "markdown"
+}
