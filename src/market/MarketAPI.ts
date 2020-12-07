@@ -1,5 +1,15 @@
 import {AxiosInstance} from 'axios';
 
+export interface MarketNode {
+  id: string;
+  name: string;
+}
+
+export interface MarketNavigation {
+  markets?: Market[];
+  nodes?: MarketNode[];
+}
+
 export interface Market {
   bid?: number;
   delayTime: number;
@@ -25,6 +35,7 @@ export interface MarketSearch {
 
 export class MarketAPI {
   static readonly URL = {
+    MARKETNAVIGATION: `/marketnavigation`,
     MARKETS: `/markets`,
   };
 
@@ -39,6 +50,18 @@ export class MarketAPI {
   async searchMarkets(searchTerm: string): Promise<MarketSearch> {
     const resource = `${MarketAPI.URL.MARKETS}?searchTerm=${searchTerm}`;
     const response = await this.apiClient.get<MarketSearch>(resource);
+    return response.data;
+  }
+
+  /**
+   * Returns all nodes (market categories) in the market navigation hierarchy.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=550
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=544
+   */
+  async getMarketCategories(nodeId?: string): Promise<MarketNavigation> {
+    const resource = nodeId ? `${MarketAPI.URL.MARKETNAVIGATION}/${nodeId}` : MarketAPI.URL.MARKETNAVIGATION;
+    const response = await this.apiClient.get<MarketNavigation>(resource);
     return response.data;
   }
 }

@@ -52,10 +52,30 @@ const session = await client.rest.login.createSession('your-username', 'your-pas
 console.info(`Your client ID is "${session.clientId}".`);
 ```
 
-## Useful links
+## Documentation
 
-- [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
 - [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
+- [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
+
+## Maintainers
+
+[![Benny Neugebauer on Stack Exchange][stack_exchange_bennyn_badge]][stack_exchange_bennyn_url]
+
+## Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/bennycode/ig-trading-api/issues).
+
+## License
+
+This project is [MIT](./LICENSE) licensed.
+
+## ⭐️ Show your support ⭐️
+
+[Please leave a star](https://github.com/bennycode/ig-trading-api/stargazers) if you find this project useful.
 
 [1]: https://www.npmjs.com/package/ig-trading-api
 [2]: https://bennycode.com/ig-trading-api
+[stack_exchange_bennyn_badge]: https://stackexchange.com/users/flair/203782.png?theme=default
+[stack_exchange_bennyn_url]: https://stackexchange.com/users/203782/benny-neugebauer?tab=accounts

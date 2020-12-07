@@ -76,4 +76,68 @@ describe('MarketAPI', () => {
       expect(marketSearch.markets[2].updateTimeUTC).toBe('16:30:00');
     });
   });
+
+  describe('getMarketCategories', () => {
+    it('returns all top-level nodes (market categories) in the market navigation hierarchy', async () => {
+      nock(APIClient.URL_DEMO)
+        .get(MarketAPI.URL.MARKETNAVIGATION)
+        .query(true)
+        .reply(
+          200,
+          JSON.stringify({
+            markets: null,
+            nodes: [
+              {id: '404243', name: 'IPOs'},
+              {id: '88877247', name: 'Shares - Euronext Dublin (Ireland)'},
+              {id: '118179919', name: 'Shares - NZX (New Zealand)'},
+              {id: '186563295', name: 'Weekend Markets'},
+            ],
+          })
+        );
+
+      const marketCategories = await global.client.rest.market.getMarketCategories();
+      const marketNodes = marketCategories.nodes!;
+      expect(marketNodes.length).toBe(4);
+      expect(marketNodes[marketNodes.length - 1].name).toBe('Weekend Markets');
+    });
+
+    it('returns all sub-nodes of the given node in the market navigation hierarchy', async () => {
+      const nodeId = '138425500';
+
+      nock(APIClient.URL_DEMO)
+        .get(`${MarketAPI.URL.MARKETNAVIGATION}/${nodeId}`)
+        .reply(
+          200,
+          JSON.stringify({
+            markets: [
+              {
+                bid: null,
+                delayTime: 0,
+                epic: 'EZ.D.WEWGREY.Month2.IP',
+                expiry: 'DEC-20',
+                high: 15.0,
+                instrumentName: 'WeWork IPO Market Cap ($Bn)',
+                instrumentType: 'SHARES',
+                lotSize: 10,
+                low: 14.0,
+                marketStatus: 'TRADEABLE',
+                netChange: 0.0,
+                offer: null,
+                otcTradeable: true,
+                percentageChange: 0.0,
+                scalingFactor: 1,
+                streamingPricesAvailable: true,
+                updateTime: '-3600000',
+                updateTimeUTC: '00:00:00',
+              },
+            ],
+            nodes: null,
+          })
+        );
+
+      const marketCategories = await global.client.rest.market.getMarketCategories(nodeId);
+      expect(marketCategories.nodes).toBeNull();
+      expect(marketCategories.markets![0].marketStatus).toBe('TRADEABLE');
+    });
+  });
 });
