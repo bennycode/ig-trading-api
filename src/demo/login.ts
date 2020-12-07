@@ -7,6 +7,9 @@ async function main(): Promise<void> {
   const client = new APIClient(APIClient.URL_LIVE, `${apiKey}`);
   const session = await client.rest.login.createSession(`${username}`, `${password}`);
   console.info(`Your client ID is "${session.clientId}".`);
+
+  const result = await client.rest.market.getMarketCategories();
+  console.log(result);
 }
 
 main().catch(console.error);

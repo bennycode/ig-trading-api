@@ -76,4 +76,29 @@ describe('MarketAPI', () => {
       expect(marketSearch.markets[2].updateTimeUTC).toBe('16:30:00');
     });
   });
+
+  describe('getMarketCategories', () => {
+    it('returns all top-level nodes (market categories) in the market navigation hierarchy', async () => {
+      nock(APIClient.URL_DEMO)
+        .get(MarketAPI.URL.MARKETNAVIGATION)
+        .query(true)
+        .reply(
+          200,
+          JSON.stringify({
+              nodes: [
+                { id: '118179919', name: 'Shares - NZX (New Zealand)' },
+                { id: '88877247', name: 'Shares - Euronext Dublin (Ireland)' },
+                { id: '404243', name: 'IPOs' },
+                { id: '186563295', name: 'Weekend Markets' }
+              ],
+              markets: null
+            }
+          )
+        );
+
+      const marketCategories = await global.client.rest.market.getMarketCategories();
+      expect(marketCategories.nodes.length).toBe(4);
+      expect(marketCategories.nodes[marketCategories.nodes.length-1].name).toBe('Weekend Markets')
+    });
+  });
 });

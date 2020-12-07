@@ -1,4 +1,14 @@
-import {AxiosInstance} from 'axios';
+import { AxiosInstance } from "axios";
+
+export interface MarketNode {
+  id: string;
+  name: string;
+}
+
+export interface MarketNavigation {
+  nodes: MarketNode[];
+  markets: null;
+}
 
 export interface Market {
   bid?: number;
@@ -26,9 +36,11 @@ export interface MarketSearch {
 export class MarketAPI {
   static readonly URL = {
     MARKETS: `/markets`,
+    MARKETNAVIGATION: `/marketnavigation`
   };
 
-  constructor(private readonly apiClient: AxiosInstance) {}
+  constructor(private readonly apiClient: AxiosInstance) {
+  }
 
   /**
    * Returns all markets matching the search term.
@@ -39,6 +51,17 @@ export class MarketAPI {
   async searchMarkets(searchTerm: string): Promise<MarketSearch> {
     const resource = `${MarketAPI.URL.MARKETS}?searchTerm=${searchTerm}`;
     const response = await this.apiClient.get<MarketSearch>(resource);
+    return response.data;
+  }
+
+  /**
+   * Returns all top-level nodes (market categories) in the market navigation hierarchy.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=550
+   */
+  async getMarketCategories(): Promise<MarketNavigation> {
+    const resource = `${MarketAPI.URL.MARKETNAVIGATION}`;
+    const response = await this.apiClient.get<MarketNavigation>(resource);
     return response.data;
   }
 }
