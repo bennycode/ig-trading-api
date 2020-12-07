@@ -270,7 +270,7 @@ describe('MarketAPI', () => {
       expect(marketDetails.snapshot.bid).toBe(6524.8);
     });
 
-    it('returns the details of multiple given markets', async () => {
+    it('returns the details of multiple epics', async () => {
       const epics = ['IX.D.FTSE.CFD.IP', 'SE.D.PFE.CASH.IP'];
 
       nock(APIClient.URL_DEMO)
