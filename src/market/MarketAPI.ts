@@ -1,4 +1,4 @@
-import { AxiosInstance } from "axios";
+import {AxiosInstance} from 'axios';
 
 export interface Currency {
   baseExchangeRate: number;
@@ -67,24 +67,24 @@ export interface Instrument {
   stopsLimitsAllowed: boolean;
   streamingPricesAvailable: boolean;
   type:
-    | "BUNGEE_COMMODITIES"
-    | "BUNGEE_CURRENCIES"
-    | "BUNGEE_INDICES"
-    | "COMMODITIES"
-    | "CURRENCIES"
-    | "INDICES"
-    | "OPT_COMMODITIES"
-    | "OPT_CURRENCIES"
-    | "OPT_INDICES"
-    | "OPT_RATES"
-    | "OPT_SHARES"
-    | "RATES"
-    | "SECTORS"
-    | "SHARES"
-    | "SPRINT_MARKET"
-    | "TEST_MARKET"
-    | "UNKNOWN";
-  unit: "AMOUNT" | "CONTRACTS" | "SHARES";
+    | 'BUNGEE_COMMODITIES'
+    | 'BUNGEE_CURRENCIES'
+    | 'BUNGEE_INDICES'
+    | 'COMMODITIES'
+    | 'CURRENCIES'
+    | 'INDICES'
+    | 'OPT_COMMODITIES'
+    | 'OPT_CURRENCIES'
+    | 'OPT_INDICES'
+    | 'OPT_RATES'
+    | 'OPT_SHARES'
+    | 'RATES'
+    | 'SECTORS'
+    | 'SHARES'
+    | 'SPRINT_MARKET'
+    | 'TEST_MARKET'
+    | 'UNKNOWN';
+  unit: 'AMOUNT' | 'CONTRACTS' | 'SHARES';
   valueOfOnePip: string;
 }
 
@@ -114,13 +114,13 @@ export interface MaxStopOrLimitDistance {
 }
 
 export interface DealingRules {
-  marketOrderPreference: "AVAILABLE_DEFAULT_OFF" | "AVAILABLE_DEFAULT_ON" | "NOT_AVAILABLE";
+  marketOrderPreference: 'AVAILABLE_DEFAULT_OFF' | 'AVAILABLE_DEFAULT_ON' | 'NOT_AVAILABLE';
   maxStopOrLimitDistance: MaxStopOrLimitDistance;
   minControlledRiskStopDistance: MinControlledRiskStopDistance;
   minDealSize: MinDealSize;
   minNormalStopOrLimitDistance: MinNormalStopOrLimitDistance;
   minStepDistance: MinStepDistance;
-  trailingStopsPreference: "AVAILABLE" | "NOT_AVAILABLE";
+  trailingStopsPreference: 'AVAILABLE' | 'NOT_AVAILABLE';
 }
 
 export interface Snapshot {
@@ -131,7 +131,7 @@ export interface Snapshot {
   delayTime: number;
   high: number;
   low: number;
-  marketStatus: "CLOSED" | "EDITS_ONLY" | "OFFLINE" | "ON_AUCTION" | "ON_AUCTION_NO_EDITS" | "SUSPENDED" | "TRADEABLE";
+  marketStatus: 'CLOSED' | 'EDITS_ONLY' | 'OFFLINE' | 'ON_AUCTION' | 'ON_AUCTION_NO_EDITS' | 'SUSPENDED' | 'TRADEABLE';
   netChange: number;
   offer: number;
   percentageChange: number;
@@ -145,7 +145,7 @@ export interface MarketDetail {
   snapshot: Snapshot;
 }
 
-export type MarketDetails = { marketDetails: MarketDetail[] }
+export type MarketDetails = {marketDetails: MarketDetail[]};
 
 export interface MarketNode {
   id: string;
@@ -183,11 +183,10 @@ export interface MarketSearch {
 export class MarketAPI {
   static readonly URL = {
     MARKETNAVIGATION: `/marketnavigation`,
-    MARKETS: `/markets`
+    MARKETS: `/markets`,
   };
 
-  constructor(private readonly apiClient: AxiosInstance) {
-  }
+  constructor(private readonly apiClient: AxiosInstance) {}
 
   /**
    * Returns all markets matching the search term.
@@ -224,7 +223,7 @@ export class MarketAPI {
   async getMarketDetails(epic: string[]): Promise<MarketDetails>;
   async getMarketDetails(epic: string | string[]): Promise<MarketDetail | MarketDetails> {
     const resource = Array.isArray(epic)
-      ? `${MarketAPI.URL.MARKETS}?epics=${encodeURIComponent(epic.join(","))}`
+      ? `${MarketAPI.URL.MARKETS}?epics=${encodeURIComponent(epic.join(','))}`
       : `${MarketAPI.URL.MARKETS}/${epic}`;
     const response = await this.apiClient.get(resource);
     return response.data;
