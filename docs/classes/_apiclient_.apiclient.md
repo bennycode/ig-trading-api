@@ -26,7 +26,7 @@
 
 \+ **new APIClient**(`baseUrl`: string, `apiKey`: string): [APIClient](_apiclient_.apiclient.md)
 
-*Defined in [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/609342c/src/APIClient.ts#L7)*
+*Defined in [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/APIClient.ts#L7)*
 
 #### Parameters:
 
@@ -43,7 +43,7 @@ Name | Type |
 
 • `Readonly` **rest**: [RESTClient](_client_restclient_.restclient.md)
 
-*Defined in [APIClient.ts:4](https://github.com/bennycode/ig-trading-api/blob/609342c/src/APIClient.ts#L4)*
+*Defined in [APIClient.ts:4](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/APIClient.ts#L4)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 ▪ `Static` **URL\_DEMO**: string = "https://demo-api.ig.com/gateway/deal/"
 
-*Defined in [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/609342c/src/APIClient.ts#L6)*
+*Defined in [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/APIClient.ts#L6)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 ▪ `Static` **URL\_LIVE**: string = "https://api.ig.com/gateway/deal/"
 
-*Defined in [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/609342c/src/APIClient.ts#L7)*
+*Defined in [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/APIClient.ts#L7)*

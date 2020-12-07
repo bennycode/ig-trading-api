@@ -20,4 +20,4 @@
 
 •  **markets**: [Market](_market_marketapi_.market.md)[]
 
-*Defined in [market/MarketAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/609342c/src/market/MarketAPI.ts#L23)*
+*Defined in [market/MarketAPI.ts:180](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/market/MarketAPI.ts#L180)*

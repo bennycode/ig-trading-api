@@ -33,7 +33,7 @@
 
 •  **accountInfo**: [AccountInfo](_login_loginapi_.accountinfo.md)
 
-*Defined in [login/LoginAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L21)*
+*Defined in [login/LoginAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L21)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 •  **accountType**: string
 
-*Defined in [login/LoginAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L23)*
+*Defined in [login/LoginAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L23)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 •  **accounts**: [Account](_login_loginapi_.account.md)[]
 
-*Defined in [login/LoginAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L22)*
+*Defined in [login/LoginAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L22)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 •  **clientId**: string
 
-*Defined in [login/LoginAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L24)*
+*Defined in [login/LoginAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L24)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 •  **currencyIsoCode**: string
 
-*Defined in [login/LoginAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L25)*
+*Defined in [login/LoginAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L25)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 •  **currencySymbol**: string
 
-*Defined in [login/LoginAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L26)*
+*Defined in [login/LoginAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L26)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 •  **currentAccountId**: string
 
-*Defined in [login/LoginAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L27)*
+*Defined in [login/LoginAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L27)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 •  **dealingEnabled**: boolean
 
-*Defined in [login/LoginAPI.ts:28](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L28)*
+*Defined in [login/LoginAPI.ts:28](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L28)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 •  **hasActiveDemoAccounts**: boolean
 
-*Defined in [login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L29)*
+*Defined in [login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L29)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 •  **hasActiveLiveAccounts**: boolean
 
-*Defined in [login/LoginAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L30)*
+*Defined in [login/LoginAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L30)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 •  **lightstreamerEndpoint**: string
 
-*Defined in [login/LoginAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L31)*
+*Defined in [login/LoginAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L31)*
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 • `Optional` **reroutingEnvironment**: [ReroutingEnvironment](../modules/_login_loginapi_.md#reroutingenvironment)
 
-*Defined in [login/LoginAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L32)*
+*Defined in [login/LoginAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L32)*
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 •  **timezoneOffset**: number
 
-*Defined in [login/LoginAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L33)*
+*Defined in [login/LoginAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L33)*
 
 ___
 
@@ -137,4 +137,4 @@ ___
 
 •  **trailingStopsEnabled**: boolean
 
-*Defined in [login/LoginAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L34)*
+*Defined in [login/LoginAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L34)*

@@ -28,7 +28,7 @@
 
 \+ **new LoginAPI**(`apiClient`: AxiosInstance, `auth`: [Authorization](../interfaces/_client_restclient_.authorization.md)): [LoginAPI](_login_loginapi_.loginapi.md)
 
-*Defined in [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L40)*
+*Defined in [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L40)*
 
 #### Parameters:
 
@@ -45,7 +45,7 @@ Name | Type |
 
 ▸ **createSession**(`username`: string, `password`: string): Promise\<[TradingSession](../interfaces/_login_loginapi_.tradingsession.md)>
 
-*Defined in [login/LoginAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L51)*
+*Defined in [login/LoginAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L51)*
 
 Creates a trading session, obtaining session tokens for subsequent API access.
 
@@ -66,7 +66,7 @@ Name | Type | Description |
 
 ▪ `Static` `Readonly` **URL**: object
 
-*Defined in [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/609342c/src/login/LoginAPI.ts#L38)*
+*Defined in [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/3c6eaee/src/login/LoginAPI.ts#L38)*
 
 #### Properties:
 
