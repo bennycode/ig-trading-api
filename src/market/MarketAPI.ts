@@ -1,4 +1,4 @@
-import { AxiosInstance } from "axios";
+import {AxiosInstance} from 'axios';
 
 export interface MarketNode {
   id: string;
@@ -6,8 +6,8 @@ export interface MarketNode {
 }
 
 export interface MarketNavigation {
-  nodes?: MarketNode[];
   markets?: Market[];
+  nodes?: MarketNode[];
 }
 
 export interface Market {
@@ -35,12 +35,11 @@ export interface MarketSearch {
 
 export class MarketAPI {
   static readonly URL = {
+    MARKETNAVIGATION: `/marketnavigation`,
     MARKETS: `/markets`,
-    MARKETNAVIGATION: `/marketnavigation`
   };
 
-  constructor(private readonly apiClient: AxiosInstance) {
-  }
+  constructor(private readonly apiClient: AxiosInstance) {}
 
   /**
    * Returns all markets matching the search term.
