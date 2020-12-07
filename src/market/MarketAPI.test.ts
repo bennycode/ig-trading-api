@@ -87,10 +87,10 @@ describe('MarketAPI', () => {
           JSON.stringify({
             markets: null,
             nodes: [
-              {id: '118179919', name: 'Shares - NZX (New Zealand)'},
-              {id: '186563295', name: 'Weekend Markets'},
               {id: '404243', name: 'IPOs'},
               {id: '88877247', name: 'Shares - Euronext Dublin (Ireland)'},
+              {id: '118179919', name: 'Shares - NZX (New Zealand)'},
+              {id: '186563295', name: 'Weekend Markets'},
             ],
           })
         );
