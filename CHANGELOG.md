@@ -1,3 +1,14 @@
+#### 0.0.3 (2020-12-07)
+
+##### Chores
+
+* **deps-dev:**  bump eslint-config-prettier from 6.15.0 to 7.0.0 ([#5](https://github.com/bennycode/ig-trading-api/pull/5)) ([de283478](https://github.com/bennycode/ig-trading-api/commit/de28347839788be0d925c6be972398d31043c17b))
+
+##### New Features
+
+*  Get market details ([#7](https://github.com/bennycode/ig-trading-api/pull/7)) ([1630c3b1](https://github.com/bennycode/ig-trading-api/commit/1630c3b1a1ff2b571510262702db8a5f66eaa081))
+*  Add market navigation ([#6](https://github.com/bennycode/ig-trading-api/pull/6)) ([459d8268](https://github.com/bennycode/ig-trading-api/commit/459d826868748da159d885332a49fd9e3414bdda))
+
 #### 0.0.2 (2020-12-05)
 
 ##### Chores
