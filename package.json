@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "@types/node": "14.14.16",
-    "axios": "0.21.0"
+    "axios": "0.21.1"
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
   "devDependencies": {
