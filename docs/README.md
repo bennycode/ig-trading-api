@@ -1,6 +1,4 @@
-**[ig-trading-api](README.md)**
-
-> [Globals](globals.md)
+ig-trading-api / [Exports](modules.md)
 
 # IG Trading API
 
@@ -31,7 +29,7 @@ yarn add ig-trading-api
 
 ## Setup
 
-You can set the API gateway, when initializing the API client. Use `APIClient.URL_DEMO` (demo-api.ig.com) for demo accounts and `APIClient.URL_LIVE` (api.ig.com) for live account access. 
+You can set the API gateway, when initializing the API client. Use `APIClient.URL_DEMO` (demo-api.ig.com) for demo accounts and `APIClient.URL_LIVE` (api.ig.com) for live account access.
 
 **JavaScript / Node.js**
 
@@ -60,6 +58,26 @@ console.info(`Your client ID is "${session.clientId}".`);
 
 - [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
 - [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
+
+### IG instrument identifier (epic)
+
+Breakdown for "IX.D.DOW.DAILY.IP":
+
+| Symbol | Description                     | Example                                                            |
+| ------ | ------------------------------- | ------------------------------------------------------------------ |
+| IX     | Hours of trading                | "[Index Out of Hours](https://www.ig.com/uk/out-of-hours-trading)" |
+| D      | Tradability                     | "D" when tradeable                                                 |
+| DOW    | Underlying market               | "Dow Jones"                                                        |
+| DAILY  | Indicator for processing method | "Daily" funded bet                                                 |
+| IP     | Asset type                      | "Intellectual Property"                                            |
+
+## Development Setup
+
+You can get up and running in just a few simple steps:
+
+1. Run `yarn` (to install or update third-party dependencies)
+1. Have a lock at the [.env.defaults](./.env.defaults) file and make a copy (including your own credentials) with the name `.env` in the root directory of this repository ([read more about dotenv files](https://github.com/mrsteele/dotenv-defaults#usage))
+1. Run `yarn demo:login` to test your credentials
 
 ## Maintainers
 
