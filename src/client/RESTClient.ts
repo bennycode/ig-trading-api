@@ -22,7 +22,7 @@ export class RESTClient {
   readonly login: LoginAPI;
   readonly market: MarketAPI;
 
-  private readonly httpClient: AxiosInstance;
+  readonly httpClient: AxiosInstance;
   private readonly auth: Authorization = {};
 
   constructor(baseURL: string, private readonly apiKey: string) {
