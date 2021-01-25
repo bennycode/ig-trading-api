@@ -66,7 +66,7 @@ Breakdown for "IX.D.DOW.DAILY.IP":
 | IX | Hours of trading | "[Index Out of Hours](https://www.ig.com/uk/out-of-hours-trading)"
 | D | Tradability | "D" when tradeable
 | DOW | Underlying market | "Dow Jones"
-| DAILY | Indicator for method of processing | "Daily" funded bet
+| DAILY | Indicator for processing method | "Daily" funded bet
 | IP | Asset type | "Intellectual Property"
 
 ## Development Setup
