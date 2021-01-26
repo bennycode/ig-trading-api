@@ -132,4 +132,22 @@ export class PricesAPI {
 
     return response.data;
   }
+
+  async getPrices(
+    epic: string,
+    resolution: Resolution,
+    pointCount: number,
+    pageSize: number = 0,
+    pageNumber: number = 1
+  ): Promise<HistoricalPricesResponse> {
+    const qs = querystring.stringify({
+      max: pointCount,
+      pageNumber,
+      pageSize,
+      resolution,
+    });
+    const resource = `${PricesAPI.URL.PRICES}/${epic}?${qs}`;
+    const response = await this.apiClient.get<HistoricalPricesResponse>(resource, {headers: {Version: 3}});
+    return response.data;
+  }
 }

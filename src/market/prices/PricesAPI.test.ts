@@ -4,6 +4,74 @@ import {APIClient} from '../../APIClient';
 import {PricesAPI, Resolution} from './PricesAPI';
 
 describe('PricesAPI', () => {
+  describe('getPrices', () => {
+    it('returns n number of price points from now', async () => {
+      nock(APIClient.URL_DEMO)
+        .get(`${PricesAPI.URL.PRICES}/CS.D.GBPUSD.TODAY.IP?max=5&pageNumber=1&pageSize=0&resolution=HOUR_4`)
+        .reply(
+          200,
+          JSON.stringify({
+            prices: [
+              {
+                snapshotTime: '2021/01/26 00:00:00',
+                snapshotTimeUTC: '2021-01-26T00:00:00',
+                openPrice: {bid: 13676.1, ask: 13677.6, lastTraded: null},
+                closePrice: {bid: 13663.8, ask: 13664.7, lastTraded: null},
+                highPrice: {bid: 13676.8, ask: 13678.1, lastTraded: null},
+                lowPrice: {bid: 13659.5, ask: 13661, lastTraded: null},
+                lastTradedVolume: 16435,
+              },
+              {
+                snapshotTime: '2021/01/26 04:00:00',
+                snapshotTimeUTC: '2021-01-26T04:00:00',
+                openPrice: {bid: 13663.7, ask: 13664.6, lastTraded: null},
+                closePrice: {bid: 13611.5, ask: 13613, lastTraded: null},
+                highPrice: {bid: 13666, ask: 13667.1, lastTraded: null},
+                lowPrice: {bid: 13609.2, ask: 13610.1, lastTraded: null},
+                lastTradedVolume: 22061,
+              },
+              {
+                snapshotTime: '2021/01/26 08:00:00',
+                snapshotTimeUTC: '2021-01-26T08:00:00',
+                openPrice: {bid: 13611.8, ask: 13612.7, lastTraded: null},
+                closePrice: {bid: 13674.1, ask: 13675.6, lastTraded: null},
+                highPrice: {bid: 13676.2, ask: 13677.1, lastTraded: null},
+                lowPrice: {bid: 13610.5, ask: 13611.8, lastTraded: null},
+                lastTradedVolume: 29631,
+              },
+              {
+                snapshotTime: '2021/01/26 12:00:00',
+                snapshotTimeUTC: '2021-01-26T12:00:00',
+                openPrice: {bid: 13675.2, ask: 13676.1, lastTraded: null},
+                closePrice: {bid: 13741.5, ask: 13742.4, lastTraded: null},
+                highPrice: {bid: 13744, ask: 13745, lastTraded: null},
+                lowPrice: {bid: 13670.5, ask: 13671.4, lastTraded: null},
+                lastTradedVolume: 31848,
+              },
+              {
+                snapshotTime: '2021/01/26 16:00:00',
+                snapshotTimeUTC: '2021-01-26T16:00:00',
+                openPrice: {bid: 13741.4, ask: 13742.3, lastTraded: null},
+                closePrice: {bid: 13731.4, ask: 13732.3, lastTraded: null},
+                highPrice: {bid: 13742.9, ask: 13743.8, lastTraded: null},
+                lowPrice: {bid: 13717.5, ask: 13718.4, lastTraded: null},
+                lastTradedVolume: 12235,
+              },
+            ],
+            instrumentType: 'CURRENCIES',
+            metadata: {
+              allowance: {remainingAllowance: 9945, totalAllowance: 10000, allowanceExpiry: 524060},
+              size: 5,
+              pageData: {pageSize: 20, pageNumber: 1, totalPages: 1},
+            },
+          })
+        );
+
+      const getPrices = await global.client.rest.market.prices.getPrices('CS.D.GBPUSD.TODAY.IP', Resolution.HOUR_4, 5);
+      expect(getPrices.prices.length).toBe(5);
+      expect(getPrices.instrumentType).toBe('CURRENCIES');
+    });
+  });
   describe('getPricesBetweenDates', () => {
     it('returns prices between given dates', async () => {
       nock(APIClient.URL_DEMO)
