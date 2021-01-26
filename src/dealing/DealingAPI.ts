@@ -1,52 +1,295 @@
 import {AxiosInstance} from 'axios';
+import {Market} from '../market';
 
-export interface Position {}
-
-export interface OTCPositionRequest {
-  currencyCode: string;
-  direction: string;
-  expiry: string;
-  size: string;
-  forceOpen: string;
-  level?: string;
-  orderType: string;
+//POSITION
+export interface Position {
+  contractSize: number;
+  controlledRisk: boolean;
+  createdDate: Date;
+  createdDateUTC: Date;
+  currency: string; //TODO: add iso standard currencies
+  dealId: string;
+  dealReference: string;
+  direction: 'BUY' | 'SELL';
+  level: number;
+  limitLevel?: number;
+  size: number;
+  stopLevel?: number;
+  trailingStep?: number;
+  trailingStopDistance?: number;
+}
+export interface PositionResponse {
+  market: Market;
+  position: Position;
+}
+export interface PositionListResponse {
+  positions: PositionResponse[];
+}
+export interface PositionCreateRequest {
+  currencyCode: string; //TODO: add iso standard currencies
+  direction: 'BUY' | 'SELL';
   epic: string;
-  limitDistance?: string;
-  limitLevel?: string;
-  guaranteedStop: string;
-  stopLevel?: string;
-  stopDistance?: string;
+  expiry: string;
+  forceOpen: Boolean;
   goodTillDate?: string;
-  timeInForce?: string;
+  guaranteedStop: Boolean;
+  level?: number;
+  limitDistance?: number;
+  limitLevel?: number;
+  orderType: 'LIMIT' | 'MARKET' | 'QUOTE';
+  size: number;
+  stopDistance?: number;
+  stopLevel?: number;
+  timeInForce?: 'EXECUTE_AND_ELIMINATE' | 'FILL_OR_KILL';
+}
+export interface PositionCloseRequest {
+  dealId?: string;
+  direction: 'BUY' | 'SELL';
+  epic?: string;
+  expiry: string;
+  level: number;
+  orderType: 'LIMIT' | 'MARKET' | 'QUOTE';
+  quoteId?: string;
+  size: number;
+  timeInForce?: 'EXECUTE_AND_ELIMINATE' | 'FILL_OR_KILL';
+}
+export interface PositionUpdateRequest {
+  limitLevel?: number;
+  stopLevel?: number;
+  trailingStop?: Boolean;
+  trailingStopDistance?: number;
+  trailingStopIncrement?: number;
 }
 
-export interface DealReference {
+//ORDER
+export interface Order {
+  createdDate: Date;
+  createdDateUTC: Date;
+  currencyCode: string; //TODO: add iso standard currencies
+  dealId: string;
+  direction: 'BUY' | 'SELL';
+  dma: boolean;
+  epic: string;
+  goodTillDate?: Date;
+  goodTillDateISO?: Date;
+  guaranteedStop: boolean;
+  limitDistance: number;
+  orderLevel: number;
+  orderSize: number;
+  orderType: 'LIMIT' | 'STOP';
+  stopDistance: number;
+  timeInForce: 'GOOD_TILL_CANCELLED' | 'GOOD_TILL_DATE';
+}
+export interface OrderResponse {
+  marketData: Market;
+  workingOrderData: Order;
+}
+export interface OrderListResponse {
+  workingOrders: OrderResponse[];
+}
+export interface OrderCreateRequest {
+  currencyCode: string; //TODO: add iso standard currencies
+  direction: 'BUY' | 'SELL';
+  epic: string;
+  expiry: string;
+  forceOpen: Boolean;
+  goodTillDate?: Date;
+  guaranteedStop: Boolean;
+  level: number;
+  limitDistance?: number;
+  limitLevel?: number;
+  size: number;
+  stopDistance?: number;
+  stopLevel?: number;
+  timeInForce: 'GOOD_TILL_CANCELLED' | 'GOOD_TILL_DATE';
+  type: 'LIMIT' | 'STOP';
+}
+export interface OrderUpdateRequest {
+  goodTillDate?: Date;
+  level: number;
+  limitDistance?: number;
+  limitLevel?: number;
+  stopDistance?: number;
+  stopLevel?: number;
+  timeInForce: 'GOOD_TILL_CANCELLED' | 'GOOD_TILL_DATE';
+  type: 'LIMIT' | 'STOP';
+}
+
+//DEAL REFERENCE
+export interface DealReferenceResponse {
   dealReference: string;
 }
 
+//DEAL CONFIRMATION
+export interface AffectedDeal {
+  dealId: string;
+  status: 'AMENDED' | 'DELETED' | 'FULLY_CLOSED' | 'OPENED' | 'PARTIALLY_CLOSED';
+}
 export interface DealConfirmation {
-  dealStatus: string;
+  affectedDeals: AffectedDeal[];
+  date: Date;
+  dealId: string;
+  dealReference: string;
+  dealStatus: 'ACCEPTED' | 'REJECTED';
+  direction: 'BUY' | 'SELL';
+  epic: string;
+  expiry: string;
+  guaranteedStop: boolean;
+  level: number;
+  limitDistance?: number;
+  limitLevel?: number;
+  profit?: number;
+  profitCurrency?: string;
   reason: string;
+  size: number;
+  status: 'AMENDED' | 'CLOSED' | 'DELETED' | 'OPEN' | 'PARTIALLY_CLOSED';
+  stopDistance?: number;
+  stopLevel?: number;
+  trailingStop: boolean;
 }
 
 export class DealingAPI {
   static readonly URL = {
     CONFIRMS: '/confirms/',
-    POSITIONS: '/positions',
-    POSITIONS_OTC: '/positions/otc',
+    POSITIONS: '/positions/',
+    POSITIONS_OTC: '/positions/otc/',
+    WORKINGORDERS: '/workingorders/',
+    WORKINGORDERS_OTC: '/workingorders/otc/',
   };
 
   constructor(private readonly apiClient: AxiosInstance) {}
 
-  async createOTCPosition(createOTCPositionRequest: OTCPositionRequest): Promise<DealReference> {
-    const resource = DealingAPI.URL.POSITIONS_OTC;
-    const response = await this.apiClient.post<DealReference>(resource, createOTCPositionRequest);
+  /**
+   * Returns all open positions for the active account.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=545
+   */
+  async getAllOpenPositions(): Promise<PositionListResponse> {
+    const resource = DealingAPI.URL.POSITIONS;
+    const response = await this.apiClient.get<PositionListResponse>(resource);
     return response.data;
   }
 
-  async confirmTrade(dealReference: DealReference): Promise<DealConfirmation> {
+  /**
+   * Returns an open position for the active account by deal identifier.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=541
+   */
+  async getPosition(dealId: String): Promise<Position> {
+    const resource = DealingAPI.URL.POSITIONS + dealId;
+    const response = await this.apiClient.get<Position>(resource);
+    return response.data;
+  }
+
+  /**
+   * Creates an OTC position.
+   *
+   * @param PositionCreateRequest - The Information to create the Position
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
+   */
+  async createPosition(createPositionRequest: PositionCreateRequest): Promise<DealReferenceResponse> {
+    const resource = DealingAPI.URL.POSITIONS_OTC;
+    const response = await this.apiClient.post<DealReferenceResponse>(resource, createPositionRequest);
+    return response.data;
+  }
+
+  /**
+   * Closes an OTC position.
+   *
+   * @param PositionCloseRequest - The Information to close the Position
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
+   */
+  async closePosition(closePositionRequest: PositionCloseRequest): Promise<DealReferenceResponse> {
+    const resource = DealingAPI.URL.POSITIONS_OTC;
+    const response = await this.apiClient.post<DealReferenceResponse>(resource, closePositionRequest, {
+      headers: {
+        _method: 'DELETE',
+      },
+    });
+    return response.data;
+  }
+
+  /**
+   * Closes an OTC position.
+   *
+   * @param PositionUpdateRequest - The Information to close the Position
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
+   */
+  async updatePosition(dealId: String, updatePositionRequest: PositionUpdateRequest): Promise<DealReferenceResponse> {
+    const resource = DealingAPI.URL.POSITIONS_OTC + dealId;
+    const response = await this.apiClient.put<DealReferenceResponse>(resource, updatePositionRequest);
+    return response.data;
+  }
+
+  /**
+   * Returns a deal confirmation for the given deal reference.
+   *
+   * @param dealReference - The dealReference of the deal to be retrieved
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=546
+   */
+  async confirmTrade(dealReference: DealReferenceResponse): Promise<DealConfirmation> {
     const resource = DealingAPI.URL.CONFIRMS + dealReference.dealReference;
     const response = await this.apiClient.get<DealConfirmation>(resource);
+    return response.data;
+  }
+
+  /**
+   * Returns all open working orders for the active account.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=555
+   */
+  async getAllOrders(): Promise<OrderListResponse> {
+    const resource = DealingAPI.URL.WORKINGORDERS;
+    const response = await this.apiClient.get<OrderListResponse>(resource);
+    return response.data;
+  }
+
+  /**
+   * Creates an OTC working order.
+   *
+   * @param OrderCreateRequest - The Information to create the Order
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=533
+   */
+  async createOrder(createOrderRequest: OrderCreateRequest): Promise<DealReferenceResponse> {
+    const resource = DealingAPI.URL.WORKINGORDERS_OTC;
+    const response = await this.apiClient.post<DealReferenceResponse>(resource, createOrderRequest, {
+      headers: {
+        VERSION: '2',
+      },
+    });
+    return response.data;
+  }
+
+  /**
+   * Deletes an OTC working order.
+   *
+   * @param DealId - The Id of the working order which should be deleted
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=526
+   */
+  async deleteOrder(dealId: String): Promise<DealReferenceResponse> {
+    const resource = DealingAPI.URL.WORKINGORDERS_OTC + dealId;
+    const response = await this.apiClient.post<DealReferenceResponse>(
+      resource,
+      {},
+      {
+        headers: {
+          _method: 'DELETE',
+        },
+      }
+    );
+    return response.data;
+  }
+
+  /**
+   * Updates an OTC working order.
+   *
+   * @param DealId - The Id of the working order which should be updated
+   * @param OrderUpdateRequest - The Information to update the Working Order
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=526
+   */
+  async updateOrder(dealId: String, orderRequest: OrderUpdateRequest): Promise<DealReferenceResponse> {
+    const resource = DealingAPI.URL.WORKINGORDERS_OTC + dealId;
+    const response = await this.apiClient.put<DealReferenceResponse>(resource, orderRequest);
     return response.data;
   }
 }
