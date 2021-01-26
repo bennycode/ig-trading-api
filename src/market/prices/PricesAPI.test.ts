@@ -1,6 +1,6 @@
 /* eslint-disable sort-keys */
 import nock from 'nock';
-import {APIClient} from '../APIClient';
+import {APIClient} from '../../APIClient';
 import {PricesAPI, Resolution} from './PricesAPI';
 
 describe('PricesAPI', () => {
@@ -79,7 +79,7 @@ describe('PricesAPI', () => {
           })
         );
 
-      const getPricesBetweenDates = await global.client.rest.prices.getPricesBetweenDates(
+      const getPricesBetweenDates = await global.client.rest.market.prices.getPricesBetweenDates(
         'CS.D.GBPUSD.TODAY.IP',
         Resolution.HOUR_4,
         new Date('2021-01-15T00:00:00'),

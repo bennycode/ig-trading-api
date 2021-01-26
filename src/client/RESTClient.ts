@@ -1,7 +1,6 @@
 import axios, {AxiosInstance, AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse} from 'axios';
 import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
-import {PricesAPI} from '../prices';
 
 export interface Authorization {
   clientSessionToken?: string;
@@ -22,7 +21,6 @@ export class RESTClient {
 
   readonly login: LoginAPI;
   readonly market: MarketAPI;
-  readonly prices: PricesAPI;
 
   readonly httpClient: AxiosInstance;
   private readonly auth: Authorization = {};
@@ -56,6 +54,5 @@ export class RESTClient {
 
     this.login = new LoginAPI(this.httpClient, this.auth);
     this.market = new MarketAPI(this.httpClient);
-    this.prices = new PricesAPI(this.httpClient);
   }
 }
