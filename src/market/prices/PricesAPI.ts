@@ -1,10 +1,12 @@
 import {AxiosInstance} from 'axios';
 import querystring from 'querystring';
+
 interface BidAsk {
   ask: number;
   bid: number;
   lastTraded: number | null;
 }
+
 export interface CandleStick {
   closePrice: BidAsk;
   highPrice: BidAsk;
@@ -34,26 +36,29 @@ export interface HistoricalPricesPagination {
 }
 
 export interface HistoricalPricesResponse {
-  instrumentType:
-    | 'BUNGEE_COMMODITIES'
-    | 'BUNGEE_CURRENCIES'
-    | 'BUNGEE_INDICES'
-    | 'COMMODITIES'
-    | 'CURRENCIES'
-    | 'INDICES'
-    | 'OPT_COMMODITIES'
-    | 'OPT_CURRENCIES'
-    | 'OPT_INDICES'
-    | 'OPT_RATES'
-    | 'OPT_SHARES'
-    | 'RATES'
-    | 'SECTORS'
-    | 'SHARES'
-    | 'SPRINT_MARKET'
-    | 'TEST_MARKET'
-    | 'UNKNOWN';
+  instrumentType: InstrumentType;
   metadata: HistoricalPricesMetadata;
   prices: CandleStick[];
+}
+
+export enum InstrumentType {
+  BUNGEE_COMMODITIES = 'BUNGEE_COMMODITIES',
+  BUNGEE_CURRENCIES = 'BUNGEE_CURRENCIES',
+  BUNGEE_INDICES = 'BUNGEE_INDICES',
+  COMMODITIES = 'COMMODITIES',
+  CURRENCIES = 'CURRENCIES',
+  INDICES = 'INDICES',
+  OPT_COMMODITIES = 'OPT_COMMODITIES',
+  OPT_CURRENCIES = 'OPT_CURRENCIES',
+  OPT_INDICES = 'OPT_INDICES',
+  OPT_RATES = 'OPT_RATES',
+  OPT_SHARES = 'OPT_SHARES',
+  RATES = 'RATES',
+  SECTORS = 'SECTORS',
+  SHARES = 'SHARES',
+  SPRINT_MARKET = 'SPRINT_MARKET',
+  TEST_MARKET = 'TEST_MARKET',
+  UNKNOWN = 'UNKNOWN',
 }
 
 export enum Resolution {
