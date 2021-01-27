@@ -8,6 +8,12 @@ import {
   DealReferenceResponse,
   OrderCreateRequest,
   OrderUpdateRequest,
+  Direction,
+  PositionOrderType,
+  DealStatus,
+  AffectedDealStatus,
+  OrderTimeInForce,
+  OrderType,
 } from './DealingAPI';
 
 describe('DealingAPI', () => {
@@ -99,13 +105,13 @@ describe('DealingAPI', () => {
     it('creates an position', async () => {
       const createPositionRequest: PositionCreateRequest = {
         currencyCode: 'USD',
-        direction: 'BUY',
+        direction: Direction.BUY,
         epic: 'UD.D.TSLA.CASH.IP',
         expiry: '-',
         forceOpen: true,
         guaranteedStop: false,
         level: 900.4,
-        orderType: 'LIMIT',
+        orderType: PositionOrderType.LIMIT,
         size: 1,
       };
 
@@ -136,10 +142,10 @@ describe('DealingAPI', () => {
     it('closes an position', async () => {
       const closePositionRequest: PositionCloseRequest = {
         dealId: '12345',
-        direction: 'SELL',
+        direction: Direction.SELL,
         expiry: '-',
         level: 860.4,
-        orderType: 'LIMIT',
+        orderType: PositionOrderType.LIMIT,
         size: 1,
       };
 
@@ -234,10 +240,10 @@ describe('DealingAPI', () => {
 
       const confirmedPosition = await global.client.rest.dealing.confirmTrade(dealReference);
       expect(confirmedPosition.dealId).toBe('12345');
-      expect(confirmedPosition.dealStatus).toBe('ACCEPTED');
+      expect(confirmedPosition.dealStatus).toBe(DealStatus.ACCEPTED);
       expect(confirmedPosition.epic).toBe('UD.D.TSLA.CASH.IP');
       expect(confirmedPosition.level).toBe(900.4);
-      expect(confirmedPosition.affectedDeals[0].status).toBe('OPENED');
+      expect(confirmedPosition.affectedDeals[0].status).toBe(AffectedDealStatus.OPENED);
     });
   });
 
@@ -302,15 +308,15 @@ describe('DealingAPI', () => {
     it('creates an order', async () => {
       const createOrderRequest: OrderCreateRequest = {
         currencyCode: 'USD',
-        direction: 'BUY',
+        direction: Direction.BUY,
         epic: 'UD.D.TSLA.CASH.IP',
         expiry: '-',
         forceOpen: true,
         guaranteedStop: false,
         level: 811.4,
         size: 1,
-        timeInForce: 'GOOD_TILL_CANCELLED',
-        type: 'LIMIT',
+        timeInForce: OrderTimeInForce.GOOD_TILL_CANCELLED,
+        type: OrderType.LIMIT,
       };
 
       nock(APIClient.URL_DEMO)
@@ -369,8 +375,8 @@ describe('DealingAPI', () => {
       const dealId = '12345';
       const updateOrderRequest: OrderUpdateRequest = {
         level: 519.1,
-        timeInForce: 'GOOD_TILL_CANCELLED',
-        type: 'LIMIT',
+        timeInForce: OrderTimeInForce.GOOD_TILL_CANCELLED,
+        type: OrderType.LIMIT,
       };
 
       nock(APIClient.URL_DEMO)
