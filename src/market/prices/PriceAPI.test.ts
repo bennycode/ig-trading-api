@@ -161,8 +161,8 @@ describe('PricesAPI', () => {
       const getPricesBetweenDates = await global.client.rest.market.price.getPricesBetweenDates(
         'CS.D.GBPUSD.TODAY.IP',
         Resolution.HOUR_4,
-        new Date('2021-01-15T00:00:00'),
-        new Date('2021-01-16T00:00:00')
+        '2021-01-15T00:00:00.000Z',
+        '2021-01-16T00:00:00.000Z'
       );
 
       expect(getPricesBetweenDates.prices.length).toBe(expectedPrices.length);

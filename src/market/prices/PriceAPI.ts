@@ -91,8 +91,8 @@ export class PriceAPI {
    * @note Uses the v3 API response
    * @param epic - Instrument identifier
    * @param resolution - Time resolution
-   * @param startDate - Start date
-   * @param endDate - End date (must be later than start date)
+   * @param startDate - Start date as ISO 8601 string, i.e. "2021-01-15T00:00:00.000Z"
+   * @param endDate - End date as ISO 8601 string, i.e. "2021-01-16T00:00:00.000Z"
    * @param pageSize - Number of candles per page of results (defaults to 0, no pagination)
    * @param pageNumber - Page of results to return (pagination)
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=521
@@ -100,17 +100,17 @@ export class PriceAPI {
   async getPricesBetweenDates(
     epic: string,
     resolution: Resolution,
-    startDate: Date,
-    endDate: Date,
+    startDate: string,
+    endDate: string,
     pageSize: number = 0,
     pageNumber: number = 1
   ): Promise<HistoricalPricesResponse> {
     const qs = querystring.stringify({
-      from: startDate.toISOString(),
+      from: startDate,
       pageNumber,
       pageSize,
       resolution,
-      to: endDate.toISOString(),
+      to: endDate,
     });
 
     const resource = `${PriceAPI.URL.PRICES}/${epic}?${qs}`;
