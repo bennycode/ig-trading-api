@@ -1,4 +1,5 @@
 import {AxiosInstance} from 'axios';
+import {PricesAPI} from './prices';
 
 export interface Currency {
   baseExchangeRate: number;
@@ -185,8 +186,11 @@ export class MarketAPI {
     MARKETNAVIGATION: `/marketnavigation`,
     MARKETS: `/markets`,
   };
+  prices: PricesAPI;
 
-  constructor(private readonly apiClient: AxiosInstance) {}
+  constructor(private readonly apiClient: AxiosInstance) {
+    this.prices = new PricesAPI(apiClient);
+  }
 
   /**
    * Returns all markets matching the search term.
