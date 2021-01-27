@@ -144,15 +144,22 @@ describe('DealingAPI', () => {
       };
 
       nock(APIClient.URL_DEMO)
-        .post(DealingAPI.URL.POSITIONS_OTC, {
-          dealId: '12345',
-          direction: 'SELL',
-          expiry: '-',
-          level: 860.4,
-          orderType: 'LIMIT',
-          size: 1,
-          //TODO: delete Header?
-        })
+        .post(
+          DealingAPI.URL.POSITIONS_OTC,
+          {
+            dealId: '12345',
+            direction: 'SELL',
+            expiry: '-',
+            level: 860.4,
+            orderType: 'LIMIT',
+            size: 1,
+          },
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
         .reply(
           200,
           JSON.stringify({
@@ -336,7 +343,15 @@ describe('DealingAPI', () => {
       const dealId = '12345';
 
       nock(APIClient.URL_DEMO)
-        .post(DealingAPI.URL.WORKINGORDERS_OTC + dealId)
+        .post(
+          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
+          {},
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
         .reply(
           200,
           JSON.stringify({
