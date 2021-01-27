@@ -1,5 +1,5 @@
 import {AxiosInstance} from 'axios';
-import {PricesAPI} from './prices';
+import {PriceAPI} from './prices';
 
 export interface Currency {
   baseExchangeRate: number;
@@ -67,26 +67,35 @@ export interface Instrument {
   sprintMarketsMinimumExpiryTime?: number;
   stopsLimitsAllowed: boolean;
   streamingPricesAvailable: boolean;
-  type:
-    | 'BUNGEE_COMMODITIES'
-    | 'BUNGEE_CURRENCIES'
-    | 'BUNGEE_INDICES'
-    | 'COMMODITIES'
-    | 'CURRENCIES'
-    | 'INDICES'
-    | 'OPT_COMMODITIES'
-    | 'OPT_CURRENCIES'
-    | 'OPT_INDICES'
-    | 'OPT_RATES'
-    | 'OPT_SHARES'
-    | 'RATES'
-    | 'SECTORS'
-    | 'SHARES'
-    | 'SPRINT_MARKET'
-    | 'TEST_MARKET'
-    | 'UNKNOWN';
-  unit: 'AMOUNT' | 'CONTRACTS' | 'SHARES';
+  type: InstrumentType;
+  unit: InstrumentUnit;
   valueOfOnePip: string;
+}
+
+export enum InstrumentType {
+  BUNGEE_COMMODITIES = 'BUNGEE_COMMODITIES',
+  BUNGEE_CURRENCIES = 'BUNGEE_CURRENCIES',
+  BUNGEE_INDICES = 'BUNGEE_INDICES',
+  COMMODITIES = 'COMMODITIES',
+  CURRENCIES = 'CURRENCIES',
+  INDICES = 'INDICES',
+  OPT_COMMODITIES = 'OPT_COMMODITIES',
+  OPT_CURRENCIES = 'OPT_CURRENCIES',
+  OPT_INDICES = 'OPT_INDICES',
+  OPT_RATES = 'OPT_RATES',
+  OPT_SHARES = 'OPT_SHARES',
+  RATES = 'RATES',
+  SECTORS = 'SECTORS',
+  SHARES = 'SHARES',
+  SPRINT_MARKET = 'SPRINT_MARKET',
+  TEST_MARKET = 'TEST_MARKET',
+  UNKNOWN = 'UNKNOWN',
+}
+
+export enum InstrumentUnit {
+  AMOUNT = 'AMOUNT',
+  CONTRACTS = 'CONTRACTS',
+  SHARES = 'SHARES',
 }
 
 export interface MinStepDistance {
@@ -115,13 +124,24 @@ export interface MaxStopOrLimitDistance {
 }
 
 export interface DealingRules {
-  marketOrderPreference: 'AVAILABLE_DEFAULT_OFF' | 'AVAILABLE_DEFAULT_ON' | 'NOT_AVAILABLE';
+  marketOrderPreference: MarketOrderPreference;
   maxStopOrLimitDistance: MaxStopOrLimitDistance;
   minControlledRiskStopDistance: MinControlledRiskStopDistance;
   minDealSize: MinDealSize;
   minNormalStopOrLimitDistance: MinNormalStopOrLimitDistance;
   minStepDistance: MinStepDistance;
-  trailingStopsPreference: 'AVAILABLE' | 'NOT_AVAILABLE';
+  trailingStopsPreference: TrailingStopPreference;
+}
+
+export enum MarketOrderPreference {
+  AVAILABLE_DEFAULT_OFF = 'AVAILABLE_DEFAULT_OFF',
+  AVAILABLE_DEFAULT_ON = 'AVAILABLE_DEFAULT_ON',
+  NOT_AVAILABLE = 'NOT_AVAILABLE',
+}
+
+export enum TrailingStopPreference {
+  AVAILABLE = 'AVAILABLE',
+  NOT_AVAILABLE = 'NOT_AVAILABLE',
 }
 
 export interface Snapshot {
@@ -132,12 +152,22 @@ export interface Snapshot {
   delayTime: number;
   high: number;
   low: number;
-  marketStatus: 'CLOSED' | 'EDITS_ONLY' | 'OFFLINE' | 'ON_AUCTION' | 'ON_AUCTION_NO_EDITS' | 'SUSPENDED' | 'TRADEABLE';
+  marketStatus: MarketStatus;
   netChange: number;
   offer: number;
   percentageChange: number;
   scalingFactor: number;
   updateTime: string;
+}
+
+export enum MarketStatus {
+  CLOSED = 'CLOSED',
+  EDITS_ONLY = 'EDITS_ONLY',
+  OFFLINE = 'OFFLINE',
+  ON_AUCTION = 'ON_AUCTION',
+  ON_AUCTION_NO_EDITS = 'ON_AUCTION_NO_EDITS',
+  SUSPENDED = 'SUSPENDED',
+  TRADEABLE = 'TRADEABLE',
 }
 
 export interface MarketDetail {
@@ -186,10 +216,10 @@ export class MarketAPI {
     MARKETNAVIGATION: `/marketnavigation`,
     MARKETS: `/markets`,
   };
-  prices: PricesAPI;
+  price: PriceAPI;
 
   constructor(private readonly apiClient: AxiosInstance) {
-    this.prices = new PricesAPI(apiClient);
+    this.price = new PriceAPI(apiClient);
   }
 
   /**
