@@ -1,1 +1,1 @@
-export * from './PricesAPI';
+export * from './PriceAPI';

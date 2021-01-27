@@ -1,10 +1,11 @@
 import nock from 'nock';
 import {APIClient} from '../../APIClient';
-import {InstrumentType, PricesAPI, Resolution} from './PricesAPI';
+import {InstrumentType} from '../MarketAPI';
+import {PriceAPI, Resolution} from './PriceAPI';
 
 describe('PricesAPI', () => {
   describe('getPrices', () => {
-    it('returns n number of price points from now', async () => {
+    it('returns the number of price points from now', async () => {
       const expectedPrices = [
         {
           closePrice: {ask: 13664.7, bid: 13663.8, lastTraded: null},
@@ -54,11 +55,11 @@ describe('PricesAPI', () => {
       ];
 
       nock(APIClient.URL_DEMO)
-        .get(`${PricesAPI.URL.PRICES}/CS.D.GBPUSD.TODAY.IP?max=5&pageNumber=1&pageSize=0&resolution=HOUR_4`)
+        .get(`${PriceAPI.URL.PRICES}/CS.D.GBPUSD.TODAY.IP?max=5&pageNumber=1&pageSize=0&resolution=HOUR_4`)
         .reply(
           200,
           JSON.stringify({
-            instrumentType: 'CURRENCIES',
+            instrumentType: InstrumentType.CURRENCIES,
             metadata: {
               allowance: {allowanceExpiry: 524060, remainingAllowance: 9945, totalAllowance: 10000},
               pageData: {pageNumber: 1, pageSize: 20, totalPages: 1},
@@ -68,9 +69,9 @@ describe('PricesAPI', () => {
           })
         );
 
-      const getPrices = await global.client.rest.market.prices.getPrices('CS.D.GBPUSD.TODAY.IP', Resolution.HOUR_4, 5);
+      const getPrices = await global.client.rest.market.price.getPrices('CS.D.GBPUSD.TODAY.IP', Resolution.HOUR_4, 5);
       expect(getPrices.prices.length).toBe(expectedPrices.length);
-      expect(getPrices.instrumentType).toBe('CURRENCIES');
+      expect(getPrices.instrumentType).toBe(InstrumentType.CURRENCIES);
     });
   });
   describe('getPricesBetweenDates', () => {
@@ -134,9 +135,8 @@ describe('PricesAPI', () => {
 
       nock(APIClient.URL_DEMO)
         .get(
-          `${PricesAPI.URL.PRICES}/CS.D.GBPUSD.TODAY.IP?from=2021-01-15T00%3A00%3A00.000Z&pageNumber=1&pageSize=0&resolution=HOUR_4&to=2021-01-16T00%3A00%3A00.000Z`
+          `${PriceAPI.URL.PRICES}/CS.D.GBPUSD.TODAY.IP?from=2021-01-15T00%3A00%3A00.000Z&pageNumber=1&pageSize=0&resolution=HOUR_4&to=2021-01-16T00%3A00%3A00.000Z`
         )
-        // .query(true)
         .reply(
           200,
           JSON.stringify({
@@ -158,7 +158,7 @@ describe('PricesAPI', () => {
           })
         );
 
-      const getPricesBetweenDates = await global.client.rest.market.prices.getPricesBetweenDates(
+      const getPricesBetweenDates = await global.client.rest.market.price.getPricesBetweenDates(
         'CS.D.GBPUSD.TODAY.IP',
         Resolution.HOUR_4,
         new Date('2021-01-15T00:00:00'),

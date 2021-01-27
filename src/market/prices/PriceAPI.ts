@@ -1,5 +1,6 @@
 import {AxiosInstance} from 'axios';
 import querystring from 'querystring';
+import {InstrumentType} from '../MarketAPI';
 
 interface BidAsk {
   ask: number;
@@ -41,26 +42,6 @@ export interface HistoricalPricesResponse {
   prices: CandleStick[];
 }
 
-export enum InstrumentType {
-  BUNGEE_COMMODITIES = 'BUNGEE_COMMODITIES',
-  BUNGEE_CURRENCIES = 'BUNGEE_CURRENCIES',
-  BUNGEE_INDICES = 'BUNGEE_INDICES',
-  COMMODITIES = 'COMMODITIES',
-  CURRENCIES = 'CURRENCIES',
-  INDICES = 'INDICES',
-  OPT_COMMODITIES = 'OPT_COMMODITIES',
-  OPT_CURRENCIES = 'OPT_CURRENCIES',
-  OPT_INDICES = 'OPT_INDICES',
-  OPT_RATES = 'OPT_RATES',
-  OPT_SHARES = 'OPT_SHARES',
-  RATES = 'RATES',
-  SECTORS = 'SECTORS',
-  SHARES = 'SHARES',
-  SPRINT_MARKET = 'SPRINT_MARKET',
-  TEST_MARKET = 'TEST_MARKET',
-  UNKNOWN = 'UNKNOWN',
-}
-
 export enum Resolution {
   DAY = 'DAY',
   HOUR = 'HOUR',
@@ -79,7 +60,7 @@ export enum Resolution {
   WEEK = 'WEEK',
 }
 
-export enum ResolutionTime {
+export enum ResolutionInMillis {
   DAY = 86400000,
   HOUR = 3600000,
   HOUR_2 = 7200000,
@@ -97,7 +78,7 @@ export enum ResolutionTime {
   WEEK = 604800000,
 }
 
-export class PricesAPI {
+export class PriceAPI {
   static readonly URL = {
     PRICES: '/prices',
   };
@@ -105,14 +86,15 @@ export class PricesAPI {
   constructor(private readonly apiClient: AxiosInstance) {}
 
   /**
-   * Returns historical prices between given dates
-   * NOTE: Uses the V3 API response
-   * @param epic - The epic of the market to be retrieved
-   * @param resolution - the time resolution to get
+   * Returns historical prices between given dates.
+   *
+   * @note Uses the v3 API response
+   * @param epic - Instrument identifier
+   * @param resolution - Time resolution
    * @param startDate - Start date
-   * @param endDate - End date - must be later than start date
-   * @param pageSize - Number of candles per page of results (default 0 - no pagination)
-   * @param pageNumber - the page of results to return
+   * @param endDate - End date (must be later than start date)
+   * @param pageSize - Number of candles per page of results (defaults to 0, no pagination)
+   * @param pageNumber - Page of results to return (pagination)
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=521
    */
   async getPricesBetweenDates(
@@ -131,13 +113,20 @@ export class PricesAPI {
       to: endDate.toISOString(),
     });
 
-    const resource = `${PricesAPI.URL.PRICES}/${epic}?${qs}`;
-
+    const resource = `${PriceAPI.URL.PRICES}/${epic}?${qs}`;
     const response = await this.apiClient.get<HistoricalPricesResponse>(resource, {headers: {Version: 3}});
-
     return response.data;
   }
 
+  /**
+   * Returns historical prices for a particular instrument.
+   *
+   * @param epic - Instrument identifier
+   * @param resolution - Time resolution
+   * @param pointCount - Limits the number of price points (not applicable if a date range has been specified)
+   * @param pageSize - Number of candles per page of results (defaults to 0, no pagination)
+   * @param pageNumber - Page of results to return (pagination)
+   */
   async getPrices(
     epic: string,
     resolution: Resolution,
@@ -151,7 +140,7 @@ export class PricesAPI {
       pageSize,
       resolution,
     });
-    const resource = `${PricesAPI.URL.PRICES}/${epic}?${qs}`;
+    const resource = `${PriceAPI.URL.PRICES}/${epic}?${qs}`;
     const response = await this.apiClient.get<HistoricalPricesResponse>(resource, {headers: {Version: 3}});
     return response.data;
   }
