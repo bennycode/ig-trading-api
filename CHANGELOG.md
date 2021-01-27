@@ -1,3 +1,15 @@
+### 0.2.0 (2021-01-27)
+
+##### New Features
+
+- Handle market positions ([#42](https://github.com/bennycode/ig-trading-api/pull/42)) ([58f0e841](https://github.com/bennycode/ig-trading-api/commit/58f0e8412d1fbb6f2cbcf577a550249ccf448885))
+- Export instrument types ([#55](https://github.com/bennycode/ig-trading-api/pull/55)) ([abf53d42](https://github.com/bennycode/ig-trading-api/commit/abf53d42bf37f6f4da569ec405ffc86de460fa16))
+- Return historical prices ([#54](https://github.com/bennycode/ig-trading-api/pull/54)) ([ea64b96d](https://github.com/bennycode/ig-trading-api/commit/ea64b96dcdeeba485df6dec3a484b75ddcd0d749))
+
+##### Refactors
+
+- Submit times in ISO 8601 string format ([a955b631](https://github.com/bennycode/ig-trading-api/commit/a955b6317bc3a52be9bb9095ebfec4b61605c7da))
+
 ### 0.1.0 (2021-01-25)
 
 ##### Chores
