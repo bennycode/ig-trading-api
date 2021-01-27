@@ -178,7 +178,7 @@ describe('DealingAPI', () => {
   });
 
   describe('updatePosition', () => {
-    it('updates an position', async () => {
+    it('updates a position', async () => {
       const updatePositionRequest: PositionUpdateRequest = {
         limitLevel: 950.4,
       };
