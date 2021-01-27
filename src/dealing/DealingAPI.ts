@@ -1,6 +1,54 @@
 import {AxiosInstance} from 'axios';
 import {Market} from '../market';
 
+//ENUMS
+export enum Direction {
+  BUY = 'BUY',
+  SELL = 'SELL',
+}
+
+export enum PositionOrderType {
+  LIMIT = 'LIMIT',
+  MARKET = 'MARKET',
+  QUOTE = 'QUOTE',
+}
+
+export enum PositionTimeInForce {
+  EXECUTE_AND_ELIMINATE = 'EXECUTE_AND_ELIMINATE',
+  FILL_OR_KILL = 'FILL_OR_KILL',
+}
+
+export enum OrderType {
+  LIMIT = 'LIMIT',
+  STOP = 'STOP',
+}
+
+export enum OrderTimeInForce {
+  GOOD_TILL_CANCELLED = 'GOOD_TILL_CANCELLED',
+  GOOD_TILL_DATE = 'GOOD_TILL_DATE',
+}
+
+export enum AffectedDealStatus {
+  AMENDED = 'AMENDED',
+  DELETED = 'DELETED',
+  FULLY_CLOSED = 'FULLY_CLOSED',
+  OPENED = 'OPENED',
+  PARTIALLY_CLOSED = 'PARTIALLY_CLOSED',
+}
+
+export enum DealStatus {
+  ACCEPTED = 'ACCEPTED',
+  REJECTED = 'REJECTED',
+}
+
+export enum Status {
+  AMENDED = 'AMENDED',
+  CLOSED = 'CLOSED',
+  DELETED = 'DELETED',
+  OPEN = 'OPEN',
+  PARTIALLY_CLOSED = 'PARTIALLY_CLOSED',
+}
+
 //POSITION
 export interface Position {
   contractSize: number;
@@ -10,7 +58,7 @@ export interface Position {
   currency: string; //TODO: add iso standard currencies
   dealId: string;
   dealReference: string;
-  direction: 'BUY' | 'SELL';
+  direction: Direction;
   level: number;
   limitLevel?: number;
   size: number;
@@ -27,7 +75,7 @@ export interface PositionListResponse {
 }
 export interface PositionCreateRequest {
   currencyCode: string; //TODO: add iso standard currencies
-  direction: 'BUY' | 'SELL';
+  direction: Direction;
   epic: string;
   expiry: string;
   forceOpen: Boolean;
@@ -36,22 +84,22 @@ export interface PositionCreateRequest {
   level?: number;
   limitDistance?: number;
   limitLevel?: number;
-  orderType: 'LIMIT' | 'MARKET' | 'QUOTE';
+  orderType: PositionOrderType;
   size: number;
   stopDistance?: number;
   stopLevel?: number;
-  timeInForce?: 'EXECUTE_AND_ELIMINATE' | 'FILL_OR_KILL';
+  timeInForce?: PositionTimeInForce;
 }
 export interface PositionCloseRequest {
   dealId?: string;
-  direction: 'BUY' | 'SELL';
+  direction: Direction;
   epic?: string;
   expiry: string;
   level: number;
-  orderType: 'LIMIT' | 'MARKET' | 'QUOTE';
+  orderType: PositionOrderType;
   quoteId?: string;
   size: number;
-  timeInForce?: 'EXECUTE_AND_ELIMINATE' | 'FILL_OR_KILL';
+  timeInForce?: PositionTimeInForce;
 }
 export interface PositionUpdateRequest {
   limitLevel?: number;
@@ -67,7 +115,7 @@ export interface Order {
   createdDateUTC: Date;
   currencyCode: string; //TODO: add iso standard currencies
   dealId: string;
-  direction: 'BUY' | 'SELL';
+  direction: Direction;
   dma: boolean;
   epic: string;
   goodTillDate?: Date;
@@ -76,9 +124,9 @@ export interface Order {
   limitDistance: number;
   orderLevel: number;
   orderSize: number;
-  orderType: 'LIMIT' | 'STOP';
+  orderType: OrderType;
   stopDistance: number;
-  timeInForce: 'GOOD_TILL_CANCELLED' | 'GOOD_TILL_DATE';
+  timeInForce: OrderTimeInForce;
 }
 export interface OrderResponse {
   marketData: Market;
@@ -89,7 +137,7 @@ export interface OrderListResponse {
 }
 export interface OrderCreateRequest {
   currencyCode: string; //TODO: add iso standard currencies
-  direction: 'BUY' | 'SELL';
+  direction: Direction;
   epic: string;
   expiry: string;
   forceOpen: Boolean;
@@ -101,8 +149,8 @@ export interface OrderCreateRequest {
   size: number;
   stopDistance?: number;
   stopLevel?: number;
-  timeInForce: 'GOOD_TILL_CANCELLED' | 'GOOD_TILL_DATE';
-  type: 'LIMIT' | 'STOP';
+  timeInForce: OrderTimeInForce;
+  type: OrderType;
 }
 export interface OrderUpdateRequest {
   goodTillDate?: Date;
@@ -111,8 +159,8 @@ export interface OrderUpdateRequest {
   limitLevel?: number;
   stopDistance?: number;
   stopLevel?: number;
-  timeInForce: 'GOOD_TILL_CANCELLED' | 'GOOD_TILL_DATE';
-  type: 'LIMIT' | 'STOP';
+  timeInForce: OrderTimeInForce;
+  type: OrderType;
 }
 
 //DEAL REFERENCE
@@ -123,15 +171,15 @@ export interface DealReferenceResponse {
 //DEAL CONFIRMATION
 export interface AffectedDeal {
   dealId: string;
-  status: 'AMENDED' | 'DELETED' | 'FULLY_CLOSED' | 'OPENED' | 'PARTIALLY_CLOSED';
+  status: AffectedDealStatus;
 }
 export interface DealConfirmation {
   affectedDeals: AffectedDeal[];
   date: Date;
   dealId: string;
   dealReference: string;
-  dealStatus: 'ACCEPTED' | 'REJECTED';
-  direction: 'BUY' | 'SELL';
+  dealStatus: DealStatus;
+  direction: Direction;
   epic: string;
   expiry: string;
   guaranteedStop: boolean;
@@ -142,7 +190,7 @@ export interface DealConfirmation {
   profitCurrency?: string;
   reason: string;
   size: number;
-  status: 'AMENDED' | 'CLOSED' | 'DELETED' | 'OPEN' | 'PARTIALLY_CLOSED';
+  status: Status;
   stopDistance?: number;
   stopLevel?: number;
   trailingStop: boolean;
