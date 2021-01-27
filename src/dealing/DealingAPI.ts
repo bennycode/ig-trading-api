@@ -1,7 +1,6 @@
 import {AxiosInstance} from 'axios';
 import {Market} from '../market';
 
-//ENUMS
 export enum Direction {
   BUY = 'BUY',
   SELL = 'SELL',
@@ -49,13 +48,12 @@ export enum Status {
   PARTIALLY_CLOSED = 'PARTIALLY_CLOSED',
 }
 
-//POSITION
 export interface Position {
   contractSize: number;
   controlledRisk: boolean;
   createdDate: Date;
   createdDateUTC: Date;
-  currency: string; //TODO: add iso standard currencies
+  currency: string;
   dealId: string;
   dealReference: string;
   direction: Direction;
@@ -66,15 +64,18 @@ export interface Position {
   trailingStep?: number;
   trailingStopDistance?: number;
 }
+
 export interface PositionResponse {
   market: Market;
   position: Position;
 }
+
 export interface PositionListResponse {
   positions: PositionResponse[];
 }
+
 export interface PositionCreateRequest {
-  currencyCode: string; //TODO: add iso standard currencies
+  currencyCode: string;
   direction: Direction;
   epic: string;
   expiry: string;
@@ -90,6 +91,7 @@ export interface PositionCreateRequest {
   stopLevel?: number;
   timeInForce?: PositionTimeInForce;
 }
+
 export interface PositionCloseRequest {
   dealId?: string;
   direction: Direction;
@@ -101,6 +103,7 @@ export interface PositionCloseRequest {
   size: number;
   timeInForce?: PositionTimeInForce;
 }
+
 export interface PositionUpdateRequest {
   limitLevel?: number;
   stopLevel?: number;
@@ -109,11 +112,10 @@ export interface PositionUpdateRequest {
   trailingStopIncrement?: number;
 }
 
-//ORDER
 export interface Order {
   createdDate: Date;
   createdDateUTC: Date;
-  currencyCode: string; //TODO: add iso standard currencies
+  currencyCode: string;
   dealId: string;
   direction: Direction;
   dma: boolean;
@@ -128,15 +130,18 @@ export interface Order {
   stopDistance: number;
   timeInForce: OrderTimeInForce;
 }
+
 export interface OrderResponse {
   marketData: Market;
   workingOrderData: Order;
 }
+
 export interface OrderListResponse {
   workingOrders: OrderResponse[];
 }
+
 export interface OrderCreateRequest {
-  currencyCode: string; //TODO: add iso standard currencies
+  currencyCode: string;
   direction: Direction;
   epic: string;
   expiry: string;
@@ -152,6 +157,7 @@ export interface OrderCreateRequest {
   timeInForce: OrderTimeInForce;
   type: OrderType;
 }
+
 export interface OrderUpdateRequest {
   goodTillDate?: Date;
   level: number;
@@ -163,16 +169,15 @@ export interface OrderUpdateRequest {
   type: OrderType;
 }
 
-//DEAL REFERENCE
 export interface DealReferenceResponse {
   dealReference: string;
 }
 
-//DEAL CONFIRMATION
 export interface AffectedDeal {
   dealId: string;
   status: AffectedDealStatus;
 }
+
 export interface DealConfirmation {
   affectedDeals: AffectedDeal[];
   date: Date;
