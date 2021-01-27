@@ -1,3 +1,9 @@
+### 0.3.0 (2021-01-27)
+
+##### New Features
+
+- Export interfaces from Market and Dealing API ([#57](https://github.com/bennycode/ig-trading-api/pull/57)) ([54d4af0c](https://github.com/bennycode/ig-trading-api/commit/54d4af0c27e6c09d228238c6447f632a0ae1044d))
+
 ### 0.2.0 (2021-01-27)
 
 ##### New Features
