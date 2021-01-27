@@ -72,7 +72,7 @@ describe('DealingAPI', () => {
   });
 
   describe('getPosition', () => {
-    it('returns a position', async () => {
+    it('returns an open position', async () => {
       nock(APIClient.URL_DEMO)
         .get(DealingAPI.URL.POSITIONS + '12345')
         .reply(
@@ -102,7 +102,7 @@ describe('DealingAPI', () => {
   });
 
   describe('createPosition', () => {
-    it('creates an position', async () => {
+    it('creates a position', async () => {
       const createPositionRequest: PositionCreateRequest = {
         currencyCode: 'USD',
         direction: Direction.BUY,
@@ -139,7 +139,7 @@ describe('DealingAPI', () => {
   });
 
   describe('closePosition', () => {
-    it('closes an position', async () => {
+    it('closes a position', async () => {
       const closePositionRequest: PositionCloseRequest = {
         dealId: '12345',
         direction: Direction.SELL,
@@ -248,7 +248,7 @@ describe('DealingAPI', () => {
   });
 
   describe('getAllOrders', () => {
-    it('get all orders', async () => {
+    it('gets all orders', async () => {
       nock(APIClient.URL_DEMO)
         .get(DealingAPI.URL.WORKINGORDERS)
         .reply(
@@ -345,7 +345,7 @@ describe('DealingAPI', () => {
   });
 
   describe('deleteOrder', () => {
-    it('close an order', async () => {
+    it('closes an order', async () => {
       const dealId = '12345';
 
       nock(APIClient.URL_DEMO)
@@ -371,7 +371,7 @@ describe('DealingAPI', () => {
   });
 
   describe('updateOrder', () => {
-    it('update an order', async () => {
+    it('updates an order', async () => {
       const dealId = '12345';
       const updateOrderRequest: OrderUpdateRequest = {
         level: 519.1,
