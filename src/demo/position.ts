@@ -1,7 +1,13 @@
 import 'dotenv-defaults/config';
 
 import {APIClient} from '../APIClient';
-import {PositionCreateRequest, PositionUpdateRequest, PositionCloseRequest, PositionOrderType, Direction} from '../dealing';
+import {
+  PositionCreateRequest,
+  PositionUpdateRequest,
+  PositionCloseRequest,
+  PositionOrderType,
+  Direction,
+} from '../dealing';
 
 async function main(): Promise<void> {
   const {IG_API_KEY: apiKey, IG_USERNAME: username, IG_PASSWORD: password} = process.env;
