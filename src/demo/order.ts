@@ -1,7 +1,7 @@
 import 'dotenv-defaults/config';
 
 import {APIClient} from '../APIClient';
-import {OrderUpdateRequest, OrderCreateRequest} from '../dealing';
+import {OrderUpdateRequest, OrderCreateRequest, Direction, OrderTimeInForce, OrderType} from '../dealing';
 
 async function main(): Promise<void> {
   const {IG_API_KEY: apiKey, IG_USERNAME: username, IG_PASSWORD: password} = process.env;
@@ -17,15 +17,15 @@ async function main(): Promise<void> {
 
   const createOrderRequest: OrderCreateRequest = {
     currencyCode: 'USD',
-    direction: 'BUY',
+    direction: Direction.BUY,
     epic: 'UD.D.TSLA.CASH.IP',
     expiry: '-',
     forceOpen: true,
     guaranteedStop: false,
     level: 811.4,
     size: 1,
-    timeInForce: 'GOOD_TILL_CANCELLED',
-    type: 'LIMIT',
+    timeInForce: OrderTimeInForce.GOOD_TILL_CANCELLED,
+    type: OrderType.LIMIT,
   };
   const createOrderSession = await client.rest.dealing.createOrder(createOrderRequest);
   console.info(`Your order deal reference is "${createOrderSession.dealReference}".`);
@@ -38,8 +38,8 @@ async function main(): Promise<void> {
 
   const updateOrderRequest: OrderUpdateRequest = {
     level: 519.1,
-    timeInForce: 'GOOD_TILL_CANCELLED',
-    type: 'LIMIT',
+    timeInForce: OrderTimeInForce.GOOD_TILL_CANCELLED,
+    type: OrderType.LIMIT,
   };
   const updateOrderSession = await client.rest.dealing.updateOrder(confirmOrderSession.dealId, updateOrderRequest);
   console.info(`Your updated order deal reference is "${updateOrderSession.dealReference}".`);

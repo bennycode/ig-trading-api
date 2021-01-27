@@ -1,7 +1,7 @@
 import 'dotenv-defaults/config';
 
 import {APIClient} from '../APIClient';
-import {PositionCreateRequest, PositionUpdateRequest, PositionCloseRequest} from '../dealing';
+import {PositionCreateRequest, PositionUpdateRequest, PositionCloseRequest, PositionOrderType, Direction} from '../dealing';
 
 async function main(): Promise<void> {
   const {IG_API_KEY: apiKey, IG_USERNAME: username, IG_PASSWORD: password} = process.env;
@@ -17,13 +17,13 @@ async function main(): Promise<void> {
 
   const createPositionRequest: PositionCreateRequest = {
     currencyCode: 'USD',
-    direction: 'BUY',
+    direction: Direction.BUY,
     epic: 'UD.D.TSLA.CASH.IP',
     expiry: '-',
     forceOpen: true,
     guaranteedStop: false,
     level: 900.4,
-    orderType: 'LIMIT',
+    orderType: PositionOrderType.LIMIT,
     size: 1,
   };
   const createPositionSession = await client.rest.dealing.createPosition(createPositionRequest);
@@ -43,7 +43,7 @@ async function main(): Promise<void> {
 
   const closePositionRequest: PositionCloseRequest = {
     dealId: confirmSession.dealId,
-    direction: 'SELL',
+    direction: Direction.SELL,
     expiry: createPositionRequest.expiry,
     level: 860.4,
     orderType: createPositionRequest.orderType,
