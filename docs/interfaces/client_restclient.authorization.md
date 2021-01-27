@@ -21,7 +21,7 @@
 
 • `Optional` **clientSessionToken**: _undefined_ | _string_
 
-Defined in: [client/RESTClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/b3c6a4e/src/client/RESTClient.ts#L7)
+Defined in: [client/RESTClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/client/RESTClient.ts#L7)
 
 ---
 
@@ -29,4 +29,4 @@ Defined in: [client/RESTClient.ts:7](https://github.com/bennycode/ig-trading-api
 
 • `Optional` **securityToken**: _undefined_ | _string_
 
-Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/b3c6a4e/src/client/RESTClient.ts#L8)
+Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/client/RESTClient.ts#L8)

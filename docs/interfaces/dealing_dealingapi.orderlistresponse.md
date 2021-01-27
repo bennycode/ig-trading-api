@@ -20,4 +20,4 @@
 
 • **workingOrders**: [_OrderResponse_](dealing_dealingapi.orderresponse.md)[]
 
-Defined in: [dealing/DealingAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/b3c6a4e/src/dealing/DealingAPI.ts#L140)
+Defined in: [dealing/DealingAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/dealing/DealingAPI.ts#L140)
