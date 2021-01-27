@@ -24,7 +24,7 @@ export class RESTClient {
   readonly market: MarketAPI;
   readonly dealing: DealingAPI;
 
-  private readonly httpClient: AxiosInstance;
+  readonly httpClient: AxiosInstance;
   private readonly auth: Authorization = {};
 
   constructor(baseURL: string, private readonly apiKey: string) {

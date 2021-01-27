@@ -57,6 +57,18 @@ console.info(`Your client ID is "${session.clientId}".`);
 - [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
 - [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
 
+### IG instrument identifier (epic)
+
+Breakdown for "IX.D.DOW.DAILY.IP":
+
+| Symbol | Description | Example
+| --- | --- | --- |
+| IX | Hours of trading | "[Index Out of Hours](https://www.ig.com/uk/out-of-hours-trading)"
+| D | Tradability | "D" when tradeable
+| DOW | Underlying market | "Dow Jones"
+| DAILY | Indicator for processing method | "Daily" funded bet
+| IP | Asset type | "Intellectual Property"
+
 ## Development Setup
 
 You can get up and running in just a few simple steps:
