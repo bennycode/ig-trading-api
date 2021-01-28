@@ -73,7 +73,15 @@ describe('AccountAPI', () => {
       };
 
       nock(APIClient.URL_DEMO)
-        .get(AccountAPI.URL.HISTORY_ACTIVITY + '?from=' + activityHistoryRequest.from + '&to=' + activityHistoryRequest.to + '&detailed=' + activityHistoryRequest.detailed)
+        .get(
+          AccountAPI.URL.HISTORY_ACTIVITY +
+            '?from=' +
+            activityHistoryRequest.from +
+            '&to=' +
+            activityHistoryRequest.to +
+            '&detailed=' +
+            activityHistoryRequest.detailed
+        )
         .reply(
           200,
           JSON.stringify({
