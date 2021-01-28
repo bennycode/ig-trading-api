@@ -6,13 +6,13 @@
 
 ### Classes
 
-- [LoginAPI](../classes/login/loginapi.loginapi.md)
+- [LoginAPI](../classes/login_loginapi.loginapi.md)
 
 ### Interfaces
 
-- [Account](../interfaces/login/loginapi.account.md)
-- [AccountInfo](../interfaces/login/loginapi.accountinfo.md)
-- [TradingSession](../interfaces/login/loginapi.tradingsession.md)
+- [Account](../interfaces/login_loginapi.account.md)
+- [AccountInfo](../interfaces/login_loginapi.accountinfo.md)
+- [TradingSession](../interfaces/login_loginapi.tradingsession.md)
 
 ### Type aliases
 
@@ -22,6 +22,6 @@
 
 ### ReroutingEnvironment
 
-Ƭ **ReroutingEnvironment**: _DEMO_ \| _LIVE_ \| _TEST_ \| _UAT_
+Ƭ **ReroutingEnvironment**: _DEMO_ | _LIVE_ | _TEST_ | _UAT_
 
-Defined in: [login/LoginAPI.ts:4](https://github.com/bennycode/ig-trading-api/blob/d998514/src/login/LoginAPI.ts#L4)
+Defined in: [login/LoginAPI.ts:4](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/login/LoginAPI.ts#L4)
