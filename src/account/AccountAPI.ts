@@ -121,8 +121,8 @@ export interface Transaction {
   period: string;
   profitAndLoss: string;
   reference: string;
-  transactionType: string;
   size: string;
+  transactionType: string;
 }
 
 export interface TransactionPaging {
