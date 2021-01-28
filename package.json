@@ -67,6 +67,7 @@
     "demo:login": "ts-node ./src/demo/login.ts",
     "demo:position": "ts-node ./src/demo/position.ts",
     "demo:order": "ts-node ./src/demo/order.ts",
+    "demo:account": "ts-node ./src/demo/account.ts",
     "docs": "yarn docs:build && yarn docs:start",
     "docs:build": "yarn typedoc",
     "docs:release": "yarn docs:build && git add docs/* && git commit -m \"docs: Updated API\"",
@@ -88,5 +89,5 @@
     "test": "nyc --nycrc-path=nyc.config.coverage.json jasmine --config=jasmine.json",
     "test:dev": "nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json"
   },
-  "version": "0.3.0"
+  "version": "0.4.0"
 }

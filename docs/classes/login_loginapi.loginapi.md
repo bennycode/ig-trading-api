@@ -37,7 +37,7 @@
 
 **Returns:** [_LoginAPI_](login_loginapi.loginapi.md)
 
-Defined in: [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/login/LoginAPI.ts#L40)
+Defined in: [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L40)
 
 ## Properties
 
@@ -51,7 +51,7 @@ Defined in: [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/b
 | --------- | -------- |
 | `SESSION` | _string_ |
 
-Defined in: [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/login/LoginAPI.ts#L38)
+Defined in: [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L38)
 
 ## Methods
 
@@ -72,4 +72,4 @@ Creates a trading session, obtaining session tokens for subsequent API access.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/login/LoginAPI.ts#L51)
+Defined in: [login/LoginAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L51)

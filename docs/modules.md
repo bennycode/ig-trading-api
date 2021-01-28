@@ -7,6 +7,7 @@
 ### Modules
 
 - [APIClient](modules/apiclient.md)
+- [account/AccountAPI](modules/account_accountapi.md)
 - [client/RESTClient](modules/client_restclient.md)
 - [dealing/DealingAPI](modules/dealing_dealingapi.md)
 - [login/LoginAPI](modules/login_loginapi.md)

@@ -21,7 +21,7 @@
 
 • **marketData**: [_Market_](market_marketapi.market.md)
 
-Defined in: [dealing/DealingAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/dealing/DealingAPI.ts#L135)
+Defined in: [dealing/DealingAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L135)
 
 ---
 
@@ -29,4 +29,4 @@ Defined in: [dealing/DealingAPI.ts:135](https://github.com/bennycode/ig-trading-
 
 • **workingOrderData**: [_Order_](dealing_dealingapi.order.md)
 
-Defined in: [dealing/DealingAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/e06a01d/src/dealing/DealingAPI.ts#L136)
+Defined in: [dealing/DealingAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L136)
