@@ -2,7 +2,7 @@ import axios, {AxiosInstance, AxiosInterceptorManager, AxiosRequestConfig, Axios
 import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
 import {DealingAPI} from '../dealing';
-import { AccountAPI } from '../account';
+import {AccountAPI} from '../account';
 
 export interface Authorization {
   clientSessionToken?: string;
