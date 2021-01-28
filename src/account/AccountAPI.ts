@@ -57,38 +57,38 @@ export interface Action {
 }
 
 export interface Details {
-  dealReference: string;
   actions: Action[];
-  marketName: string;
-  goodTillDate: string;
   currency: string;
-  size: number;
+  dealReference: string;
   direction: Direction;
-  level: number;
-  stopLevel?: any;
-  stopDistance?: any;
+  goodTillDate: string;
   guaranteedStop: boolean;
-  trailingStopDistance?: any;
-  trailingStep?: any;
-  limitLevel?: number;
+  level: number;
   limitDistance?: number;
+  limitLevel?: number;
+  marketName: string;
+  size: number;
+  stopDistance?: any;
+  stopLevel?: any;
+  trailingStep?: any;
+  trailingStopDistance?: any;
 }
 
 export interface Activity {
-  date: Date;
-  epic: string;
-  period: string;
-  dealId: string;
   channel: Channel;
-  type: ActivityType;
-  status: ActivityStatus;
+  date: Date;
+  dealId: string;
   description: string;
   details?: Details;
+  epic: string;
+  period: string;
+  status: ActivityStatus;
+  type: ActivityType;
 }
 
 export interface ActivityPaging {
-  size: number;
   next: string;
+  size: number;
 }
 
 export interface ActivityMetadata {
@@ -96,12 +96,12 @@ export interface ActivityMetadata {
 }
 
 export interface ActivityHistoryRequest {
-  from?: string;
-  to?: string;
-  detailed?: boolean;
   dealId?: string;
+  detailed?: boolean;
   filter?: string;
+  from?: string;
   pageSize?: number;
+  to?: string;
 }
 
 export interface ActivityHistoryResponse {
@@ -110,44 +110,44 @@ export interface ActivityHistoryResponse {
 }
 
 export interface Transaction {
+  cashTransaction: boolean;
+  closeLevel: string;
+  currency: string;
   date: string;
   dateUtc: Date;
-  openDateUtc: Date;
   instrumentName: string;
+  openDateUtc: Date;
+  openLevel: string;
   period: string;
   profitAndLoss: string;
-  transactionType: string;
   reference: string;
-  openLevel: string;
-  closeLevel: string;
+  transactionType: string;
   size: string;
-  currency: string;
-  cashTransaction: boolean;
 }
 
 export interface TransactionPaging {
-  pageSize: number;
   pageNumber: number;
+  pageSize: number;
   totalPages: number;
 }
 
 export interface TransactionMetadata {
-  size: number;
   pageData: TransactionPaging;
+  size: number;
 }
 
 export interface TransactionHistoryRequest {
-  type?: TransactionType;
   from?: string;
-  to?: string;
   maxSpanSeconds?: number;
-  pageSize?: number;
   pageNumber?: number;
+  pageSize?: number;
+  to?: string;
+  type?: TransactionType;
 }
 
 export interface TransactionHistoryResponse {
-  transactions: Transaction[];
   metadata: TransactionMetadata;
+  transactions: Transaction[];
 }
 
 export class AccountAPI {

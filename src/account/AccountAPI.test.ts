@@ -14,46 +14,46 @@ describe('AccountAPI', () => {
         .reply(
           200,
           JSON.stringify({
-            transactions: [
-              {
-                date: '2021-01-28',
-                dateUtc: '2021-01-28T06:55:35',
-                openDateUtc: '2021-01-28T06:13:45',
-                instrumentName: 'Bitcoin (E1)',
-                period: '-',
-                profitAndLoss: 'E-63.80',
-                transactionType: 'TRADE',
-                reference: '4FUBFVBB',
-                openLevel: '31897.1',
-                closeLevel: '31578.1',
-                size: '+0.20',
-                currency: 'E',
-                cashTransaction: false,
-              },
-              {
-                date: '2021-01-28',
-                dateUtc: '2021-01-28T02:37:44',
-                openDateUtc: '2021-01-28T02:37:44',
-                instrumentName: 'Long-Zinsen für US/Kanad. Aktien 27/01/21 $. umgerechnet bei 0,8314',
-                period: '-',
-                profitAndLoss: 'E-0.15',
-                transactionType: 'WITH',
-                reference: '23146230',
-                openLevel: '-',
-                closeLevel: '0',
-                size: '-',
-                currency: 'E',
-                cashTransaction: false,
-              },
-            ],
             metadata: {
-              size: 2,
               pageData: {
-                pageSize: 20,
                 pageNumber: 1,
+                pageSize: 20,
                 totalPages: 1,
               },
+              size: 2,
             },
+            transactions: [
+              {
+                closeLevel: '31578.1',
+                date: '2021-01-28',
+                currency: 'E',
+                dateUtc: '2021-01-28T06:55:35',
+                cashTransaction: false,
+                instrumentName: 'Bitcoin (E1)',
+                openDateUtc: '2021-01-28T06:13:45',
+                openLevel: '31897.1',
+                period: '-',
+                profitAndLoss: 'E-63.80',
+                reference: '4FUBFVBB',
+                size: '+0.20',
+                transactionType: 'TRADE',
+              },
+              {
+                closeLevel: '0',
+                date: '2021-01-28',
+                currency: 'E',
+                dateUtc: '2021-01-28T02:37:44',
+                cashTransaction: false,
+                instrumentName: 'Long-Zinsen für US/Kanad. Aktien 27/01/21 $. umgerechnet bei 0,8314',
+                openDateUtc: '2021-01-28T02:37:44',
+                openLevel: '-',
+                period: '-',
+                profitAndLoss: 'E-0.15',
+                reference: '23146230',
+                size: '-',
+                transactionType: 'WITH',
+              },
+            ],
           })
         );
 
@@ -67,9 +67,9 @@ describe('AccountAPI', () => {
   describe('getActivityHistory', () => {
     it('returns the activity history', async () => {
       const activityHistoryRequest: ActivityHistoryRequest = {
+        detailed: true,
         from: '2021-01-01T00:00:00',
         to: '2021-01-28T00:00:00',
-        detailed: true,
       };
 
       nock(APIClient.URL_DEMO)
@@ -87,42 +87,42 @@ describe('AccountAPI', () => {
           JSON.stringify({
             activities: [
               {
-                date: '2021-01-27T11:10:59',
-                epic: 'UD.D.TSLA.CASH.IP',
-                period: '-',
-                dealId: 'DIAAAAE39UG9VA6',
                 channel: 'PUBLIC_WEB_API',
-                type: 'POSITION',
-                status: 'ACCEPTED',
+                date: '2021-01-27T11:10:59',
+                dealId: 'DIAAAAE39UG9VA6',
                 description: 'Position eröffnet: 39UG9VA6',
                 details: {
-                  dealReference: 'MGSTPB4KFN744S3',
                   actions: [
                     {
                       actionType: 'POSITION_OPENED',
                       affectedDealId: 'DIAAAAE39UG9VA6',
                     },
                   ],
-                  marketName: 'Tesla Motors Inc (All Sessions)',
-                  goodTillDate: null,
                   currency: 'USD',
-                  size: 1,
+                  dealReference: 'MGSTPB4KFN744S3',
                   direction: 'BUY',
-                  level: 886.05,
-                  stopLevel: null,
-                  stopDistance: null,
+                  goodTillDate: null,
                   guaranteedStop: false,
-                  trailingStopDistance: null,
-                  trailingStep: null,
-                  limitLevel: null,
+                  level: 886.05,
+                  marketName: 'Tesla Motors Inc (All Sessions)',
                   limitDistance: null,
+                  size: 1,
+                  limitLevel: null,
+                  stopDistance: null,
+                  stopLevel: null,
+                  trailingStep: null,
+                  trailingStopDistance: null,
                 },
+                epic: 'UD.D.TSLA.CASH.IP',
+                period: '-',
+                status: 'ACCEPTED',
+                type: 'POSITION',
               },
             ],
             metadata: {
               paging: {
-                size: 1,
                 next: null,
+                size: 1,
               },
             },
           })
