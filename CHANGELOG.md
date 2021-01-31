@@ -1,3 +1,21 @@
+### 0.4.0 (2021-01-28)
+
+##### New Features
+
+- Expose Account API ([1b19f6cf](https://github.com/bennycode/ig-trading-api/commit/1b19f6cff36700a3d6d5f495aaf334deaf28e115))
+- Expose Account API ([b7ef22d0](https://github.com/bennycode/ig-trading-api/commit/b7ef22d0c1f673c3a69d5004c95a7fc35cc6140f))
+- Manage account and transaction history ([#58](https://github.com/bennycode/ig-trading-api/pull/58)) ([d4122ada](https://github.com/bennycode/ig-trading-api/commit/d4122ada2db7a485441ff8d2eebe12d3abd21ecf))
+
+##### Refactors
+
+- Turn candlestick dates into strings ([67b957ec](https://github.com/bennycode/ig-trading-api/commit/67b957ec4e85a08348e5e457e3a1166751660f6b))
+
+### 0.3.0 (2021-01-27)
+
+##### New Features
+
+- Export interfaces from Market and Dealing API ([#57](https://github.com/bennycode/ig-trading-api/pull/57)) ([54d4af0c](https://github.com/bennycode/ig-trading-api/commit/54d4af0c27e6c09d228238c6447f632a0ae1044d))
+
 ### 0.2.0 (2021-01-27)
 
 ##### New Features

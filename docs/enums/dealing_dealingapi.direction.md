@@ -17,7 +17,7 @@
 
 • **BUY**: = "BUY"
 
-Defined in: [dealing/DealingAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/b3c6a4e/src/dealing/DealingAPI.ts#L5)
+Defined in: [dealing/DealingAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L5)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:5](https://github.com/bennycode/ig-trading-ap
 
 • **SELL**: = "SELL"
 
-Defined in: [dealing/DealingAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/b3c6a4e/src/dealing/DealingAPI.ts#L6)
+Defined in: [dealing/DealingAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L6)

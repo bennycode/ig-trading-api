@@ -14,8 +14,8 @@ export interface CandleStick {
   lastTradedVolume: number;
   lowPrice: BidAsk;
   openPrice: BidAsk;
-  snapshotTime: Date | string;
-  snapshotTimeUTC: Date | string;
+  snapshotTime: string;
+  snapshotTimeUTC: string;
 }
 
 export interface HistoricalPricesAllowance {
