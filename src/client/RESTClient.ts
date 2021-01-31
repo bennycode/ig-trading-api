@@ -6,7 +6,9 @@ import {AccountAPI} from '../account';
 
 export interface Authorization {
   clientSessionToken?: string;
+  lightstreamerEndpoint?: string;
   securityToken?: string;
+  user?: string;
 }
 
 export class RESTClient {
@@ -27,7 +29,7 @@ export class RESTClient {
   readonly account: AccountAPI;
 
   readonly httpClient: AxiosInstance;
-  private readonly auth: Authorization = {};
+  readonly auth: Authorization = {};
 
   constructor(baseURL: string, private readonly apiKey: string) {
     this.httpClient = axios.create({
