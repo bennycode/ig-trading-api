@@ -8,9 +8,13 @@ async function main(): Promise<void> {
   const client = new APIClient(APIClient.URL_DEMO, `${apiKey}`);
   const session = await client.rest.login.createSession(`${username}`, `${password}`);
 
-  client.ls.subscribeCandles(['CS.D.BITCOIN.TODAY.IP', 'CS.D.ETHXBT.TODAY.IP'], ChartResolution.MINUTE, (epic, val) => {
-    console.info('ls', epic, val);
-  });
+  client.stream.subscribeCandles(
+    ['CS.D.BITCOIN.TODAY.IP', 'CS.D.ETHXBT.TODAY.IP'],
+    ChartResolution.MINUTE,
+    (epic, val) => {
+      console.info('ls', epic, val);
+    }
+  );
   console.info(`Your client ID is "${session.clientId}".`);
 }
 

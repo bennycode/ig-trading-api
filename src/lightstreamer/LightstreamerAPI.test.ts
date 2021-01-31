@@ -11,12 +11,12 @@ describe('LightstreamerAPI', () => {
       const client = new APIClient(APIClient.URL_DEMO, apiKey as string);
       await client.rest.login.createSession(`${username}`, `${password}`);
 
-      client.ls.subscribeCandles(['CS.D.BITCOIN.TODAY.IP'], ChartResolution.MINUTE, (epic, candle) => {
+      client.stream.subscribeCandles(['CS.D.BITCOIN.TODAY.IP'], ChartResolution.MINUTE, (epic, candle) => {
         expect(epic).toBe('CS.D.BITCOIN.TODAY.IP');
         expect(candle.closePrice.ask).toBe(10);
       });
 
-      const listeners = client.ls.candleSubscription.getListeners()[0];
+      const listeners = client.stream.candleSubscription.getListeners()[0];
       if (listeners.onItemUpdate) {
         //@ts-ignore
         listeners.onItemUpdate({
@@ -29,7 +29,7 @@ describe('LightstreamerAPI', () => {
         });
       }
 
-      client.ls.subscribeCandles(['CS.D.ETHUSD.TODAY.IP'], ChartResolution.MINUTE, (epic, _candle) => {
+      client.stream.subscribeCandles(['CS.D.ETHUSD.TODAY.IP'], ChartResolution.MINUTE, (epic, _candle) => {
         expect(epic).toBe('CS.D.ETHUSD.TODAY.IP');
       });
     });
