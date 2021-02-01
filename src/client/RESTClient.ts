@@ -1,12 +1,13 @@
-import axios, {AxiosInstance, AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse} from 'axios';
+import axios, {AxiosError, AxiosInstance, AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse} from 'axios';
 import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
 import {DealingAPI} from '../dealing';
 import {AccountAPI} from '../account';
 
 export interface Authorization {
-  clientSessionToken?: string;
-  securityToken?: string;
+  accessToken?: string;
+  accountId?: string;
+  refreshToken?: string;
 }
 
 export class RESTClient {
@@ -41,20 +42,39 @@ export class RESTClient {
         'X-IG-API-KEY': this.apiKey,
       };
 
-      const {clientSessionToken, securityToken} = this.auth;
+      const {accessToken, accountId} = this.auth;
 
-      if (clientSessionToken) {
-        updatedHeaders.CST = clientSessionToken;
+      if (accessToken) {
+        updatedHeaders.Authorization = 'Bearer ' + accessToken;
       }
-
-      if (securityToken) {
-        updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
+      if (accountId) {
+        updatedHeaders['IG-ACCOUNT-ID'] = accountId;
       }
 
       config.headers = updatedHeaders;
 
       return config;
     });
+
+    this.httpClient.interceptors.response.use(
+      response => {
+        return response;
+      },
+      (error: AxiosError) => {
+        if (error.response?.status == 401) {
+          const config = error.config;
+          return this.login.refreshToken().then(_ => {
+            const {accessToken} = this.auth;
+            config.headers.Authorization = 'Bearer ' + accessToken;
+            return axios(config);
+          });
+        }
+        if (error.config) {
+          return Promise.reject(error.config);
+        }
+        return Promise.reject(error);
+      }
+    );
 
     this.login = new LoginAPI(this.httpClient, this.auth);
     this.market = new MarketAPI(this.httpClient);

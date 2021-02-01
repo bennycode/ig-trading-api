@@ -1,41 +1,25 @@
 import {AxiosInstance} from 'axios';
 import {Authorization} from '../client';
 
-export type ReroutingEnvironment = 'DEMO' | 'LIVE' | 'TEST' | 'UAT';
-
-export interface AccountInfo {
-  available: number;
-  balance: number;
-  deposit: number;
-  profitLoss: number;
-}
-
-export interface Account {
-  accountId: string;
-  accountName: string;
-  accountType: string;
-  preferred: boolean;
+export interface OauthToken {
+  access_token: string;
+  expires_in: string;
+  refresh_token: string;
+  scope: string;
+  token_type: string;
 }
 
 export interface TradingSession {
-  accountInfo: AccountInfo;
-  accounts: Account[];
-  accountType: string;
+  accountId: string;
   clientId: string;
-  currencyIsoCode: string;
-  currencySymbol: string;
-  currentAccountId: string;
-  dealingEnabled: boolean;
-  hasActiveDemoAccounts: boolean;
-  hasActiveLiveAccounts: boolean;
   lightstreamerEndpoint: string;
-  reroutingEnvironment?: ReroutingEnvironment;
+  oauthToken: OauthToken;
   timezoneOffset: number;
-  trailingStopsEnabled: boolean;
 }
 
 export class LoginAPI {
   static readonly URL = {
+    REFRESH_TOKEN: `/session/refresh-token`,
     SESSION: `/session`,
   };
 
@@ -49,13 +33,43 @@ export class LoginAPI {
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
   async createSession(username: string, password: string): Promise<TradingSession> {
+    delete this.auth.accessToken;
+
     const resource = LoginAPI.URL.SESSION;
-    const response = await this.apiClient.post<TradingSession>(resource, {
-      identifier: username,
-      password,
+    const response = await this.apiClient.post<TradingSession>(
+      resource,
+      {
+        identifier: username,
+        password,
+      },
+      {
+        headers: {
+          Version: '3',
+        },
+      }
+    );
+    this.auth.accessToken = response.data.oauthToken.access_token;
+    this.auth.accountId = response.data.accountId;
+    this.auth.refreshToken = response.data.oauthToken.refresh_token;
+    return response.data;
+  }
+
+  /**
+   * Refreshes a trading session, obtaining new session tokens for subsequent API access.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=523
+   */
+  async refreshToken(): Promise<OauthToken> {
+    delete this.auth.accessToken;
+
+    const resource = LoginAPI.URL.REFRESH_TOKEN;
+    const response = await this.apiClient.post<OauthToken>(resource, {
+      refresh_token: this.auth.refreshToken,
     });
-    this.auth.clientSessionToken = response.headers.cst;
-    this.auth.securityToken = response.headers['x-security-token'];
+    this.auth.accessToken = response.data.access_token;
+    this.auth.refreshToken = response.data.refresh_token;
+
+    console.info('Refreshed Token!');
     return response.data;
   }
 }
