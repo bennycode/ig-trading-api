@@ -1,19 +1,14 @@
-import 'dotenv-defaults/config';
-
-import {APIClient} from '../APIClient';
+import {initDemoClient} from './initDemoClient';
 import {
-  PositionCreateRequest,
-  PositionUpdateRequest,
-  PositionCloseRequest,
-  PositionOrderType,
   Direction,
+  PositionCloseRequest,
+  PositionCreateRequest,
+  PositionOrderType,
+  PositionUpdateRequest,
 } from '../dealing';
 
 async function main(): Promise<void> {
-  const {IG_API_KEY: apiKey, IG_USERNAME: username, IG_PASSWORD: password} = process.env;
-  const client = new APIClient(APIClient.URL_DEMO, `${apiKey}`);
-  const session = await client.rest.login.createSession(`${username}`, `${password}`);
-  console.info(`Your client ID is "${session.clientId}".`);
+  const client = await initDemoClient();
 
   const firstGetAllPositionsSession = await client.rest.dealing.getAllOpenPositions();
   firstGetAllPositionsSession.positions.forEach(position => {
@@ -32,6 +27,7 @@ async function main(): Promise<void> {
     orderType: PositionOrderType.LIMIT,
     size: 1,
   };
+
   const createPositionSession = await client.rest.dealing.createPosition(createPositionRequest);
   console.info(`Your position deal reference is "${createPositionSession.dealReference}".`);
 
@@ -55,8 +51,11 @@ async function main(): Promise<void> {
     orderType: createPositionRequest.orderType,
     size: createPositionRequest.size,
   };
+
   const closePositionSession = await client.rest.dealing.closePosition(closePositionRequest);
   console.info(`Your position "${closePositionSession.dealReference}" was closed`);
+
+  process.exit(0);
 }
 
 main().catch(console.error);

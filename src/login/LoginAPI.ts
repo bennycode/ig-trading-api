@@ -54,7 +54,7 @@ export class LoginAPI {
       identifier: username,
       password,
     });
-    this.auth.user = username;
+    this.auth.username = username;
     this.auth.clientSessionToken = response.headers.cst;
     this.auth.securityToken = response.headers['x-security-token'];
     this.auth.lightstreamerEndpoint = response.data.lightstreamerEndpoint;

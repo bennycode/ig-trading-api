@@ -1,13 +1,8 @@
-import 'dotenv-defaults/config';
-
-import {APIClient} from '../APIClient';
-import {TransactionHistoryRequest, ActivityHistoryRequest} from '../account/AccountAPI';
+import {initDemoClient} from './initDemoClient';
+import {ActivityHistoryRequest, TransactionHistoryRequest} from '../account/AccountAPI';
 
 async function main(): Promise<void> {
-  const {IG_API_KEY: apiKey, IG_USERNAME: username, IG_PASSWORD: password} = process.env;
-  const client = new APIClient(APIClient.URL_DEMO, `${apiKey}`);
-  const session = await client.rest.login.createSession(`${username}`, `${password}`);
-  console.info(`Your client ID is "${session.clientId}".`);
+  const client = await initDemoClient();
 
   const transactionHistoryRequest: TransactionHistoryRequest = {
     maxSpanSeconds: 100000000,
