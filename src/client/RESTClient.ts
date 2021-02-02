@@ -28,7 +28,7 @@ export class RESTClient {
   readonly account: AccountAPI;
 
   readonly httpClient: AxiosInstance;
-  private readonly auth: Authorization = {};
+  readonly auth: Authorization = {};
 
   constructor(baseURL: string, private readonly apiKey: string) {
     this.httpClient = axios.create({
