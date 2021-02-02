@@ -5,7 +5,7 @@
   "dependencies": {
     "@types/node": "14.14.22",
     "axios": "0.21.1",
-    "lightstreamer-client-node": "^8.0.3",
+    "lightstreamer-client-node": "8.0.3",
     "luxon": "1.25.0"
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
