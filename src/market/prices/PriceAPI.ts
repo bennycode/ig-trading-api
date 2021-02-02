@@ -2,7 +2,7 @@ import {AxiosInstance} from 'axios';
 import querystring from 'querystring';
 import {InstrumentType} from '../MarketAPI';
 
-interface BidAsk {
+export interface BidAsk {
   ask: number;
   bid: number;
   lastTraded: number | null;
