@@ -396,4 +396,25 @@ describe('DealingAPI', () => {
       expect(updateOrder.dealReference).toBe('54321');
     });
   });
+
+  describe('failedRetry', () => {
+    it('failed to delete an order', async () => {
+      const dealId = '12345';
+
+      nock(APIClient.URL_DEMO)
+        .post(
+          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
+          {},
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
+        .reply(403);
+
+      const deleteOrder = await global.client.rest.dealing.deleteOrder(dealId);
+      expect(deleteOrder.dealReference).toBe('Something doesnt work');
+    });
+  });
 });

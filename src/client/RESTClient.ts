@@ -61,7 +61,7 @@ export class RESTClient {
         return response;
       },
       (error: AxiosError) => {
-        if (error.response?.status == 401) {
+        if (error.response!.status == 401 && error.response!.data.errorCode == 'error.security.oauth-token-invalid') {
           const config = error.config;
           return this.login.refreshToken().then(_ => {
             const {accessToken} = this.auth;
@@ -69,10 +69,7 @@ export class RESTClient {
             return axios(config);
           });
         }
-        if (error.config) {
-          return Promise.reject(error.config);
-        }
-        return Promise.reject(error);
+        return Promise.reject(error.config);
       }
     );
 
