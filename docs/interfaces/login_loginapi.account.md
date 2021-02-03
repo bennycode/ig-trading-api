@@ -23,7 +23,7 @@
 
 • **accountId**: _string_
 
-Defined in: [login/LoginAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L14)
+Defined in: [login/LoginAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/login/LoginAPI.ts#L14)
 
 ---
 
@@ -31,7 +31,7 @@ Defined in: [login/LoginAPI.ts:14](https://github.com/bennycode/ig-trading-api/b
 
 • **accountName**: _string_
 
-Defined in: [login/LoginAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L15)
+Defined in: [login/LoginAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/login/LoginAPI.ts#L15)
 
 ---
 
@@ -39,7 +39,7 @@ Defined in: [login/LoginAPI.ts:15](https://github.com/bennycode/ig-trading-api/b
 
 • **accountType**: _string_
 
-Defined in: [login/LoginAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L16)
+Defined in: [login/LoginAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/login/LoginAPI.ts#L16)
 
 ---
 
@@ -47,4 +47,4 @@ Defined in: [login/LoginAPI.ts:16](https://github.com/bennycode/ig-trading-api/b
 
 • **preferred**: _boolean_
 
-Defined in: [login/LoginAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L17)
+Defined in: [login/LoginAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/login/LoginAPI.ts#L17)

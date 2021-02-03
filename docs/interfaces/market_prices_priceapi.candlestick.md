@@ -24,17 +24,17 @@
 
 ### closePrice
 
-• **closePrice**: BidAsk
+• **closePrice**: [_BidAsk_](market_prices_priceapi.bidask.md)
 
-Defined in: [market/prices/PriceAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L12)
+Defined in: [market/prices/PriceAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L12)
 
 ---
 
 ### highPrice
 
-• **highPrice**: BidAsk
+• **highPrice**: [_BidAsk_](market_prices_priceapi.bidask.md)
 
-Defined in: [market/prices/PriceAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L13)
+Defined in: [market/prices/PriceAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L13)
 
 ---
 
@@ -42,23 +42,23 @@ Defined in: [market/prices/PriceAPI.ts:13](https://github.com/bennycode/ig-tradi
 
 • **lastTradedVolume**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L14)
+Defined in: [market/prices/PriceAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L14)
 
 ---
 
 ### lowPrice
 
-• **lowPrice**: BidAsk
+• **lowPrice**: [_BidAsk_](market_prices_priceapi.bidask.md)
 
-Defined in: [market/prices/PriceAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L15)
+Defined in: [market/prices/PriceAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L15)
 
 ---
 
 ### openPrice
 
-• **openPrice**: BidAsk
+• **openPrice**: [_BidAsk_](market_prices_priceapi.bidask.md)
 
-Defined in: [market/prices/PriceAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L16)
+Defined in: [market/prices/PriceAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L16)
 
 ---
 
@@ -66,7 +66,7 @@ Defined in: [market/prices/PriceAPI.ts:16](https://github.com/bennycode/ig-tradi
 
 • **snapshotTime**: _string_
 
-Defined in: [market/prices/PriceAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L17)
+Defined in: [market/prices/PriceAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L17)
 
 ---
 
@@ -74,4 +74,4 @@ Defined in: [market/prices/PriceAPI.ts:17](https://github.com/bennycode/ig-tradi
 
 • **snapshotTimeUTC**: _string_
 
-Defined in: [market/prices/PriceAPI.ts:18](https://github.com/bennycode/ig-trading-api/blob/2436905/src/market/prices/PriceAPI.ts#L18)
+Defined in: [market/prices/PriceAPI.ts:18](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/market/prices/PriceAPI.ts#L18)

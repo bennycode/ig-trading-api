@@ -21,7 +21,7 @@
 
 • **DEALER**: = "DEALER"
 
-Defined in: [account/AccountAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L12)
+Defined in: [account/AccountAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L12)
 
 ---
 
@@ -29,7 +29,7 @@ Defined in: [account/AccountAPI.ts:12](https://github.com/bennycode/ig-trading-a
 
 • **MOBILE**: = "MOBILE"
 
-Defined in: [account/AccountAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L13)
+Defined in: [account/AccountAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L13)
 
 ---
 
@@ -37,7 +37,7 @@ Defined in: [account/AccountAPI.ts:13](https://github.com/bennycode/ig-trading-a
 
 • **PUBLIC_FIX_API**: = "PUBLIC_FIX_API"
 
-Defined in: [account/AccountAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L14)
+Defined in: [account/AccountAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L14)
 
 ---
 
@@ -45,7 +45,7 @@ Defined in: [account/AccountAPI.ts:14](https://github.com/bennycode/ig-trading-a
 
 • **PUBLIC_WEB_API**: = "PUBLIC_WEB_API"
 
-Defined in: [account/AccountAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L15)
+Defined in: [account/AccountAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L15)
 
 ---
 
@@ -53,7 +53,7 @@ Defined in: [account/AccountAPI.ts:15](https://github.com/bennycode/ig-trading-a
 
 • **SYSTEM**: = "SYSTEM"
 
-Defined in: [account/AccountAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L16)
+Defined in: [account/AccountAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L16)
 
 ---
 
@@ -61,4 +61,4 @@ Defined in: [account/AccountAPI.ts:16](https://github.com/bennycode/ig-trading-a
 
 • **WEB**: = "WEB"
 
-Defined in: [account/AccountAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L17)
+Defined in: [account/AccountAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L17)

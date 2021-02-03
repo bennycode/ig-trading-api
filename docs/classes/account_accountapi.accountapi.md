@@ -37,7 +37,7 @@
 
 **Returns:** [_AccountAPI_](account_accountapi.accountapi.md)
 
-Defined in: [account/AccountAPI.ts:157](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L157)
+Defined in: [account/AccountAPI.ts:157](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L157)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Defined in: [account/AccountAPI.ts:157](https://github.com/bennycode/ig-trading-
 | `HISTORY_ACTIVITY`     | _string_ |
 | `HISTORY_TRANSACTIONS` | _string_ |
 
-Defined in: [account/AccountAPI.ts:154](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L154)
+Defined in: [account/AccountAPI.ts:154](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L154)
 
 ## Methods
 
@@ -72,7 +72,7 @@ Returns the account activity history.
 
 **Returns:** _Promise_<[_ActivityHistoryResponse_](../interfaces/account_accountapi.activityhistoryresponse.md)\>
 
-Defined in: [account/AccountAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L167)
+Defined in: [account/AccountAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L167)
 
 ---
 
@@ -92,4 +92,4 @@ Returns the account transaction history.
 
 **Returns:** _Promise_<[_TransactionHistoryResponse_](../interfaces/account_accountapi.transactionhistoryresponse.md)\>
 
-Defined in: [account/AccountAPI.ts:184](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L184)
+Defined in: [account/AccountAPI.ts:184](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L184)
