@@ -10,7 +10,7 @@ export class LightstreamerAPI {
 
   constructor(private readonly auth: Authorization) {}
 
-  private createLightStream(): void {
+  private createLightStream(): LightstreamerClient {
     if (!this.lightstream) {
       this.lightstream = new LightstreamerClient(this.auth.lightstreamerEndpoint, '');
       this.lightstream.connectionDetails.setUser(this.auth.username!);
@@ -18,6 +18,8 @@ export class LightstreamerAPI {
         `CST-${this.auth.clientSessionToken}|XST-${this.auth.securityToken}`
       );
     }
+
+    return this.lightstream;
   }
 
   subscribeCandles(
@@ -25,7 +27,7 @@ export class LightstreamerAPI {
     resolution: ChartResolution,
     onCandleUpdate: (epic: string, candle: CandleStick) => void
   ): void {
-    this.createLightStream();
+    const lightstream = this.createLightStream();
 
     const fields = [
       ChartFields.BID_HIGH,
@@ -45,7 +47,7 @@ export class LightstreamerAPI {
     ];
 
     if (this.candleSubscription && this.candleSubscription.isSubscribed) {
-      this.lightstream?.unsubscribe(this.candleSubscription);
+      lightstream.unsubscribe(this.candleSubscription);
     }
     const epics = epicList.map(x => `CHART:${x}:${resolution}`);
     this.candleSubscription = new Subscription('MERGE', epics, fields);
@@ -83,7 +85,8 @@ export class LightstreamerAPI {
         onCandleUpdate(epic, candle);
       },
     });
-    this.lightstream?.connect();
-    this.lightstream?.subscribe(this.candleSubscription);
+
+    lightstream.connect();
+    lightstream.subscribe(this.candleSubscription);
   }
 }
