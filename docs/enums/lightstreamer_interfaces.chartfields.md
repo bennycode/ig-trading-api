@@ -37,7 +37,7 @@
 
 • **BID_CLOSE**: = "BID_CLOSE"
 
-Defined in: [lightstreamer/interfaces.ts:9](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L9)
+Defined in: [lightstreamer/interfaces.ts:9](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L9)
 
 ---
 
@@ -45,7 +45,7 @@ Defined in: [lightstreamer/interfaces.ts:9](https://github.com/bennycode/ig-trad
 
 • **BID_HIGH**: = "BID_HIGH"
 
-Defined in: [lightstreamer/interfaces.ts:10](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L10)
+Defined in: [lightstreamer/interfaces.ts:10](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L10)
 
 ---
 
@@ -53,7 +53,7 @@ Defined in: [lightstreamer/interfaces.ts:10](https://github.com/bennycode/ig-tra
 
 • **BID_LOW**: = "BID_LOW"
 
-Defined in: [lightstreamer/interfaces.ts:11](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L11)
+Defined in: [lightstreamer/interfaces.ts:11](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L11)
 
 ---
 
@@ -61,7 +61,7 @@ Defined in: [lightstreamer/interfaces.ts:11](https://github.com/bennycode/ig-tra
 
 • **BID_OPEN**: = "BID_OPEN"
 
-Defined in: [lightstreamer/interfaces.ts:12](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L12)
+Defined in: [lightstreamer/interfaces.ts:12](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L12)
 
 ---
 
@@ -69,7 +69,7 @@ Defined in: [lightstreamer/interfaces.ts:12](https://github.com/bennycode/ig-tra
 
 • **CONS_END**: = "CONS_END"
 
-Defined in: [lightstreamer/interfaces.ts:13](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L13)
+Defined in: [lightstreamer/interfaces.ts:13](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L13)
 
 ---
 
@@ -77,7 +77,7 @@ Defined in: [lightstreamer/interfaces.ts:13](https://github.com/bennycode/ig-tra
 
 • **CONS_TICK_COUNT**: = "CONS_TICK_COUNT"
 
-Defined in: [lightstreamer/interfaces.ts:14](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L14)
+Defined in: [lightstreamer/interfaces.ts:14](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L14)
 
 ---
 
@@ -85,7 +85,7 @@ Defined in: [lightstreamer/interfaces.ts:14](https://github.com/bennycode/ig-tra
 
 • **DAY_HIGH**: = "DAY_HIGH"
 
-Defined in: [lightstreamer/interfaces.ts:15](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L15)
+Defined in: [lightstreamer/interfaces.ts:15](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L15)
 
 ---
 
@@ -93,7 +93,7 @@ Defined in: [lightstreamer/interfaces.ts:15](https://github.com/bennycode/ig-tra
 
 • **DAY_LOW**: = "DAY_LOW"
 
-Defined in: [lightstreamer/interfaces.ts:16](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L16)
+Defined in: [lightstreamer/interfaces.ts:16](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L16)
 
 ---
 
@@ -101,7 +101,7 @@ Defined in: [lightstreamer/interfaces.ts:16](https://github.com/bennycode/ig-tra
 
 • **DAY_NET_CHG_MID**: = "DAY_NET_CHG_MID"
 
-Defined in: [lightstreamer/interfaces.ts:17](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L17)
+Defined in: [lightstreamer/interfaces.ts:17](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L17)
 
 ---
 
@@ -109,7 +109,7 @@ Defined in: [lightstreamer/interfaces.ts:17](https://github.com/bennycode/ig-tra
 
 • **DAY_OPEN_MID**: = "DAY_OPEN_MID"
 
-Defined in: [lightstreamer/interfaces.ts:18](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L18)
+Defined in: [lightstreamer/interfaces.ts:18](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L18)
 
 ---
 
@@ -117,7 +117,7 @@ Defined in: [lightstreamer/interfaces.ts:18](https://github.com/bennycode/ig-tra
 
 • **DAY_PERC_CHG_MID**: = "DAY_PERC_CHG_MID"
 
-Defined in: [lightstreamer/interfaces.ts:19](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L19)
+Defined in: [lightstreamer/interfaces.ts:19](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L19)
 
 ---
 
@@ -125,7 +125,7 @@ Defined in: [lightstreamer/interfaces.ts:19](https://github.com/bennycode/ig-tra
 
 • **LTP_CLOSE**: = "LTP_CLOSE"
 
-Defined in: [lightstreamer/interfaces.ts:20](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L20)
+Defined in: [lightstreamer/interfaces.ts:20](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L20)
 
 ---
 
@@ -133,7 +133,7 @@ Defined in: [lightstreamer/interfaces.ts:20](https://github.com/bennycode/ig-tra
 
 • **LTP_HIGH**: = "LTP_HIGH"
 
-Defined in: [lightstreamer/interfaces.ts:21](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L21)
+Defined in: [lightstreamer/interfaces.ts:21](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L21)
 
 ---
 
@@ -141,7 +141,7 @@ Defined in: [lightstreamer/interfaces.ts:21](https://github.com/bennycode/ig-tra
 
 • **LTP_LOW**: = "LTP_LOW"
 
-Defined in: [lightstreamer/interfaces.ts:22](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L22)
+Defined in: [lightstreamer/interfaces.ts:22](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L22)
 
 ---
 
@@ -149,7 +149,7 @@ Defined in: [lightstreamer/interfaces.ts:22](https://github.com/bennycode/ig-tra
 
 • **LTP_OPEN**: = "LTP_OPEN"
 
-Defined in: [lightstreamer/interfaces.ts:23](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L23)
+Defined in: [lightstreamer/interfaces.ts:23](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L23)
 
 ---
 
@@ -157,7 +157,7 @@ Defined in: [lightstreamer/interfaces.ts:23](https://github.com/bennycode/ig-tra
 
 • **LTV**: = "LTV"
 
-Defined in: [lightstreamer/interfaces.ts:24](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L24)
+Defined in: [lightstreamer/interfaces.ts:24](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L24)
 
 ---
 
@@ -165,7 +165,7 @@ Defined in: [lightstreamer/interfaces.ts:24](https://github.com/bennycode/ig-tra
 
 • **OFR_CLOSE**: = "OFR_CLOSE"
 
-Defined in: [lightstreamer/interfaces.ts:25](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L25)
+Defined in: [lightstreamer/interfaces.ts:25](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L25)
 
 ---
 
@@ -173,7 +173,7 @@ Defined in: [lightstreamer/interfaces.ts:25](https://github.com/bennycode/ig-tra
 
 • **OFR_HIGH**: = "OFR_HIGH"
 
-Defined in: [lightstreamer/interfaces.ts:26](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L26)
+Defined in: [lightstreamer/interfaces.ts:26](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L26)
 
 ---
 
@@ -181,7 +181,7 @@ Defined in: [lightstreamer/interfaces.ts:26](https://github.com/bennycode/ig-tra
 
 • **OFR_LOW**: = "OFR_LOW"
 
-Defined in: [lightstreamer/interfaces.ts:27](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L27)
+Defined in: [lightstreamer/interfaces.ts:27](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L27)
 
 ---
 
@@ -189,7 +189,7 @@ Defined in: [lightstreamer/interfaces.ts:27](https://github.com/bennycode/ig-tra
 
 • **OFR_OPEN**: = "OFR_OPEN"
 
-Defined in: [lightstreamer/interfaces.ts:28](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L28)
+Defined in: [lightstreamer/interfaces.ts:28](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L28)
 
 ---
 
@@ -197,7 +197,7 @@ Defined in: [lightstreamer/interfaces.ts:28](https://github.com/bennycode/ig-tra
 
 • **TTV**: = "TTV"
 
-Defined in: [lightstreamer/interfaces.ts:29](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L29)
+Defined in: [lightstreamer/interfaces.ts:29](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L29)
 
 ---
 
@@ -205,4 +205,4 @@ Defined in: [lightstreamer/interfaces.ts:29](https://github.com/bennycode/ig-tra
 
 • **UTM**: = "UTM"
 
-Defined in: [lightstreamer/interfaces.ts:30](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/lightstreamer/interfaces.ts#L30)
+Defined in: [lightstreamer/interfaces.ts:30](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/lightstreamer/interfaces.ts#L30)

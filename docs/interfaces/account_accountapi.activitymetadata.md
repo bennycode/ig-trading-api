@@ -20,4 +20,4 @@
 
 • **paging**: [_ActivityPaging_](account_accountapi.activitypaging.md)
 
-Defined in: [account/AccountAPI.ts:95](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L95)
+Defined in: [account/AccountAPI.ts:95](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L95)

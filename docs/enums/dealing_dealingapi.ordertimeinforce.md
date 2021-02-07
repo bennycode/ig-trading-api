@@ -17,7 +17,7 @@
 
 • **GOOD_TILL_CANCELLED**: = "GOOD_TILL_CANCELLED"
 
-Defined in: [dealing/DealingAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/dealing/DealingAPI.ts#L26)
+Defined in: [dealing/DealingAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L26)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:26](https://github.com/bennycode/ig-trading-a
 
 • **GOOD_TILL_DATE**: = "GOOD_TILL_DATE"
 
-Defined in: [dealing/DealingAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/dealing/DealingAPI.ts#L27)
+Defined in: [dealing/DealingAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L27)

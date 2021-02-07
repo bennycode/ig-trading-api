@@ -19,7 +19,7 @@
 
 • **EDIT_STOP_AND_LIMIT**: = "EDIT_STOP_AND_LIMIT"
 
-Defined in: [account/AccountAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L48)
+Defined in: [account/AccountAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L48)
 
 ---
 
@@ -27,7 +27,7 @@ Defined in: [account/AccountAPI.ts:48](https://github.com/bennycode/ig-trading-a
 
 • **POSITION**: = "POSITION"
 
-Defined in: [account/AccountAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L49)
+Defined in: [account/AccountAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L49)
 
 ---
 
@@ -35,7 +35,7 @@ Defined in: [account/AccountAPI.ts:49](https://github.com/bennycode/ig-trading-a
 
 • **SYSTEM**: = "SYSTEM"
 
-Defined in: [account/AccountAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L50)
+Defined in: [account/AccountAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L50)
 
 ---
 
@@ -43,4 +43,4 @@ Defined in: [account/AccountAPI.ts:50](https://github.com/bennycode/ig-trading-a
 
 • **WORKING_ORDER**: = "WORKING_ORDER"
 
-Defined in: [account/AccountAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L51)
+Defined in: [account/AccountAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L51)

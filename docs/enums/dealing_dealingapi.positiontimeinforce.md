@@ -17,7 +17,7 @@
 
 • **EXECUTE_AND_ELIMINATE**: = "EXECUTE_AND_ELIMINATE"
 
-Defined in: [dealing/DealingAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/dealing/DealingAPI.ts#L16)
+Defined in: [dealing/DealingAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L16)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:16](https://github.com/bennycode/ig-trading-a
 
 • **FILL_OR_KILL**: = "FILL_OR_KILL"
 
-Defined in: [dealing/DealingAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/dealing/DealingAPI.ts#L17)
+Defined in: [dealing/DealingAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L17)
