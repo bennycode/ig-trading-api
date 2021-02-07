@@ -15,6 +15,7 @@
 
 ### Interfaces
 
+- [BidAsk](../interfaces/market_prices_priceapi.bidask.md)
 - [CandleStick](../interfaces/market_prices_priceapi.candlestick.md)
 - [HistoricalPricesAllowance](../interfaces/market_prices_priceapi.historicalpricesallowance.md)
 - [HistoricalPricesMetadata](../interfaces/market_prices_priceapi.historicalpricesmetadata.md)

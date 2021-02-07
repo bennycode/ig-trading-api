@@ -4,16 +4,19 @@
   },
   "dependencies": {
     "@types/node": "14.14.22",
-    "axios": "0.21.1"
+    "axios": "0.21.1",
+    "lightstreamer-client-node": "8.0.3",
+    "luxon": "1.25.0"
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
   "devDependencies": {
     "@types/jasmine": "3.6.3",
-    "@typescript-eslint/eslint-plugin": "4.14.0",
-    "@typescript-eslint/parser": "4.14.0",
+    "@types/luxon": "1.25.1",
+    "@typescript-eslint/eslint-plugin": "4.14.2",
+    "@typescript-eslint/parser": "4.14.2",
     "cross-env": "7.0.3",
     "dotenv-defaults": "2.0.1",
-    "eslint": "7.18.0",
+    "eslint": "7.19.0",
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-sort-keys-fix": "1.1.1",
@@ -22,14 +25,14 @@
     "husky": "4.3.8",
     "jasmine": "3.6.4",
     "lint-staged": "10.5.3",
-    "nock": "13.0.6",
+    "nock": "13.0.7",
     "nyc": "15.1.0",
     "prettier": "2.2.1",
     "pretty-quick": "3.1.0",
     "rimraf": "3.0.2",
     "ts-node": "9.1.1",
-    "typedoc": "0.20.18",
-    "typedoc-plugin-markdown": "3.4.3",
+    "typedoc": "0.20.20",
+    "typedoc-plugin-markdown": "3.4.5",
     "typescript": "4.1.3"
   },
   "engines": {
@@ -64,15 +67,16 @@
     "build": "tsc",
     "changelog:commit": "git add CHANGELOG.md && git commit -m \"docs: Updated changelog\"",
     "clean": "rimraf .nyc_output coverage dist",
-    "demo:login": "ts-node ./src/demo/login.ts",
-    "demo:position": "ts-node ./src/demo/position.ts",
-    "demo:order": "ts-node ./src/demo/order.ts",
     "demo:account": "ts-node ./src/demo/account.ts",
+    "demo:login": "ts-node ./src/demo/login.ts",
+    "demo:order": "ts-node ./src/demo/order.ts",
+    "demo:position": "ts-node ./src/demo/position.ts",
+    "demo:stream": "ts-node ./src/demo/stream.ts",
+    "dist": "yarn clean && yarn build",
     "docs": "yarn docs:build && yarn docs:start",
     "docs:build": "yarn typedoc",
     "docs:release": "yarn docs:build && git add docs/* && git commit -m \"docs: Updated API\"",
     "docs:start": "docsify serve docs",
-    "dist": "yarn clean && yarn build",
     "fix": "yarn fix:other && yarn fix:code",
     "fix:code": "yarn lint:code --fix",
     "fix:other": "yarn prettier --write",
@@ -87,7 +91,8 @@
     "release:minor": "generate-changelog -m && yarn changelog:commit && yarn docs:release && npm version minor",
     "release:patch": "generate-changelog -p && yarn changelog:commit && yarn docs:release && npm version patch",
     "test": "nyc --nycrc-path=nyc.config.coverage.json jasmine --config=jasmine.json",
-    "test:dev": "nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json"
+    "test:dev": "nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json",
+    "test:types": "yarn lint:types"
   },
-  "version": "0.4.0"
+  "version": "0.5.0"
 }

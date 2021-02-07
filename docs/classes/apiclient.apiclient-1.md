@@ -17,6 +17,7 @@
 ### Properties
 
 - [rest](apiclient.apiclient-1.md#rest)
+- [stream](apiclient.apiclient-1.md#stream)
 - [URL_DEMO](apiclient.apiclient-1.md#url_demo)
 - [URL_LIVE](apiclient.apiclient-1.md#url_live)
 
@@ -35,7 +36,7 @@
 
 **Returns:** [_APIClient_](apiclient.apiclient-1.md)
 
-Defined in: [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/2436905/src/APIClient.ts#L7)
+Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/APIClient.ts#L8)
 
 ## Properties
 
@@ -43,7 +44,15 @@ Defined in: [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/24
 
 • `Readonly` **rest**: [_RESTClient_](client_restclient.restclient.md)
 
-Defined in: [APIClient.ts:4](https://github.com/bennycode/ig-trading-api/blob/2436905/src/APIClient.ts#L4)
+Defined in: [APIClient.ts:4](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/APIClient.ts#L4)
+
+---
+
+### stream
+
+• `Readonly` **stream**: [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
+
+Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/APIClient.ts#L5)
 
 ---
 
@@ -51,7 +60,7 @@ Defined in: [APIClient.ts:4](https://github.com/bennycode/ig-trading-api/blob/24
 
 ▪ `Static` **URL_DEMO**: _string_= 'https://demo-api.ig.com/gateway/deal/'
 
-Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/2436905/src/APIClient.ts#L6)
+Defined in: [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/APIClient.ts#L7)
 
 ---
 
@@ -59,4 +68,4 @@ Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/24
 
 ▪ `Static` **URL_LIVE**: _string_= 'https://api.ig.com/gateway/deal/'
 
-Defined in: [APIClient.ts:7](https://github.com/bennycode/ig-trading-api/blob/2436905/src/APIClient.ts#L7)
+Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/APIClient.ts#L8)

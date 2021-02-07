@@ -22,6 +22,6 @@
 
 ### ReroutingEnvironment
 
-Ƭ **ReroutingEnvironment**: _DEMO_ | _LIVE_ | _TEST_ | _UAT_
+Ƭ **ReroutingEnvironment**: _DEMO_ \| _LIVE_ \| _TEST_ \| _UAT_
 
-Defined in: [login/LoginAPI.ts:4](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L4)
+Defined in: [login/LoginAPI.ts:4](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/login/LoginAPI.ts#L4)

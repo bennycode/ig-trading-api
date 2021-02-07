@@ -23,46 +23,46 @@
 
 ### from
 
-• `Optional` **from**: _undefined_ | _string_
+• `Optional` **from**: _undefined_ \| _string_
 
-Defined in: [account/AccountAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L140)
+Defined in: [account/AccountAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L140)
 
 ---
 
 ### maxSpanSeconds
 
-• `Optional` **maxSpanSeconds**: _undefined_ | _number_
+• `Optional` **maxSpanSeconds**: _undefined_ \| _number_
 
-Defined in: [account/AccountAPI.ts:141](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L141)
+Defined in: [account/AccountAPI.ts:141](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L141)
 
 ---
 
 ### pageNumber
 
-• `Optional` **pageNumber**: _undefined_ | _number_
+• `Optional` **pageNumber**: _undefined_ \| _number_
 
-Defined in: [account/AccountAPI.ts:142](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L142)
+Defined in: [account/AccountAPI.ts:142](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L142)
 
 ---
 
 ### pageSize
 
-• `Optional` **pageSize**: _undefined_ | _number_
+• `Optional` **pageSize**: _undefined_ \| _number_
 
-Defined in: [account/AccountAPI.ts:143](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L143)
+Defined in: [account/AccountAPI.ts:143](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L143)
 
 ---
 
 ### to
 
-• `Optional` **to**: _undefined_ | _string_
+• `Optional` **to**: _undefined_ \| _string_
 
-Defined in: [account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L144)
+Defined in: [account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L144)
 
 ---
 
 ### type
 
-• `Optional` **type**: _undefined_ | [_ALL_](../enums/account_accountapi.transactiontype.md#all) | [_ALL_DEAL_](../enums/account_accountapi.transactiontype.md#all_deal) | [_DEPOSIT_](../enums/account_accountapi.transactiontype.md#deposit) | [_WITHDRAWAL_](../enums/account_accountapi.transactiontype.md#withdrawal)
+• `Optional` **type**: _undefined_ \| [_ALL_](../enums/account_accountapi.transactiontype.md#all) \| [_ALL_DEAL_](../enums/account_accountapi.transactiontype.md#all_deal) \| [_DEPOSIT_](../enums/account_accountapi.transactiontype.md#deposit) \| [_WITHDRAWAL_](../enums/account_accountapi.transactiontype.md#withdrawal)
 
-Defined in: [account/AccountAPI.ts:145](https://github.com/bennycode/ig-trading-api/blob/2436905/src/account/AccountAPI.ts#L145)
+Defined in: [account/AccountAPI.ts:145](https://github.com/bennycode/ig-trading-api/blob/76cc822/src/account/AccountAPI.ts#L145)
