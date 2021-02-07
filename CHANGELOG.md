@@ -1,3 +1,9 @@
+#### 0.5.1 (2021-02-07)
+
+##### Bug Fixes
+
+- Use dashes in date formatting ([#68](https://github.com/bennycode/ig-trading-api/pull/68)) ([f1fd3518](https://github.com/bennycode/ig-trading-api/commit/f1fd351890aabe38bd3c4234916e7ab39e859366))
+
 ### 0.5.0 (2021-02-03)
 
 ##### Chores
