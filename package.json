@@ -3,7 +3,7 @@
     "url": "https://github.com/bennycode/ig-trading-api/issues"
   },
   "dependencies": {
-    "@types/node": "14.14.22",
+    "@types/node": "14.14.25",
     "axios": "0.21.1",
     "lightstreamer-client-node": "8.0.3",
     "luxon": "1.25.0"
