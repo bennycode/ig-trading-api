@@ -1,3 +1,33 @@
+#### 0.5.1 (2021-02-07)
+
+##### Bug Fixes
+
+- Use dashes in date formatting ([#68](https://github.com/bennycode/ig-trading-api/pull/68)) ([f1fd3518](https://github.com/bennycode/ig-trading-api/commit/f1fd351890aabe38bd3c4234916e7ab39e859366))
+
+### 0.5.0 (2021-02-03)
+
+##### Chores
+
+- **deps-dev:**
+  - bump @typescript-eslint/parser from 4.14.0 to 4.14.1 ([#62](https://github.com/bennycode/ig-trading-api/pull/62)) ([ee1fb5a3](https://github.com/bennycode/ig-trading-api/commit/ee1fb5a3268bce28c9b4d561e4950e3fd79c3c60))
+  - bump typedoc from 0.20.18 to 0.20.20 ([#65](https://github.com/bennycode/ig-trading-api/pull/65)) ([8e57c68f](https://github.com/bennycode/ig-trading-api/commit/8e57c68fb41eb7166d19e8a643552d6548e8fceb))
+  - bump eslint from 7.18.0 to 7.19.0 ([#61](https://github.com/bennycode/ig-trading-api/pull/61)) ([fd5e7425](https://github.com/bennycode/ig-trading-api/commit/fd5e74256b1c4f313b5b7094ebbec9ae5b0a5e0e))
+  - bump @typescript-eslint/eslint-plugin ([#63](https://github.com/bennycode/ig-trading-api/pull/63)) ([dc187d28](https://github.com/bennycode/ig-trading-api/commit/dc187d28f05fbe5ce9d5d7ecdbd07b47db7d5691))
+  - bump nock from 13.0.6 to 13.0.7 ([#64](https://github.com/bennycode/ig-trading-api/pull/64)) ([9ee6df6a](https://github.com/bennycode/ig-trading-api/commit/9ee6df6ae99a7fd73d39e1e8ca4523159afde1cf))
+  - bump typedoc-plugin-markdown from 3.4.3 to 3.4.5 ([#66](https://github.com/bennycode/ig-trading-api/pull/66)) ([2fe0a2f9](https://github.com/bennycode/ig-trading-api/commit/2fe0a2f962e797854f345b4265174f372888d758))
+
+##### New Features
+
+- Add Streaming API (Lightstreamer) ([#60](https://github.com/bennycode/ig-trading-api/pull/60)) ([db7ee195](https://github.com/bennycode/ig-trading-api/commit/db7ee19568e0380d66b09a4617ba71a4648fd095))
+
+##### Refactors
+
+- Share demo client in scripts ([4ec64730](https://github.com/bennycode/ig-trading-api/commit/4ec64730e5800fb38a84ffade9ad8c25fa6d1d55))
+
+##### Tests
+
+- Add 100% code coverage for Lightstreamer API ([a72c87aa](https://github.com/bennycode/ig-trading-api/commit/a72c87aa767ad67a984bce30666ca6672388747d))
+
 ### 0.4.0 (2021-01-28)
 
 ##### New Features

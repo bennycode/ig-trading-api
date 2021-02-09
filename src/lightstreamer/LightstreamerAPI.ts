@@ -1,16 +1,16 @@
-import {LightstreamerClient, Subscription} from 'lightstreamer-client-node';
+import {ItemUpdate, LightstreamerClient, Subscription} from 'lightstreamer-client-node';
 import {DateTime} from 'luxon';
 import {Authorization} from '../client';
 import {CandleStick} from '../market';
 import {ChartFields, ChartResolution} from './interfaces';
 
 export class LightstreamerAPI {
-  lightstream!: LightstreamerClient;
-  candleSubscription!: Subscription;
+  lightstream?: LightstreamerClient;
+  candleSubscription?: Subscription;
 
   constructor(private readonly auth: Authorization) {}
 
-  private _createLightstream(): void {
+  private createLightStream(): LightstreamerClient {
     if (!this.lightstream) {
       this.lightstream = new LightstreamerClient(this.auth.lightstreamerEndpoint, '');
       this.lightstream.connectionDetails.setUser(this.auth.accountId as string);
@@ -18,19 +18,16 @@ export class LightstreamerAPI {
         `CST-${this.auth.clientSessionToken}|XST-${this.auth.securityToken}`
       );
     }
+
+    return this.lightstream;
   }
 
   subscribeCandles(
     epicList: string[],
     resolution: ChartResolution,
-    // fields: ChartFields[] = [],
     onCandleUpdate: (epic: string, candle: CandleStick) => void
   ): void {
-    this._createLightstream();
-
-    // if (fields.length === 0) {
-    //   fields = Object.values(ChartFields);
-    // }
+    const lightstream = this.createLightStream();
 
     const fields = [
       ChartFields.BID_HIGH,
@@ -50,13 +47,13 @@ export class LightstreamerAPI {
     ];
 
     if (this.candleSubscription && this.candleSubscription.isSubscribed) {
-      this.lightstream.unsubscribe(this.candleSubscription);
+      lightstream.unsubscribe(this.candleSubscription);
     }
     const epics = epicList.map(x => `CHART:${x}:${resolution}`);
     this.candleSubscription = new Subscription('MERGE', epics, fields);
 
     this.candleSubscription.addListener({
-      onItemUpdate: item => {
+      onItemUpdate: (item: ItemUpdate) => {
         const dt = DateTime.fromMillis(parseInt(item.getValue(ChartFields.UTM)));
         const epic = item.getItemName().split(':')[1];
         const candle: CandleStick = {
@@ -82,13 +79,14 @@ export class LightstreamerAPI {
             lastTraded: parseFloat(item.getValue(ChartFields.LTP_OPEN)),
           },
           snapshotTime: dt.toFormat('yyyy/LL/dd hh:mm:ss'),
-          snapshotTimeUTC: dt.toFormat("yyyy/LL/dd'T'hh:mm:ss"),
+          snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'hh:mm:ss"),
         };
 
         onCandleUpdate(epic, candle);
       },
     });
-    this.lightstream.connect();
-    this.lightstream.subscribe(this.candleSubscription);
+
+    lightstream.connect();
+    lightstream.subscribe(this.candleSubscription);
   }
 }

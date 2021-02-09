@@ -13,20 +13,38 @@
 ### Properties
 
 - [clientSessionToken](client_restclient.authorization.md#clientsessiontoken)
+- [lightstreamerEndpoint](client_restclient.authorization.md#lightstreamerendpoint)
 - [securityToken](client_restclient.authorization.md#securitytoken)
+- [username](client_restclient.authorization.md#username)
 
 ## Properties
 
 ### clientSessionToken
 
-• `Optional` **clientSessionToken**: _undefined_ | _string_
+• `Optional` **clientSessionToken**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/2436905/src/client/RESTClient.ts#L8)
+Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/client/RESTClient.ts#L8)
+
+---
+
+### lightstreamerEndpoint
+
+• `Optional` **lightstreamerEndpoint**: _undefined_ \| _string_
+
+Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/client/RESTClient.ts#L9)
 
 ---
 
 ### securityToken
 
-• `Optional` **securityToken**: _undefined_ | _string_
+• `Optional` **securityToken**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/2436905/src/client/RESTClient.ts#L9)
+Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/client/RESTClient.ts#L10)
+
+---
+
+### username
+
+• `Optional` **username**: _undefined_ \| _string_
+
+Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/client/RESTClient.ts#L11)

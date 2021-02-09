@@ -1,13 +1,13 @@
 import nock from 'nock';
-// import {ItemUpdate} from 'lightstreamer-client-node';
 import {APIClient} from '../APIClient';
 import {LoginAPI} from '../login/LoginAPI';
 
 import {ChartResolution} from './interfaces';
+import {ItemUpdate} from 'lightstreamer-client-node';
 
 describe('LightstreamerAPI', () => {
   describe('subscribeChart', () => {
-    it('can subscribe and resub to chart data', async () => {
+    it('can subscribe and re-subscribe to chart data', async () => {
       nock(APIClient.URL_DEMO)
         .post(LoginAPI.URL.SESSION)
         .query(true)
@@ -53,17 +53,16 @@ describe('LightstreamerAPI', () => {
         expect(candle.closePrice.ask).toBe(10);
       });
 
-      const listeners = global.client.stream.candleSubscription.getListeners()[0];
+      const listeners = global.client.stream.candleSubscription!.getListeners()[0];
       if (listeners.onItemUpdate) {
-        //@ts-ignore
-        listeners.onItemUpdate({
+        listeners.onItemUpdate(({
           getItemName() {
             return 'CHART:CS.D.BITCOIN.TODAY.IP:1MINUTE';
           },
-          getValue(_name) {
+          getValue() {
             return '10';
           },
-        });
+        } as unknown) as ItemUpdate);
       }
 
       global.client.stream.subscribeCandles(['CS.D.ETHUSD.TODAY.IP'], ChartResolution.MINUTE, (epic, _candle) => {

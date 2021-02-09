@@ -11,6 +11,7 @@ export interface Authorization {
   lightstreamerEndpoint?: string;
   refreshToken?: string;
   securityToken?: string;
+  username?: string;
 }
 
 export class RESTClient {
