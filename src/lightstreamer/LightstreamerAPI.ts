@@ -13,7 +13,7 @@ export class LightstreamerAPI {
   private _createLightstream(): void {
     if (!this.lightstream) {
       this.lightstream = new LightstreamerClient(this.auth.lightstreamerEndpoint, '');
-      this.lightstream.connectionDetails.setUser(this.auth.user as string);
+      this.lightstream.connectionDetails.setUser(this.auth.accountId as string);
       this.lightstream.connectionDetails.setPassword(
         `CST-${this.auth.clientSessionToken}|XST-${this.auth.securityToken}`
       );

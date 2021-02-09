@@ -26,9 +26,10 @@ describe('RESTClient', () => {
           CST: 'test',
           'X-SECURITY-TOKEN': 'test',
         })
-        .post(LoginAPI.URL.SESSION)
-        .query(true)
+        .get(LoginAPI.URL.SESSION + '?fetchSessionTokens=true')
         .reply(200, JSON.stringify({}));
+
+      nock(APIClient.URL_DEMO).persist().post(LoginAPI.URL.SESSION).query(true).reply(200, JSON.stringify({}));
     });
 
     it('supports custom HTTP interceptors', async () => {

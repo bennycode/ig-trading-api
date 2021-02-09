@@ -7,7 +7,10 @@ import {AccountAPI} from '../account';
 export interface Authorization {
   accessToken?: string;
   accountId?: string;
+  clientSessionToken?: string;
+  lightstreamerEndpoint?: string;
   refreshToken?: string;
+  securityToken?: string;
 }
 
 export class RESTClient {

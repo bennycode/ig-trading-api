@@ -26,6 +26,24 @@ describe('LoginAPI', () => {
           })
         );
 
+      nock(APIClient.URL_DEMO)
+        .get(LoginAPI.URL.SESSION + '?fetchSessionTokens=true')
+        .reply(
+          200,
+          JSON.stringify({
+            accountId: 'ABC123',
+            clientId: '133721337',
+            currency: 'EUR',
+            lightstreamerEndpoint: 'https://demo-apd.marketdatasystems.com',
+            locale: 'de_DE',
+            timezoneOffset: 1,
+          }),
+          {
+            cst: 'a608da13371337e4f600bfa82e3ea43520eb664f22ce18b15a36879bd0eb28CU01113',
+            'x-security-token': '5e6843dea133713375fe000a5e8b5ec6da09946c0e97bd557f13a6d699CD01113',
+          }
+        );
+
       const session = await global.client.rest.login.createSession('test-user', 'test-password');
       expect(session.accountId).toBe('ABC123');
       expect(session.clientId).toBe('133721337');

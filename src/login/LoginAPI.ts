@@ -48,10 +48,28 @@ export class LoginAPI {
         },
       }
     );
+
     this.auth.accessToken = response.data.oauthToken.access_token;
     this.auth.accountId = response.data.accountId;
     this.auth.refreshToken = response.data.oauthToken.refresh_token;
+    this.auth.lightstreamerEndpoint = response.data.lightstreamerEndpoint;
+
+    await this.getSessionToken();
+
     return response.data;
+  }
+
+  /**
+   * Returns the user's session details.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   */
+  async getSessionToken(): Promise<boolean> {
+    const resource = LoginAPI.URL.SESSION + '?fetchSessionTokens=true';
+    const response = await this.apiClient.get(resource);
+    this.auth.securityToken = response.headers['x-security-token'];
+    this.auth.clientSessionToken = response.headers.cst;
+    return true;
   }
 
   /**

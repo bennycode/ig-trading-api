@@ -1484,7 +1484,7 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-lightstreamer-client-node@^8.0.3:
+lightstreamer-client-node@8.0.3:
   version "8.0.3"
   resolved "https://registry.npmjs.org/lightstreamer-client-node/-/lightstreamer-client-node-8.0.3.tgz#e04213d06e8484f6a2764e0fc2dfc01cbfb25743"
   integrity sha512-dxq3MR2f+K9G74JBnQ6epvejfjmorS4chgBv4evqwyxMewyTRgUqaphCB900skBadpV0Jqh6FsI1WdnLSJRhtg==
