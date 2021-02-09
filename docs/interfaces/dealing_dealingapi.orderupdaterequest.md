@@ -25,9 +25,9 @@
 
 ### goodTillDate
 
-• `Optional` **goodTillDate**: _undefined_ | Date
+• `Optional` **goodTillDate**: _undefined_ \| Date
 
-Defined in: [dealing/DealingAPI.ts:162](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L162)
+Defined in: [dealing/DealingAPI.ts:162](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L162)
 
 ---
 
@@ -35,39 +35,39 @@ Defined in: [dealing/DealingAPI.ts:162](https://github.com/bennycode/ig-trading-
 
 • **level**: _number_
 
-Defined in: [dealing/DealingAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L163)
+Defined in: [dealing/DealingAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L163)
 
 ---
 
 ### limitDistance
 
-• `Optional` **limitDistance**: _undefined_ | _number_
+• `Optional` **limitDistance**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:164](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L164)
+Defined in: [dealing/DealingAPI.ts:164](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L164)
 
 ---
 
 ### limitLevel
 
-• `Optional` **limitLevel**: _undefined_ | _number_
+• `Optional` **limitLevel**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L165)
+Defined in: [dealing/DealingAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L165)
 
 ---
 
 ### stopDistance
 
-• `Optional` **stopDistance**: _undefined_ | _number_
+• `Optional` **stopDistance**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L166)
+Defined in: [dealing/DealingAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L166)
 
 ---
 
 ### stopLevel
 
-• `Optional` **stopLevel**: _undefined_ | _number_
+• `Optional` **stopLevel**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L167)
+Defined in: [dealing/DealingAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L167)
 
 ---
 
@@ -75,7 +75,7 @@ Defined in: [dealing/DealingAPI.ts:167](https://github.com/bennycode/ig-trading-
 
 • **timeInForce**: [_OrderTimeInForce_](../enums/dealing_dealingapi.ordertimeinforce.md)
 
-Defined in: [dealing/DealingAPI.ts:168](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L168)
+Defined in: [dealing/DealingAPI.ts:168](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L168)
 
 ---
 
@@ -83,4 +83,4 @@ Defined in: [dealing/DealingAPI.ts:168](https://github.com/bennycode/ig-trading-
 
 • **type**: [_OrderType_](../enums/dealing_dealingapi.ordertype.md)
 
-Defined in: [dealing/DealingAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/2436905/src/dealing/DealingAPI.ts#L169)
+Defined in: [dealing/DealingAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L169)

@@ -10,6 +10,8 @@
 - [account/AccountAPI](modules/account_accountapi.md)
 - [client/RESTClient](modules/client_restclient.md)
 - [dealing/DealingAPI](modules/dealing_dealingapi.md)
+- [lightstreamer/LightstreamerAPI](modules/lightstreamer_lightstreamerapi.md)
+- [lightstreamer/interfaces](modules/lightstreamer_interfaces.md)
 - [login/LoginAPI](modules/login_loginapi.md)
 - [market/MarketAPI](modules/market_marketapi.md)
 - [market/prices/PriceAPI](modules/market_prices_priceapi.md)

@@ -23,7 +23,7 @@
 
 • **available**: _number_
 
-Defined in: [login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L7)
+Defined in: [login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L7)
 
 ---
 
@@ -31,7 +31,7 @@ Defined in: [login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/bl
 
 • **balance**: _number_
 
-Defined in: [login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L8)
+Defined in: [login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L8)
 
 ---
 
@@ -39,7 +39,7 @@ Defined in: [login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/bl
 
 • **deposit**: _number_
 
-Defined in: [login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L9)
+Defined in: [login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L9)
 
 ---
 
@@ -47,4 +47,4 @@ Defined in: [login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/bl
 
 • **profitLoss**: _number_
 
-Defined in: [login/LoginAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/2436905/src/login/LoginAPI.ts#L10)
+Defined in: [login/LoginAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L10)

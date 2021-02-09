@@ -8,7 +8,7 @@ export interface Authorization {
   clientSessionToken?: string;
   lightstreamerEndpoint?: string;
   securityToken?: string;
-  user?: string;
+  username?: string;
 }
 
 export class RESTClient {
