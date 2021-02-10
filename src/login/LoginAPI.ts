@@ -87,7 +87,6 @@ export class LoginAPI {
     this.auth.accessToken = response.data.access_token;
     this.auth.refreshToken = response.data.refresh_token;
 
-    console.info('Refreshed Token!');
     return response.data;
   }
 }
