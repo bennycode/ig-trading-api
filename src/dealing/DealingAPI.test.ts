@@ -398,7 +398,7 @@ describe('DealingAPI', () => {
   });
 
   describe('failedDelete', () => {
-    it('failed to delete an order', async () => {
+    it('fails to delete an order', async () => {
       const dealId = '12345';
 
       nock(APIClient.URL_DEMO)
@@ -413,8 +413,7 @@ describe('DealingAPI', () => {
         )
         .reply(403);
 
-      const deleteOrder = await global.client.rest.dealing.deleteOrder(dealId);
-      expect(deleteOrder.dealReference).toBeNull();
+      await expectAsync(global.client.rest.dealing.deleteOrder(dealId)).toBeRejected();
     });
   });
 });
