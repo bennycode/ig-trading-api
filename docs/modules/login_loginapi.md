@@ -10,18 +10,5 @@
 
 ### Interfaces
 
-- [Account](../interfaces/login_loginapi.account.md)
-- [AccountInfo](../interfaces/login_loginapi.accountinfo.md)
+- [OauthToken](../interfaces/login_loginapi.oauthtoken.md)
 - [TradingSession](../interfaces/login_loginapi.tradingsession.md)
-
-### Type aliases
-
-- [ReroutingEnvironment](login_loginapi.md#reroutingenvironment)
-
-## Type aliases
-
-### ReroutingEnvironment
-
-Ƭ **ReroutingEnvironment**: _DEMO_ \| _LIVE_ \| _TEST_ \| _UAT_
-
-Defined in: [login/LoginAPI.ts:4](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L4)

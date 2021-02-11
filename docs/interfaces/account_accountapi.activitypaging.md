@@ -21,7 +21,7 @@
 
 • **next**: _string_
 
-Defined in: [account/AccountAPI.ts:90](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L90)
+Defined in: [account/AccountAPI.ts:90](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L90)
 
 ---
 
@@ -29,4 +29,4 @@ Defined in: [account/AccountAPI.ts:90](https://github.com/bennycode/ig-trading-a
 
 • **size**: _number_
 
-Defined in: [account/AccountAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L91)
+Defined in: [account/AccountAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L91)

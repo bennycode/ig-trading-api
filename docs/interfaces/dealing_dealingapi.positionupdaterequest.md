@@ -24,7 +24,7 @@
 
 • `Optional` **limitLevel**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L108)
+Defined in: [dealing/DealingAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/dealing/DealingAPI.ts#L108)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [dealing/DealingAPI.ts:108](https://github.com/bennycode/ig-trading-
 
 • `Optional` **stopLevel**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L109)
+Defined in: [dealing/DealingAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/dealing/DealingAPI.ts#L109)
 
 ---
 
@@ -40,7 +40,7 @@ Defined in: [dealing/DealingAPI.ts:109](https://github.com/bennycode/ig-trading-
 
 • `Optional` **trailingStop**: _undefined_ \| Boolean
 
-Defined in: [dealing/DealingAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L110)
+Defined in: [dealing/DealingAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/dealing/DealingAPI.ts#L110)
 
 ---
 
@@ -48,7 +48,7 @@ Defined in: [dealing/DealingAPI.ts:110](https://github.com/bennycode/ig-trading-
 
 • `Optional` **trailingStopDistance**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:111](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L111)
+Defined in: [dealing/DealingAPI.ts:111](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/dealing/DealingAPI.ts#L111)
 
 ---
 
@@ -56,4 +56,4 @@ Defined in: [dealing/DealingAPI.ts:111](https://github.com/bennycode/ig-trading-
 
 • `Optional` **trailingStopIncrement**: _undefined_ \| _number_
 
-Defined in: [dealing/DealingAPI.ts:112](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/dealing/DealingAPI.ts#L112)
+Defined in: [dealing/DealingAPI.ts:112](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/dealing/DealingAPI.ts#L112)
