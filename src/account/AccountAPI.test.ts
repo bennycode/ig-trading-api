@@ -1,8 +1,44 @@
 import nock from 'nock';
 import {APIClient} from '../APIClient';
-import {AccountAPI, TransactionHistoryRequest, ActivityHistoryRequest} from './AccountAPI';
+import {AccountAPI, TransactionHistoryRequest, ActivityHistoryRequest, AccountStatus} from './AccountAPI';
 
 describe('AccountAPI', () => {
+  describe('getAccounts', () => {
+    it('returns all accounts', async () => {
+      nock(APIClient.URL_DEMO)
+        .get(AccountAPI.URL.ACCOUNTS)
+        .reply(
+          200,
+          JSON.stringify({
+            accounts: [
+              {
+                accountAlias: null,
+                accountId: 'ABCDEF',
+                accountName: 'CFD',
+                accountType: 'CFD',
+                balance: {
+                  available: 20.0,
+                  balance: 20.0,
+                  deposit: 0.0,
+                  profitLoss: 0.0,
+                },
+                canTransferFrom: true,
+                canTransferTo: true,
+                currency: 'EUR',
+                preferred: true,
+                status: 'ENABLED',
+              },
+            ],
+          })
+        );
+
+      const getAccounts = await global.client.rest.account.getAccounts();
+      expect(getAccounts.accounts[0].accountId).toBe('ABCDEF');
+      expect(getAccounts.accounts[0].status).toBe(AccountStatus.ENABLED);
+      expect(getAccounts.accounts[0].balance.available).toBe(20.0);
+    });
+  });
+
   describe('getTransactionHistory', () => {
     it('returns the transaction history', async () => {
       const transactionHistoryRequest: TransactionHistoryRequest = {
