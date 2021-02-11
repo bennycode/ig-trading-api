@@ -1,3 +1,13 @@
+### 0.7.0 (2021-02-11)
+
+##### Documentation Changes
+
+- Fix typo ([34d7916b](https://github.com/bennycode/ig-trading-api/commit/34d7916b55560e742880df4fce60b37b3c0c3394))
+
+##### New Features
+
+- List accounts ([#72](https://github.com/bennycode/ig-trading-api/pull/72)) ([2958103b](https://github.com/bennycode/ig-trading-api/commit/2958103b05e6cee8388046f6d46407404a557556))
+
 ### 0.6.0 (2021-02-11)
 
 ##### Chores
