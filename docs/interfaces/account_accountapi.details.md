@@ -34,7 +34,7 @@
 
 • **actions**: [_Action_](account_accountapi.action.md)[]
 
-Defined in: [account/AccountAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L60)
+Defined in: [account/AccountAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L96)
 
 ---
 
@@ -42,7 +42,7 @@ Defined in: [account/AccountAPI.ts:60](https://github.com/bennycode/ig-trading-a
 
 • **currency**: _string_
 
-Defined in: [account/AccountAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L61)
+Defined in: [account/AccountAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L97)
 
 ---
 
@@ -50,7 +50,7 @@ Defined in: [account/AccountAPI.ts:61](https://github.com/bennycode/ig-trading-a
 
 • **dealReference**: _string_
 
-Defined in: [account/AccountAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L62)
+Defined in: [account/AccountAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L98)
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: [account/AccountAPI.ts:62](https://github.com/bennycode/ig-trading-a
 
 • **direction**: Direction
 
-Defined in: [account/AccountAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L63)
+Defined in: [account/AccountAPI.ts:99](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L99)
 
 ---
 
@@ -66,7 +66,7 @@ Defined in: [account/AccountAPI.ts:63](https://github.com/bennycode/ig-trading-a
 
 • **goodTillDate**: _string_
 
-Defined in: [account/AccountAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L64)
+Defined in: [account/AccountAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L100)
 
 ---
 
@@ -74,7 +74,7 @@ Defined in: [account/AccountAPI.ts:64](https://github.com/bennycode/ig-trading-a
 
 • **guaranteedStop**: _boolean_
 
-Defined in: [account/AccountAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L65)
+Defined in: [account/AccountAPI.ts:101](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L101)
 
 ---
 
@@ -82,7 +82,7 @@ Defined in: [account/AccountAPI.ts:65](https://github.com/bennycode/ig-trading-a
 
 • **level**: _number_
 
-Defined in: [account/AccountAPI.ts:66](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L66)
+Defined in: [account/AccountAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L102)
 
 ---
 
@@ -90,7 +90,7 @@ Defined in: [account/AccountAPI.ts:66](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **limitDistance**: _undefined_ \| _number_
 
-Defined in: [account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L67)
+Defined in: [account/AccountAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L103)
 
 ---
 
@@ -98,7 +98,7 @@ Defined in: [account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **limitLevel**: _undefined_ \| _number_
 
-Defined in: [account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L68)
+Defined in: [account/AccountAPI.ts:104](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L104)
 
 ---
 
@@ -106,7 +106,7 @@ Defined in: [account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-a
 
 • **marketName**: _string_
 
-Defined in: [account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L69)
+Defined in: [account/AccountAPI.ts:105](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L105)
 
 ---
 
@@ -114,7 +114,7 @@ Defined in: [account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-a
 
 • **size**: _number_
 
-Defined in: [account/AccountAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L70)
+Defined in: [account/AccountAPI.ts:106](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L106)
 
 ---
 
@@ -122,7 +122,7 @@ Defined in: [account/AccountAPI.ts:70](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **stopDistance**: _any_
 
-Defined in: [account/AccountAPI.ts:71](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L71)
+Defined in: [account/AccountAPI.ts:107](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L107)
 
 ---
 
@@ -130,7 +130,7 @@ Defined in: [account/AccountAPI.ts:71](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **stopLevel**: _any_
 
-Defined in: [account/AccountAPI.ts:72](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L72)
+Defined in: [account/AccountAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L108)
 
 ---
 
@@ -138,7 +138,7 @@ Defined in: [account/AccountAPI.ts:72](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **trailingStep**: _any_
 
-Defined in: [account/AccountAPI.ts:73](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L73)
+Defined in: [account/AccountAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L109)
 
 ---
 
@@ -146,4 +146,4 @@ Defined in: [account/AccountAPI.ts:73](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **trailingStopDistance**: _any_
 
-Defined in: [account/AccountAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/account/AccountAPI.ts#L74)
+Defined in: [account/AccountAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L110)

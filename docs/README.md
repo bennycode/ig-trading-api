@@ -76,7 +76,7 @@ Breakdown for "IX.D.DOW.DAILY.IP":
 You can get up and running in just a few simple steps:
 
 1. Run `yarn` (to install or update third-party dependencies)
-1. Have a lock at the [.env.defaults](./.env.defaults) file and make a copy (including your own credentials) with the name `.env` in the root directory of this repository ([read more about dotenv files](https://github.com/mrsteele/dotenv-defaults#usage))
+1. Have a look at the [.env.defaults](./.env.defaults) file and make a copy (including your own credentials) with the name `.env` in the root directory of this repository ([read more about dotenv files](https://github.com/mrsteele/dotenv-defaults#usage))
 1. Run `yarn demo:login` to test your credentials
 
 ## Maintainers

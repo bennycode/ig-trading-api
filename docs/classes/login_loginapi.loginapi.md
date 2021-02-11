@@ -39,7 +39,7 @@
 
 **Returns:** [_LoginAPI_](login_loginapi.loginapi.md)
 
-Defined in: [login/LoginAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L24)
+Defined in: [login/LoginAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L24)
 
 ## Properties
 
@@ -54,7 +54,7 @@ Defined in: [login/LoginAPI.ts:24](https://github.com/bennycode/ig-trading-api/b
 | `REFRESH_TOKEN` | _string_ |
 | `SESSION`       | _string_ |
 
-Defined in: [login/LoginAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L21)
+Defined in: [login/LoginAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L21)
 
 ## Methods
 
@@ -75,7 +75,7 @@ Creates a trading session, obtaining session tokens for subsequent API access.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L35)
+Defined in: [login/LoginAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L35)
 
 ---
 
@@ -89,7 +89,7 @@ Returns the user's session details.
 
 **Returns:** _Promise_<_boolean_\>
 
-Defined in: [login/LoginAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L67)
+Defined in: [login/LoginAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L67)
 
 ---
 
@@ -103,4 +103,4 @@ Refreshes a trading session, obtaining new session tokens for subsequent API acc
 
 **Returns:** _Promise_<[_OauthToken_](../interfaces/login_loginapi.oauthtoken.md)\>
 
-Defined in: [login/LoginAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L80)
+Defined in: [login/LoginAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L80)

@@ -21,7 +21,7 @@
 
 • `Optional` **markets**: _undefined_ \| [_Market_](market_marketapi.market.md)[]
 
-Defined in: [market/MarketAPI.ts:187](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/market/MarketAPI.ts#L187)
+Defined in: [market/MarketAPI.ts:187](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L187)
 
 ---
 
@@ -29,4 +29,4 @@ Defined in: [market/MarketAPI.ts:187](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **nodes**: _undefined_ \| [_MarketNode_](market_marketapi.marketnode.md)[]
 
-Defined in: [market/MarketAPI.ts:188](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/market/MarketAPI.ts#L188)
+Defined in: [market/MarketAPI.ts:188](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L188)

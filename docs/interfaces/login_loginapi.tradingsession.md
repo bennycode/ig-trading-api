@@ -24,7 +24,7 @@
 
 • **accountId**: _string_
 
-Defined in: [login/LoginAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L13)
+Defined in: [login/LoginAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L13)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [login/LoginAPI.ts:13](https://github.com/bennycode/ig-trading-api/b
 
 • **clientId**: _string_
 
-Defined in: [login/LoginAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L14)
+Defined in: [login/LoginAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L14)
 
 ---
 
@@ -40,7 +40,7 @@ Defined in: [login/LoginAPI.ts:14](https://github.com/bennycode/ig-trading-api/b
 
 • **lightstreamerEndpoint**: _string_
 
-Defined in: [login/LoginAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L15)
+Defined in: [login/LoginAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L15)
 
 ---
 
@@ -48,7 +48,7 @@ Defined in: [login/LoginAPI.ts:15](https://github.com/bennycode/ig-trading-api/b
 
 • **oauthToken**: [_OauthToken_](login_loginapi.oauthtoken.md)
 
-Defined in: [login/LoginAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L16)
+Defined in: [login/LoginAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L16)
 
 ---
 
@@ -56,4 +56,4 @@ Defined in: [login/LoginAPI.ts:16](https://github.com/bennycode/ig-trading-api/b
 
 • **timezoneOffset**: _number_
 
-Defined in: [login/LoginAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/aeb83dc/src/login/LoginAPI.ts#L17)
+Defined in: [login/LoginAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L17)
