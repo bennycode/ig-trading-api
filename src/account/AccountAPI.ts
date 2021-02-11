@@ -1,6 +1,18 @@
 import {AxiosInstance} from 'axios';
 import {Direction} from 'readline';
 
+export enum AccountStatus {
+  DISABLED = 'DISABLED',
+  ENABLED = 'ENABLED',
+  SUSPENDED_FROM_DEALING = 'SUSPENDED_FROM_DEALING',
+}
+
+export enum AccountType {
+  CFD = 'CFD',
+  PHYSICAL = 'PHYSICAL',
+  SPREADBET = 'SPREADBET',
+}
+
 export enum TransactionType {
   ALL = 'ALL',
   ALL_DEAL = 'ALL_DEAL',
@@ -49,6 +61,30 @@ export enum ActivityType {
   POSITION = 'POSITION',
   SYSTEM = 'SYSTEM',
   WORKING_ORDER = 'WORKING_ORDER',
+}
+
+export interface Balance {
+  available: number;
+  balance: number;
+  deposit: number;
+  profitLoss: number;
+}
+
+export interface Account {
+  accountAlias?: any;
+  accountId: string;
+  accountName: string;
+  accountType: AccountType;
+  balance: Balance;
+  canTransferFrom: boolean;
+  canTransferTo: boolean;
+  currency: string;
+  preferred: boolean;
+  status: AccountStatus;
+}
+
+export interface AccountsResponse {
+  accounts: Account[];
 }
 
 export interface Action {
@@ -152,11 +188,23 @@ export interface TransactionHistoryResponse {
 
 export class AccountAPI {
   static readonly URL = {
+    ACCOUNTS: '/accounts/',
     HISTORY_ACTIVITY: '/history/activity/',
     HISTORY_TRANSACTIONS: '/history/transactions',
   };
 
   constructor(private readonly apiClient: AxiosInstance) {}
+
+  /**
+   * Returns a list of accounts belonging to the logged-in client.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=553
+   */
+  async getAccounts(): Promise<AccountsResponse> {
+    const resource = AccountAPI.URL.ACCOUNTS;
+    const response = await this.apiClient.get<AccountsResponse>(resource);
+    return response.data;
+  }
 
   /**
    * Returns the account activity history.
