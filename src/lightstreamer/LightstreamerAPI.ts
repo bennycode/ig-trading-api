@@ -26,7 +26,7 @@ export class LightstreamerAPI {
     epicList: string[],
     resolution: ChartResolution,
     onCandleUpdate: (epic: string, candle: CandleStick) => void
-  ): void {
+  ): LightstreamerClient {
     const lightstream = this.createLightStream();
 
     const fields = [
@@ -88,5 +88,6 @@ export class LightstreamerAPI {
 
     lightstream.connect();
     lightstream.subscribe(this.candleSubscription);
+    return lightstream;
   }
 }
