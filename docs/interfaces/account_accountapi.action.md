@@ -21,7 +21,7 @@
 
 • **actionType**: [_ActionType_](../enums/account_accountapi.actiontype.md)
 
-Defined in: [account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L55)
+Defined in: [account/AccountAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L91)
 
 ---
 
@@ -29,4 +29,4 @@ Defined in: [account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-a
 
 • **affectedDealId**: _string_
 
-Defined in: [account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L56)
+Defined in: [account/AccountAPI.ts:92](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L92)

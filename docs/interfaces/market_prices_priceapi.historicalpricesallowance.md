@@ -22,7 +22,7 @@
 
 • **allowanceExpiry**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/market/prices/PriceAPI.ts#L22)
+Defined in: [market/prices/PriceAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/prices/PriceAPI.ts#L22)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [market/prices/PriceAPI.ts:22](https://github.com/bennycode/ig-tradi
 
 • **remainingAllowance**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/market/prices/PriceAPI.ts#L23)
+Defined in: [market/prices/PriceAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/prices/PriceAPI.ts#L23)
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: [market/prices/PriceAPI.ts:23](https://github.com/bennycode/ig-tradi
 
 • **totalAllowance**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/market/prices/PriceAPI.ts#L24)
+Defined in: [market/prices/PriceAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/prices/PriceAPI.ts#L24)

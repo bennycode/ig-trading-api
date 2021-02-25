@@ -22,7 +22,7 @@
 
 • **pageNumber**: _number_
 
-Defined in: [account/AccountAPI.ts:129](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L129)
+Defined in: [account/AccountAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L165)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [account/AccountAPI.ts:129](https://github.com/bennycode/ig-trading-
 
 • **pageSize**: _number_
 
-Defined in: [account/AccountAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L130)
+Defined in: [account/AccountAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L166)
 
 ---
 
@@ -38,4 +38,4 @@ Defined in: [account/AccountAPI.ts:130](https://github.com/bennycode/ig-trading-
 
 • **totalPages**: _number_
 
-Defined in: [account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L131)
+Defined in: [account/AccountAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L167)

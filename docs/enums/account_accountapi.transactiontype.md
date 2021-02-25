@@ -19,7 +19,7 @@
 
 • **ALL**: = "ALL"
 
-Defined in: [account/AccountAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L5)
+Defined in: [account/AccountAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L17)
 
 ---
 
@@ -27,7 +27,7 @@ Defined in: [account/AccountAPI.ts:5](https://github.com/bennycode/ig-trading-ap
 
 • **ALL_DEAL**: = "ALL_DEAL"
 
-Defined in: [account/AccountAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L6)
+Defined in: [account/AccountAPI.ts:18](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L18)
 
 ---
 
@@ -35,7 +35,7 @@ Defined in: [account/AccountAPI.ts:6](https://github.com/bennycode/ig-trading-ap
 
 • **DEPOSIT**: = "DEPOSIT"
 
-Defined in: [account/AccountAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L7)
+Defined in: [account/AccountAPI.ts:19](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L19)
 
 ---
 
@@ -43,4 +43,4 @@ Defined in: [account/AccountAPI.ts:7](https://github.com/bennycode/ig-trading-ap
 
 • **WITHDRAWAL**: = "WITHDRAWAL"
 
-Defined in: [account/AccountAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L8)
+Defined in: [account/AccountAPI.ts:20](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L20)

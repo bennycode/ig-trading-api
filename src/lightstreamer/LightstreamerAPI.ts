@@ -13,7 +13,7 @@ export class LightstreamerAPI {
   private createLightStream(): LightstreamerClient {
     if (!this.lightstream) {
       this.lightstream = new LightstreamerClient(this.auth.lightstreamerEndpoint, '');
-      this.lightstream.connectionDetails.setUser(this.auth.username!);
+      this.lightstream.connectionDetails.setUser(this.auth.accountId as string);
       this.lightstream.connectionDetails.setPassword(
         `CST-${this.auth.clientSessionToken}|XST-${this.auth.securityToken}`
       );
@@ -26,7 +26,7 @@ export class LightstreamerAPI {
     epicList: string[],
     resolution: ChartResolution,
     onCandleUpdate: (epic: string, candle: CandleStick) => void
-  ): void {
+  ): LightstreamerClient {
     const lightstream = this.createLightStream();
 
     const fields = [
@@ -88,5 +88,6 @@ export class LightstreamerAPI {
 
     lightstream.connect();
     lightstream.subscribe(this.candleSubscription);
+    return lightstream;
   }
 }

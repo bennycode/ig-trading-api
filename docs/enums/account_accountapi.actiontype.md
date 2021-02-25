@@ -33,7 +33,7 @@
 
 • **LIMIT_ORDER_AMENDED**: = "LIMIT_ORDER_AMENDED"
 
-Defined in: [account/AccountAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L21)
+Defined in: [account/AccountAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L33)
 
 ---
 
@@ -41,7 +41,7 @@ Defined in: [account/AccountAPI.ts:21](https://github.com/bennycode/ig-trading-a
 
 • **LIMIT_ORDER_DELETED**: = "LIMIT_ORDER_DELETED"
 
-Defined in: [account/AccountAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L22)
+Defined in: [account/AccountAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L34)
 
 ---
 
@@ -49,7 +49,7 @@ Defined in: [account/AccountAPI.ts:22](https://github.com/bennycode/ig-trading-a
 
 • **LIMIT_ORDER_FILLED**: = "LIMIT_ORDER_FILLED"
 
-Defined in: [account/AccountAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L23)
+Defined in: [account/AccountAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L35)
 
 ---
 
@@ -57,7 +57,7 @@ Defined in: [account/AccountAPI.ts:23](https://github.com/bennycode/ig-trading-a
 
 • **LIMIT_ORDER_OPENED**: = "LIMIT_ORDER_OPENED"
 
-Defined in: [account/AccountAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L24)
+Defined in: [account/AccountAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L36)
 
 ---
 
@@ -65,7 +65,7 @@ Defined in: [account/AccountAPI.ts:24](https://github.com/bennycode/ig-trading-a
 
 • **LIMIT_ORDER_ROLLED**: = "LIMIT_ORDER_ROLLED"
 
-Defined in: [account/AccountAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L25)
+Defined in: [account/AccountAPI.ts:37](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L37)
 
 ---
 
@@ -73,7 +73,7 @@ Defined in: [account/AccountAPI.ts:25](https://github.com/bennycode/ig-trading-a
 
 • **POSITION_CLOSED**: = "POSITION_CLOSED"
 
-Defined in: [account/AccountAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L26)
+Defined in: [account/AccountAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L38)
 
 ---
 
@@ -81,7 +81,7 @@ Defined in: [account/AccountAPI.ts:26](https://github.com/bennycode/ig-trading-a
 
 • **POSITION_DELETED**: = "POSITION_DELETED"
 
-Defined in: [account/AccountAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L27)
+Defined in: [account/AccountAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L39)
 
 ---
 
@@ -89,7 +89,7 @@ Defined in: [account/AccountAPI.ts:27](https://github.com/bennycode/ig-trading-a
 
 • **POSITION_OPENED**: = "POSITION_OPENED"
 
-Defined in: [account/AccountAPI.ts:28](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L28)
+Defined in: [account/AccountAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L40)
 
 ---
 
@@ -97,7 +97,7 @@ Defined in: [account/AccountAPI.ts:28](https://github.com/bennycode/ig-trading-a
 
 • **POSITION_PARTIALLY_CLOSED**: = "POSITION_PARTIALLY_CLOSED"
 
-Defined in: [account/AccountAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L29)
+Defined in: [account/AccountAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L41)
 
 ---
 
@@ -105,7 +105,7 @@ Defined in: [account/AccountAPI.ts:29](https://github.com/bennycode/ig-trading-a
 
 • **POSITION_ROLLED**: = "POSITION_ROLLED"
 
-Defined in: [account/AccountAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L30)
+Defined in: [account/AccountAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L42)
 
 ---
 
@@ -113,7 +113,7 @@ Defined in: [account/AccountAPI.ts:30](https://github.com/bennycode/ig-trading-a
 
 • **STOP_LIMIT_AMENDED**: = "STOP_LIMIT_AMENDED"
 
-Defined in: [account/AccountAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L31)
+Defined in: [account/AccountAPI.ts:43](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L43)
 
 ---
 
@@ -121,7 +121,7 @@ Defined in: [account/AccountAPI.ts:31](https://github.com/bennycode/ig-trading-a
 
 • **STOP_ORDER_AMENDED**: = "STOP_ORDER_AMENDED"
 
-Defined in: [account/AccountAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L32)
+Defined in: [account/AccountAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L44)
 
 ---
 
@@ -129,7 +129,7 @@ Defined in: [account/AccountAPI.ts:32](https://github.com/bennycode/ig-trading-a
 
 • **STOP_ORDER_DELETED**: = "STOP_ORDER_DELETED"
 
-Defined in: [account/AccountAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L33)
+Defined in: [account/AccountAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L45)
 
 ---
 
@@ -137,7 +137,7 @@ Defined in: [account/AccountAPI.ts:33](https://github.com/bennycode/ig-trading-a
 
 • **STOP_ORDER_FILLED**: = "STOP_ORDER_FILLED"
 
-Defined in: [account/AccountAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L34)
+Defined in: [account/AccountAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L46)
 
 ---
 
@@ -145,7 +145,7 @@ Defined in: [account/AccountAPI.ts:34](https://github.com/bennycode/ig-trading-a
 
 • **STOP_ORDER_OPENED**: = "STOP_ORDER_OPENED"
 
-Defined in: [account/AccountAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L35)
+Defined in: [account/AccountAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L47)
 
 ---
 
@@ -153,7 +153,7 @@ Defined in: [account/AccountAPI.ts:35](https://github.com/bennycode/ig-trading-a
 
 • **STOP_ORDER_ROLLED**: = "STOP_ORDER_ROLLED"
 
-Defined in: [account/AccountAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L36)
+Defined in: [account/AccountAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L48)
 
 ---
 
@@ -161,7 +161,7 @@ Defined in: [account/AccountAPI.ts:36](https://github.com/bennycode/ig-trading-a
 
 • **UNKNOWN**: = "UNKNOWN"
 
-Defined in: [account/AccountAPI.ts:37](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L37)
+Defined in: [account/AccountAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L49)
 
 ---
 
@@ -169,4 +169,4 @@ Defined in: [account/AccountAPI.ts:37](https://github.com/bennycode/ig-trading-a
 
 • **WORKING_ORDER_DELETED**: = "WORKING_ORDER_DELETED"
 
-Defined in: [account/AccountAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/account/AccountAPI.ts#L38)
+Defined in: [account/AccountAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L50)

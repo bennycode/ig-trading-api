@@ -21,6 +21,8 @@
 ### Methods
 
 - [createSession](login_loginapi.loginapi.md#createsession)
+- [getSessionToken](login_loginapi.loginapi.md#getsessiontoken)
+- [refreshToken](login_loginapi.loginapi.md#refreshtoken)
 
 ## Constructors
 
@@ -37,21 +39,22 @@
 
 **Returns:** [_LoginAPI_](login_loginapi.loginapi.md)
 
-Defined in: [login/LoginAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L40)
+Defined in: [login/LoginAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L24)
 
 ## Properties
 
 ### URL
 
-▪ `Readonly` `Static` **URL**: { `SESSION`: _string_ }
+▪ `Readonly` `Static` **URL**: { `REFRESH_TOKEN`: _string_ ; `SESSION`: _string_ }
 
 #### Type declaration:
 
-| Name      | Type     |
-| --------- | -------- |
-| `SESSION` | _string_ |
+| Name            | Type     |
+| --------------- | -------- |
+| `REFRESH_TOKEN` | _string_ |
+| `SESSION`       | _string_ |
 
-Defined in: [login/LoginAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L38)
+Defined in: [login/LoginAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L21)
 
 ## Methods
 
@@ -72,4 +75,32 @@ Creates a trading session, obtaining session tokens for subsequent API access.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/a046dbb/src/login/LoginAPI.ts#L51)
+Defined in: [login/LoginAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L35)
+
+---
+
+### getSessionToken
+
+▸ **getSessionToken**(): _Promise_<_boolean_\>
+
+Returns the user's session details.
+
+**`see`** https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+
+**Returns:** _Promise_<_boolean_\>
+
+Defined in: [login/LoginAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L67)
+
+---
+
+### refreshToken
+
+▸ **refreshToken**(): _Promise_<[_OauthToken_](../interfaces/login_loginapi.oauthtoken.md)\>
+
+Refreshes a trading session, obtaining new session tokens for subsequent API access.
+
+**`see`** https://labs.ig.com/rest-trading-api-reference/service-detail?id=523
+
+**Returns:** _Promise_<[_OauthToken_](../interfaces/login_loginapi.oauthtoken.md)\>
+
+Defined in: [login/LoginAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/login/LoginAPI.ts#L80)

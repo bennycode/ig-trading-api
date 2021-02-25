@@ -1,3 +1,26 @@
+### 0.7.0 (2021-02-11)
+
+##### Documentation Changes
+
+- Fix typo ([34d7916b](https://github.com/bennycode/ig-trading-api/commit/34d7916b55560e742880df4fce60b37b3c0c3394))
+
+##### New Features
+
+- List accounts ([#72](https://github.com/bennycode/ig-trading-api/pull/72)) ([2958103b](https://github.com/bennycode/ig-trading-api/commit/2958103b05e6cee8388046f6d46407404a557556))
+
+### 0.6.0 (2021-02-11)
+
+##### Chores
+
+- **deps-dev:**
+  - bump lint-staged from 10.5.3 to 10.5.4 ([#70](https://github.com/bennycode/ig-trading-api/pull/70)) ([e96f8682](https://github.com/bennycode/ig-trading-api/commit/e96f86823edc926701847f6763260bcb40788cff))
+  - bump typedoc from 0.20.20 to 0.20.23 ([#69](https://github.com/bennycode/ig-trading-api/pull/69)) ([84affc83](https://github.com/bennycode/ig-trading-api/commit/84affc83eed9a2721507f2d76a632c7de180e0f1))
+- **deps:** bump @types/node from 14.14.22 to 14.14.25 ([#71](https://github.com/bennycode/ig-trading-api/pull/71)) ([236c89de](https://github.com/bennycode/ig-trading-api/commit/236c89de3e7dcf30892dedba671ebfd3a58e8181))
+
+##### New Features
+
+- Add automatic token refresh ([#67](https://github.com/bennycode/ig-trading-api/pull/67)) ([df098a4d](https://github.com/bennycode/ig-trading-api/commit/df098a4de245c13321fb25157533dcd643451be7))
+
 #### 0.5.1 (2021-02-07)
 
 ##### Bug Fixes
