@@ -219,7 +219,11 @@ export class DealingAPI {
    */
   async getAllOpenPositions(): Promise<PositionListResponse> {
     const resource = DealingAPI.URL.POSITIONS;
-    const response = await this.apiClient.get<PositionListResponse>(resource);
+    const response = await this.apiClient.get<PositionListResponse>(resource, {
+      headers: {
+        VERSION: '2',
+      },
+    });
     return response.data;
   }
 
@@ -230,7 +234,11 @@ export class DealingAPI {
    */
   async getPosition(dealId: String): Promise<Position> {
     const resource = DealingAPI.URL.POSITIONS + dealId;
-    const response = await this.apiClient.get<Position>(resource);
+    const response = await this.apiClient.get<Position>(resource, {
+      headers: {
+        VERSION: '2',
+      },
+    });
     return response.data;
   }
 
@@ -242,7 +250,11 @@ export class DealingAPI {
    */
   async createPosition(createPositionRequest: PositionCreateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.POSITIONS_OTC;
-    const response = await this.apiClient.post<DealReferenceResponse>(resource, createPositionRequest);
+    const response = await this.apiClient.post<DealReferenceResponse>(resource, createPositionRequest, {
+      headers: {
+        VERSION: '2',
+      },
+    });
     return response.data;
   }
 
@@ -263,14 +275,18 @@ export class DealingAPI {
   }
 
   /**
-   * Closes an OTC position.
+   * Updates an OTC position.
    *
    * @param PositionUpdateRequest - The Information to close the Position
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
    */
   async updatePosition(dealId: String, updatePositionRequest: PositionUpdateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.POSITIONS_OTC + dealId;
-    const response = await this.apiClient.put<DealReferenceResponse>(resource, updatePositionRequest);
+    const response = await this.apiClient.put<DealReferenceResponse>(resource, updatePositionRequest, {
+      headers: {
+        VERSION: '2',
+      },
+    });
     return response.data;
   }
 
@@ -293,7 +309,11 @@ export class DealingAPI {
    */
   async getAllOrders(): Promise<OrderListResponse> {
     const resource = DealingAPI.URL.WORKINGORDERS;
-    const response = await this.apiClient.get<OrderListResponse>(resource);
+    const response = await this.apiClient.get<OrderListResponse>(resource, {
+      headers: {
+        VERSION: '2',
+      },
+    });
     return response.data;
   }
 
@@ -326,6 +346,7 @@ export class DealingAPI {
       {},
       {
         headers: {
+          VERSION: '2',
           _method: 'DELETE',
         },
       }
@@ -342,7 +363,11 @@ export class DealingAPI {
    */
   async updateOrder(dealId: String, orderRequest: OrderUpdateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.WORKINGORDERS_OTC + dealId;
-    const response = await this.apiClient.put<DealReferenceResponse>(resource, orderRequest);
+    const response = await this.apiClient.put<DealReferenceResponse>(resource, orderRequest, {
+      headers: {
+        VERSION: '2',
+      },
+    });
     return response.data;
   }
 }
