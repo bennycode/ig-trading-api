@@ -94,5 +94,5 @@
     "test:dev": "nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json",
     "test:types": "yarn lint:types"
   },
-  "version": "0.7.0"
+  "version": "0.8.0"
 }
