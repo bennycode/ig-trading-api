@@ -60,7 +60,7 @@ export class LoginAPI {
   }
 
   /**
-   * Returns the user's session details.
+   * Saves the user's session details.
    *
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
@@ -70,6 +70,17 @@ export class LoginAPI {
     this.auth.securityToken = response.headers['x-security-token'];
     this.auth.clientSessionToken = response.headers.cst;
     return true;
+  }
+
+  /**
+   * Returns the user's session details.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   */
+  async getSession(): Promise<TradingSession> {
+    const resource = LoginAPI.URL.SESSION + '?fetchSessionTokens=true';
+    const response = await this.apiClient.get(resource);
+    return response.data;
   }
 
   /**
