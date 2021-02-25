@@ -73,6 +73,29 @@ describe('LoginAPI', () => {
     });
   });
 
+  describe('getSession', () => {
+    it('returns the trading session', async () => {
+      nock(APIClient.URL_DEMO)
+        .get(LoginAPI.URL.SESSION + '?fetchSessionTokens=true')
+        .reply(
+          200,
+          JSON.stringify({
+            accountId: 'XYZ123',
+            clientId: '1234567',
+            currency: 'EUR',
+            lightstreamerEndpoint: 'https://demo-apd.marketdatasystems.com',
+            locale: 'de_DE',
+            timezoneOffset: 1,
+          })
+        );
+
+      const session = await global.client.rest.login.getSession();
+      expect(session.accountId).toBe('XYZ123');
+      expect(session.clientId).toBe('1234567');
+      expect(session.timezoneOffset).toBe(1);
+    });
+  });
+
   describe('refreshSession', () => {
     it('refreshing a trading session', async () => {
       const dealId = '12345';
