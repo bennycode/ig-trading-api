@@ -4,10 +4,6 @@
 
 [market/prices/PriceAPI](../modules/market_prices_priceapi.md).HistoricalPricesMetadata
 
-## Hierarchy
-
-- **HistoricalPricesMetadata**
-
 ## Table of contents
 
 ### Properties
@@ -22,7 +18,7 @@
 
 • **allowance**: [_HistoricalPricesAllowance_](market_prices_priceapi.historicalpricesallowance.md)
 
-Defined in: [market/prices/PriceAPI.ts:28](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/prices/PriceAPI.ts#L28)
+Defined in: [market/prices/PriceAPI.ts:28](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/prices/PriceAPI.ts#L28)
 
 ---
 
@@ -30,7 +26,7 @@ Defined in: [market/prices/PriceAPI.ts:28](https://github.com/bennycode/ig-tradi
 
 • **pageData**: [_HistoricalPricesPagination_](market_prices_priceapi.historicalpricespagination.md)
 
-Defined in: [market/prices/PriceAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/prices/PriceAPI.ts#L29)
+Defined in: [market/prices/PriceAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/prices/PriceAPI.ts#L29)
 
 ---
 
@@ -38,4 +34,4 @@ Defined in: [market/prices/PriceAPI.ts:29](https://github.com/bennycode/ig-tradi
 
 • **size**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/prices/PriceAPI.ts#L30)
+Defined in: [market/prices/PriceAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/prices/PriceAPI.ts#L30)

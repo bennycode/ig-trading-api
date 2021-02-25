@@ -4,10 +4,6 @@
 
 [dealing/DealingAPI](../modules/dealing_dealingapi.md).OrderResponse
 
-## Hierarchy
-
-- **OrderResponse**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **marketData**: [_Market_](market_marketapi.market.md)
 
-Defined in: [dealing/DealingAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L135)
+Defined in: [dealing/DealingAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/afea174/src/dealing/DealingAPI.ts#L135)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:135](https://github.com/bennycode/ig-trading-
 
 • **workingOrderData**: [_Order_](dealing_dealingapi.order.md)
 
-Defined in: [dealing/DealingAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L136)
+Defined in: [dealing/DealingAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/afea174/src/dealing/DealingAPI.ts#L136)

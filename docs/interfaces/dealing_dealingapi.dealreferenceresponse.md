@@ -4,10 +4,6 @@
 
 [dealing/DealingAPI](../modules/dealing_dealingapi.md).DealReferenceResponse
 
-## Hierarchy
-
-- **DealReferenceResponse**
-
 ## Table of contents
 
 ### Properties
@@ -20,4 +16,4 @@
 
 • **dealReference**: _string_
 
-Defined in: [dealing/DealingAPI.ts:173](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L173)
+Defined in: [dealing/DealingAPI.ts:173](https://github.com/bennycode/ig-trading-api/blob/afea174/src/dealing/DealingAPI.ts#L173)

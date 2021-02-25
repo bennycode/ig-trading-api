@@ -4,10 +4,6 @@
 
 [account/AccountAPI](../modules/account_accountapi.md).ActivityMetadata
 
-## Hierarchy
-
-- **ActivityMetadata**
-
 ## Table of contents
 
 ### Properties
@@ -20,4 +16,4 @@
 
 • **paging**: [_ActivityPaging_](account_accountapi.activitypaging.md)
 
-Defined in: [account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L131)
+Defined in: [account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L131)

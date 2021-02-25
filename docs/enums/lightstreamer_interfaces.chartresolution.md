@@ -19,7 +19,7 @@
 
 • **HOUR**: = "HOUR"
 
-Defined in: [lightstreamer/interfaces.ts:2](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/lightstreamer/interfaces.ts#L2)
+Defined in: [lightstreamer/interfaces.ts:2](https://github.com/bennycode/ig-trading-api/blob/afea174/src/lightstreamer/interfaces.ts#L2)
 
 ---
 
@@ -27,7 +27,7 @@ Defined in: [lightstreamer/interfaces.ts:2](https://github.com/bennycode/ig-trad
 
 • **MINUTE**: = "1MINUTE"
 
-Defined in: [lightstreamer/interfaces.ts:3](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/lightstreamer/interfaces.ts#L3)
+Defined in: [lightstreamer/interfaces.ts:3](https://github.com/bennycode/ig-trading-api/blob/afea174/src/lightstreamer/interfaces.ts#L3)
 
 ---
 
@@ -35,7 +35,7 @@ Defined in: [lightstreamer/interfaces.ts:3](https://github.com/bennycode/ig-trad
 
 • **MINUTE_5**: = "5MINUTE"
 
-Defined in: [lightstreamer/interfaces.ts:4](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/lightstreamer/interfaces.ts#L4)
+Defined in: [lightstreamer/interfaces.ts:4](https://github.com/bennycode/ig-trading-api/blob/afea174/src/lightstreamer/interfaces.ts#L4)
 
 ---
 
@@ -43,4 +43,4 @@ Defined in: [lightstreamer/interfaces.ts:4](https://github.com/bennycode/ig-trad
 
 • **SECOND**: = "SECOND"
 
-Defined in: [lightstreamer/interfaces.ts:5](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/lightstreamer/interfaces.ts#L5)
+Defined in: [lightstreamer/interfaces.ts:5](https://github.com/bennycode/ig-trading-api/blob/afea174/src/lightstreamer/interfaces.ts#L5)

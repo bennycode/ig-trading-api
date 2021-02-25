@@ -4,10 +4,6 @@
 
 [client/RESTClient](../modules/client_restclient.md).Authorization
 
-## Hierarchy
-
-- **Authorization**
-
 ## Table of contents
 
 ### Properties
@@ -26,7 +22,7 @@
 
 • `Optional` **accessToken**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L8)
+Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L8)
 
 ---
 
@@ -34,7 +30,7 @@ Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api
 
 • `Optional` **accountId**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L9)
+Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L9)
 
 ---
 
@@ -42,7 +38,7 @@ Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api
 
 • `Optional` **clientSessionToken**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L10)
+Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L10)
 
 ---
 
@@ -50,7 +46,7 @@ Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **lightstreamerEndpoint**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L11)
+Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L11)
 
 ---
 
@@ -58,7 +54,7 @@ Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **refreshToken**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L12)
+Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L12)
 
 ---
 
@@ -66,7 +62,7 @@ Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **securityToken**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L13)
+Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L13)
 
 ---
 
@@ -74,4 +70,4 @@ Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **username**: _undefined_ \| _string_
 
-Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/client/RESTClient.ts#L14)
+Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L14)

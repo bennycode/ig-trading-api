@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).MaxStopOrLimitDistance
 
-## Hierarchy
-
-- **MaxStopOrLimitDistance**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **unit**: _string_
 
-Defined in: [market/MarketAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L122)
+Defined in: [market/MarketAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L122)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [market/MarketAPI.ts:122](https://github.com/bennycode/ig-trading-ap
 
 • **value**: _number_
 
-Defined in: [market/MarketAPI.ts:123](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L123)
+Defined in: [market/MarketAPI.ts:123](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L123)

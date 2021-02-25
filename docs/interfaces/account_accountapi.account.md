@@ -4,10 +4,6 @@
 
 [account/AccountAPI](../modules/account_accountapi.md).Account
 
-## Hierarchy
-
-- **Account**
-
 ## Table of contents
 
 ### Properties
@@ -29,7 +25,7 @@
 
 • `Optional` **accountAlias**: _any_
 
-Defined in: [account/AccountAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L74)
+Defined in: [account/AccountAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L74)
 
 ---
 
@@ -37,7 +33,7 @@ Defined in: [account/AccountAPI.ts:74](https://github.com/bennycode/ig-trading-a
 
 • **accountId**: _string_
 
-Defined in: [account/AccountAPI.ts:75](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L75)
+Defined in: [account/AccountAPI.ts:75](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L75)
 
 ---
 
@@ -45,7 +41,7 @@ Defined in: [account/AccountAPI.ts:75](https://github.com/bennycode/ig-trading-a
 
 • **accountName**: _string_
 
-Defined in: [account/AccountAPI.ts:76](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L76)
+Defined in: [account/AccountAPI.ts:76](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L76)
 
 ---
 
@@ -53,7 +49,7 @@ Defined in: [account/AccountAPI.ts:76](https://github.com/bennycode/ig-trading-a
 
 • **accountType**: [_AccountType_](../enums/account_accountapi.accounttype.md)
 
-Defined in: [account/AccountAPI.ts:77](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L77)
+Defined in: [account/AccountAPI.ts:77](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L77)
 
 ---
 
@@ -61,7 +57,7 @@ Defined in: [account/AccountAPI.ts:77](https://github.com/bennycode/ig-trading-a
 
 • **balance**: [_Balance_](account_accountapi.balance.md)
 
-Defined in: [account/AccountAPI.ts:78](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L78)
+Defined in: [account/AccountAPI.ts:78](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L78)
 
 ---
 
@@ -69,7 +65,7 @@ Defined in: [account/AccountAPI.ts:78](https://github.com/bennycode/ig-trading-a
 
 • **canTransferFrom**: _boolean_
 
-Defined in: [account/AccountAPI.ts:79](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L79)
+Defined in: [account/AccountAPI.ts:79](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L79)
 
 ---
 
@@ -77,7 +73,7 @@ Defined in: [account/AccountAPI.ts:79](https://github.com/bennycode/ig-trading-a
 
 • **canTransferTo**: _boolean_
 
-Defined in: [account/AccountAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L80)
+Defined in: [account/AccountAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L80)
 
 ---
 
@@ -85,7 +81,7 @@ Defined in: [account/AccountAPI.ts:80](https://github.com/bennycode/ig-trading-a
 
 • **currency**: _string_
 
-Defined in: [account/AccountAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L81)
+Defined in: [account/AccountAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L81)
 
 ---
 
@@ -93,7 +89,7 @@ Defined in: [account/AccountAPI.ts:81](https://github.com/bennycode/ig-trading-a
 
 • **preferred**: _boolean_
 
-Defined in: [account/AccountAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L82)
+Defined in: [account/AccountAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L82)
 
 ---
 
@@ -101,4 +97,4 @@ Defined in: [account/AccountAPI.ts:82](https://github.com/bennycode/ig-trading-a
 
 • **status**: [_AccountStatus_](../enums/account_accountapi.accountstatus.md)
 
-Defined in: [account/AccountAPI.ts:83](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L83)
+Defined in: [account/AccountAPI.ts:83](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L83)

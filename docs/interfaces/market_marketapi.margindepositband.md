@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).MarginDepositBand
 
-## Hierarchy
-
-- **MarginDepositBand**
-
 ## Table of contents
 
 ### Properties
@@ -23,7 +19,7 @@
 
 • **currency**: _string_
 
-Defined in: [market/MarketAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L13)
+Defined in: [market/MarketAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L13)
 
 ---
 
@@ -31,7 +27,7 @@ Defined in: [market/MarketAPI.ts:13](https://github.com/bennycode/ig-trading-api
 
 • **margin**: _number_
 
-Defined in: [market/MarketAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L14)
+Defined in: [market/MarketAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L14)
 
 ---
 
@@ -39,7 +35,7 @@ Defined in: [market/MarketAPI.ts:14](https://github.com/bennycode/ig-trading-api
 
 • `Optional` **max**: _undefined_ \| _number_
 
-Defined in: [market/MarketAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L15)
+Defined in: [market/MarketAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L15)
 
 ---
 
@@ -47,4 +43,4 @@ Defined in: [market/MarketAPI.ts:15](https://github.com/bennycode/ig-trading-api
 
 • **min**: _number_
 
-Defined in: [market/MarketAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L16)
+Defined in: [market/MarketAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L16)

@@ -4,10 +4,6 @@
 
 [dealing/DealingAPI](../modules/dealing_dealingapi.md).PositionListResponse
 
-## Hierarchy
-
-- **PositionListResponse**
-
 ## Table of contents
 
 ### Properties
@@ -20,4 +16,4 @@
 
 • **positions**: [_PositionResponse_](dealing_dealingapi.positionresponse.md)[]
 
-Defined in: [dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L74)
+Defined in: [dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/afea174/src/dealing/DealingAPI.ts#L74)

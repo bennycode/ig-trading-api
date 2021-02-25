@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).MarketSearch
 
-## Hierarchy
-
-- **MarketSearch**
-
 ## Table of contents
 
 ### Properties
@@ -20,4 +16,4 @@
 
 • **markets**: [_Market_](market_marketapi.market.md)[]
 
-Defined in: [market/MarketAPI.ts:211](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L211)
+Defined in: [market/MarketAPI.ts:211](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L211)

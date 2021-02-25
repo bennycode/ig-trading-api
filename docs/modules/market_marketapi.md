@@ -46,12 +46,12 @@
 
 ### MarketDetails
 
-Ƭ **MarketDetails**: { `marketDetails`: [_MarketDetail_](../interfaces/market_marketapi.marketdetail.md)[] }
+Ƭ **MarketDetails**: _object_
 
 #### Type declaration:
 
 | Name            | Type                                                               |
-| --------------- | ------------------------------------------------------------------ |
+| :-------------- | :----------------------------------------------------------------- |
 | `marketDetails` | [_MarketDetail_](../interfaces/market_marketapi.marketdetail.md)[] |
 
-Defined in: [market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L179)
+Defined in: [market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L179)
