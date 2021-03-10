@@ -1,3 +1,23 @@
+#### 0.8.1 (2021-03-10)
+
+##### Chores
+
+- **deps-dev:**
+  - bump eslint-config-prettier from 8.0.0 to 8.1.0 ([#100](https://github.com/bennycode/ig-trading-api/pull/100)) ([84f2a8c2](https://github.com/bennycode/ig-trading-api/commit/84f2a8c2684365e796e8686ac870521ea3af7b90))
+  - bump typedoc from 0.20.28 to 0.20.30 ([#104](https://github.com/bennycode/ig-trading-api/pull/104)) ([01db363b](https://github.com/bennycode/ig-trading-api/commit/01db363bc5d1b74598ca6bd2ccabbd89fbbcb636))
+  - bump @types/luxon from 1.26.0 to 1.26.2 ([#106](https://github.com/bennycode/ig-trading-api/pull/106)) ([8fd138b9](https://github.com/bennycode/ig-trading-api/commit/8fd138b90a135cf985a00f87f249884d056dada3))
+  - bump @typescript-eslint/parser from 4.15.2 to 4.17.0 ([#110](https://github.com/bennycode/ig-trading-api/pull/110)) ([75a4b3db](https://github.com/bennycode/ig-trading-api/commit/75a4b3db90debe801371023d0b7ddfbcd75a2d9b))
+  - bump @types/jasmine from 3.6.4 to 3.6.6 ([#103](https://github.com/bennycode/ig-trading-api/pull/103)) ([8d6e712c](https://github.com/bennycode/ig-trading-api/commit/8d6e712c6894ae16a3713b6d2b22a3177a6989ab))
+  - bump eslint from 7.20.0 to 7.21.0 ([#98](https://github.com/bennycode/ig-trading-api/pull/98)) ([0e6379c4](https://github.com/bennycode/ig-trading-api/commit/0e6379c476f7bc80233a848c942de3cc27c2e49f))
+  - bump typedoc-plugin-markdown from 3.5.0 to 3.6.0 ([#97](https://github.com/bennycode/ig-trading-api/pull/97)) ([4bd84447](https://github.com/bennycode/ig-trading-api/commit/4bd8444763b860217620f1a1740f40bbdfe4375e))
+  - bump @typescript-eslint/eslint-plugin ([#107](https://github.com/bennycode/ig-trading-api/pull/107)) ([117ea3fc](https://github.com/bennycode/ig-trading-api/commit/117ea3fc0a3d24a1decbfa6934887d1def9ffb38))
+  - bump nock from 13.0.7 to 13.0.11 ([#108](https://github.com/bennycode/ig-trading-api/pull/108)) ([56c04532](https://github.com/bennycode/ig-trading-api/commit/56c04532397ef5b973419b4cec110a7396c3e57a))
+- **deps:** bump @types/node from 14.14.31 to 14.14.32 ([#102](https://github.com/bennycode/ig-trading-api/pull/102)) ([27984f82](https://github.com/bennycode/ig-trading-api/commit/27984f8280483f811fa6098b8c2b5d2b7ec35fbf))
+
+##### Bug Fixes
+
+- Import of Direction ([#109](https://github.com/bennycode/ig-trading-api/pull/109)) ([f80df8e0](https://github.com/bennycode/ig-trading-api/commit/f80df8e04c253c753524d334c02c8951f2921c12))
+
 ### 0.8.0 (2021-02-25)
 
 ##### Chores
