@@ -18,7 +18,7 @@
 
 • **instrumentType**: [_InstrumentType_](../enums/market_marketapi.instrumenttype.md)
 
-Defined in: [market/prices/PriceAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/prices/PriceAPI.ts#L40)
+Defined in: [market/prices/PriceAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/prices/PriceAPI.ts#L40)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [market/prices/PriceAPI.ts:40](https://github.com/bennycode/ig-tradi
 
 • **metadata**: [_HistoricalPricesMetadata_](market_prices_priceapi.historicalpricesmetadata.md)
 
-Defined in: [market/prices/PriceAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/prices/PriceAPI.ts#L41)
+Defined in: [market/prices/PriceAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/prices/PriceAPI.ts#L41)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [market/prices/PriceAPI.ts:41](https://github.com/bennycode/ig-tradi
 
 • **prices**: [_CandleStick_](market_prices_priceapi.candlestick.md)[]
 
-Defined in: [market/prices/PriceAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/prices/PriceAPI.ts#L42)
+Defined in: [market/prices/PriceAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/prices/PriceAPI.ts#L42)

@@ -17,7 +17,7 @@
 
 • **lastRolloverTime**: _string_
 
-Defined in: [market/MarketAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L35)
+Defined in: [market/MarketAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L35)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [market/MarketAPI.ts:35](https://github.com/bennycode/ig-trading-api
 
 • **rolloverInfo**: _string_
 
-Defined in: [market/MarketAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L36)
+Defined in: [market/MarketAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L36)

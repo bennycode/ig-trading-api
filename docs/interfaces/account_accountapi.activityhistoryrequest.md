@@ -21,7 +21,7 @@
 
 • `Optional` **dealId**: _undefined_ \| _string_
 
-Defined in: [account/AccountAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L135)
+Defined in: [account/AccountAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L135)
 
 ---
 
@@ -29,7 +29,7 @@ Defined in: [account/AccountAPI.ts:135](https://github.com/bennycode/ig-trading-
 
 • `Optional` **detailed**: _undefined_ \| _boolean_
 
-Defined in: [account/AccountAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L136)
+Defined in: [account/AccountAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L136)
 
 ---
 
@@ -37,7 +37,7 @@ Defined in: [account/AccountAPI.ts:136](https://github.com/bennycode/ig-trading-
 
 • `Optional` **filter**: _undefined_ \| _string_
 
-Defined in: [account/AccountAPI.ts:137](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L137)
+Defined in: [account/AccountAPI.ts:137](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L137)
 
 ---
 
@@ -45,7 +45,7 @@ Defined in: [account/AccountAPI.ts:137](https://github.com/bennycode/ig-trading-
 
 • `Optional` **from**: _undefined_ \| _string_
 
-Defined in: [account/AccountAPI.ts:138](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L138)
+Defined in: [account/AccountAPI.ts:138](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L138)
 
 ---
 
@@ -53,7 +53,7 @@ Defined in: [account/AccountAPI.ts:138](https://github.com/bennycode/ig-trading-
 
 • `Optional` **pageSize**: _undefined_ \| _number_
 
-Defined in: [account/AccountAPI.ts:139](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L139)
+Defined in: [account/AccountAPI.ts:139](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L139)
 
 ---
 
@@ -61,4 +61,4 @@ Defined in: [account/AccountAPI.ts:139](https://github.com/bennycode/ig-trading-
 
 • `Optional` **to**: _undefined_ \| _string_
 
-Defined in: [account/AccountAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L140)
+Defined in: [account/AccountAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L140)

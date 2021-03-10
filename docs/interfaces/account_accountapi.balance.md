@@ -19,7 +19,7 @@
 
 • **available**: _number_
 
-Defined in: [account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L67)
+Defined in: [account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L67)
 
 ---
 
@@ -27,7 +27,7 @@ Defined in: [account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-a
 
 • **balance**: _number_
 
-Defined in: [account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L68)
+Defined in: [account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L68)
 
 ---
 
@@ -35,7 +35,7 @@ Defined in: [account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-a
 
 • **deposit**: _number_
 
-Defined in: [account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L69)
+Defined in: [account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L69)
 
 ---
 
@@ -43,4 +43,4 @@ Defined in: [account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-a
 
 • **profitLoss**: _number_
 
-Defined in: [account/AccountAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/afea174/src/account/AccountAPI.ts#L70)
+Defined in: [account/AccountAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L70)

@@ -18,7 +18,7 @@
 
 • **dealingRules**: [_DealingRules_](market_marketapi.dealingrules.md)
 
-Defined in: [market/MarketAPI.ts:174](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L174)
+Defined in: [market/MarketAPI.ts:174](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L174)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [market/MarketAPI.ts:174](https://github.com/bennycode/ig-trading-ap
 
 • **instrument**: [_Instrument_](market_marketapi.instrument.md)
 
-Defined in: [market/MarketAPI.ts:175](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L175)
+Defined in: [market/MarketAPI.ts:175](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L175)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [market/MarketAPI.ts:175](https://github.com/bennycode/ig-trading-ap
 
 • **snapshot**: [_Snapshot_](market_marketapi.snapshot.md)
 
-Defined in: [market/MarketAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/afea174/src/market/MarketAPI.ts#L176)
+Defined in: [market/MarketAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L176)

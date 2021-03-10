@@ -39,7 +39,7 @@
 
 **Returns:** [_RESTClient_](client_restclient.restclient.md)
 
-Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L35)
+Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L35)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-ap
 
 • `Readonly` **account**: [_AccountAPI_](account_accountapi.accountapi.md)
 
-Defined in: [client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L32)
+Defined in: [client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L32)
 
 ---
 
@@ -55,7 +55,7 @@ Defined in: [client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-ap
 
 • `Readonly` **auth**: [_Authorization_](../interfaces/client_restclient.authorization.md)
 
-Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L35)
+Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L35)
 
 ---
 
@@ -63,7 +63,7 @@ Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-ap
 
 • `Readonly` **dealing**: [_DealingAPI_](dealing_dealingapi.dealingapi.md)
 
-Defined in: [client/RESTClient.ts:31](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L31)
+Defined in: [client/RESTClient.ts:31](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L31)
 
 ---
 
@@ -71,7 +71,7 @@ Defined in: [client/RESTClient.ts:31](https://github.com/bennycode/ig-trading-ap
 
 • `Readonly` **httpClient**: AxiosInstance
 
-Defined in: [client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L34)
+Defined in: [client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L34)
 
 ---
 
@@ -79,7 +79,7 @@ Defined in: [client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-ap
 
 • `Readonly` **login**: [_LoginAPI_](login_loginapi.loginapi.md)
 
-Defined in: [client/RESTClient.ts:29](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L29)
+Defined in: [client/RESTClient.ts:29](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L29)
 
 ---
 
@@ -87,7 +87,7 @@ Defined in: [client/RESTClient.ts:29](https://github.com/bennycode/ig-trading-ap
 
 • `Readonly` **market**: [_MarketAPI_](market_marketapi.marketapi.md)
 
-Defined in: [client/RESTClient.ts:30](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L30)
+Defined in: [client/RESTClient.ts:30](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L30)
 
 ## Accessors
 
@@ -97,7 +97,7 @@ Defined in: [client/RESTClient.ts:30](https://github.com/bennycode/ig-trading-ap
 
 **Returns:** AxiosRequestConfig
 
-Defined in: [client/RESTClient.ts:18](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L18)
+Defined in: [client/RESTClient.ts:18](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L18)
 
 ---
 
@@ -112,4 +112,4 @@ Defined in: [client/RESTClient.ts:18](https://github.com/bennycode/ig-trading-ap
 | `request`  | _AxiosInterceptorManager_<AxiosRequestConfig\>  |
 | `response` | _AxiosInterceptorManager_<AxiosResponse<any\>\> |
 
-Defined in: [client/RESTClient.ts:22](https://github.com/bennycode/ig-trading-api/blob/afea174/src/client/RESTClient.ts#L22)
+Defined in: [client/RESTClient.ts:22](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L22)
