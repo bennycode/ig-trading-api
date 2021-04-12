@@ -20,54 +20,54 @@
 
 ### accessToken
 
-• `Optional` **accessToken**: _undefined_ \| _string_
+• `Optional` **accessToken**: _string_
 
-Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L8)
+Defined in: [client/RESTClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L8)
 
 ---
 
 ### accountId
 
-• `Optional` **accountId**: _undefined_ \| _string_
+• `Optional` **accountId**: _string_
 
-Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L9)
+Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L9)
 
 ---
 
 ### clientSessionToken
 
-• `Optional` **clientSessionToken**: _undefined_ \| _string_
+• `Optional` **clientSessionToken**: _string_
 
-Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L10)
+Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L10)
 
 ---
 
 ### lightstreamerEndpoint
 
-• `Optional` **lightstreamerEndpoint**: _undefined_ \| _string_
+• `Optional` **lightstreamerEndpoint**: _string_
 
-Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L11)
+Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L11)
 
 ---
 
 ### refreshToken
 
-• `Optional` **refreshToken**: _undefined_ \| _string_
+• `Optional` **refreshToken**: _string_
 
-Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L12)
+Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L12)
 
 ---
 
 ### securityToken
 
-• `Optional` **securityToken**: _undefined_ \| _string_
+• `Optional` **securityToken**: _string_
 
-Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L13)
+Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L13)
 
 ---
 
 ### username
 
-• `Optional` **username**: _undefined_ \| _string_
+• `Optional` **username**: _string_
 
-Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/client/RESTClient.ts#L14)
+Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/client/RESTClient.ts#L14)

@@ -17,7 +17,7 @@
 
 • **dealId**: _string_
 
-Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/dealing/DealingAPI.ts#L177)
+Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/dealing/DealingAPI.ts#L177)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-
 
 • **status**: [_AffectedDealStatus_](../enums/dealing_dealingapi.affecteddealstatus.md)
 
-Defined in: [dealing/DealingAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/dealing/DealingAPI.ts#L178)
+Defined in: [dealing/DealingAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/dealing/DealingAPI.ts#L178)

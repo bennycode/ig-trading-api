@@ -16,4 +16,4 @@
 
 • **positions**: [_PositionResponse_](dealing_dealingapi.positionresponse.md)[]
 
-Defined in: [dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/dealing/DealingAPI.ts#L74)
+Defined in: [dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/dealing/DealingAPI.ts#L74)

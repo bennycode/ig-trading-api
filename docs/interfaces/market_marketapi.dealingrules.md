@@ -22,7 +22,7 @@
 
 • **marketOrderPreference**: [_MarketOrderPreference_](../enums/market_marketapi.marketorderpreference.md)
 
-Defined in: [market/MarketAPI.ts:127](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L127)
+Defined in: [market/MarketAPI.ts:127](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L127)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [market/MarketAPI.ts:127](https://github.com/bennycode/ig-trading-ap
 
 • **maxStopOrLimitDistance**: [_MaxStopOrLimitDistance_](market_marketapi.maxstoporlimitdistance.md)
 
-Defined in: [market/MarketAPI.ts:128](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L128)
+Defined in: [market/MarketAPI.ts:128](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L128)
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: [market/MarketAPI.ts:128](https://github.com/bennycode/ig-trading-ap
 
 • **minControlledRiskStopDistance**: [_MinControlledRiskStopDistance_](market_marketapi.mincontrolledriskstopdistance.md)
 
-Defined in: [market/MarketAPI.ts:129](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L129)
+Defined in: [market/MarketAPI.ts:129](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L129)
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: [market/MarketAPI.ts:129](https://github.com/bennycode/ig-trading-ap
 
 • **minDealSize**: [_MinDealSize_](market_marketapi.mindealsize.md)
 
-Defined in: [market/MarketAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L130)
+Defined in: [market/MarketAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L130)
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: [market/MarketAPI.ts:130](https://github.com/bennycode/ig-trading-ap
 
 • **minNormalStopOrLimitDistance**: [_MinNormalStopOrLimitDistance_](market_marketapi.minnormalstoporlimitdistance.md)
 
-Defined in: [market/MarketAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L131)
+Defined in: [market/MarketAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L131)
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: [market/MarketAPI.ts:131](https://github.com/bennycode/ig-trading-ap
 
 • **minStepDistance**: [_MinStepDistance_](market_marketapi.minstepdistance.md)
 
-Defined in: [market/MarketAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L132)
+Defined in: [market/MarketAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L132)
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: [market/MarketAPI.ts:132](https://github.com/bennycode/ig-trading-ap
 
 • **trailingStopsPreference**: [_TrailingStopPreference_](../enums/market_marketapi.trailingstoppreference.md)
 
-Defined in: [market/MarketAPI.ts:133](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L133)
+Defined in: [market/MarketAPI.ts:133](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L133)

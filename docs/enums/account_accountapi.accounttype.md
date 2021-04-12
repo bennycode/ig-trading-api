@@ -18,7 +18,7 @@
 
 • **CFD**: = "CFD"
 
-Defined in: [account/AccountAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L11)
+Defined in: [account/AccountAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L11)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [account/AccountAPI.ts:11](https://github.com/bennycode/ig-trading-a
 
 • **PHYSICAL**: = "PHYSICAL"
 
-Defined in: [account/AccountAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L12)
+Defined in: [account/AccountAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L12)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [account/AccountAPI.ts:12](https://github.com/bennycode/ig-trading-a
 
 • **SPREADBET**: = "SPREADBET"
 
-Defined in: [account/AccountAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L13)
+Defined in: [account/AccountAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L13)

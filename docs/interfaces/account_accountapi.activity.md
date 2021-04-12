@@ -24,7 +24,7 @@
 
 • **channel**: [_Channel_](../enums/account_accountapi.channel.md)
 
-Defined in: [account/AccountAPI.ts:114](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L114)
+Defined in: [account/AccountAPI.ts:114](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L114)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [account/AccountAPI.ts:114](https://github.com/bennycode/ig-trading-
 
 • **date**: Date
 
-Defined in: [account/AccountAPI.ts:115](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L115)
+Defined in: [account/AccountAPI.ts:115](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L115)
 
 ---
 
@@ -40,7 +40,7 @@ Defined in: [account/AccountAPI.ts:115](https://github.com/bennycode/ig-trading-
 
 • **dealId**: _string_
 
-Defined in: [account/AccountAPI.ts:116](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L116)
+Defined in: [account/AccountAPI.ts:116](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L116)
 
 ---
 
@@ -48,15 +48,15 @@ Defined in: [account/AccountAPI.ts:116](https://github.com/bennycode/ig-trading-
 
 • **description**: _string_
 
-Defined in: [account/AccountAPI.ts:117](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L117)
+Defined in: [account/AccountAPI.ts:117](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L117)
 
 ---
 
 ### details
 
-• `Optional` **details**: _undefined_ \| [_Details_](account_accountapi.details.md)
+• `Optional` **details**: [_Details_](account_accountapi.details.md)
 
-Defined in: [account/AccountAPI.ts:118](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L118)
+Defined in: [account/AccountAPI.ts:118](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L118)
 
 ---
 
@@ -64,7 +64,7 @@ Defined in: [account/AccountAPI.ts:118](https://github.com/bennycode/ig-trading-
 
 • **epic**: _string_
 
-Defined in: [account/AccountAPI.ts:119](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L119)
+Defined in: [account/AccountAPI.ts:119](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L119)
 
 ---
 
@@ -72,7 +72,7 @@ Defined in: [account/AccountAPI.ts:119](https://github.com/bennycode/ig-trading-
 
 • **period**: _string_
 
-Defined in: [account/AccountAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L120)
+Defined in: [account/AccountAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L120)
 
 ---
 
@@ -80,7 +80,7 @@ Defined in: [account/AccountAPI.ts:120](https://github.com/bennycode/ig-trading-
 
 • **status**: [_ActivityStatus_](../enums/account_accountapi.activitystatus.md)
 
-Defined in: [account/AccountAPI.ts:121](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L121)
+Defined in: [account/AccountAPI.ts:121](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L121)
 
 ---
 
@@ -88,4 +88,4 @@ Defined in: [account/AccountAPI.ts:121](https://github.com/bennycode/ig-trading-
 
 • **type**: [_ActivityType_](../enums/account_accountapi.activitytype.md)
 
-Defined in: [account/AccountAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/account/AccountAPI.ts#L122)
+Defined in: [account/AccountAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/account/AccountAPI.ts#L122)

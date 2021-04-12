@@ -17,7 +17,7 @@
 
 • **lastDealingDate**: _string_
 
-Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L30)
+Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L30)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api
 
 • **settlementInfo**: _string_
 
-Defined in: [market/MarketAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/bea509e/src/market/MarketAPI.ts#L31)
+Defined in: [market/MarketAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/market/MarketAPI.ts#L31)
