@@ -79,8 +79,18 @@ export class LoginAPI {
    */
   async getSession(): Promise<TradingSession> {
     const resource = LoginAPI.URL.SESSION + '?fetchSessionTokens=true';
-    const response = await this.apiClient.get(resource);
+    const response = await this.apiClient.get<TradingSession>(resource);
     return response.data;
+  }
+
+  /**
+   * Log out of the current session.
+   *
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=600
+   */
+  async logout(): Promise<void> {
+    const resource = LoginAPI.URL.SESSION;
+    return this.apiClient.delete(resource);
   }
 
   /**

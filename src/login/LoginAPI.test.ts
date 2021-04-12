@@ -152,4 +152,12 @@ describe('LoginAPI', () => {
       expect(deleteOrder.dealReference).toBe('54321');
     });
   });
+
+  describe('logout', () => {
+    it('sends a DELETE HTTP request to destroy the current session', async () => {
+      nock(APIClient.URL_DEMO).delete(LoginAPI.URL.SESSION).reply(200);
+
+      await global.client.rest.login.logout();
+    });
+  });
 });
