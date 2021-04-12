@@ -52,10 +52,11 @@ const session = await client.rest.login.createSession('your-username', 'your-pas
 console.info(`Your client ID is "${session.clientId}".`);
 ```
 
-## Documentation
+## Resources
 
 - [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
 - [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
+- [IG Streaming Companion](https://labs.ig.com/sample-apps/streaming-companion/index.html)
 
 ### IG instrument identifier (epic)
 
