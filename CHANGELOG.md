@@ -1,3 +1,10 @@
+### 0.10.0 (2021-04-13)
+
+##### New Features
+
+- Expose live status ([fc81cc30](https://github.com/bennycode/ig-trading-api/commit/fc81cc3005c7777964d49ff84a6aae2e95ee6354))
+- Expose base URL ([1f5c8936](https://github.com/bennycode/ig-trading-api/commit/1f5c893647a029f57ecc1dfcd659358c27c0ce6e))
+
 ### 0.9.0 (2021-04-12)
 
 ##### Chores
