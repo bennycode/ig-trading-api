@@ -17,7 +17,7 @@
 
 • **market**: [_Market_](market_marketapi.market.md)
 
-Defined in: [dealing/DealingAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/dealing/DealingAPI.ts#L69)
+Defined in: [dealing/DealingAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/dealing/DealingAPI.ts#L69)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:69](https://github.com/bennycode/ig-trading-a
 
 • **position**: [_Position_](dealing_dealingapi.position.md)
 
-Defined in: [dealing/DealingAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/7c81ba3/src/dealing/DealingAPI.ts#L70)
+Defined in: [dealing/DealingAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/dealing/DealingAPI.ts#L70)
