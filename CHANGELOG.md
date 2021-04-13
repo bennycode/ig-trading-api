@@ -1,3 +1,19 @@
+#### 0.9.1 (2021-04-13)
+
+##### Documentation Changes
+
+- Updated API ([5a10645d](https://github.com/bennycode/ig-trading-api/commit/5a10645dad0e808330522b8529863209e8c89c84))
+- Updated changelog ([8f9d9941](https://github.com/bennycode/ig-trading-api/commit/8f9d99417a492324680e136554dc467ac6260fb7))
+
+##### New Features
+
+- Expose live status ([fc81cc30](https://github.com/bennycode/ig-trading-api/commit/fc81cc3005c7777964d49ff84a6aae2e95ee6354))
+- Expose base URL ([1f5c8936](https://github.com/bennycode/ig-trading-api/commit/1f5c893647a029f57ecc1dfcd659358c27c0ce6e))
+
+##### Tests
+
+- Add API client URL tests ([6685000f](https://github.com/bennycode/ig-trading-api/commit/6685000f910161873e918441b7b8817f1e12ba5d))
+
 ### 0.10.0 (2021-04-13)
 
 ##### New Features
