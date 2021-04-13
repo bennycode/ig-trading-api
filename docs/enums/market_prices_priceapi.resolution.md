@@ -30,7 +30,7 @@
 
 • **DAY**: = "DAY"
 
-Defined in: [market/prices/PriceAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L46)
+Defined in: [market/prices/PriceAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L46)
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: [market/prices/PriceAPI.ts:46](https://github.com/bennycode/ig-tradi
 
 • **HOUR**: = "HOUR"
 
-Defined in: [market/prices/PriceAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L47)
+Defined in: [market/prices/PriceAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L47)
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: [market/prices/PriceAPI.ts:47](https://github.com/bennycode/ig-tradi
 
 • **HOUR_2**: = "HOUR_2"
 
-Defined in: [market/prices/PriceAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L48)
+Defined in: [market/prices/PriceAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L48)
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: [market/prices/PriceAPI.ts:48](https://github.com/bennycode/ig-tradi
 
 • **HOUR_3**: = "HOUR_3"
 
-Defined in: [market/prices/PriceAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L49)
+Defined in: [market/prices/PriceAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L49)
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: [market/prices/PriceAPI.ts:49](https://github.com/bennycode/ig-tradi
 
 • **HOUR_4**: = "HOUR_4"
 
-Defined in: [market/prices/PriceAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L50)
+Defined in: [market/prices/PriceAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L50)
 
 ---
 
@@ -70,7 +70,7 @@ Defined in: [market/prices/PriceAPI.ts:50](https://github.com/bennycode/ig-tradi
 
 • **MINUTE**: = "MINUTE"
 
-Defined in: [market/prices/PriceAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L51)
+Defined in: [market/prices/PriceAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L51)
 
 ---
 
@@ -78,7 +78,7 @@ Defined in: [market/prices/PriceAPI.ts:51](https://github.com/bennycode/ig-tradi
 
 • **MINUTE_10**: = "MINUTE_10"
 
-Defined in: [market/prices/PriceAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L52)
+Defined in: [market/prices/PriceAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L52)
 
 ---
 
@@ -86,7 +86,7 @@ Defined in: [market/prices/PriceAPI.ts:52](https://github.com/bennycode/ig-tradi
 
 • **MINUTE_15**: = "MINUTE_15"
 
-Defined in: [market/prices/PriceAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L53)
+Defined in: [market/prices/PriceAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L53)
 
 ---
 
@@ -94,7 +94,7 @@ Defined in: [market/prices/PriceAPI.ts:53](https://github.com/bennycode/ig-tradi
 
 • **MINUTE_2**: = "MINUTE_2"
 
-Defined in: [market/prices/PriceAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L54)
+Defined in: [market/prices/PriceAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L54)
 
 ---
 
@@ -102,7 +102,7 @@ Defined in: [market/prices/PriceAPI.ts:54](https://github.com/bennycode/ig-tradi
 
 • **MINUTE_3**: = "MINUTE_3"
 
-Defined in: [market/prices/PriceAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L55)
+Defined in: [market/prices/PriceAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L55)
 
 ---
 
@@ -110,7 +110,7 @@ Defined in: [market/prices/PriceAPI.ts:55](https://github.com/bennycode/ig-tradi
 
 • **MINUTE_30**: = "MINUTE_30"
 
-Defined in: [market/prices/PriceAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L56)
+Defined in: [market/prices/PriceAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L56)
 
 ---
 
@@ -118,7 +118,7 @@ Defined in: [market/prices/PriceAPI.ts:56](https://github.com/bennycode/ig-tradi
 
 • **MINUTE_5**: = "MINUTE_5"
 
-Defined in: [market/prices/PriceAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L57)
+Defined in: [market/prices/PriceAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L57)
 
 ---
 
@@ -126,7 +126,7 @@ Defined in: [market/prices/PriceAPI.ts:57](https://github.com/bennycode/ig-tradi
 
 • **MONTH**: = "MONTH"
 
-Defined in: [market/prices/PriceAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L58)
+Defined in: [market/prices/PriceAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L58)
 
 ---
 
@@ -134,7 +134,7 @@ Defined in: [market/prices/PriceAPI.ts:58](https://github.com/bennycode/ig-tradi
 
 • **SECOND**: = "SECOND"
 
-Defined in: [market/prices/PriceAPI.ts:59](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L59)
+Defined in: [market/prices/PriceAPI.ts:59](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L59)
 
 ---
 
@@ -142,4 +142,4 @@ Defined in: [market/prices/PriceAPI.ts:59](https://github.com/bennycode/ig-tradi
 
 • **WEEK**: = "WEEK"
 
-Defined in: [market/prices/PriceAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/prices/PriceAPI.ts#L60)
+Defined in: [market/prices/PriceAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/prices/PriceAPI.ts#L60)

@@ -17,7 +17,7 @@
 
 • **activities**: [_Activity_](account_accountapi.activity.md)[]
 
-Defined in: [account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/account/AccountAPI.ts#L144)
+Defined in: [account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/account/AccountAPI.ts#L144)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-
 
 • **metadata**: [_ActivityMetadata_](account_accountapi.activitymetadata.md)
 
-Defined in: [account/AccountAPI.ts:145](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/account/AccountAPI.ts#L145)
+Defined in: [account/AccountAPI.ts:145](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/account/AccountAPI.ts#L145)

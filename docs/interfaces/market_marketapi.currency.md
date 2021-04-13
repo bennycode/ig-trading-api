@@ -20,7 +20,7 @@
 
 • **baseExchangeRate**: _number_
 
-Defined in: [market/MarketAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/MarketAPI.ts#L5)
+Defined in: [market/MarketAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/MarketAPI.ts#L5)
 
 ---
 
@@ -28,7 +28,7 @@ Defined in: [market/MarketAPI.ts:5](https://github.com/bennycode/ig-trading-api/
 
 • **code**: _string_
 
-Defined in: [market/MarketAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/MarketAPI.ts#L6)
+Defined in: [market/MarketAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/MarketAPI.ts#L6)
 
 ---
 
@@ -36,7 +36,7 @@ Defined in: [market/MarketAPI.ts:6](https://github.com/bennycode/ig-trading-api/
 
 • **exchangeRate**: _number_
 
-Defined in: [market/MarketAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/MarketAPI.ts#L7)
+Defined in: [market/MarketAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/MarketAPI.ts#L7)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [market/MarketAPI.ts:7](https://github.com/bennycode/ig-trading-api/
 
 • **isDefault**: _boolean_
 
-Defined in: [market/MarketAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/MarketAPI.ts#L8)
+Defined in: [market/MarketAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/MarketAPI.ts#L8)
 
 ---
 
@@ -52,4 +52,4 @@ Defined in: [market/MarketAPI.ts:8](https://github.com/bennycode/ig-trading-api/
 
 • **symbol**: _string_
 
-Defined in: [market/MarketAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/8f9d994/src/market/MarketAPI.ts#L9)
+Defined in: [market/MarketAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/market/MarketAPI.ts#L9)
