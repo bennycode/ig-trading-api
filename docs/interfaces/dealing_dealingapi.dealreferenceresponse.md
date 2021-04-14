@@ -16,4 +16,4 @@
 
 • **dealReference**: _string_
 
-Defined in: [dealing/DealingAPI.ts:173](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L173)
+Defined in: [dealing/DealingAPI.ts:173](https://github.com/bennycode/ig-trading-api/blob/840a401/src/dealing/DealingAPI.ts#L173)
