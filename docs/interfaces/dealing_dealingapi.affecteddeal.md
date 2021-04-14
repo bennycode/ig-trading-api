@@ -4,10 +4,6 @@
 
 [dealing/DealingAPI](../modules/dealing_dealingapi.md).AffectedDeal
 
-## Hierarchy
-
-- **AffectedDeal**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **dealId**: _string_
 
-Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L177)
+Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L177)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-
 
 • **status**: [_AffectedDealStatus_](../enums/dealing_dealingapi.affecteddealstatus.md)
 
-Defined in: [dealing/DealingAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L178)
+Defined in: [dealing/DealingAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L178)

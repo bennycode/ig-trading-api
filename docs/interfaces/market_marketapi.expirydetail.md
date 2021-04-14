@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).ExpiryDetail
 
-## Hierarchy
-
-- **ExpiryDetail**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **lastDealingDate**: _string_
 
-Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L30)
+Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L30)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api
 
 • **settlementInfo**: _string_
 
-Defined in: [market/MarketAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L31)
+Defined in: [market/MarketAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L31)

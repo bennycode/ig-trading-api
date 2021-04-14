@@ -4,10 +4,6 @@
 
 [account/AccountAPI](../modules/account_accountapi.md).TransactionHistoryResponse
 
-## Hierarchy
-
-- **TransactionHistoryResponse**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **metadata**: [_TransactionMetadata_](account_accountapi.transactionmetadata.md)
 
-Defined in: [account/AccountAPI.ts:185](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L185)
+Defined in: [account/AccountAPI.ts:185](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L185)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [account/AccountAPI.ts:185](https://github.com/bennycode/ig-trading-
 
 • **transactions**: [_Transaction_](account_accountapi.transaction.md)[]
 
-Defined in: [account/AccountAPI.ts:186](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L186)
+Defined in: [account/AccountAPI.ts:186](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L186)

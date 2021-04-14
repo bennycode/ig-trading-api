@@ -4,10 +4,6 @@
 
 [account/AccountAPI](../modules/account_accountapi.md).AccountAPI
 
-## Hierarchy
-
-- **AccountAPI**
-
 ## Table of contents
 
 ### Constructors
@@ -33,28 +29,28 @@
 #### Parameters:
 
 | Name        | Type          |
-| ----------- | ------------- |
+| :---------- | :------------ |
 | `apiClient` | AxiosInstance |
 
 **Returns:** [_AccountAPI_](account_accountapi.accountapi.md)
 
-Defined in: [account/AccountAPI.ts:194](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L194)
+Defined in: [account/AccountAPI.ts:194](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L194)
 
 ## Properties
 
 ### URL
 
-▪ `Readonly` `Static` **URL**: { `ACCOUNTS`: _string_ = '/accounts/'; `HISTORY_ACTIVITY`: _string_ = '/history/activity/'; `HISTORY_TRANSACTIONS`: _string_ = '/history/transactions' }
+▪ `Static` `Readonly` **URL**: _object_
 
 #### Type declaration:
 
 | Name                   | Type     |
-| ---------------------- | -------- |
+| :--------------------- | :------- |
 | `ACCOUNTS`             | _string_ |
 | `HISTORY_ACTIVITY`     | _string_ |
 | `HISTORY_TRANSACTIONS` | _string_ |
 
-Defined in: [account/AccountAPI.ts:190](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L190)
+Defined in: [account/AccountAPI.ts:190](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L190)
 
 ## Methods
 
@@ -68,7 +64,7 @@ Returns a list of accounts belonging to the logged-in client.
 
 **Returns:** _Promise_<[_AccountsResponse_](../interfaces/account_accountapi.accountsresponse.md)\>
 
-Defined in: [account/AccountAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L203)
+Defined in: [account/AccountAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L203)
 
 ---
 
@@ -83,12 +79,12 @@ Returns the account activity history.
 #### Parameters:
 
 | Name                     | Type                                                                                   |
-| ------------------------ | -------------------------------------------------------------------------------------- |
+| :----------------------- | :------------------------------------------------------------------------------------- |
 | `activityHistoryRequest` | [_ActivityHistoryRequest_](../interfaces/account_accountapi.activityhistoryrequest.md) |
 
 **Returns:** _Promise_<[_ActivityHistoryResponse_](../interfaces/account_accountapi.activityhistoryresponse.md)\>
 
-Defined in: [account/AccountAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L215)
+Defined in: [account/AccountAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L215)
 
 ---
 
@@ -103,9 +99,9 @@ Returns the account transaction history.
 #### Parameters:
 
 | Name | Type |
-| --- | --- |
+| :-- | :-- |
 | `transactionHistoryRequest` | [_TransactionHistoryRequest_](../interfaces/account_accountapi.transactionhistoryrequest.md) |
 
 **Returns:** _Promise_<[_TransactionHistoryResponse_](../interfaces/account_accountapi.transactionhistoryresponse.md)\>
 
-Defined in: [account/AccountAPI.ts:232](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L232)
+Defined in: [account/AccountAPI.ts:232](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L232)

@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).SlippageFactor
 
-## Hierarchy
-
-- **SlippageFactor**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **unit**: _string_
 
-Defined in: [market/MarketAPI.ts:20](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L20)
+Defined in: [market/MarketAPI.ts:20](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L20)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [market/MarketAPI.ts:20](https://github.com/bennycode/ig-trading-api
 
 • **value**: _number_
 
-Defined in: [market/MarketAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L21)
+Defined in: [market/MarketAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L21)

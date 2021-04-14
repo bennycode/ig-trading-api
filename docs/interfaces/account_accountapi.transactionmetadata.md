@@ -4,10 +4,6 @@
 
 [account/AccountAPI](../modules/account_accountapi.md).TransactionMetadata
 
-## Hierarchy
-
-- **TransactionMetadata**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **pageData**: [_TransactionPaging_](account_accountapi.transactionpaging.md)
 
-Defined in: [account/AccountAPI.ts:171](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L171)
+Defined in: [account/AccountAPI.ts:171](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L171)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [account/AccountAPI.ts:171](https://github.com/bennycode/ig-trading-
 
 • **size**: _number_
 
-Defined in: [account/AccountAPI.ts:172](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L172)
+Defined in: [account/AccountAPI.ts:172](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L172)

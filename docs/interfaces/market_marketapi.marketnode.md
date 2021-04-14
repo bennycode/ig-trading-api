@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).MarketNode
 
-## Hierarchy
-
-- **MarketNode**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **id**: _string_
 
-Defined in: [market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L182)
+Defined in: [market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L182)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-ap
 
 • **name**: _string_
 
-Defined in: [market/MarketAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L183)
+Defined in: [market/MarketAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L183)

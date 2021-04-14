@@ -4,10 +4,6 @@
 
 [account/AccountAPI](../modules/account_accountapi.md).Transaction
 
-## Hierarchy
-
-- **Transaction**
-
 ## Table of contents
 
 ### Properties
@@ -32,7 +28,7 @@
 
 • **cashTransaction**: _boolean_
 
-Defined in: [account/AccountAPI.ts:149](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L149)
+Defined in: [account/AccountAPI.ts:149](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L149)
 
 ---
 
@@ -40,7 +36,7 @@ Defined in: [account/AccountAPI.ts:149](https://github.com/bennycode/ig-trading-
 
 • **closeLevel**: _string_
 
-Defined in: [account/AccountAPI.ts:150](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L150)
+Defined in: [account/AccountAPI.ts:150](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L150)
 
 ---
 
@@ -48,7 +44,7 @@ Defined in: [account/AccountAPI.ts:150](https://github.com/bennycode/ig-trading-
 
 • **currency**: _string_
 
-Defined in: [account/AccountAPI.ts:151](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L151)
+Defined in: [account/AccountAPI.ts:151](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L151)
 
 ---
 
@@ -56,7 +52,7 @@ Defined in: [account/AccountAPI.ts:151](https://github.com/bennycode/ig-trading-
 
 • **date**: _string_
 
-Defined in: [account/AccountAPI.ts:152](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L152)
+Defined in: [account/AccountAPI.ts:152](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L152)
 
 ---
 
@@ -64,7 +60,7 @@ Defined in: [account/AccountAPI.ts:152](https://github.com/bennycode/ig-trading-
 
 • **dateUtc**: Date
 
-Defined in: [account/AccountAPI.ts:153](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L153)
+Defined in: [account/AccountAPI.ts:153](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L153)
 
 ---
 
@@ -72,7 +68,7 @@ Defined in: [account/AccountAPI.ts:153](https://github.com/bennycode/ig-trading-
 
 • **instrumentName**: _string_
 
-Defined in: [account/AccountAPI.ts:154](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L154)
+Defined in: [account/AccountAPI.ts:154](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L154)
 
 ---
 
@@ -80,7 +76,7 @@ Defined in: [account/AccountAPI.ts:154](https://github.com/bennycode/ig-trading-
 
 • **openDateUtc**: Date
 
-Defined in: [account/AccountAPI.ts:155](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L155)
+Defined in: [account/AccountAPI.ts:155](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L155)
 
 ---
 
@@ -88,7 +84,7 @@ Defined in: [account/AccountAPI.ts:155](https://github.com/bennycode/ig-trading-
 
 • **openLevel**: _string_
 
-Defined in: [account/AccountAPI.ts:156](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L156)
+Defined in: [account/AccountAPI.ts:156](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L156)
 
 ---
 
@@ -96,7 +92,7 @@ Defined in: [account/AccountAPI.ts:156](https://github.com/bennycode/ig-trading-
 
 • **period**: _string_
 
-Defined in: [account/AccountAPI.ts:157](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L157)
+Defined in: [account/AccountAPI.ts:157](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L157)
 
 ---
 
@@ -104,7 +100,7 @@ Defined in: [account/AccountAPI.ts:157](https://github.com/bennycode/ig-trading-
 
 • **profitAndLoss**: _string_
 
-Defined in: [account/AccountAPI.ts:158](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L158)
+Defined in: [account/AccountAPI.ts:158](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L158)
 
 ---
 
@@ -112,7 +108,7 @@ Defined in: [account/AccountAPI.ts:158](https://github.com/bennycode/ig-trading-
 
 • **reference**: _string_
 
-Defined in: [account/AccountAPI.ts:159](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L159)
+Defined in: [account/AccountAPI.ts:159](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L159)
 
 ---
 
@@ -120,7 +116,7 @@ Defined in: [account/AccountAPI.ts:159](https://github.com/bennycode/ig-trading-
 
 • **size**: _string_
 
-Defined in: [account/AccountAPI.ts:160](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L160)
+Defined in: [account/AccountAPI.ts:160](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L160)
 
 ---
 
@@ -128,4 +124,4 @@ Defined in: [account/AccountAPI.ts:160](https://github.com/bennycode/ig-trading-
 
 • **transactionType**: _string_
 
-Defined in: [account/AccountAPI.ts:161](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L161)
+Defined in: [account/AccountAPI.ts:161](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L161)

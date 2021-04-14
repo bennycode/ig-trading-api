@@ -18,7 +18,7 @@
 
 • **ACCEPTED**: = "ACCEPTED"
 
-Defined in: [account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L54)
+Defined in: [account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L54)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-a
 
 • **REJECTED**: = "REJECTED"
 
-Defined in: [account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L55)
+Defined in: [account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L55)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-a
 
 • **UNKNOWN**: = "UNKNOWN"
 
-Defined in: [account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/account/AccountAPI.ts#L56)
+Defined in: [account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/account/AccountAPI.ts#L56)

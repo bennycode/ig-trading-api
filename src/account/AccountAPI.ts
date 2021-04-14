@@ -1,5 +1,5 @@
 import {AxiosInstance} from 'axios';
-import {Direction} from 'readline';
+import {Direction} from '../dealing/DealingAPI';
 
 export enum AccountStatus {
   DISABLED = 'DISABLED',

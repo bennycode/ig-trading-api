@@ -4,10 +4,6 @@
 
 [market/MarketAPI](../modules/market_marketapi.md).LimitedRiskPremium
 
-## Hierarchy
-
-- **LimitedRiskPremium**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • **unit**: _string_
 
-Defined in: [market/MarketAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L25)
+Defined in: [market/MarketAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L25)
 
 ---
 
@@ -29,4 +25,4 @@ Defined in: [market/MarketAPI.ts:25](https://github.com/bennycode/ig-trading-api
 
 • **value**: _number_
 
-Defined in: [market/MarketAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/market/MarketAPI.ts#L26)
+Defined in: [market/MarketAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L26)

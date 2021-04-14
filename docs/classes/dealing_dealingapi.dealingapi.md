@@ -4,10 +4,6 @@
 
 [dealing/DealingAPI](../modules/dealing_dealingapi.md).DealingAPI
 
-## Hierarchy
-
-- **DealingAPI**
-
 ## Table of contents
 
 ### Constructors
@@ -40,30 +36,30 @@
 #### Parameters:
 
 | Name        | Type          |
-| ----------- | ------------- |
+| :---------- | :------------ |
 | `apiClient` | AxiosInstance |
 
 **Returns:** [_DealingAPI_](dealing_dealingapi.dealingapi.md)
 
-Defined in: [dealing/DealingAPI.ts:211](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L211)
+Defined in: [dealing/DealingAPI.ts:211](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L211)
 
 ## Properties
 
 ### URL
 
-▪ `Readonly` `Static` **URL**: { `CONFIRMS`: _string_ = '/confirms/'; `POSITIONS`: _string_ = '/positions/'; `POSITIONS_OTC`: _string_ = '/positions/otc/'; `WORKINGORDERS`: _string_ = '/workingorders/'; `WORKINGORDERS_OTC`: _string_ = '/workingorders/otc/' }
+▪ `Static` `Readonly` **URL**: _object_
 
 #### Type declaration:
 
 | Name                | Type     |
-| ------------------- | -------- |
+| :------------------ | :------- |
 | `CONFIRMS`          | _string_ |
 | `POSITIONS`         | _string_ |
 | `POSITIONS_OTC`     | _string_ |
 | `WORKINGORDERS`     | _string_ |
 | `WORKINGORDERS_OTC` | _string_ |
 
-Defined in: [dealing/DealingAPI.ts:205](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L205)
+Defined in: [dealing/DealingAPI.ts:205](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L205)
 
 ## Methods
 
@@ -78,12 +74,12 @@ Closes an OTC position.
 #### Parameters:
 
 | Name                   | Type                                                                               |
-| ---------------------- | ---------------------------------------------------------------------------------- |
+| :--------------------- | :--------------------------------------------------------------------------------- |
 | `closePositionRequest` | [_PositionCloseRequest_](../interfaces/dealing_dealingapi.positioncloserequest.md) |
 
 **Returns:** _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:255](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L255)
+Defined in: [dealing/DealingAPI.ts:267](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L267)
 
 ---
 
@@ -98,12 +94,12 @@ Returns a deal confirmation for the given deal reference.
 #### Parameters:
 
 | Name | Type | Description |
-| --- | --- | --- |
+| :-- | :-- | :-- |
 | `dealReference` | [_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md) | The dealReference of the deal to be retrieved |
 
 **Returns:** _Promise_<[_DealConfirmation_](../interfaces/dealing_dealingapi.dealconfirmation.md)\>
 
-Defined in: [dealing/DealingAPI.ts:283](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L283)
+Defined in: [dealing/DealingAPI.ts:299](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L299)
 
 ---
 
@@ -118,12 +114,12 @@ Creates an OTC working order.
 #### Parameters:
 
 | Name                 | Type                                                                           |
-| -------------------- | ------------------------------------------------------------------------------ |
+| :------------------- | :----------------------------------------------------------------------------- |
 | `createOrderRequest` | [_OrderCreateRequest_](../interfaces/dealing_dealingapi.ordercreaterequest.md) |
 
 **Returns:** _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:306](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L306)
+Defined in: [dealing/DealingAPI.ts:326](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L326)
 
 ---
 
@@ -138,12 +134,12 @@ Creates an OTC position.
 #### Parameters:
 
 | Name                    | Type                                                                                 |
-| ----------------------- | ------------------------------------------------------------------------------------ |
+| :---------------------- | :----------------------------------------------------------------------------------- |
 | `createPositionRequest` | [_PositionCreateRequest_](../interfaces/dealing_dealingapi.positioncreaterequest.md) |
 
 **Returns:** _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:243](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L243)
+Defined in: [dealing/DealingAPI.ts:251](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L251)
 
 ---
 
@@ -158,12 +154,12 @@ Deletes an OTC working order.
 #### Parameters:
 
 | Name     | Type   |
-| -------- | ------ |
+| :------- | :----- |
 | `dealId` | String |
 
 **Returns:** _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:322](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L322)
+Defined in: [dealing/DealingAPI.ts:342](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L342)
 
 ---
 
@@ -177,7 +173,7 @@ Returns all open positions for the active account.
 
 **Returns:** _Promise_<[_PositionListResponse_](../interfaces/dealing_dealingapi.positionlistresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:220](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L220)
+Defined in: [dealing/DealingAPI.ts:220](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L220)
 
 ---
 
@@ -191,7 +187,7 @@ Returns all open working orders for the active account.
 
 **Returns:** _Promise_<[_OrderListResponse_](../interfaces/dealing_dealingapi.orderlistresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:294](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L294)
+Defined in: [dealing/DealingAPI.ts:310](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L310)
 
 ---
 
@@ -206,12 +202,12 @@ Returns an open position for the active account by deal identifier.
 #### Parameters:
 
 | Name     | Type   |
-| -------- | ------ |
+| :------- | :----- |
 | `dealId` | String |
 
 **Returns:** _Promise_<[_Position_](../interfaces/dealing_dealingapi.position.md)\>
 
-Defined in: [dealing/DealingAPI.ts:231](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L231)
+Defined in: [dealing/DealingAPI.ts:235](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L235)
 
 ---
 
@@ -226,13 +222,13 @@ Updates an OTC working order.
 #### Parameters:
 
 | Name           | Type                                                                           |
-| -------------- | ------------------------------------------------------------------------------ |
+| :------------- | :----------------------------------------------------------------------------- |
 | `dealId`       | String                                                                         |
 | `orderRequest` | [_OrderUpdateRequest_](../interfaces/dealing_dealingapi.orderupdaterequest.md) |
 
 **Returns:** _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:343](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L343)
+Defined in: [dealing/DealingAPI.ts:364](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L364)
 
 ---
 
@@ -240,17 +236,17 @@ Defined in: [dealing/DealingAPI.ts:343](https://github.com/bennycode/ig-trading-
 
 ▸ **updatePosition**(`dealId`: String, `updatePositionRequest`: [_PositionUpdateRequest_](../interfaces/dealing_dealingapi.positionupdaterequest.md)): _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Closes an OTC position.
+Updates an OTC position.
 
 **`see`** https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
 
 #### Parameters:
 
 | Name                    | Type                                                                                 |
-| ----------------------- | ------------------------------------------------------------------------------------ |
+| :---------------------- | :----------------------------------------------------------------------------------- |
 | `dealId`                | String                                                                               |
 | `updatePositionRequest` | [_PositionUpdateRequest_](../interfaces/dealing_dealingapi.positionupdaterequest.md) |
 
 **Returns:** _Promise_<[_DealReferenceResponse_](../interfaces/dealing_dealingapi.dealreferenceresponse.md)\>
 
-Defined in: [dealing/DealingAPI.ts:271](https://github.com/bennycode/ig-trading-api/blob/1448b27/src/dealing/DealingAPI.ts#L271)
+Defined in: [dealing/DealingAPI.ts:283](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L283)

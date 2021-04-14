@@ -3,6 +3,7 @@ import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
 import {DealingAPI} from '../dealing';
 import {AccountAPI} from '../account';
+import axiosRetry, {isNetworkOrIdempotentRequestError} from 'axios-retry';
 
 export interface Authorization {
   accessToken?: string;
@@ -40,6 +41,32 @@ export class RESTClient {
       timeout: 5000,
     });
 
+    function randomNum(min: number, max: number): number {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    axiosRetry(this.httpClient, {
+      retries: Infinity,
+      retryCondition: (error: AxiosError) => {
+        const gotRateLimited = error.response?.data?.errorCode === 'error.public-api.exceeded-api-key-allowance';
+        const expiredSecurityToken = error.response?.data?.errorCode === 'error.security.oauth-token-invalid';
+        const missingToken = error.response?.data?.errorCode === 'error.security.client-token-missing';
+
+        if (gotRateLimited) {
+          return true;
+        } else if (expiredSecurityToken || missingToken) {
+          void this.login.refreshToken();
+          return true;
+        }
+
+        return isNetworkOrIdempotentRequestError(error);
+      },
+      retryDelay: (retryCount: number) => {
+        /** Rate limits: https://labs.ig.com/faq */
+        return randomNum(1000, 3000) * retryCount;
+      },
+    });
+
     this.httpClient.interceptors.request.use(async config => {
       const updatedHeaders = {
         ...config.headers,
@@ -59,23 +86,6 @@ export class RESTClient {
 
       return config;
     });
-
-    this.httpClient.interceptors.response.use(
-      response => {
-        return response;
-      },
-      (error: AxiosError) => {
-        if (error.response!.status == 401 && error.response!.data.errorCode == 'error.security.oauth-token-invalid') {
-          const config = error.config;
-          return this.login.refreshToken().then(_ => {
-            const {accessToken} = this.auth;
-            config.headers.Authorization = 'Bearer ' + accessToken;
-            return axios(config);
-          });
-        }
-        return Promise.reject(error.config);
-      }
-    );
 
     this.login = new LoginAPI(this.httpClient, this.auth);
     this.market = new MarketAPI(this.httpClient);
