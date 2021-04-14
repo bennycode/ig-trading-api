@@ -1,3 +1,9 @@
+#### 0.10.1 (2021-04-14)
+
+##### Bug Fixes
+
+- **client:** Remove request timeouts ([b4f3e60e](https://github.com/bennycode/ig-trading-api/commit/b4f3e60e1ad62b119f7a7b18b430ed871727e52c))
+
 ### 0.10.0 (2021-04-14)
 
 ##### Chores
