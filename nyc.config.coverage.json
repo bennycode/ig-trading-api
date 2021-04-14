@@ -4,7 +4,7 @@
   "check-coverage": true,
   "exclude": ["**/*.d.ts", "**/*.test*.ts", "**/index.ts", "**/demo/**/*"],
   "extension": [".ts"],
-  "functions": 100,
+  "functions": 90,
   "include": ["src/**/*.ts"],
   "lines": 90,
   "per-file": false,

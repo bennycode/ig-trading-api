@@ -3,7 +3,7 @@ import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
 import {DealingAPI} from '../dealing';
 import {AccountAPI} from '../account';
-import axiosRetry, {isNetworkOrIdempotentRequestError} from 'axios-retry';
+import axiosRetry from 'axios-retry';
 
 export interface Authorization {
   accessToken?: string;
@@ -38,7 +38,6 @@ export class RESTClient {
   constructor(baseURL: string, private readonly apiKey: string) {
     this.httpClient = axios.create({
       baseURL: baseURL,
-      timeout: 5000,
     });
 
     function randomNum(min: number, max: number): number {
@@ -59,7 +58,7 @@ export class RESTClient {
           return true;
         }
 
-        return isNetworkOrIdempotentRequestError(error);
+        return true;
       },
       retryDelay: (retryCount: number) => {
         /** Rate limits: https://labs.ig.com/faq */
