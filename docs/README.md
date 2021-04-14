@@ -59,6 +59,8 @@ console.info(`Your client ID is "${session.clientId}".`);
 - [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
 - [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
 - [IG Streaming Companion](https://labs.ig.com/sample-apps/streaming-companion/index.html)
+- [IG REST Trading API Limits](https://labs.ig.com/faq)
+- [Spreads, commissions and margins](https://www.ig.com/en/cfd-trading/charges-and-margins) ([in Germany](https://www.ig.com/de/hilfe-und-support/cfds/kosten-und-gebuehren/wie-lauten-die-produktinformationen-fuer-aktien-cfds#information-banner-dismiss))
 
 ### IG instrument identifier (epic)
 

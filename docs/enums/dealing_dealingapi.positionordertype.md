@@ -18,7 +18,7 @@
 
 • **LIMIT**: = "LIMIT"
 
-Defined in: [dealing/DealingAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/dealing/DealingAPI.ts#L10)
+Defined in: [dealing/DealingAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L10)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [dealing/DealingAPI.ts:10](https://github.com/bennycode/ig-trading-a
 
 • **MARKET**: = "MARKET"
 
-Defined in: [dealing/DealingAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/dealing/DealingAPI.ts#L11)
+Defined in: [dealing/DealingAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L11)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [dealing/DealingAPI.ts:11](https://github.com/bennycode/ig-trading-a
 
 • **QUOTE**: = "QUOTE"
 
-Defined in: [dealing/DealingAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/eb2ba64/src/dealing/DealingAPI.ts#L12)
+Defined in: [dealing/DealingAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/dealing/DealingAPI.ts#L12)
