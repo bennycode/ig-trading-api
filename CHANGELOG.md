@@ -1,3 +1,17 @@
+### 0.10.0 (2021-04-14)
+
+##### Chores
+
+- Update docsify ([681aec93](https://github.com/bennycode/ig-trading-api/commit/681aec93e4ba7b932a3161ba9eafd74c69448b8d))
+
+##### Documentation Changes
+
+- Add links to limits & commissions ([2dd175d5](https://github.com/bennycode/ig-trading-api/commit/2dd175d5b22a2e64cf87799c513ce6920b1a3d8c))
+
+##### New Features
+
+- Add rate-limiting ([#139](https://github.com/bennycode/ig-trading-api/pull/139)) ([7347e3a9](https://github.com/bennycode/ig-trading-api/commit/7347e3a96de327f880743195cbc3de0780421a88))
+
 #### 0.9.1 (2021-04-13)
 
 ##### Documentation Changes
