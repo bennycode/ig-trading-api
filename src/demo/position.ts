@@ -1,4 +1,4 @@
-import {initDemoClient} from './initDemoClient';
+import {initClient} from './initClient';
 import {
   Direction,
   PositionCloseRequest,
@@ -8,7 +8,7 @@ import {
 } from '../dealing';
 
 async function main(): Promise<void> {
-  const client = await initDemoClient();
+  const client = await initClient();
 
   const firstGetAllPositionsSession = await client.rest.dealing.getAllOpenPositions();
   firstGetAllPositionsSession.positions.forEach(position => {

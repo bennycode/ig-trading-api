@@ -60,7 +60,7 @@ console.info(`Your client ID is "${session.clientId}".`);
 - [IG REST Trading API Limits](https://labs.ig.com/faq)
 - [Spreads, commissions and margins](https://www.ig.com/en/cfd-trading/charges-and-margins) ([in Germany](https://www.ig.com/de/hilfe-und-support/cfds/kosten-und-gebuehren/wie-lauten-die-produktinformationen-fuer-aktien-cfds#information-banner-dismiss))
 
-### IG instrument identifier (epic)
+### IG Instrument Identifier (Epic)
 
 Breakdown for "IX.D.DOW.DAILY.IP":
 
@@ -71,6 +71,13 @@ Breakdown for "IX.D.DOW.DAILY.IP":
 | DOW    | Underlying market               | "Dow Jones"                                                        |
 | DAILY  | Indicator for processing method | "Daily" funded bet                                                 |
 | IP     | Asset type                      | "Intellectual Property"                                            |
+
+Epics for testing:
+
+| Epic                | Name      | Environment | Exchange    |
+| ------------------- | --------- | ----------- | ----------- |
+| UC.D.MSFT.CASH.IP   | Microsoft | Live / Demo | Nasdaq (US) |
+| UA.D.COINUS.CASH.IP | Coinbase  | Live        | Nasdaq (US) |
 
 ## Development Setup
 
