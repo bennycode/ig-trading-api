@@ -72,10 +72,13 @@ export class RESTClient {
         'X-IG-API-KEY': this.apiKey,
       };
 
-      const {accessToken, accountId} = this.auth;
+      const {accessToken, accountId, securityToken, clientSessionToken} = this.auth;
 
       if (accessToken) {
         updatedHeaders.Authorization = 'Bearer ' + accessToken;
+      } else if (securityToken && clientSessionToken) {
+        updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
+        updatedHeaders.CST = clientSessionToken;
       }
       if (accountId) {
         updatedHeaders['IG-ACCOUNT-ID'] = accountId;
