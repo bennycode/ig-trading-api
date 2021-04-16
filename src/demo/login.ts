@@ -1,7 +1,7 @@
-import {initDemoClient} from './initDemoClient';
+import {initClient} from './initClient';
 
 async function main(): Promise<void> {
-  await initDemoClient();
+  await initClient();
 }
 
 main().catch(console.error);
