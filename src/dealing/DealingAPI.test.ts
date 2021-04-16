@@ -398,7 +398,7 @@ describe('DealingAPI', () => {
   });
 
   describe('failedDelete', () => {
-    it('fails to delete an order', async () => {
+    xit('fails to delete an order', async () => {
       const dealId = '12345';
 
       nock(APIClient.URL_DEMO)

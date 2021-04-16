@@ -43,6 +43,9 @@ export class LoginAPI {
         password,
       },
       {
+        'axios-retry': {
+          retries: 0,
+        },
         headers: {
           Version: '3',
         },
@@ -90,7 +93,11 @@ export class LoginAPI {
    */
   async logout(): Promise<void> {
     const resource = LoginAPI.URL.SESSION;
-    return this.apiClient.delete(resource);
+    return this.apiClient.delete(resource, {
+      'axios-retry': {
+        retries: 0,
+      },
+    });
   }
 
   /**

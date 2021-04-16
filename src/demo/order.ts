@@ -1,8 +1,8 @@
-import {initDemoClient} from './initDemoClient';
+import {initClient} from './initClient';
 import {OrderUpdateRequest, OrderCreateRequest, Direction, OrderTimeInForce, OrderType} from '../dealing';
 
 async function main(): Promise<void> {
-  const client = await initDemoClient();
+  const client = await initClient();
 
   const firstGetAllOrdersSession = await client.rest.dealing.getAllOrders();
   firstGetAllOrdersSession.workingOrders.forEach(order => {

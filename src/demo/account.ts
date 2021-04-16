@@ -1,8 +1,8 @@
-import {initDemoClient} from './initDemoClient';
+import {initClient} from './initClient';
 import {ActivityHistoryRequest, TransactionHistoryRequest} from '../account/AccountAPI';
 
 async function main(): Promise<void> {
-  const client = await initDemoClient();
+  const client = await initClient();
 
   const accountsSession = await client.rest.account.getAccounts();
   console.info(accountsSession.accounts[0].accountId);

@@ -28,7 +28,7 @@
 
 • **bid**: _number_
 
-Defined in: [market/MarketAPI.ts:148](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L148)
+Defined in: [market/MarketAPI.ts:148](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L148)
 
 ---
 
@@ -36,7 +36,7 @@ Defined in: [market/MarketAPI.ts:148](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **binaryOdds**: _number_
 
-Defined in: [market/MarketAPI.ts:149](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L149)
+Defined in: [market/MarketAPI.ts:149](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L149)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [market/MarketAPI.ts:149](https://github.com/bennycode/ig-trading-ap
 
 • **controlledRiskExtraSpread**: _number_
 
-Defined in: [market/MarketAPI.ts:150](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L150)
+Defined in: [market/MarketAPI.ts:150](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L150)
 
 ---
 
@@ -52,7 +52,7 @@ Defined in: [market/MarketAPI.ts:150](https://github.com/bennycode/ig-trading-ap
 
 • **decimalPlacesFactor**: _number_
 
-Defined in: [market/MarketAPI.ts:151](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L151)
+Defined in: [market/MarketAPI.ts:151](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L151)
 
 ---
 
@@ -60,7 +60,7 @@ Defined in: [market/MarketAPI.ts:151](https://github.com/bennycode/ig-trading-ap
 
 • **delayTime**: _number_
 
-Defined in: [market/MarketAPI.ts:152](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L152)
+Defined in: [market/MarketAPI.ts:152](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L152)
 
 ---
 
@@ -68,7 +68,7 @@ Defined in: [market/MarketAPI.ts:152](https://github.com/bennycode/ig-trading-ap
 
 • **high**: _number_
 
-Defined in: [market/MarketAPI.ts:153](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L153)
+Defined in: [market/MarketAPI.ts:153](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L153)
 
 ---
 
@@ -76,7 +76,7 @@ Defined in: [market/MarketAPI.ts:153](https://github.com/bennycode/ig-trading-ap
 
 • **low**: _number_
 
-Defined in: [market/MarketAPI.ts:154](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L154)
+Defined in: [market/MarketAPI.ts:154](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L154)
 
 ---
 
@@ -84,7 +84,7 @@ Defined in: [market/MarketAPI.ts:154](https://github.com/bennycode/ig-trading-ap
 
 • **marketStatus**: [_MarketStatus_](../enums/market_marketapi.marketstatus.md)
 
-Defined in: [market/MarketAPI.ts:155](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L155)
+Defined in: [market/MarketAPI.ts:155](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L155)
 
 ---
 
@@ -92,7 +92,7 @@ Defined in: [market/MarketAPI.ts:155](https://github.com/bennycode/ig-trading-ap
 
 • **netChange**: _number_
 
-Defined in: [market/MarketAPI.ts:156](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L156)
+Defined in: [market/MarketAPI.ts:156](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L156)
 
 ---
 
@@ -100,7 +100,7 @@ Defined in: [market/MarketAPI.ts:156](https://github.com/bennycode/ig-trading-ap
 
 • **offer**: _number_
 
-Defined in: [market/MarketAPI.ts:157](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L157)
+Defined in: [market/MarketAPI.ts:157](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L157)
 
 ---
 
@@ -108,7 +108,7 @@ Defined in: [market/MarketAPI.ts:157](https://github.com/bennycode/ig-trading-ap
 
 • **percentageChange**: _number_
 
-Defined in: [market/MarketAPI.ts:158](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L158)
+Defined in: [market/MarketAPI.ts:158](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L158)
 
 ---
 
@@ -116,7 +116,7 @@ Defined in: [market/MarketAPI.ts:158](https://github.com/bennycode/ig-trading-ap
 
 • **scalingFactor**: _number_
 
-Defined in: [market/MarketAPI.ts:159](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L159)
+Defined in: [market/MarketAPI.ts:159](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L159)
 
 ---
 
@@ -124,4 +124,4 @@ Defined in: [market/MarketAPI.ts:159](https://github.com/bennycode/ig-trading-ap
 
 • **updateTime**: _string_
 
-Defined in: [market/MarketAPI.ts:160](https://github.com/bennycode/ig-trading-api/blob/e858a27/src/market/MarketAPI.ts#L160)
+Defined in: [market/MarketAPI.ts:160](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L160)
