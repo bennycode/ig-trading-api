@@ -75,6 +75,19 @@ export class LoginAPI {
     return true;
   }
 
+  /**
+   * Creates a session with defined values
+   */
+  setupSessionWithToken(securityToken: string, cst: string, accountId: string, lightstreamerEndpoint: string): void {
+    this.auth.securityToken = securityToken;
+    this.auth.clientSessionToken = cst;
+    this.auth.accountId = accountId;
+    this.auth.lightstreamerEndpoint = lightstreamerEndpoint;
+  }
+
+  /**
+   * Creates a session with the mobile api (WARNING: demo is not supported)
+   */
   async createMobileSession(username: string, password: string): Promise<TradingSession> {
     delete this.auth.accessToken;
 
