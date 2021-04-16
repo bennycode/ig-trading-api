@@ -74,10 +74,11 @@ Breakdown for "IX.D.DOW.DAILY.IP":
 
 Epics for testing:
 
-| Epic                | Name      | Environment | Exchange    |
-| ------------------- | --------- | ----------- | ----------- |
-| UC.D.MSFT.CASH.IP   | Microsoft | Live / Demo | Nasdaq (US) |
-| UA.D.COINUS.CASH.IP | Coinbase  | Live        | Nasdaq (US) |
+| Epic                | Name                | Environment | Trading Time           |
+| ------------------- | ------------------- | ----------- | ---------------------- |
+| ED.D.DHERGY.CASH.IP | Delivery Hero SE    | Live / Demo | Germany: 09:00 - 17:30 |
+| UC.D.MSFT.CASH.IP   | Microsoft Corp      | Live / Demo | Germany: 10:00 - 03:00 |
+| UA.D.COINUS.CASH.IP | Coinbase Global Inc | Live        | Germany: 15:30 - 22:00 |
 
 ## Development Setup
 
