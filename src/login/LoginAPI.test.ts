@@ -1,7 +1,7 @@
 import nock from 'nock';
 import {APIClient} from '../APIClient';
 import {DealingAPI} from '../dealing/DealingAPI';
-import {LoginAPI} from './LoginAPI';
+import {LoginAPI, TradingSession} from './LoginAPI';
 
 describe('LoginAPI', () => {
   describe('createSession', () => {
@@ -75,7 +75,7 @@ describe('LoginAPI', () => {
 
   describe('setupSessionWithToken', () => {
     it('setup a session with predefined values', async () => {
-      global.client.rest.login.setupSessionWithToken('1234', '4321', '1111', '4444');
+      global.client.rest.login.createSessionFromToken('1234', '4321', '1111', '4444');
       expect(global.client.rest.auth.securityToken).toBe('1234');
       expect(global.client.rest.auth.clientSessionToken).toBe('4321');
       expect(global.client.rest.auth.accountId).toBe('1111');
@@ -99,7 +99,7 @@ describe('LoginAPI', () => {
           }
         );
 
-      const session = await global.client.rest.login.createMobileSession('username', 'password');
+      const session = await global.client.rest.login.createSessionFromMobileLogin('username', 'password');
       expect(session.accountId).toBe('XYZ123');
       expect(global.client.rest.auth.securityToken).toBe('securityToken');
     });
@@ -190,6 +190,26 @@ describe('LoginAPI', () => {
       nock(APIClient.URL_DEMO).delete(LoginAPI.URL.SESSION).reply(200);
 
       await global.client.rest.login.logout();
+    });
+  });
+
+  describe('login', () => {
+    it('selects the mobile login when using a live account', async () => {
+      const apiClient = new APIClient(APIClient.URL_LIVE, '123');
+      const mobileLogin = spyOn<LoginAPI>(apiClient.rest.login, 'createSessionFromMobileLogin').and.callFake(() =>
+        Promise.resolve({} as TradingSession)
+      );
+      await apiClient.rest.login.login('username', 'password');
+      expect(mobileLogin).toHaveBeenCalledTimes(1);
+    });
+
+    it('selects the standard login when using a demo account', async () => {
+      const apiClient = new APIClient(APIClient.URL_DEMO, '123');
+      const standardLogin = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.callFake(() =>
+        Promise.resolve({} as TradingSession)
+      );
+      await apiClient.rest.login.login('username', 'password');
+      expect(standardLogin).toHaveBeenCalledTimes(1);
     });
   });
 });

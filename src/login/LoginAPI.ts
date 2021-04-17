@@ -1,4 +1,5 @@
 import axios, {AxiosInstance} from 'axios';
+import {APIClient} from '../APIClient';
 import {Authorization} from '../client';
 
 export interface OauthToken {
@@ -26,7 +27,8 @@ export class LoginAPI {
   constructor(private readonly apiClient: AxiosInstance, private auth: Authorization) {}
 
   /**
-   * Creates a trading session, obtaining session tokens for subsequent API access.
+   * Creates a trading session, obtaining session tokens for subsequent API access. Please note that region-specific
+   * login restrictions may apply.
    *
    * @param username - Username
    * @param password - Password
@@ -53,8 +55,9 @@ export class LoginAPI {
     );
 
     this.auth.accessToken = response.data.oauthToken.access_token;
-    this.auth.accountId = response.data.accountId;
     this.auth.refreshToken = response.data.oauthToken.refresh_token;
+
+    this.auth.accountId = response.data.accountId;
     this.auth.lightstreamerEndpoint = response.data.lightstreamerEndpoint;
 
     await this.getSessionToken();
@@ -76,19 +79,21 @@ export class LoginAPI {
   }
 
   /**
-   * Creates a session with defined values
+   * Creates a session from predefined token values.
    */
-  setupSessionWithToken(securityToken: string, cst: string, accountId: string, lightstreamerEndpoint: string): void {
-    this.auth.securityToken = securityToken;
-    this.auth.clientSessionToken = cst;
+  createSessionFromToken(securityToken: string, cst: string, accountId: string, lightstreamerEndpoint: string): void {
     this.auth.accountId = accountId;
+    this.auth.clientSessionToken = cst;
     this.auth.lightstreamerEndpoint = lightstreamerEndpoint;
+    this.auth.securityToken = securityToken;
   }
 
   /**
-   * Creates a session with the mobile api (WARNING: demo is not supported)
+   * Creates a session using the IG Mobile App API.
+   *
+   * WARNING: This endpoint only works with a production environment.
    */
-  async createMobileSession(username: string, password: string): Promise<TradingSession> {
+  async createSessionFromMobileLogin(username: string, password: string): Promise<TradingSession> {
     delete this.auth.accessToken;
 
     const resource = 'https://api.ig.com/clientsecurity/session';
@@ -123,6 +128,15 @@ export class LoginAPI {
     const resource = LoginAPI.URL.SESSION + '?fetchSessionTokens=true';
     const response = await this.apiClient.get<TradingSession>(resource);
     return response.data;
+  }
+
+  async login(username: string, password: string): Promise<TradingSession> {
+    const isLive = this.apiClient.defaults.baseURL === APIClient.URL_LIVE;
+
+    if (isLive) {
+      return this.createSessionFromMobileLogin(username, password);
+    }
+    return this.createSession(username, password);
   }
 
   /**

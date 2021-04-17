@@ -1,4 +1,4 @@
-import {initClient} from '../demo/initClient';
+import {initClient} from './initClient';
 import {APIClient} from '../APIClient';
 
 declare global {

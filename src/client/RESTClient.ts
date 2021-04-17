@@ -47,9 +47,11 @@ export class RESTClient {
     axiosRetry(this.httpClient, {
       retries: Infinity,
       retryCondition: (error: AxiosError) => {
-        const gotRateLimited = error.response?.data?.errorCode === 'error.public-api.exceeded-api-key-allowance';
-        const expiredSecurityToken = error.response?.data?.errorCode === 'error.security.oauth-token-invalid';
-        const missingToken = error.response?.data?.errorCode === 'error.security.client-token-missing';
+        const errorCode = error.response?.data?.errorCode;
+
+        const gotRateLimited = errorCode === 'error.public-api.exceeded-api-key-allowance';
+        const expiredSecurityToken = errorCode === 'error.security.oauth-token-invalid';
+        const missingToken = errorCode === 'error.security.client-token-missing';
 
         if (gotRateLimited) {
           return true;
