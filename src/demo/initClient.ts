@@ -16,7 +16,7 @@ export async function initClient(useLive: boolean = false): Promise<APIClient> {
   const baseUrl = useLive ? APIClient.URL_LIVE : APIClient.URL_DEMO;
 
   const client = new APIClient(baseUrl, apiKey!);
-  const session = await client.rest.login.createSession(username!, password!);
+  const session = await client.rest.login.login(username!, password!);
 
   console.info(`Your client ID is "${session.clientId}".`);
 
