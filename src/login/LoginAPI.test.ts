@@ -73,6 +73,38 @@ describe('LoginAPI', () => {
     });
   });
 
+  describe('setupSessionWithToken', () => {
+    it('setup a session with predefined values', async () => {
+      global.client.rest.login.setupSessionWithToken('1234', '4321', '1111', '4444');
+      expect(global.client.rest.auth.securityToken).toBe('1234');
+      expect(global.client.rest.auth.clientSessionToken).toBe('4321');
+      expect(global.client.rest.auth.accountId).toBe('1111');
+      expect(global.client.rest.auth.lightstreamerEndpoint).toBe('4444');
+    });
+  });
+
+  describe('createMobileSession', () => {
+    it('create a mobile session', async () => {
+      nock('https://api.ig.com/')
+        .post('/clientsecurity/session')
+        .reply(
+          200,
+          JSON.stringify({
+            accountId: 'XYZ123',
+            lightstreamerEndpoint: 'https://demo-apd.marketdatasystems.com',
+          }),
+          {
+            cst: 'cst',
+            'x-security-token': 'securityToken',
+          }
+        );
+
+      const session = await global.client.rest.login.createMobileSession('username', 'password');
+      expect(session.accountId).toBe('XYZ123');
+      expect(global.client.rest.auth.securityToken).toBe('securityToken');
+    });
+  });
+
   describe('getSession', () => {
     it('returns the trading session', async () => {
       nock(APIClient.URL_DEMO)

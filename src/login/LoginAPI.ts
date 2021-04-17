@@ -1,4 +1,4 @@
-import {AxiosInstance} from 'axios';
+import axios, {AxiosInstance} from 'axios';
 import {Authorization} from '../client';
 
 export interface OauthToken {
@@ -73,6 +73,45 @@ export class LoginAPI {
     this.auth.securityToken = response.headers['x-security-token'];
     this.auth.clientSessionToken = response.headers.cst;
     return true;
+  }
+
+  /**
+   * Creates a session with defined values
+   */
+  setupSessionWithToken(securityToken: string, cst: string, accountId: string, lightstreamerEndpoint: string): void {
+    this.auth.securityToken = securityToken;
+    this.auth.clientSessionToken = cst;
+    this.auth.accountId = accountId;
+    this.auth.lightstreamerEndpoint = lightstreamerEndpoint;
+  }
+
+  /**
+   * Creates a session with the mobile api (WARNING: demo is not supported)
+   */
+  async createMobileSession(username: string, password: string): Promise<TradingSession> {
+    delete this.auth.accessToken;
+
+    const resource = 'https://api.ig.com/clientsecurity/session';
+    const response = await axios.post<TradingSession>(
+      resource,
+      {
+        enc: false,
+        password,
+        username: username,
+      },
+      {
+        'axios-retry': {
+          retries: 0,
+        },
+      }
+    );
+
+    this.auth.securityToken = response.headers['x-security-token'];
+    this.auth.clientSessionToken = response.headers.cst;
+    this.auth.accountId = response.data.accountId;
+    this.auth.lightstreamerEndpoint = response.data.lightstreamerEndpoint;
+
+    return response.data;
   }
 
   /**
