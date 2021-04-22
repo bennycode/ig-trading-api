@@ -54,4 +54,4 @@
 | :-------------- | :----------------------------------------------------------------- |
 | `marketDetails` | [_MarketDetail_](../interfaces/market_marketapi.marketdetail.md)[] |
 
-Defined in: [market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L179)
+Defined in: [market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L179)

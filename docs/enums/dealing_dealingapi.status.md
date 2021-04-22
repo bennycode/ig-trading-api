@@ -20,7 +20,7 @@
 
 • **AMENDED**: = "AMENDED"
 
-Defined in: [dealing/DealingAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/840a401/src/dealing/DealingAPI.ts#L44)
+Defined in: [dealing/DealingAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/dealing/DealingAPI.ts#L44)
 
 ---
 
@@ -28,7 +28,7 @@ Defined in: [dealing/DealingAPI.ts:44](https://github.com/bennycode/ig-trading-a
 
 • **CLOSED**: = "CLOSED"
 
-Defined in: [dealing/DealingAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/840a401/src/dealing/DealingAPI.ts#L45)
+Defined in: [dealing/DealingAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/dealing/DealingAPI.ts#L45)
 
 ---
 
@@ -36,7 +36,7 @@ Defined in: [dealing/DealingAPI.ts:45](https://github.com/bennycode/ig-trading-a
 
 • **DELETED**: = "DELETED"
 
-Defined in: [dealing/DealingAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/840a401/src/dealing/DealingAPI.ts#L46)
+Defined in: [dealing/DealingAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/dealing/DealingAPI.ts#L46)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [dealing/DealingAPI.ts:46](https://github.com/bennycode/ig-trading-a
 
 • **OPEN**: = "OPEN"
 
-Defined in: [dealing/DealingAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/840a401/src/dealing/DealingAPI.ts#L47)
+Defined in: [dealing/DealingAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/dealing/DealingAPI.ts#L47)
 
 ---
 
@@ -52,4 +52,4 @@ Defined in: [dealing/DealingAPI.ts:47](https://github.com/bennycode/ig-trading-a
 
 • **PARTIALLY_CLOSED**: = "PARTIALLY_CLOSED"
 
-Defined in: [dealing/DealingAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/840a401/src/dealing/DealingAPI.ts#L48)
+Defined in: [dealing/DealingAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/dealing/DealingAPI.ts#L48)

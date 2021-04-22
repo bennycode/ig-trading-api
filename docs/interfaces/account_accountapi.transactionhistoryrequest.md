@@ -21,7 +21,7 @@
 
 • `Optional` **from**: _string_
 
-Defined in: [account/AccountAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/840a401/src/account/AccountAPI.ts#L176)
+Defined in: [account/AccountAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L176)
 
 ---
 
@@ -29,7 +29,7 @@ Defined in: [account/AccountAPI.ts:176](https://github.com/bennycode/ig-trading-
 
 • `Optional` **maxSpanSeconds**: _number_
 
-Defined in: [account/AccountAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/840a401/src/account/AccountAPI.ts#L177)
+Defined in: [account/AccountAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L177)
 
 ---
 
@@ -37,7 +37,7 @@ Defined in: [account/AccountAPI.ts:177](https://github.com/bennycode/ig-trading-
 
 • `Optional` **pageNumber**: _number_
 
-Defined in: [account/AccountAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/840a401/src/account/AccountAPI.ts#L178)
+Defined in: [account/AccountAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L178)
 
 ---
 
@@ -45,7 +45,7 @@ Defined in: [account/AccountAPI.ts:178](https://github.com/bennycode/ig-trading-
 
 • `Optional` **pageSize**: _number_
 
-Defined in: [account/AccountAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/840a401/src/account/AccountAPI.ts#L179)
+Defined in: [account/AccountAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L179)
 
 ---
 
@@ -53,7 +53,7 @@ Defined in: [account/AccountAPI.ts:179](https://github.com/bennycode/ig-trading-
 
 • `Optional` **to**: _string_
 
-Defined in: [account/AccountAPI.ts:180](https://github.com/bennycode/ig-trading-api/blob/840a401/src/account/AccountAPI.ts#L180)
+Defined in: [account/AccountAPI.ts:180](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L180)
 
 ---
 
@@ -61,4 +61,4 @@ Defined in: [account/AccountAPI.ts:180](https://github.com/bennycode/ig-trading-
 
 • `Optional` **type**: [_TransactionType_](../enums/account_accountapi.transactiontype.md)
 
-Defined in: [account/AccountAPI.ts:181](https://github.com/bennycode/ig-trading-api/blob/840a401/src/account/AccountAPI.ts#L181)
+Defined in: [account/AccountAPI.ts:181](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L181)

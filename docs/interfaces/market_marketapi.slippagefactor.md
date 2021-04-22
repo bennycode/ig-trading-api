@@ -17,7 +17,7 @@
 
 • **unit**: _string_
 
-Defined in: [market/MarketAPI.ts:20](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L20)
+Defined in: [market/MarketAPI.ts:20](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L20)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [market/MarketAPI.ts:20](https://github.com/bennycode/ig-trading-api
 
 • **value**: _number_
 
-Defined in: [market/MarketAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/840a401/src/market/MarketAPI.ts#L21)
+Defined in: [market/MarketAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L21)
