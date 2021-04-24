@@ -70,6 +70,25 @@ describe('LoginAPI', () => {
 
       const deleteOrder = await global.client.rest.dealing.deleteOrder(dealId);
       expect(deleteOrder.dealReference).toBe('54321');
+
+      nock(APIClient.URL_DEMO)
+        .put(LoginAPI.URL.SESSION)
+        .query(true)
+        .reply(
+          200,
+          JSON.stringify({
+            dealingEnabled: true,
+            hasActiveDemoAccounts: true,
+            hasActiveLiveAccounts: true,
+            trailingStopsEnabled: false,
+          })
+        );
+
+      const switchAccountResponse = await global.client.rest.login.switchAccount('ABC124');
+      expect(switchAccountResponse.dealingEnabled).toBe(true);
+      expect(switchAccountResponse.hasActiveDemoAccounts).toBe(true);
+      expect(switchAccountResponse.hasActiveLiveAccounts).toBe(true);
+      expect(switchAccountResponse.trailingStopsEnabled).toBe(false);
     });
   });
 

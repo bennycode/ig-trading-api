@@ -18,6 +18,13 @@ export interface TradingSession {
   timezoneOffset: number;
 }
 
+export interface SwitchAccountResposonse {
+  dealingEnabled: boolean;
+  hasActiveDemoAccounts: boolean;
+  hasActiveLiveAccounts: boolean;
+  trailingStopsEnabled: boolean;
+}
+
 export class LoginAPI {
   static readonly URL = {
     REFRESH_TOKEN: `/session/refresh-token`,
@@ -61,6 +68,35 @@ export class LoginAPI {
     this.auth.lightstreamerEndpoint = response.data.lightstreamerEndpoint;
 
     await this.getSessionToken();
+
+    return response.data;
+  }
+
+  /**
+   * Switches accounts
+   *
+   * @param accountId - Account ID
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   */
+  async switchAccount(accountId: string): Promise<SwitchAccountResposonse> {
+    const resource = LoginAPI.URL.SESSION;
+    const response = await this.apiClient.put<SwitchAccountResposonse>(
+      resource,
+      {
+        accountId: accountId,
+        defaultAccount: false,
+      },
+      {
+        'axios-retry': {
+          retries: 0,
+        },
+        headers: {
+          Version: '1',
+        },
+      }
+    );
+
+    this.auth.accountId = accountId;
 
     return response.data;
   }
