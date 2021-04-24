@@ -78,8 +78,10 @@ export class RESTClient {
 
       if (config.url == '/session' && config.method == 'put') {
         // Edge case for switchAccount, doesn't work with bearer
-        updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
-        updatedHeaders.CST = clientSessionToken;
+        if (securityToken && clientSessionToken) {
+          updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
+          updatedHeaders.CST = clientSessionToken;
+        }
       } else {
         if (accessToken) {
           updatedHeaders.Authorization = 'Bearer ' + accessToken;
