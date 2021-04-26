@@ -18,6 +18,13 @@ export interface TradingSession {
   timezoneOffset: number;
 }
 
+export interface SwitchAccountResponse {
+  dealingEnabled: boolean;
+  hasActiveDemoAccounts: boolean;
+  hasActiveLiveAccounts: boolean;
+  trailingStopsEnabled: boolean;
+}
+
 export class LoginAPI {
   static readonly URL = {
     REFRESH_TOKEN: `/session/refresh-token`,
@@ -61,6 +68,35 @@ export class LoginAPI {
     this.auth.lightstreamerEndpoint = response.data.lightstreamerEndpoint;
 
     await this.getSessionToken();
+
+    return response.data;
+  }
+
+  /**
+   * Switches active accounts, optionally setting the default IG account (of type CFD or spreadbet), against which trades may be made.
+   *
+   * @param accountId - Account ID
+   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   */
+  async switchAccount(accountId: string): Promise<SwitchAccountResponse> {
+    const resource = LoginAPI.URL.SESSION;
+    const response = await this.apiClient.put<SwitchAccountResponse>(
+      resource,
+      {
+        accountId: accountId,
+        defaultAccount: false,
+      },
+      {
+        'axios-retry': {
+          retries: 0,
+        },
+        headers: {
+          VERSION: '1',
+        },
+      }
+    );
+
+    this.auth.accountId = accountId;
 
     return response.data;
   }

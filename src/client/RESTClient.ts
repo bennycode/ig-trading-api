@@ -76,14 +76,23 @@ export class RESTClient {
 
       const {accessToken, accountId, securityToken, clientSessionToken} = this.auth;
 
-      if (accessToken) {
-        updatedHeaders.Authorization = 'Bearer ' + accessToken;
-      } else if (securityToken && clientSessionToken) {
-        updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
-        updatedHeaders.CST = clientSessionToken;
-      }
-      if (accountId) {
-        updatedHeaders['IG-ACCOUNT-ID'] = accountId;
+      if (config.url === '/session' && config.method == 'put') {
+        // Edge case to switch accounts which doesn't work with Bearer tokens
+        if (securityToken && clientSessionToken) {
+          updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
+          updatedHeaders.CST = clientSessionToken;
+        }
+      } else {
+        if (accessToken) {
+          updatedHeaders.Authorization = 'Bearer ' + accessToken;
+        } else if (securityToken && clientSessionToken) {
+          updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
+          updatedHeaders.CST = clientSessionToken;
+        }
+
+        if (accountId) {
+          updatedHeaders['IG-ACCOUNT-ID'] = accountId;
+        }
       }
 
       config.headers = updatedHeaders;
