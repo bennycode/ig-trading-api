@@ -73,7 +73,7 @@ export class LoginAPI {
   }
 
   /**
-   * Switches accounts
+   * Switches active accounts, optionally setting the default IG account (of type CFD or spreadbet), against which trades may be made.
    *
    * @param accountId - Account ID
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
@@ -91,7 +91,7 @@ export class LoginAPI {
           retries: 0,
         },
         headers: {
-          Version: '1',
+          VERSION: '1',
         },
       }
     );
