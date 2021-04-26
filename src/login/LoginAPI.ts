@@ -18,7 +18,7 @@ export interface TradingSession {
   timezoneOffset: number;
 }
 
-export interface SwitchAccountResposonse {
+export interface SwitchAccountResponse {
   dealingEnabled: boolean;
   hasActiveDemoAccounts: boolean;
   hasActiveLiveAccounts: boolean;
@@ -78,9 +78,9 @@ export class LoginAPI {
    * @param accountId - Account ID
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
-  async switchAccount(accountId: string): Promise<SwitchAccountResposonse> {
+  async switchAccount(accountId: string): Promise<SwitchAccountResponse> {
     const resource = LoginAPI.URL.SESSION;
-    const response = await this.apiClient.put<SwitchAccountResposonse>(
+    const response = await this.apiClient.put<SwitchAccountResponse>(
       resource,
       {
         accountId: accountId,
