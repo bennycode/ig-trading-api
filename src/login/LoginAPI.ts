@@ -56,7 +56,7 @@ export class LoginAPI {
           retries: 0,
         },
         headers: {
-          Version: '3',
+          VERSION: '3',
         },
       }
     );

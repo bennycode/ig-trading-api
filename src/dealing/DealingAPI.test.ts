@@ -398,7 +398,7 @@ describe('DealingAPI', () => {
   });
 
   describe('failedDelete', () => {
-    xit('fails to delete an order', async () => {
+    it('fails to delete an order', async () => {
       const dealId = '12345';
 
       nock(APIClient.URL_DEMO)
@@ -413,6 +413,9 @@ describe('DealingAPI', () => {
         )
         .reply(403);
 
+      global.client.rest.defaults['axios-retry'] = {
+        retries: 1,
+      };
       await expectAsync(global.client.rest.dealing.deleteOrder(dealId)).toBeRejected();
     });
   });

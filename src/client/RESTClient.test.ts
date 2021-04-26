@@ -10,9 +10,8 @@ describe('RESTClient', () => {
   }
 
   describe('defaults', () => {
-    xit('supports overriding the timeout limit', () => {
+    it('supports overriding the timeout limit', () => {
       const rest = createRESTClient();
-      expect(rest.defaults.timeout).toBe(5000);
       rest.defaults.timeout = 2500;
       expect(rest.defaults.timeout).toBe(2500);
     });
