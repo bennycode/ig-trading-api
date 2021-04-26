@@ -76,8 +76,8 @@ export class RESTClient {
 
       const {accessToken, accountId, securityToken, clientSessionToken} = this.auth;
 
-      if (config.url == '/session' && config.method == 'put') {
-        // Edge case for switchAccount, doesn't work with bearer
+      if (config.url === '/session' && config.method == 'put') {
+        // Edge case to switch accounts which doesn't work with Bearer tokens
         if (securityToken && clientSessionToken) {
           updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
           updatedHeaders.CST = clientSessionToken;
