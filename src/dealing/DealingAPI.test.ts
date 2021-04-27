@@ -1,19 +1,19 @@
 import nock from 'nock';
 import {APIClient} from '../APIClient';
 import {
-  DealingAPI,
-  PositionCreateRequest,
-  PositionCloseRequest,
-  PositionUpdateRequest,
-  DealReferenceResponse,
-  OrderCreateRequest,
-  OrderUpdateRequest,
-  Direction,
-  PositionOrderType,
-  DealStatus,
   AffectedDealStatus,
+  DealingAPI,
+  DealReferenceResponse,
+  DealStatus,
+  Direction,
+  OrderCreateRequest,
   OrderTimeInForce,
   OrderType,
+  OrderUpdateRequest,
+  PositionCloseRequest,
+  PositionCreateRequest,
+  PositionOrderType,
+  PositionUpdateRequest,
 } from './DealingAPI';
 
 describe('DealingAPI', () => {
@@ -368,6 +368,62 @@ describe('DealingAPI', () => {
       const deleteOrder = await global.client.rest.dealing.deleteOrder(dealId);
       expect(deleteOrder.dealReference).toBe('54321');
     });
+
+    it('fails to delete an order', async () => {
+      const dealId = '12345';
+
+      nock(APIClient.URL_DEMO)
+        .post(
+          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
+          {},
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
+        .reply(403);
+
+      global.client.rest.defaults['axios-retry'] = {
+        retries: 1,
+      };
+      await expectAsync(global.client.rest.dealing.deleteOrder(dealId)).toBeRejected();
+    });
+
+    it('retries when being rate limited', async () => {
+      const dealId = '12345';
+
+      nock(APIClient.URL_DEMO)
+        .post(
+          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
+          {},
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
+        .reply(
+          403,
+          JSON.stringify({
+            errorCode: 'error.public-api.exceeded-api-key-allowance',
+          })
+        );
+
+      const amountOfRetries = 2;
+
+      global.client.rest.defaults['axios-retry'] = {
+        retries: amountOfRetries,
+      };
+
+      try {
+        await global.client.rest.dealing.deleteOrder(dealId);
+        fail('Expected error');
+      } catch (error) {
+        expect(error.isAxiosError).toBe(true);
+        expect(error.config['axios-retry'].retryCount).toBe(amountOfRetries);
+      }
+    }, 10_000);
   });
 
   describe('updateOrder', () => {
@@ -394,29 +450,6 @@ describe('DealingAPI', () => {
 
       const updateOrder = await global.client.rest.dealing.updateOrder(dealId, updateOrderRequest);
       expect(updateOrder.dealReference).toBe('54321');
-    });
-  });
-
-  describe('failedDelete', () => {
-    it('fails to delete an order', async () => {
-      const dealId = '12345';
-
-      nock(APIClient.URL_DEMO)
-        .post(
-          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
-          {},
-          {
-            reqheaders: {
-              _method: 'DELETE',
-            },
-          }
-        )
-        .reply(403);
-
-      global.client.rest.defaults['axios-retry'] = {
-        retries: 1,
-      };
-      await expectAsync(global.client.rest.dealing.deleteOrder(dealId)).toBeRejected();
     });
   });
 });
