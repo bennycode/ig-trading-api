@@ -17,7 +17,7 @@
 
 • **metadata**: [_TransactionMetadata_](account_accountapi.transactionmetadata.md)
 
-Defined in: [account/AccountAPI.ts:185](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L185)
+Defined in: [account/AccountAPI.ts:185](https://github.com/bennycode/ig-trading-api/blob/192094d/src/account/AccountAPI.ts#L185)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [account/AccountAPI.ts:185](https://github.com/bennycode/ig-trading-
 
 • **transactions**: [_Transaction_](account_accountapi.transaction.md)[]
 
-Defined in: [account/AccountAPI.ts:186](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L186)
+Defined in: [account/AccountAPI.ts:186](https://github.com/bennycode/ig-trading-api/blob/192094d/src/account/AccountAPI.ts#L186)

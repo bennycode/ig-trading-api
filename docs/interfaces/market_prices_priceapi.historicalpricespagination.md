@@ -18,7 +18,7 @@
 
 • **pageNumber**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/prices/PriceAPI.ts#L34)
+Defined in: [market/prices/PriceAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/prices/PriceAPI.ts#L34)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [market/prices/PriceAPI.ts:34](https://github.com/bennycode/ig-tradi
 
 • **pageSize**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/prices/PriceAPI.ts#L35)
+Defined in: [market/prices/PriceAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/prices/PriceAPI.ts#L35)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [market/prices/PriceAPI.ts:35](https://github.com/bennycode/ig-tradi
 
 • **totalPages**: _number_
 
-Defined in: [market/prices/PriceAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/prices/PriceAPI.ts#L36)
+Defined in: [market/prices/PriceAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/prices/PriceAPI.ts#L36)

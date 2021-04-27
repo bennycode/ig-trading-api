@@ -17,7 +17,7 @@
 
 • **pageData**: [_TransactionPaging_](account_accountapi.transactionpaging.md)
 
-Defined in: [account/AccountAPI.ts:171](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L171)
+Defined in: [account/AccountAPI.ts:171](https://github.com/bennycode/ig-trading-api/blob/192094d/src/account/AccountAPI.ts#L171)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [account/AccountAPI.ts:171](https://github.com/bennycode/ig-trading-
 
 • **size**: _number_
 
-Defined in: [account/AccountAPI.ts:172](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/account/AccountAPI.ts#L172)
+Defined in: [account/AccountAPI.ts:172](https://github.com/bennycode/ig-trading-api/blob/192094d/src/account/AccountAPI.ts#L172)

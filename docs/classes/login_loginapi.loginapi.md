@@ -24,6 +24,7 @@
 - [login](login_loginapi.loginapi.md#login)
 - [logout](login_loginapi.loginapi.md#logout)
 - [refreshToken](login_loginapi.loginapi.md#refreshtoken)
+- [switchAccount](login_loginapi.loginapi.md#switchaccount)
 
 ## Constructors
 
@@ -40,7 +41,7 @@
 
 **Returns:** [_LoginAPI_](login_loginapi.loginapi.md)
 
-Defined in: [login/LoginAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L25)
+Defined in: [login/LoginAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L32)
 
 ## Properties
 
@@ -55,7 +56,7 @@ Defined in: [login/LoginAPI.ts:25](https://github.com/bennycode/ig-trading-api/b
 | `REFRESH_TOKEN` | _string_ |
 | `SESSION`       | _string_ |
 
-Defined in: [login/LoginAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L22)
+Defined in: [login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L29)
 
 ## Methods
 
@@ -76,7 +77,7 @@ Creates a trading session, obtaining session tokens for subsequent API access. P
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:37](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L37)
+Defined in: [login/LoginAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L44)
 
 ---
 
@@ -97,7 +98,7 @@ WARNING: This endpoint only works with a production environment.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L96)
+Defined in: [login/LoginAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L132)
 
 ---
 
@@ -118,7 +119,7 @@ Creates a session from predefined token values.
 
 **Returns:** _void_
 
-Defined in: [login/LoginAPI.ts:84](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L84)
+Defined in: [login/LoginAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L120)
 
 ---
 
@@ -132,7 +133,7 @@ Returns the user's session details.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:127](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L127)
+Defined in: [login/LoginAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L163)
 
 ---
 
@@ -146,7 +147,7 @@ Saves the user's session details.
 
 **Returns:** _Promise_<boolean\>
 
-Defined in: [login/LoginAPI.ts:73](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L73)
+Defined in: [login/LoginAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L109)
 
 ---
 
@@ -163,7 +164,7 @@ Defined in: [login/LoginAPI.ts:73](https://github.com/bennycode/ig-trading-api/b
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:133](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L133)
+Defined in: [login/LoginAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L169)
 
 ---
 
@@ -177,7 +178,7 @@ Log out of the current session.
 
 **Returns:** _Promise_<void\>
 
-Defined in: [login/LoginAPI.ts:147](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L147)
+Defined in: [login/LoginAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L183)
 
 ---
 
@@ -191,4 +192,24 @@ Refreshes a trading session, obtaining new session tokens for subsequent API acc
 
 **Returns:** _Promise_<[_OauthToken_](../interfaces/login_loginapi.oauthtoken.md)\>
 
-Defined in: [login/LoginAPI.ts:161](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/login/LoginAPI.ts#L161)
+Defined in: [login/LoginAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L197)
+
+---
+
+### switchAccount
+
+▸ **switchAccount**(`accountId`: _string_): _Promise_<[_SwitchAccountResponse_](../interfaces/login_loginapi.switchaccountresponse.md)\>
+
+Switches active accounts, optionally setting the default IG account (of type CFD or spreadbet), against which trades may be made.
+
+**`see`** https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+
+#### Parameters:
+
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `accountId` | _string_ | Account ID  |
+
+**Returns:** _Promise_<[_SwitchAccountResponse_](../interfaces/login_loginapi.switchaccountresponse.md)\>
+
+Defined in: [login/LoginAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/192094d/src/login/LoginAPI.ts#L81)

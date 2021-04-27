@@ -22,7 +22,7 @@
 
 • **CLOSED**: = "CLOSED"
 
-Defined in: [market/MarketAPI.ts:164](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L164)
+Defined in: [market/MarketAPI.ts:164](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L164)
 
 ---
 
@@ -30,7 +30,7 @@ Defined in: [market/MarketAPI.ts:164](https://github.com/bennycode/ig-trading-ap
 
 • **EDITS_ONLY**: = "EDITS_ONLY"
 
-Defined in: [market/MarketAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L165)
+Defined in: [market/MarketAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L165)
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: [market/MarketAPI.ts:165](https://github.com/bennycode/ig-trading-ap
 
 • **OFFLINE**: = "OFFLINE"
 
-Defined in: [market/MarketAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L166)
+Defined in: [market/MarketAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L166)
 
 ---
 
@@ -46,7 +46,7 @@ Defined in: [market/MarketAPI.ts:166](https://github.com/bennycode/ig-trading-ap
 
 • **ON_AUCTION**: = "ON_AUCTION"
 
-Defined in: [market/MarketAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L167)
+Defined in: [market/MarketAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L167)
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: [market/MarketAPI.ts:167](https://github.com/bennycode/ig-trading-ap
 
 • **ON_AUCTION_NO_EDITS**: = "ON_AUCTION_NO_EDITS"
 
-Defined in: [market/MarketAPI.ts:168](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L168)
+Defined in: [market/MarketAPI.ts:168](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L168)
 
 ---
 
@@ -62,7 +62,7 @@ Defined in: [market/MarketAPI.ts:168](https://github.com/bennycode/ig-trading-ap
 
 • **SUSPENDED**: = "SUSPENDED"
 
-Defined in: [market/MarketAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L169)
+Defined in: [market/MarketAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L169)
 
 ---
 
@@ -70,4 +70,4 @@ Defined in: [market/MarketAPI.ts:169](https://github.com/bennycode/ig-trading-ap
 
 • **TRADEABLE**: = "TRADEABLE"
 
-Defined in: [market/MarketAPI.ts:170](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L170)
+Defined in: [market/MarketAPI.ts:170](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L170)

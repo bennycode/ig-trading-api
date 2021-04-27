@@ -11,4 +11,5 @@
 ### Interfaces
 
 - [OauthToken](../interfaces/login_loginapi.oauthtoken.md)
+- [SwitchAccountResponse](../interfaces/login_loginapi.switchaccountresponse.md)
 - [TradingSession](../interfaces/login_loginapi.tradingsession.md)

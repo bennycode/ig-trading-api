@@ -33,7 +33,7 @@
 
 **Returns:** [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/lightstreamer/LightstreamerAPI.ts#L9)
+Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/192094d/src/lightstreamer/LightstreamerAPI.ts#L9)
 
 ## Properties
 
@@ -41,7 +41,7 @@ Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/i
 
 • `Optional` **candleSubscription**: _Subscription_
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/lightstreamer/LightstreamerAPI.ts#L9)
+Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/192094d/src/lightstreamer/LightstreamerAPI.ts#L9)
 
 ---
 
@@ -49,7 +49,7 @@ Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/i
 
 • `Optional` **lightstream**: _LightstreamerClient_
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/lightstreamer/LightstreamerAPI.ts#L8)
+Defined in: [lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/192094d/src/lightstreamer/LightstreamerAPI.ts#L8)
 
 ## Methods
 
@@ -67,4 +67,4 @@ Defined in: [lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/i
 
 **Returns:** _LightstreamerClient_
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/lightstreamer/LightstreamerAPI.ts#L25)
+Defined in: [lightstreamer/LightstreamerAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/192094d/src/lightstreamer/LightstreamerAPI.ts#L25)

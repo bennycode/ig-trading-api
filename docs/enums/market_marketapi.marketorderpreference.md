@@ -18,7 +18,7 @@
 
 • **AVAILABLE_DEFAULT_OFF**: = "AVAILABLE_DEFAULT_OFF"
 
-Defined in: [market/MarketAPI.ts:137](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L137)
+Defined in: [market/MarketAPI.ts:137](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L137)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [market/MarketAPI.ts:137](https://github.com/bennycode/ig-trading-ap
 
 • **AVAILABLE_DEFAULT_ON**: = "AVAILABLE_DEFAULT_ON"
 
-Defined in: [market/MarketAPI.ts:138](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L138)
+Defined in: [market/MarketAPI.ts:138](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L138)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [market/MarketAPI.ts:138](https://github.com/bennycode/ig-trading-ap
 
 • **NOT_AVAILABLE**: = "NOT_AVAILABLE"
 
-Defined in: [market/MarketAPI.ts:139](https://github.com/bennycode/ig-trading-api/blob/6347f7e/src/market/MarketAPI.ts#L139)
+Defined in: [market/MarketAPI.ts:139](https://github.com/bennycode/ig-trading-api/blob/192094d/src/market/MarketAPI.ts#L139)
