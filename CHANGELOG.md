@@ -1,3 +1,22 @@
+#### 0.11.1 (2021-04-27)
+
+##### Chores
+
+- **deps-dev:**
+  - bump eslint from 7.24.0 to 7.25.0 ([#151](https://github.com/bennycode/ig-trading-api/pull/151)) ([694d4815](https://github.com/bennycode/ig-trading-api/commit/694d4815a22d404660791a80401582ff0684ee00))
+  - bump typedoc from 0.20.35 to 0.20.36 ([#153](https://github.com/bennycode/ig-trading-api/pull/153)) ([1f98e6db](https://github.com/bennycode/ig-trading-api/commit/1f98e6db537c58bbd031cd435ec659a0f2dcaac4))
+  - bump eslint-config-prettier from 8.2.0 to 8.3.0 ([#152](https://github.com/bennycode/ig-trading-api/pull/152)) ([5060e40f](https://github.com/bennycode/ig-trading-api/commit/5060e40fb04ec74689f8329c20c69fadc15fa055))
+  - bump typedoc-plugin-markdown from 3.7.1 to 3.7.2 ([#154](https://github.com/bennycode/ig-trading-api/pull/154)) ([eac69382](https://github.com/bennycode/ig-trading-api/commit/eac6938264e20edb1921fede3ea36937dccd2e81))
+
+##### New Features
+
+- **login:** Switch active accounts ([#150](https://github.com/bennycode/ig-trading-api/pull/150)) ([b6d57e82](https://github.com/bennycode/ig-trading-api/commit/b6d57e82105187b985e2de373ae34550b0f5a2c0))
+
+##### Tests
+
+- Enforce 100% code coverage ([#155](https://github.com/bennycode/ig-trading-api/pull/155)) ([48060f10](https://github.com/bennycode/ig-trading-api/commit/48060f10f759cabb1b84c09d69a6fe64a34beceb))
+- Improve overall code coverage ([c000fdab](https://github.com/bennycode/ig-trading-api/commit/c000fdab4d415998fe12323dc2964fa8638b4822))
+
 ### 0.11.0 (2021-04-22)
 
 ##### Chores
