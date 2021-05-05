@@ -3,7 +3,7 @@
     "url": "https://github.com/bennycode/ig-trading-api/issues"
   },
   "dependencies": {
-    "@types/node": "14.14.41",
+    "@types/node": "15.0.1",
     "axios": "0.21.1",
     "axios-retry": "3.1.9",
     "lightstreamer-client-node": "8.0.3",
@@ -12,7 +12,7 @@
   "description": "IG Trading API for Node.js, written in TypeScript.",
   "devDependencies": {
     "@types/jasmine": "3.6.10",
-    "@types/luxon": "1.26.4",
+    "@types/luxon": "1.26.5",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
     "cross-env": "7.0.3",
