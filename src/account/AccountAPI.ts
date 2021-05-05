@@ -207,7 +207,7 @@ export class AccountAPI {
   }
 
   /**
-   * Returns the account activity history.
+   * Returns the account activity history. The first element in the array is the latest activity. The last element is the oldest activity.
    *
    * @param PositionCreateRequest - The Information to create the Position
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=543
