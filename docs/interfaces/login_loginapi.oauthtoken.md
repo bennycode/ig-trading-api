@@ -20,7 +20,7 @@
 
 • **access_token**: _string_
 
-Defined in: [login/LoginAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/login/LoginAPI.ts#L6)
+Defined in: [login/LoginAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L6)
 
 ---
 
@@ -28,7 +28,7 @@ Defined in: [login/LoginAPI.ts:6](https://github.com/bennycode/ig-trading-api/bl
 
 • **expires_in**: _string_
 
-Defined in: [login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/login/LoginAPI.ts#L7)
+Defined in: [login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L7)
 
 ---
 
@@ -36,7 +36,7 @@ Defined in: [login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/bl
 
 • **refresh_token**: _string_
 
-Defined in: [login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/login/LoginAPI.ts#L8)
+Defined in: [login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L8)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/bl
 
 • **scope**: _string_
 
-Defined in: [login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/login/LoginAPI.ts#L9)
+Defined in: [login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L9)
 
 ---
 
@@ -52,4 +52,4 @@ Defined in: [login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/bl
 
 • **token_type**: _string_
 
-Defined in: [login/LoginAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/login/LoginAPI.ts#L10)
+Defined in: [login/LoginAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L10)

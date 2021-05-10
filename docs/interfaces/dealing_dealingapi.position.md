@@ -29,7 +29,7 @@
 
 • **contractSize**: _number_
 
-Defined in: [dealing/DealingAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L52)
+Defined in: [dealing/DealingAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L52)
 
 ---
 
@@ -37,7 +37,7 @@ Defined in: [dealing/DealingAPI.ts:52](https://github.com/bennycode/ig-trading-a
 
 • **controlledRisk**: _boolean_
 
-Defined in: [dealing/DealingAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L53)
+Defined in: [dealing/DealingAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L53)
 
 ---
 
@@ -45,7 +45,7 @@ Defined in: [dealing/DealingAPI.ts:53](https://github.com/bennycode/ig-trading-a
 
 • **createdDate**: Date
 
-Defined in: [dealing/DealingAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L54)
+Defined in: [dealing/DealingAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L54)
 
 ---
 
@@ -53,7 +53,7 @@ Defined in: [dealing/DealingAPI.ts:54](https://github.com/bennycode/ig-trading-a
 
 • **createdDateUTC**: Date
 
-Defined in: [dealing/DealingAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L55)
+Defined in: [dealing/DealingAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L55)
 
 ---
 
@@ -61,7 +61,7 @@ Defined in: [dealing/DealingAPI.ts:55](https://github.com/bennycode/ig-trading-a
 
 • **currency**: _string_
 
-Defined in: [dealing/DealingAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L56)
+Defined in: [dealing/DealingAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L56)
 
 ---
 
@@ -69,7 +69,7 @@ Defined in: [dealing/DealingAPI.ts:56](https://github.com/bennycode/ig-trading-a
 
 • **dealId**: _string_
 
-Defined in: [dealing/DealingAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L57)
+Defined in: [dealing/DealingAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L57)
 
 ---
 
@@ -77,7 +77,7 @@ Defined in: [dealing/DealingAPI.ts:57](https://github.com/bennycode/ig-trading-a
 
 • **dealReference**: _string_
 
-Defined in: [dealing/DealingAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L58)
+Defined in: [dealing/DealingAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L58)
 
 ---
 
@@ -85,7 +85,7 @@ Defined in: [dealing/DealingAPI.ts:58](https://github.com/bennycode/ig-trading-a
 
 • **direction**: [_Direction_](../enums/dealing_dealingapi.direction.md)
 
-Defined in: [dealing/DealingAPI.ts:59](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L59)
+Defined in: [dealing/DealingAPI.ts:59](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L59)
 
 ---
 
@@ -93,7 +93,7 @@ Defined in: [dealing/DealingAPI.ts:59](https://github.com/bennycode/ig-trading-a
 
 • **level**: _number_
 
-Defined in: [dealing/DealingAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L60)
+Defined in: [dealing/DealingAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L60)
 
 ---
 
@@ -101,7 +101,7 @@ Defined in: [dealing/DealingAPI.ts:60](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **limitLevel**: _number_
 
-Defined in: [dealing/DealingAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L61)
+Defined in: [dealing/DealingAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L61)
 
 ---
 
@@ -109,7 +109,7 @@ Defined in: [dealing/DealingAPI.ts:61](https://github.com/bennycode/ig-trading-a
 
 • **size**: _number_
 
-Defined in: [dealing/DealingAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L62)
+Defined in: [dealing/DealingAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L62)
 
 ---
 
@@ -117,7 +117,7 @@ Defined in: [dealing/DealingAPI.ts:62](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **stopLevel**: _number_
 
-Defined in: [dealing/DealingAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L63)
+Defined in: [dealing/DealingAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L63)
 
 ---
 
@@ -125,7 +125,7 @@ Defined in: [dealing/DealingAPI.ts:63](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **trailingStep**: _number_
 
-Defined in: [dealing/DealingAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L64)
+Defined in: [dealing/DealingAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L64)
 
 ---
 
@@ -133,4 +133,4 @@ Defined in: [dealing/DealingAPI.ts:64](https://github.com/bennycode/ig-trading-a
 
 • `Optional` **trailingStopDistance**: _number_
 
-Defined in: [dealing/DealingAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L65)
+Defined in: [dealing/DealingAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L65)

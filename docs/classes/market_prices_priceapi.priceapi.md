@@ -25,7 +25,7 @@
 
 \+ **new PriceAPI**(`apiClient`: AxiosInstance): [_PriceAPI_](market_prices_priceapi.priceapi.md)
 
-#### Parameters:
+#### Parameters
 
 | Name        | Type          |
 | :---------- | :------------ |
@@ -33,7 +33,7 @@
 
 **Returns:** [_PriceAPI_](market_prices_priceapi.priceapi.md)
 
-Defined in: [market/prices/PriceAPI.ts:84](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/market/prices/PriceAPI.ts#L84)
+Defined in: [market/prices/PriceAPI.ts:84](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/prices/PriceAPI.ts#L84)
 
 ## Properties
 
@@ -41,13 +41,13 @@ Defined in: [market/prices/PriceAPI.ts:84](https://github.com/bennycode/ig-tradi
 
 ▪ `Static` `Readonly` **URL**: _object_
 
-#### Type declaration:
+#### Type declaration
 
 | Name     | Type     |
 | :------- | :------- |
 | `PRICES` | _string_ |
 
-Defined in: [market/prices/PriceAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/market/prices/PriceAPI.ts#L82)
+Defined in: [market/prices/PriceAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/prices/PriceAPI.ts#L82)
 
 ## Methods
 
@@ -57,7 +57,7 @@ Defined in: [market/prices/PriceAPI.ts:82](https://github.com/bennycode/ig-tradi
 
 Returns historical prices for a particular instrument.
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Default value | Description |
 | :-- | :-- | :-- | :-- |
@@ -69,7 +69,7 @@ Returns historical prices for a particular instrument.
 
 **Returns:** _Promise_<[_HistoricalPricesResponse_](../interfaces/market_prices_priceapi.historicalpricesresponse.md)\>
 
-Defined in: [market/prices/PriceAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/market/prices/PriceAPI.ts#L130)
+Defined in: [market/prices/PriceAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/prices/PriceAPI.ts#L130)
 
 ---
 
@@ -83,7 +83,7 @@ Returns historical prices between given dates.
 
 **`see`** https://labs.ig.com/rest-trading-api-reference/service-detail?id=521
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Default value | Description |
 | :-- | :-- | :-- | :-- |
@@ -96,4 +96,4 @@ Returns historical prices between given dates.
 
 **Returns:** _Promise_<[_HistoricalPricesResponse_](../interfaces/market_prices_priceapi.historicalpricesresponse.md)\>
 
-Defined in: [market/prices/PriceAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/market/prices/PriceAPI.ts#L100)
+Defined in: [market/prices/PriceAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/prices/PriceAPI.ts#L100)

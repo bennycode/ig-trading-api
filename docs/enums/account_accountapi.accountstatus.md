@@ -18,7 +18,7 @@
 
 • **DISABLED**: = "DISABLED"
 
-Defined in: [account/AccountAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/account/AccountAPI.ts#L5)
+Defined in: [account/AccountAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/account/AccountAPI.ts#L5)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [account/AccountAPI.ts:5](https://github.com/bennycode/ig-trading-ap
 
 • **ENABLED**: = "ENABLED"
 
-Defined in: [account/AccountAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/account/AccountAPI.ts#L6)
+Defined in: [account/AccountAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/account/AccountAPI.ts#L6)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [account/AccountAPI.ts:6](https://github.com/bennycode/ig-trading-ap
 
 • **SUSPENDED_FROM_DEALING**: = "SUSPENDED_FROM_DEALING"
 
-Defined in: [account/AccountAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/account/AccountAPI.ts#L7)
+Defined in: [account/AccountAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/account/AccountAPI.ts#L7)

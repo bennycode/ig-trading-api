@@ -20,7 +20,7 @@
 
 • `Optional` **limitLevel**: _number_
 
-Defined in: [dealing/DealingAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L108)
+Defined in: [dealing/DealingAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L108)
 
 ---
 
@@ -28,7 +28,7 @@ Defined in: [dealing/DealingAPI.ts:108](https://github.com/bennycode/ig-trading-
 
 • `Optional` **stopLevel**: _number_
 
-Defined in: [dealing/DealingAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L109)
+Defined in: [dealing/DealingAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L109)
 
 ---
 
@@ -36,7 +36,7 @@ Defined in: [dealing/DealingAPI.ts:109](https://github.com/bennycode/ig-trading-
 
 • `Optional` **trailingStop**: Boolean
 
-Defined in: [dealing/DealingAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L110)
+Defined in: [dealing/DealingAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L110)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [dealing/DealingAPI.ts:110](https://github.com/bennycode/ig-trading-
 
 • `Optional` **trailingStopDistance**: _number_
 
-Defined in: [dealing/DealingAPI.ts:111](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L111)
+Defined in: [dealing/DealingAPI.ts:111](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L111)
 
 ---
 
@@ -52,4 +52,4 @@ Defined in: [dealing/DealingAPI.ts:111](https://github.com/bennycode/ig-trading-
 
 • `Optional` **trailingStopIncrement**: _number_
 
-Defined in: [dealing/DealingAPI.ts:112](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L112)
+Defined in: [dealing/DealingAPI.ts:112](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L112)

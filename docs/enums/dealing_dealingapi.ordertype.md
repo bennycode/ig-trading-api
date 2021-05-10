@@ -17,7 +17,7 @@
 
 • **LIMIT**: = "LIMIT"
 
-Defined in: [dealing/DealingAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L21)
+Defined in: [dealing/DealingAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L21)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:21](https://github.com/bennycode/ig-trading-a
 
 • **STOP**: = "STOP"
 
-Defined in: [dealing/DealingAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L22)
+Defined in: [dealing/DealingAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/dealing/DealingAPI.ts#L22)
