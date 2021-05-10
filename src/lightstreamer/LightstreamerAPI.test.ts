@@ -55,14 +55,14 @@ describe('LightstreamerAPI', () => {
 
       const listeners = global.client.stream.candleSubscription!.getListeners()[0];
       if (listeners.onItemUpdate) {
-        listeners.onItemUpdate(({
+        listeners.onItemUpdate({
           getItemName() {
             return 'CHART:CS.D.BITCOIN.TODAY.IP:1MINUTE';
           },
           getValue() {
             return '10';
           },
-        } as unknown) as ItemUpdate);
+        } as unknown as ItemUpdate);
       }
 
       global.client.stream.subscribeCandles(['CS.D.ETHUSD.TODAY.IP'], ChartResolution.MINUTE, (epic, _candle) => {
