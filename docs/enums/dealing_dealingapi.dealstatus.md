@@ -17,7 +17,7 @@
 
 • **ACCEPTED**: = "ACCEPTED"
 
-Defined in: [dealing/DealingAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/192094d/src/dealing/DealingAPI.ts#L39)
+Defined in: [dealing/DealingAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L39)
 
 ---
 
@@ -25,4 +25,4 @@ Defined in: [dealing/DealingAPI.ts:39](https://github.com/bennycode/ig-trading-a
 
 • **REJECTED**: = "REJECTED"
 
-Defined in: [dealing/DealingAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/192094d/src/dealing/DealingAPI.ts#L40)
+Defined in: [dealing/DealingAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/dealing/DealingAPI.ts#L40)

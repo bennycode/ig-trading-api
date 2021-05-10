@@ -10,8 +10,10 @@
 
 - [accessToken](client_restclient.authorization.md#accesstoken)
 - [accountId](client_restclient.authorization.md#accountid)
+- [apiKey](client_restclient.authorization.md#apikey)
 - [clientSessionToken](client_restclient.authorization.md#clientsessiontoken)
 - [lightstreamerEndpoint](client_restclient.authorization.md#lightstreamerendpoint)
+- [password](client_restclient.authorization.md#password)
 - [refreshToken](client_restclient.authorization.md#refreshtoken)
 - [securityToken](client_restclient.authorization.md#securitytoken)
 - [username](client_restclient.authorization.md#username)
@@ -22,7 +24,7 @@
 
 • `Optional` **accessToken**: _string_
 
-Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L9)
+Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L9)
 
 ---
 
@@ -30,7 +32,15 @@ Defined in: [client/RESTClient.ts:9](https://github.com/bennycode/ig-trading-api
 
 • `Optional` **accountId**: _string_
 
-Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L10)
+Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L10)
+
+---
+
+### apiKey
+
+• `Optional` **apiKey**: _string_
+
+Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L11)
 
 ---
 
@@ -38,7 +48,7 @@ Defined in: [client/RESTClient.ts:10](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **clientSessionToken**: _string_
 
-Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L11)
+Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L12)
 
 ---
 
@@ -46,7 +56,15 @@ Defined in: [client/RESTClient.ts:11](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **lightstreamerEndpoint**: _string_
 
-Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L12)
+Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L13)
+
+---
+
+### password
+
+• `Optional` **password**: _string_
+
+Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L14)
 
 ---
 
@@ -54,7 +72,7 @@ Defined in: [client/RESTClient.ts:12](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **refreshToken**: _string_
 
-Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L13)
+Defined in: [client/RESTClient.ts:15](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L15)
 
 ---
 
@@ -62,7 +80,7 @@ Defined in: [client/RESTClient.ts:13](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **securityToken**: _string_
 
-Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L14)
+Defined in: [client/RESTClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L16)
 
 ---
 
@@ -70,4 +88,4 @@ Defined in: [client/RESTClient.ts:14](https://github.com/bennycode/ig-trading-ap
 
 • `Optional` **username**: _string_
 
-Defined in: [client/RESTClient.ts:15](https://github.com/bennycode/ig-trading-api/blob/192094d/src/client/RESTClient.ts#L15)
+Defined in: [client/RESTClient.ts:17](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/client/RESTClient.ts#L17)

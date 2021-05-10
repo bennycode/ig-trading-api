@@ -16,4 +16,4 @@
 
 • **accounts**: [_Account_](account_accountapi.account.md)[]
 
-Defined in: [account/AccountAPI.ts:87](https://github.com/bennycode/ig-trading-api/blob/192094d/src/account/AccountAPI.ts#L87)
+Defined in: [account/AccountAPI.ts:87](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/account/AccountAPI.ts#L87)

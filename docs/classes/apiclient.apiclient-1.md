@@ -25,18 +25,18 @@
 
 ### constructor
 
-\+ **new APIClient**(`baseUrl`: _string_, `apiKey`: _string_): [_APIClient_](apiclient.apiclient-1.md)
+\+ **new APIClient**(`baseUrl`: _string_, `apiKey`: _string_ \| [_Authorization_](../interfaces/client_restclient.authorization.md)): [_APIClient_](apiclient.apiclient-1.md)
 
 #### Parameters:
 
-| Name      | Type     |
-| :-------- | :------- |
-| `baseUrl` | _string_ |
-| `apiKey`  | _string_ |
+| Name      | Type                                                                            |
+| :-------- | :------------------------------------------------------------------------------ |
+| `baseUrl` | _string_                                                                        |
+| `apiKey`  | _string_ \| [_Authorization_](../interfaces/client_restclient.authorization.md) |
 
 **Returns:** [_APIClient_](apiclient.apiclient-1.md)
 
-Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/192094d/src/APIClient.ts#L9)
+Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/APIClient.ts#L9)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/19
 
 • `Readonly` **rest**: [_RESTClient_](client_restclient.restclient.md)
 
-Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/192094d/src/APIClient.ts#L5)
+Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/APIClient.ts#L5)
 
 ---
 
@@ -52,7 +52,7 @@ Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/19
 
 • `Readonly` **stream**: [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
 
-Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/192094d/src/APIClient.ts#L6)
+Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/APIClient.ts#L6)
 
 ---
 
@@ -60,7 +60,7 @@ Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/19
 
 ▪ `Static` **URL_DEMO**: _string_= 'https://demo-api.ig.com/gateway/deal/'
 
-Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/192094d/src/APIClient.ts#L8)
+Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/APIClient.ts#L8)
 
 ---
 
@@ -68,7 +68,7 @@ Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/19
 
 ▪ `Static` **URL_LIVE**: _string_= 'https://api.ig.com/gateway/deal/'
 
-Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/192094d/src/APIClient.ts#L9)
+Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/APIClient.ts#L9)
 
 ## Accessors
 
@@ -78,4 +78,4 @@ Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/19
 
 **Returns:** _boolean_
 
-Defined in: [APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/192094d/src/APIClient.ts#L16)
+Defined in: [APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/a8e1c4a/src/APIClient.ts#L16)
