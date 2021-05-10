@@ -3,7 +3,7 @@
     "url": "https://github.com/bennycode/ig-trading-api/issues"
   },
   "dependencies": {
-    "@types/node": "15.0.1",
+    "@types/node": "15.0.2",
     "axios": "0.21.1",
     "axios-retry": "3.1.9",
     "lightstreamer-client-node": "8.0.3",
@@ -11,13 +11,13 @@
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
   "devDependencies": {
-    "@types/jasmine": "3.6.10",
+    "@types/jasmine": "3.7.1",
     "@types/luxon": "1.26.5",
-    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/eslint-plugin": "4.22.1",
     "@typescript-eslint/parser": "4.22.1",
     "cross-env": "7.0.3",
     "dotenv-defaults": "2.0.1",
-    "eslint": "7.25.0",
+    "eslint": "7.26.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-sort-keys-fix": "1.1.1",
@@ -25,7 +25,7 @@
     "generate-changelog": "1.8.0",
     "husky": "4.3.8",
     "jasmine": "3.7.0",
-    "lint-staged": "10.5.4",
+    "lint-staged": "11.0.0",
     "nock": "13.0.11",
     "nyc": "15.1.0",
     "prettier": "2.2.1",
@@ -33,7 +33,7 @@
     "rimraf": "3.0.2",
     "ts-node": "9.1.1",
     "typedoc": "0.20.36",
-    "typedoc-plugin-markdown": "3.7.2",
+    "typedoc-plugin-markdown": "3.8.0",
     "typescript": "4.2.4"
   },
   "engines": {
