@@ -90,6 +90,43 @@ describe('LoginAPI', () => {
       expect(switchAccountResponse.hasActiveLiveAccounts).toBe(true);
       expect(switchAccountResponse.trailingStopsEnabled).toBe(false);
     });
+
+    it('uses already existing credentials', async () => {
+      const username = 'top';
+      const password = 'secret';
+
+      nock(APIClient.URL_DEMO)
+        .post(LoginAPI.URL.SESSION)
+        .query(true)
+        .reply(200, (_: string, requestBody: Record<string, any>) => {
+          expect(requestBody.identifier).toBe(username);
+          expect(requestBody.password).toBe(password);
+          return JSON.stringify({
+            accountId: 'ABC123',
+            clientId: '133721337',
+            lightstreamerEndpoint: 'https://demo-apd.marketdatasystems.com',
+            oauthToken: {
+              access_token: '6ba8e2bd-1337-40e5-9299-68f60474f986',
+              expires_in: '60',
+              refresh_token: '83c056b8-1337-46d3-821d-92a1dffd7f1e',
+              scope: 'profile',
+              token_type: 'Bearer',
+            },
+            timezoneOffset: 1,
+          });
+        });
+
+      const apiClient = new APIClient(APIClient.URL_DEMO, {
+        apiKey: '123',
+        password,
+        username,
+      });
+      const getSessionToken = spyOn<LoginAPI>(apiClient.rest.login, 'getSessionToken').and.callFake(() =>
+        Promise.resolve(true)
+      );
+      await apiClient.rest.login.createSession();
+      expect(getSessionToken).toHaveBeenCalledTimes(1);
+    });
   });
 
   describe('setupSessionWithToken', () => {

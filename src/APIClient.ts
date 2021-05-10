@@ -1,4 +1,4 @@
-import {RESTClient} from './client/RESTClient';
+import {Authorization, RESTClient} from './client/RESTClient';
 import {LightstreamerAPI} from './lightstreamer';
 
 export class APIClient {
@@ -8,7 +8,7 @@ export class APIClient {
   static URL_DEMO = 'https://demo-api.ig.com/gateway/deal/';
   static URL_LIVE = 'https://api.ig.com/gateway/deal/';
 
-  constructor(private readonly baseUrl: string, apiKey: string) {
+  constructor(private readonly baseUrl: string, apiKey: string | Authorization) {
     this.rest = new RESTClient(baseUrl, apiKey);
     this.stream = new LightstreamerAPI(this.rest.auth);
   }

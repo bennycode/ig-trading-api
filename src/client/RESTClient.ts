@@ -8,8 +8,10 @@ import axiosRetry from 'axios-retry';
 export interface Authorization {
   accessToken?: string;
   accountId?: string;
+  apiKey?: string;
   clientSessionToken?: string;
   lightstreamerEndpoint?: string;
+  password?: string;
   refreshToken?: string;
   securityToken?: string;
   username?: string;
@@ -35,10 +37,18 @@ export class RESTClient {
   readonly httpClient: AxiosInstance;
   readonly auth: Authorization = {};
 
-  constructor(baseURL: string, private readonly apiKey: string) {
+  constructor(baseURL: string, private readonly apiKey: string | Authorization) {
     this.httpClient = axios.create({
       baseURL: baseURL,
     });
+
+    function isAuthorization(candidate: any): candidate is Authorization {
+      return typeof candidate !== 'string';
+    }
+
+    if (isAuthorization(this.apiKey)) {
+      this.auth = this.apiKey;
+    }
 
     function randomNum(min: number, max: number): number {
       return Math.floor(Math.random() * (max - min + 1) + min);
@@ -71,7 +81,7 @@ export class RESTClient {
     this.httpClient.interceptors.request.use(async config => {
       const updatedHeaders = {
         ...config.headers,
-        'X-IG-API-KEY': this.apiKey,
+        'X-IG-API-KEY': isAuthorization(this.apiKey) ? this.apiKey.apiKey : this.apiKey,
       };
 
       const {accessToken, accountId, securityToken, clientSessionToken} = this.auth;

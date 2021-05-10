@@ -41,15 +41,15 @@ export class LoginAPI {
    * @param password - Password
    * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
-  async createSession(username: string, password: string): Promise<TradingSession> {
+  async createSession(username?: string, password?: string): Promise<TradingSession> {
     delete this.auth.accessToken;
 
     const resource = LoginAPI.URL.SESSION;
     const response = await this.apiClient.post<TradingSession>(
       resource,
       {
-        identifier: username,
-        password,
+        identifier: this.auth.username || username,
+        password: this.auth.password || password,
       },
       {
         'axios-retry': {
