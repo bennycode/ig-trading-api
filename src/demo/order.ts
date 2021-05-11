@@ -43,4 +43,7 @@ async function main(): Promise<void> {
   console.info(`Your deleted order deal reference is "${closeOrderSession.dealReference}".`);
 }
 
-main().catch(console.error);
+main().catch(error => {
+  console.error(error);
+  process.exit(1);
+});

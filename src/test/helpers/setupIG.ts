@@ -10,7 +10,7 @@ declare global {
 }
 
 beforeEach(() => {
-  global.client = new APIClient(APIClient.URL_DEMO, '');
+  global.client = new APIClient(APIClient.URL_DEMO, 'global-demo-api-key');
 });
 
 afterEach(() => nock.cleanAll());

@@ -50,32 +50,34 @@ export class RESTClient {
       this.auth = this.apiKey;
     }
 
-    function randomNum(min: number, max: number): number {
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
     axiosRetry(this.httpClient, {
       retries: Infinity,
       retryCondition: (error: AxiosError) => {
         const errorCode = error.response?.data?.errorCode;
 
-        const gotRateLimited = errorCode === 'error.public-api.exceeded-api-key-allowance';
-        const expiredSecurityToken = errorCode === 'error.security.oauth-token-invalid';
-        const missingToken = errorCode === 'error.security.client-token-missing';
-
-        if (gotRateLimited) {
-          return true;
-        } else if (expiredSecurityToken || missingToken) {
-          void this.login.refreshToken();
-          return true;
+        switch (errorCode) {
+          case 'error.public-api.exceeded-api-key-allowance':
+            // Got rate limited
+            return true;
+          case 'error.security.oauth-token-invalid':
+            // Security token expired
+            void this.login.refreshToken();
+            return true;
+          case 'error.security.client-token-missing':
+            // Trading session has not been initialized
+            const {username, password} = this.auth;
+            if (username && password) {
+              void this.login.createSession(this.auth.username, this.auth.password);
+              return true;
+            }
+            throw new Error(
+              `Cannot fulfill request because there is no active session and username & password have not been provided.`
+            );
+          default:
+            return true;
         }
-
-        return true;
       },
-      retryDelay: (retryCount: number) => {
-        /** Rate limits: https://labs.ig.com/faq */
-        return randomNum(1000, 3000) * retryCount;
-      },
+      retryDelay: axiosRetry.exponentialDelay,
     });
 
     this.httpClient.interceptors.request.use(async config => {
@@ -92,7 +94,7 @@ export class RESTClient {
         updatedHeaders.CST = clientSessionToken;
       } else {
         if (accessToken) {
-          updatedHeaders.Authorization = 'Bearer ' + accessToken;
+          updatedHeaders.Authorization = `Bearer ${accessToken}`;
         } else if (securityToken && clientSessionToken) {
           updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
           updatedHeaders.CST = clientSessionToken;
