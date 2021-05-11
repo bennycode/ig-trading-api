@@ -1,3 +1,9 @@
+### 0.13.0 (2021-05-11)
+
+##### New Features
+
+- **client:** Automatically create trading session with username and password ([#169](https://github.com/bennycode/ig-trading-api/pull/169)) ([2cb80b39](https://github.com/bennycode/ig-trading-api/commit/2cb80b39db90a421761fce6b3e189ca70571df82))
+
 ### 0.12.0 (2021-05-10)
 
 ##### Chores
