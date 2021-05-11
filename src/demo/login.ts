@@ -4,4 +4,7 @@ async function main(): Promise<void> {
   await initClient();
 }
 
-main().catch(console.error);
+main().catch(error => {
+  console.error(error);
+  process.exit(1);
+});

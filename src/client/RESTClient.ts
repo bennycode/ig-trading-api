@@ -50,10 +50,6 @@ export class RESTClient {
       this.auth = this.apiKey;
     }
 
-    function randomNum(min: number, max: number): number {
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
     axiosRetry(this.httpClient, {
       retries: Infinity,
       retryCondition: (error: AxiosError) => {
@@ -65,17 +61,24 @@ export class RESTClient {
 
         if (gotRateLimited) {
           return true;
-        } else if (expiredSecurityToken || missingToken) {
+        } else if (expiredSecurityToken) {
           void this.login.refreshToken();
           return true;
+        } else if (missingToken) {
+          const {username, password} = this.auth;
+          if (username && password) {
+            void this.login.createSession(this.auth.username, this.auth.password);
+            return true;
+          }
+          console.warn(
+            `Cannot fulfill request because there is no active session and username & password have not been provided.`
+          );
+          return false;
         }
 
         return true;
       },
-      retryDelay: (retryCount: number) => {
-        /** Rate limits: https://labs.ig.com/faq */
-        return randomNum(1000, 3000) * retryCount;
-      },
+      retryDelay: axiosRetry.exponentialDelay,
     });
 
     this.httpClient.interceptors.request.use(async config => {
