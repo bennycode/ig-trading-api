@@ -27,31 +27,30 @@ npm install ig-trading-api
 yarn add ig-trading-api
 ```
 
-## Setup
+## Usage
 
 You can set the API gateway, when initializing the API client. Use `APIClient.URL_DEMO` (demo-api.ig.com) for demo accounts and `APIClient.URL_LIVE` (api.ig.com) for live account access.
 
-**JavaScript / Node.js**
+### TypeScript
 
-```javascript
-const {APIClient} = require('ig-trading-api');
-const client = new APIClient(APIClient.URL_LIVE, 'your-api-key');
-```
-
-**TypeScript**
+Recommended:
 
 ```typescript
 import {APIClient} from 'ig-trading-api';
 const client = new APIClient(APIClient.URL_LIVE, 'your-api-key');
-```
-
-## Usage
-
-### Login
-
-```typescript
 const session = await client.rest.login.createSession('your-username', 'your-password');
 console.info(`Your client ID is "${session.clientId}".`);
+```
+
+Alternative:
+
+```typescript
+import {APIClient} from 'ig-trading-api';
+const client = new APIClient(APIClient.URL_LIVE, {
+  apiKey: 'your-api-key',
+  username: 'your-username',
+  password: 'your-password',
+});
 ```
 
 ## Resources

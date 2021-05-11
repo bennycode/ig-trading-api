@@ -41,7 +41,7 @@
 
 **Returns:** [_LoginAPI_](login_loginapi.loginapi.md)
 
-Defined in: [login/LoginAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L32)
+Defined in: [login/LoginAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L32)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Defined in: [login/LoginAPI.ts:32](https://github.com/bennycode/ig-trading-api/b
 | `REFRESH_TOKEN` | _string_ |
 | `SESSION`       | _string_ |
 
-Defined in: [login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L29)
+Defined in: [login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L29)
 
 ## Methods
 
@@ -77,7 +77,7 @@ Creates a trading session, obtaining session tokens for subsequent API access. P
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L44)
+Defined in: [login/LoginAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L44)
 
 ---
 
@@ -98,7 +98,7 @@ WARNING: This endpoint only works with a production environment.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L132)
+Defined in: [login/LoginAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L132)
 
 ---
 
@@ -119,7 +119,7 @@ Creates a session from predefined token values.
 
 **Returns:** _void_
 
-Defined in: [login/LoginAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L120)
+Defined in: [login/LoginAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L120)
 
 ---
 
@@ -133,7 +133,7 @@ Returns the user's session details.
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L163)
+Defined in: [login/LoginAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L163)
 
 ---
 
@@ -147,7 +147,7 @@ Saves the user's session details.
 
 **Returns:** _Promise_<boolean\>
 
-Defined in: [login/LoginAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L109)
+Defined in: [login/LoginAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L109)
 
 ---
 
@@ -164,7 +164,7 @@ Defined in: [login/LoginAPI.ts:109](https://github.com/bennycode/ig-trading-api/
 
 **Returns:** _Promise_<[_TradingSession_](../interfaces/login_loginapi.tradingsession.md)\>
 
-Defined in: [login/LoginAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L169)
+Defined in: [login/LoginAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L169)
 
 ---
 
@@ -178,7 +178,7 @@ Log out of the current session.
 
 **Returns:** _Promise_<void\>
 
-Defined in: [login/LoginAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L183)
+Defined in: [login/LoginAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L183)
 
 ---
 
@@ -192,7 +192,7 @@ Refreshes a trading session, obtaining new session tokens for subsequent API acc
 
 **Returns:** _Promise_<[_OauthToken_](../interfaces/login_loginapi.oauthtoken.md)\>
 
-Defined in: [login/LoginAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L197)
+Defined in: [login/LoginAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L197)
 
 ---
 
@@ -212,4 +212,4 @@ Switches active accounts, optionally setting the default IG account (of type CFD
 
 **Returns:** _Promise_<[_SwitchAccountResponse_](../interfaces/login_loginapi.switchaccountresponse.md)\>
 
-Defined in: [login/LoginAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/login/LoginAPI.ts#L81)
+Defined in: [login/LoginAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/login/LoginAPI.ts#L81)

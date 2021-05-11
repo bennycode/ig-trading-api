@@ -36,7 +36,7 @@
 
 **Returns:** [_APIClient_](apiclient.apiclient-1.md)
 
-Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/APIClient.ts#L9)
+Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L9)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/12
 
 • `Readonly` **rest**: [_RESTClient_](client_restclient.restclient.md)
 
-Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/APIClient.ts#L5)
+Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L5)
 
 ---
 
@@ -52,7 +52,7 @@ Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/12
 
 • `Readonly` **stream**: [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
 
-Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/APIClient.ts#L6)
+Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L6)
 
 ---
 
@@ -60,7 +60,7 @@ Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/12
 
 ▪ `Static` **URL_DEMO**: _string_= 'https://demo-api.ig.com/gateway/deal/'
 
-Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/APIClient.ts#L8)
+Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L8)
 
 ---
 
@@ -68,7 +68,7 @@ Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/12
 
 ▪ `Static` **URL_LIVE**: _string_= 'https://api.ig.com/gateway/deal/'
 
-Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/APIClient.ts#L9)
+Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L9)
 
 ## Accessors
 
@@ -78,4 +78,4 @@ Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/12
 
 **Returns:** _boolean_
 
-Defined in: [APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/APIClient.ts#L16)
+Defined in: [APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L16)

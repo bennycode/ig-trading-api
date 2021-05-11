@@ -18,7 +18,7 @@
 
 • **AMOUNT**: = "AMOUNT"
 
-Defined in: [market/MarketAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/MarketAPI.ts#L96)
+Defined in: [market/MarketAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L96)
 
 ---
 
@@ -26,7 +26,7 @@ Defined in: [market/MarketAPI.ts:96](https://github.com/bennycode/ig-trading-api
 
 • **CONTRACTS**: = "CONTRACTS"
 
-Defined in: [market/MarketAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/MarketAPI.ts#L97)
+Defined in: [market/MarketAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L97)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [market/MarketAPI.ts:97](https://github.com/bennycode/ig-trading-api
 
 • **SHARES**: = "SHARES"
 
-Defined in: [market/MarketAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/12afeb1/src/market/MarketAPI.ts#L98)
+Defined in: [market/MarketAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L98)
