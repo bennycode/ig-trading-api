@@ -449,24 +449,67 @@ describe('DealingAPI', () => {
       const amountOfRetries = 0;
 
       const apiClient = new APIClient(APIClient.URL_DEMO, {
-        apiKey: 'demo-apiKey',
-        password: 'demo-password',
-        username: 'demo-username',
+        apiKey: 'local-demo-api-key',
+        password: 'local-demo-password',
+        username: 'local-demo-username',
       });
 
       apiClient.rest.defaults['axios-retry'] = {
         retries: amountOfRetries,
       };
 
-      const createSession = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.rejectWith();
+      const createSession = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.callFake(() => {});
 
       try {
-        await global.client.rest.dealing.deleteOrder(dealId);
+        await apiClient.rest.dealing.deleteOrder(dealId);
         fail('Expected error');
       } catch (error) {
         expect(createSession).toHaveBeenCalledTimes(1);
       }
-    }, 10_000);
+    });
+
+    it('fails to automatically init a trading session if username and password are not supplied', async () => {
+      const dealId = '12345';
+
+      nock(APIClient.URL_DEMO)
+        .post(
+          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
+          {},
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
+        .reply(
+          401,
+          JSON.stringify({
+            errorCode: 'error.security.client-token-missing',
+          })
+        );
+
+      const amountOfRetries = 0;
+
+      const apiClient = new APIClient(APIClient.URL_DEMO, {
+        apiKey: 'local-demo-api-key',
+      });
+
+      apiClient.rest.defaults['axios-retry'] = {
+        retries: amountOfRetries,
+      };
+
+      const createSession = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.callFake(() => {});
+
+      try {
+        await apiClient.rest.dealing.deleteOrder(dealId);
+        fail('Expected error');
+      } catch (error) {
+        expect(createSession).not.toHaveBeenCalled();
+        expect(error.message).toBe(
+          'Cannot fulfill request because there is no active session and username & password have not been provided.'
+        );
+      }
+    });
   });
 
   describe('updateOrder', () => {

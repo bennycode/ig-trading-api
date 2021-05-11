@@ -70,10 +70,9 @@ export class RESTClient {
               void this.login.createSession(this.auth.username, this.auth.password);
               return true;
             }
-            console.warn(
+            throw new Error(
               `Cannot fulfill request because there is no active session and username & password have not been provided.`
             );
-            return false;
           default:
             return true;
         }
