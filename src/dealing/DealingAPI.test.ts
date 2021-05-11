@@ -15,6 +15,7 @@ import {
   PositionOrderType,
   PositionUpdateRequest,
 } from './DealingAPI';
+import {LoginAPI} from '../login';
 
 describe('DealingAPI', () => {
   describe('getAllOpenPositions', () => {
@@ -422,6 +423,48 @@ describe('DealingAPI', () => {
       } catch (error) {
         expect(error.isAxiosError).toBe(true);
         expect(error.config['axios-retry'].retryCount).toBe(amountOfRetries);
+      }
+    }, 10_000);
+
+    it('tries to init a trading session when no session was created', async () => {
+      const dealId = '12345';
+
+      nock(APIClient.URL_DEMO)
+        .post(
+          DealingAPI.URL.WORKINGORDERS_OTC + dealId,
+          {},
+          {
+            reqheaders: {
+              _method: 'DELETE',
+            },
+          }
+        )
+        .reply(
+          401,
+          JSON.stringify({
+            errorCode: 'error.security.client-token-missing',
+          })
+        );
+
+      const amountOfRetries = 0;
+
+      const apiClient = new APIClient(APIClient.URL_DEMO, {
+        apiKey: 'demo-apiKey',
+        password: 'demo-password',
+        username: 'demo-username',
+      });
+
+      apiClient.rest.defaults['axios-retry'] = {
+        retries: amountOfRetries,
+      };
+
+      const createSession = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.rejectWith();
+
+      try {
+        await global.client.rest.dealing.deleteOrder(dealId);
+        fail('Expected error');
+      } catch (error) {
+        expect(createSession).toHaveBeenCalledTimes(1);
       }
     }, 10_000);
   });
