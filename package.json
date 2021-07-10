@@ -3,7 +3,7 @@
     "url": "https://github.com/bennycode/ig-trading-api/issues"
   },
   "dependencies": {
-    "@types/node": "15.12.4",
+    "@types/node": "16.3.1",
     "axios": "0.21.1",
     "axios-retry": "3.1.9",
     "lightstreamer-client-node": "8.0.3",
