@@ -14,7 +14,7 @@
     "@types/jasmine": "3.8.1",
     "@types/luxon": "1.27.1",
     "@typescript-eslint/eslint-plugin": "4.28.3",
-    "@typescript-eslint/parser": "4.28.3",
+    "@typescript-eslint/parser": "4.28.4",
     "cross-env": "7.0.3",
     "dotenv-defaults": "2.0.2",
     "eslint": "7.30.0",
