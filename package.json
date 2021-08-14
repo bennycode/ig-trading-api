@@ -7,7 +7,7 @@
     "axios": "0.21.1",
     "axios-retry": "3.1.9",
     "lightstreamer-client-node": "8.0.3",
-    "luxon": "2.0.1"
+    "luxon": "2.0.2"
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
   "devDependencies": {
