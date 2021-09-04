@@ -16,6 +16,7 @@ import {
   PositionUpdateRequest,
 } from './DealingAPI';
 import {LoginAPI} from '../login';
+import {AxiosError} from 'axios';
 
 describe('DealingAPI', () => {
   describe('getAllOpenPositions', () => {
@@ -421,8 +422,10 @@ describe('DealingAPI', () => {
         await global.client.rest.dealing.deleteOrder(dealId);
         fail('Expected error');
       } catch (error) {
-        expect(error.isAxiosError).toBe(true);
-        expect(error.config['axios-retry'].retryCount).toBe(amountOfRetries);
+        const axiosError = error as AxiosError;
+        expect(axiosError.isAxiosError).toBe(true);
+        // Any typing because of: https://github.com/softonic/axios-retry/pull/174
+        expect((axiosError.config['axios-retry'] as any).retryCount).toBe(amountOfRetries);
       }
     }, 10_000);
 
@@ -504,8 +507,9 @@ describe('DealingAPI', () => {
         await apiClient.rest.dealing.deleteOrder(dealId);
         fail('Expected error');
       } catch (error) {
+        const expectedError = error as Error;
         expect(createSession).not.toHaveBeenCalled();
-        expect(error.message).toBe(
+        expect(expectedError.message).toBe(
           'Cannot fulfill request because there is no active session and username & password have not been provided.'
         );
       }
