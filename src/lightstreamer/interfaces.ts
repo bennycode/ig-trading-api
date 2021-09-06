@@ -29,3 +29,43 @@ export enum ChartFields {
   TTV = 'TTV',
   UTM = 'UTM',
 }
+
+export enum MarketState {
+  CLOSED = 'CLOSED',
+  OFFLINE = 'OFFLINE',
+  TRADEABLE = 'TRADEABLE',
+  EDIT = 'EDIT',
+  AUCTION = 'AUCTION',
+  AUCTION_NO_EDIT = 'AUCTION_NO_EDIT',
+  SUSPENDED = 'SUSPENDED',
+}
+
+export enum MarketFields {
+  MID_OPEN = 'MID_OPEN',
+  HIGH = 'HIGH',
+  LOW = 'LOW',
+  CHANGE = 'CHANGE',
+  CHANGE_PCT = 'CHANGE_PCT',
+  UPDATE_TIME = 'UPDATE_TIME',
+  MARKET_DELAY = 'MARKET_DELAY',
+  MARKET_STATE = 'MARKET_STATE',
+  BID = 'BID',
+  OFFER = 'OFFER',
+  STRIKE_PRICE = 'STRIKE_PRICE',
+  ODDS = 'ODDS',
+}
+
+export interface MarketData {
+  midOpen: number;
+  high: number;
+  low: number;
+  change: number;
+  changePct: number;
+  updateTime: string;
+  marketDelay: number;
+  marketState: string;
+  bid: number;
+  offer: number;
+  strikePrice: number;
+  odds: number;
+}

@@ -2,11 +2,12 @@ import {ItemUpdate, LightstreamerClient, Subscription} from 'lightstreamer-clien
 import {DateTime} from 'luxon';
 import {Authorization} from '../client';
 import {CandleStick} from '../market';
-import {ChartFields, ChartResolution} from './interfaces';
+import {ChartFields, ChartResolution, MarketData, MarketFields} from './interfaces';
 
 export class LightstreamerAPI {
   lightstream?: LightstreamerClient;
   candleSubscription?: Subscription;
+  marketSubscription?: Subscription;
 
   constructor(private readonly auth: Authorization) {}
 
@@ -88,6 +89,57 @@ export class LightstreamerAPI {
 
     lightstream.connect();
     lightstream.subscribe(this.candleSubscription);
+    return lightstream;
+  }
+
+  subscribeMarket(epicList: string[], onMarketUpdate: (epic: string, data: MarketData) => void): LightstreamerClient {
+    const lightstream = this.createLightStream();
+
+    const fields = [
+      MarketFields.MID_OPEN,
+      MarketFields.HIGH,
+      MarketFields.LOW,
+      MarketFields.CHANGE,
+      MarketFields.CHANGE_PCT,
+      MarketFields.UPDATE_TIME,
+      MarketFields.MARKET_DELAY,
+      MarketFields.MARKET_STATE,
+      MarketFields.BID,
+      MarketFields.OFFER,
+      MarketFields.STRIKE_PRICE,
+      MarketFields.ODDS,
+    ];
+
+    if (this.marketSubscription && this.marketSubscription.isSubscribed) {
+      lightstream.unsubscribe(this.marketSubscription);
+    }
+
+    this.marketSubscription = new Subscription('MERGE', epicList, fields);
+
+    this.marketSubscription.addListener({
+      onItemUpdate: (item: ItemUpdate) => {
+        const epic = item.getItemName();
+        const market: MarketData = {
+          midOpen: parseFloat(item.getValue(MarketFields.MID_OPEN)),
+          high: parseFloat(item.getValue(MarketFields.HIGH)),
+          low: parseFloat(item.getValue(MarketFields.LOW)),
+          change: parseFloat(item.getValue(MarketFields.CHANGE)),
+          changePct: parseFloat(item.getValue(MarketFields.CHANGE_PCT)),
+          updateTime: item.getValue(MarketFields.UPDATE_TIME),
+          marketDelay: parseFloat(item.getValue(MarketFields.MARKET_DELAY)),
+          marketState: item.getValue(MarketFields.MARKET_STATE),
+          bid: parseFloat(item.getValue(MarketFields.BID)),
+          offer: parseFloat(item.getValue(MarketFields.OFFER)),
+          strikePrice: parseFloat(item.getValue(MarketFields.STRIKE_PRICE)),
+          odds: parseFloat(item.getValue(MarketFields.ODDS)),
+        };
+
+        onMarketUpdate(epic, market);
+      },
+    });
+
+    lightstream.connect();
+    lightstream.subscribe(this.marketSubscription);
     return lightstream;
   }
 }
