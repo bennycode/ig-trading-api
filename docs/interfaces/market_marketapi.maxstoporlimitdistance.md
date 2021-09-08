@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MaxStopOrLimitDistance
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MaxStopOrLimitDistance
 
 # Interface: MaxStopOrLimitDistance
 
-[market/MarketAPI](../modules/market_marketapi.md).MaxStopOrLimitDistance
+[market/MarketAPI](../modules/market_MarketAPI.md).MaxStopOrLimitDistance
 
 ## Table of contents
 
 ### Properties
 
-- [unit](market_marketapi.maxstoporlimitdistance.md#unit)
-- [value](market_marketapi.maxstoporlimitdistance.md#value)
+- [unit](market_MarketAPI.MaxStopOrLimitDistance.md#unit)
+- [value](market_MarketAPI.MaxStopOrLimitDistance.md#value)
 
 ## Properties
 
 ### unit
 
-• **unit**: _string_
+• **unit**: `string`
 
-Defined in: [market/MarketAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L122)
+#### Defined in
+
+[market/MarketAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L122)
 
 ---
 
 ### value
 
-• **value**: _number_
+• **value**: `number`
 
-Defined in: [market/MarketAPI.ts:123](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L123)
+#### Defined in
+
+[market/MarketAPI.ts:123](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L123)

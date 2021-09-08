@@ -1,46 +1,54 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / Balance
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / Balance
 
 # Interface: Balance
 
-[account/AccountAPI](../modules/account_accountapi.md).Balance
+[account/AccountAPI](../modules/account_AccountAPI.md).Balance
 
 ## Table of contents
 
 ### Properties
 
-- [available](account_accountapi.balance.md#available)
-- [balance](account_accountapi.balance.md#balance)
-- [deposit](account_accountapi.balance.md#deposit)
-- [profitLoss](account_accountapi.balance.md#profitloss)
+- [available](account_AccountAPI.Balance.md#available)
+- [balance](account_AccountAPI.Balance.md#balance)
+- [deposit](account_AccountAPI.Balance.md#deposit)
+- [profitLoss](account_AccountAPI.Balance.md#profitloss)
 
 ## Properties
 
 ### available
 
-• **available**: _number_
+• **available**: `number`
 
-Defined in: [account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L67)
+#### Defined in
+
+[account/AccountAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L67)
 
 ---
 
 ### balance
 
-• **balance**: _number_
+• **balance**: `number`
 
-Defined in: [account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L68)
+#### Defined in
+
+[account/AccountAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L68)
 
 ---
 
 ### deposit
 
-• **deposit**: _number_
+• **deposit**: `number`
 
-Defined in: [account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L69)
+#### Defined in
+
+[account/AccountAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L69)
 
 ---
 
 ### profitLoss
 
-• **profitLoss**: _number_
+• **profitLoss**: `number`
 
-Defined in: [account/AccountAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L70)
+#### Defined in
+
+[account/AccountAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L70)

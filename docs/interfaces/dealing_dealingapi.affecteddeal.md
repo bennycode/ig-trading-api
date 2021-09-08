@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_dealingapi.md) / AffectedDeal
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_DealingAPI.md) / AffectedDeal
 
 # Interface: AffectedDeal
 
-[dealing/DealingAPI](../modules/dealing_dealingapi.md).AffectedDeal
+[dealing/DealingAPI](../modules/dealing_DealingAPI.md).AffectedDeal
 
 ## Table of contents
 
 ### Properties
 
-- [dealId](dealing_dealingapi.affecteddeal.md#dealid)
-- [status](dealing_dealingapi.affecteddeal.md#status)
+- [dealId](dealing_DealingAPI.AffectedDeal.md#dealid)
+- [status](dealing_DealingAPI.AffectedDeal.md#status)
 
 ## Properties
 
 ### dealId
 
-• **dealId**: _string_
+• **dealId**: `string`
 
-Defined in: [dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L177)
+#### Defined in
+
+[dealing/DealingAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L177)
 
 ---
 
 ### status
 
-• **status**: [_AffectedDealStatus_](../enums/dealing_dealingapi.affecteddealstatus.md)
+• **status**: [`AffectedDealStatus`](../enums/dealing_DealingAPI.AffectedDealStatus.md)
 
-Defined in: [dealing/DealingAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L178)
+#### Defined in
+
+[dealing/DealingAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L178)

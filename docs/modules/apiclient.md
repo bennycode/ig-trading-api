@@ -6,4 +6,4 @@
 
 ### Classes
 
-- [APIClient](../classes/apiclient.apiclient-1.md)
+- [APIClient](../classes/APIClient.APIClient-1.md)

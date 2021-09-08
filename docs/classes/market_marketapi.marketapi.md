@@ -1,70 +1,74 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MarketAPI
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MarketAPI
 
 # Class: MarketAPI
 
-[market/MarketAPI](../modules/market_marketapi.md).MarketAPI
+[market/MarketAPI](../modules/market_MarketAPI.md).MarketAPI
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](market_marketapi.marketapi.md#constructor)
+- [constructor](market_MarketAPI.MarketAPI.md#constructor)
 
 ### Properties
 
-- [price](market_marketapi.marketapi.md#price)
-- [URL](market_marketapi.marketapi.md#url)
+- [price](market_MarketAPI.MarketAPI.md#price)
+- [URL](market_MarketAPI.MarketAPI.md#url)
 
 ### Methods
 
-- [getMarketCategories](market_marketapi.marketapi.md#getmarketcategories)
-- [getMarketDetails](market_marketapi.marketapi.md#getmarketdetails)
-- [searchMarkets](market_marketapi.marketapi.md#searchmarkets)
+- [getMarketCategories](market_MarketAPI.MarketAPI.md#getmarketcategories)
+- [getMarketDetails](market_MarketAPI.MarketAPI.md#getmarketdetails)
+- [searchMarkets](market_MarketAPI.MarketAPI.md#searchmarkets)
 
 ## Constructors
 
 ### constructor
 
-\+ **new MarketAPI**(`apiClient`: AxiosInstance): [_MarketAPI_](market_marketapi.marketapi.md)
+• **new MarketAPI**(`apiClient`)
 
 #### Parameters
 
-| Name        | Type          |
-| :---------- | :------------ |
-| `apiClient` | AxiosInstance |
+| Name        | Type            |
+| :---------- | :-------------- |
+| `apiClient` | `AxiosInstance` |
 
-**Returns:** [_MarketAPI_](market_marketapi.marketapi.md)
+#### Defined in
 
-Defined in: [market/MarketAPI.ts:219](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L219)
+[market/MarketAPI.ts:221](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L221)
 
 ## Properties
 
 ### price
 
-• **price**: [_PriceAPI_](market_prices_priceapi.priceapi.md)
+• **price**: [`PriceAPI`](market_prices_PriceAPI.PriceAPI.md)
 
-Defined in: [market/MarketAPI.ts:219](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L219)
+#### Defined in
+
+[market/MarketAPI.ts:219](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L219)
 
 ---
 
 ### URL
 
-▪ `Static` `Readonly` **URL**: _object_
+▪ `Static` `Readonly` **URL**: `Object`
 
 #### Type declaration
 
 | Name               | Type     |
 | :----------------- | :------- |
-| `MARKETNAVIGATION` | _string_ |
-| `MARKETS`          | _string_ |
+| `MARKETNAVIGATION` | `string` |
+| `MARKETS`          | `string` |
 
-Defined in: [market/MarketAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L215)
+#### Defined in
+
+[market/MarketAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L215)
 
 ## Methods
 
 ### getMarketCategories
 
-▸ **getMarketCategories**(`nodeId?`: _string_): _Promise_<[_MarketNavigation_](../interfaces/market_marketapi.marketnavigation.md)\>
+▸ **getMarketCategories**(`nodeId?`): `Promise`<[`MarketNavigation`](../interfaces/market_MarketAPI.MarketNavigation.md)\>
 
 Returns all nodes (market categories) in the market navigation hierarchy.
 
@@ -76,17 +80,21 @@ Returns all nodes (market categories) in the market navigation hierarchy.
 
 | Name      | Type     | Description                          |
 | :-------- | :------- | :----------------------------------- |
-| `nodeId?` | _string_ | The identifier of the node to browse |
+| `nodeId?` | `string` | The identifier of the node to browse |
 
-**Returns:** _Promise_<[_MarketNavigation_](../interfaces/market_marketapi.marketnavigation.md)\>
+#### Returns
 
-Defined in: [market/MarketAPI.ts:244](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L244)
+`Promise`<[`MarketNavigation`](../interfaces/market_MarketAPI.MarketNavigation.md)\>
+
+#### Defined in
+
+[market/MarketAPI.ts:244](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L244)
 
 ---
 
 ### getMarketDetails
 
-▸ **getMarketDetails**(`epic`: _string_): _Promise_<[_MarketDetail_](../interfaces/market_marketapi.marketdetail.md)\>
+▸ **getMarketDetails**(`epic`): `Promise`<[`MarketDetail`](../interfaces/market_MarketAPI.MarketDetail.md)\>
 
 Returns the details of the given market(s).
 
@@ -96,29 +104,37 @@ Returns the details of the given market(s).
 
 | Name   | Type     | Description                            |
 | :----- | :------- | :------------------------------------- |
-| `epic` | _string_ | The epic of the market to be retrieved |
+| `epic` | `string` | The epic of the market to be retrieved |
 
-**Returns:** _Promise_<[_MarketDetail_](../interfaces/market_marketapi.marketdetail.md)\>
+#### Returns
 
-Defined in: [market/MarketAPI.ts:256](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L256)
+`Promise`<[`MarketDetail`](../interfaces/market_MarketAPI.MarketDetail.md)\>
 
-▸ **getMarketDetails**(`epic`: _string_[]): _Promise_<[_MarketDetails_](../modules/market_marketapi.md#marketdetails)\>
+#### Defined in
+
+[market/MarketAPI.ts:256](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L256)
+
+▸ **getMarketDetails**(`epic`): `Promise`<[`MarketDetails`](../modules/market_MarketAPI.md#marketdetails)\>
 
 #### Parameters
 
 | Name   | Type       |
 | :----- | :--------- |
-| `epic` | _string_[] |
+| `epic` | `string`[] |
 
-**Returns:** _Promise_<[_MarketDetails_](../modules/market_marketapi.md#marketdetails)\>
+#### Returns
 
-Defined in: [market/MarketAPI.ts:257](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L257)
+`Promise`<[`MarketDetails`](../modules/market_MarketAPI.md#marketdetails)\>
+
+#### Defined in
+
+[market/MarketAPI.ts:257](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L257)
 
 ---
 
 ### searchMarkets
 
-▸ **searchMarkets**(`searchTerm`: _string_): _Promise_<[_MarketSearch_](../interfaces/market_marketapi.marketsearch.md)\>
+▸ **searchMarkets**(`searchTerm`): `Promise`<[`MarketSearch`](../interfaces/market_MarketAPI.MarketSearch.md)\>
 
 Returns all markets matching the search term.
 
@@ -128,8 +144,12 @@ Returns all markets matching the search term.
 
 | Name         | Type     | Description                       |
 | :----------- | :------- | :-------------------------------- |
-| `searchTerm` | _string_ | The term to be used in the search |
+| `searchTerm` | `string` | The term to be used in the search |
 
-**Returns:** _Promise_<[_MarketSearch_](../interfaces/market_marketapi.marketsearch.md)\>
+#### Returns
 
-Defined in: [market/MarketAPI.ts:231](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L231)
+`Promise`<[`MarketSearch`](../interfaces/market_MarketAPI.MarketSearch.md)\>
+
+#### Defined in
+
+[market/MarketAPI.ts:231](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L231)

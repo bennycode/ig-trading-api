@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / RolloverDetail
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / RolloverDetail
 
 # Interface: RolloverDetail
 
-[market/MarketAPI](../modules/market_marketapi.md).RolloverDetail
+[market/MarketAPI](../modules/market_MarketAPI.md).RolloverDetail
 
 ## Table of contents
 
 ### Properties
 
-- [lastRolloverTime](market_marketapi.rolloverdetail.md#lastrollovertime)
-- [rolloverInfo](market_marketapi.rolloverdetail.md#rolloverinfo)
+- [lastRolloverTime](market_MarketAPI.RolloverDetail.md#lastrollovertime)
+- [rolloverInfo](market_MarketAPI.RolloverDetail.md#rolloverinfo)
 
 ## Properties
 
 ### lastRolloverTime
 
-• **lastRolloverTime**: _string_
+• **lastRolloverTime**: `string`
 
-Defined in: [market/MarketAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L35)
+#### Defined in
+
+[market/MarketAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L35)
 
 ---
 
 ### rolloverInfo
 
-• **rolloverInfo**: _string_
+• **rolloverInfo**: `string`
 
-Defined in: [market/MarketAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L36)
+#### Defined in
+
+[market/MarketAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L36)

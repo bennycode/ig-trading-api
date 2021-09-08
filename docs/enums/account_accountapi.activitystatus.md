@@ -1,37 +1,43 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / ActivityStatus
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / ActivityStatus
 
 # Enumeration: ActivityStatus
 
-[account/AccountAPI](../modules/account_accountapi.md).ActivityStatus
+[account/AccountAPI](../modules/account_AccountAPI.md).ActivityStatus
 
 ## Table of contents
 
 ### Enumeration members
 
-- [ACCEPTED](account_accountapi.activitystatus.md#accepted)
-- [REJECTED](account_accountapi.activitystatus.md#rejected)
-- [UNKNOWN](account_accountapi.activitystatus.md#unknown)
+- [ACCEPTED](account_AccountAPI.ActivityStatus.md#accepted)
+- [REJECTED](account_AccountAPI.ActivityStatus.md#rejected)
+- [UNKNOWN](account_AccountAPI.ActivityStatus.md#unknown)
 
 ## Enumeration members
 
 ### ACCEPTED
 
-• **ACCEPTED**: = "ACCEPTED"
+• **ACCEPTED** = `"ACCEPTED"`
 
-Defined in: [account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L54)
+#### Defined in
+
+[account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L54)
 
 ---
 
 ### REJECTED
 
-• **REJECTED**: = "REJECTED"
+• **REJECTED** = `"REJECTED"`
 
-Defined in: [account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L55)
+#### Defined in
+
+[account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L55)
 
 ---
 
 ### UNKNOWN
 
-• **UNKNOWN**: = "UNKNOWN"
+• **UNKNOWN** = `"UNKNOWN"`
 
-Defined in: [account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L56)
+#### Defined in
+
+[account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L56)

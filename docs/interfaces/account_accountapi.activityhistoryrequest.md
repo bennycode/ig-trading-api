@@ -1,64 +1,76 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / ActivityHistoryRequest
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / ActivityHistoryRequest
 
 # Interface: ActivityHistoryRequest
 
-[account/AccountAPI](../modules/account_accountapi.md).ActivityHistoryRequest
+[account/AccountAPI](../modules/account_AccountAPI.md).ActivityHistoryRequest
 
 ## Table of contents
 
 ### Properties
 
-- [dealId](account_accountapi.activityhistoryrequest.md#dealid)
-- [detailed](account_accountapi.activityhistoryrequest.md#detailed)
-- [filter](account_accountapi.activityhistoryrequest.md#filter)
-- [from](account_accountapi.activityhistoryrequest.md#from)
-- [pageSize](account_accountapi.activityhistoryrequest.md#pagesize)
-- [to](account_accountapi.activityhistoryrequest.md#to)
+- [dealId](account_AccountAPI.ActivityHistoryRequest.md#dealid)
+- [detailed](account_AccountAPI.ActivityHistoryRequest.md#detailed)
+- [filter](account_AccountAPI.ActivityHistoryRequest.md#filter)
+- [from](account_AccountAPI.ActivityHistoryRequest.md#from)
+- [pageSize](account_AccountAPI.ActivityHistoryRequest.md#pagesize)
+- [to](account_AccountAPI.ActivityHistoryRequest.md#to)
 
 ## Properties
 
 ### dealId
 
-• `Optional` **dealId**: _string_
+• `Optional` **dealId**: `string`
 
-Defined in: [account/AccountAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L135)
+#### Defined in
+
+[account/AccountAPI.ts:135](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L135)
 
 ---
 
 ### detailed
 
-• `Optional` **detailed**: _boolean_
+• `Optional` **detailed**: `boolean`
 
-Defined in: [account/AccountAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L136)
+#### Defined in
+
+[account/AccountAPI.ts:136](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L136)
 
 ---
 
 ### filter
 
-• `Optional` **filter**: _string_
+• `Optional` **filter**: `string`
 
-Defined in: [account/AccountAPI.ts:137](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L137)
+#### Defined in
+
+[account/AccountAPI.ts:137](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L137)
 
 ---
 
 ### from
 
-• `Optional` **from**: _string_
+• `Optional` **from**: `string`
 
-Defined in: [account/AccountAPI.ts:138](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L138)
+#### Defined in
+
+[account/AccountAPI.ts:138](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L138)
 
 ---
 
 ### pageSize
 
-• `Optional` **pageSize**: _number_
+• `Optional` **pageSize**: `number`
 
-Defined in: [account/AccountAPI.ts:139](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L139)
+#### Defined in
+
+[account/AccountAPI.ts:139](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L139)
 
 ---
 
 ### to
 
-• `Optional` **to**: _string_
+• `Optional` **to**: `string`
 
-Defined in: [account/AccountAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L140)
+#### Defined in
+
+[account/AccountAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L140)

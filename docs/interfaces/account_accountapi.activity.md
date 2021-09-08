@@ -1,91 +1,109 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / Activity
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / Activity
 
 # Interface: Activity
 
-[account/AccountAPI](../modules/account_accountapi.md).Activity
+[account/AccountAPI](../modules/account_AccountAPI.md).Activity
 
 ## Table of contents
 
 ### Properties
 
-- [channel](account_accountapi.activity.md#channel)
-- [date](account_accountapi.activity.md#date)
-- [dealId](account_accountapi.activity.md#dealid)
-- [description](account_accountapi.activity.md#description)
-- [details](account_accountapi.activity.md#details)
-- [epic](account_accountapi.activity.md#epic)
-- [period](account_accountapi.activity.md#period)
-- [status](account_accountapi.activity.md#status)
-- [type](account_accountapi.activity.md#type)
+- [channel](account_AccountAPI.Activity.md#channel)
+- [date](account_AccountAPI.Activity.md#date)
+- [dealId](account_AccountAPI.Activity.md#dealid)
+- [description](account_AccountAPI.Activity.md#description)
+- [details](account_AccountAPI.Activity.md#details)
+- [epic](account_AccountAPI.Activity.md#epic)
+- [period](account_AccountAPI.Activity.md#period)
+- [status](account_AccountAPI.Activity.md#status)
+- [type](account_AccountAPI.Activity.md#type)
 
 ## Properties
 
 ### channel
 
-• **channel**: [_Channel_](../enums/account_accountapi.channel.md)
+• **channel**: [`Channel`](../enums/account_AccountAPI.Channel.md)
 
-Defined in: [account/AccountAPI.ts:114](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L114)
+#### Defined in
+
+[account/AccountAPI.ts:114](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L114)
 
 ---
 
 ### date
 
-• **date**: Date
+• **date**: `Date`
 
-Defined in: [account/AccountAPI.ts:115](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L115)
+#### Defined in
+
+[account/AccountAPI.ts:115](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L115)
 
 ---
 
 ### dealId
 
-• **dealId**: _string_
+• **dealId**: `string`
 
-Defined in: [account/AccountAPI.ts:116](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L116)
+#### Defined in
+
+[account/AccountAPI.ts:116](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L116)
 
 ---
 
 ### description
 
-• **description**: _string_
+• **description**: `string`
 
-Defined in: [account/AccountAPI.ts:117](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L117)
+#### Defined in
+
+[account/AccountAPI.ts:117](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L117)
 
 ---
 
 ### details
 
-• `Optional` **details**: [_Details_](account_accountapi.details.md)
+• `Optional` **details**: [`Details`](account_AccountAPI.Details.md)
 
-Defined in: [account/AccountAPI.ts:118](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L118)
+#### Defined in
+
+[account/AccountAPI.ts:118](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L118)
 
 ---
 
 ### epic
 
-• **epic**: _string_
+• **epic**: `string`
 
-Defined in: [account/AccountAPI.ts:119](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L119)
+#### Defined in
+
+[account/AccountAPI.ts:119](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L119)
 
 ---
 
 ### period
 
-• **period**: _string_
+• **period**: `string`
 
-Defined in: [account/AccountAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L120)
+#### Defined in
+
+[account/AccountAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L120)
 
 ---
 
 ### status
 
-• **status**: [_ActivityStatus_](../enums/account_accountapi.activitystatus.md)
+• **status**: [`ActivityStatus`](../enums/account_AccountAPI.ActivityStatus.md)
 
-Defined in: [account/AccountAPI.ts:121](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L121)
+#### Defined in
+
+[account/AccountAPI.ts:121](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L121)
 
 ---
 
 ### type
 
-• **type**: [_ActivityType_](../enums/account_accountapi.activitytype.md)
+• **type**: [`ActivityType`](../enums/account_AccountAPI.ActivityType.md)
 
-Defined in: [account/AccountAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L122)
+#### Defined in
+
+[account/AccountAPI.ts:122](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L122)

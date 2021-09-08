@@ -1,81 +1,93 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [APIClient](../modules/apiclient.md) / APIClient
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [APIClient](../modules/APIClient.md) / APIClient
 
 # Class: APIClient
 
-[APIClient](../modules/apiclient.md).APIClient
+[APIClient](../modules/APIClient.md).APIClient
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](apiclient.apiclient-1.md#constructor)
+- [constructor](APIClient.APIClient-1.md#constructor)
 
 ### Properties
 
-- [rest](apiclient.apiclient-1.md#rest)
-- [stream](apiclient.apiclient-1.md#stream)
-- [URL_DEMO](apiclient.apiclient-1.md#url_demo)
-- [URL_LIVE](apiclient.apiclient-1.md#url_live)
+- [rest](APIClient.APIClient-1.md#rest)
+- [stream](APIClient.APIClient-1.md#stream)
+- [URL_DEMO](APIClient.APIClient-1.md#url_demo)
+- [URL_LIVE](APIClient.APIClient-1.md#url_live)
 
 ### Accessors
 
-- [isLive](apiclient.apiclient-1.md#islive)
+- [isLive](APIClient.APIClient-1.md#islive)
 
 ## Constructors
 
 ### constructor
 
-\+ **new APIClient**(`baseUrl`: _string_, `apiKey`: _string_ \| [_Authorization_](../interfaces/client_restclient.authorization.md)): [_APIClient_](apiclient.apiclient-1.md)
+• **new APIClient**(`baseUrl`, `apiKey`)
 
 #### Parameters
 
 | Name      | Type                                                                            |
 | :-------- | :------------------------------------------------------------------------------ |
-| `baseUrl` | _string_                                                                        |
-| `apiKey`  | _string_ \| [_Authorization_](../interfaces/client_restclient.authorization.md) |
+| `baseUrl` | `string`                                                                        |
+| `apiKey`  | `string` \| [`Authorization`](../interfaces/client_RESTClient.Authorization.md) |
 
-**Returns:** [_APIClient_](apiclient.apiclient-1.md)
+#### Defined in
 
-Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L9)
+[APIClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L11)
 
 ## Properties
 
 ### rest
 
-• `Readonly` **rest**: [_RESTClient_](client_restclient.restclient.md)
+• `Readonly` **rest**: [`RESTClient`](client_RESTClient.RESTClient.md)
 
-Defined in: [APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L5)
+#### Defined in
+
+[APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L5)
 
 ---
 
 ### stream
 
-• `Readonly` **stream**: [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
+• `Readonly` **stream**: [`LightstreamerAPI`](lightstreamer_LightstreamerAPI.LightstreamerAPI.md)
 
-Defined in: [APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L6)
+#### Defined in
+
+[APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L6)
 
 ---
 
 ### URL_DEMO
 
-▪ `Static` **URL_DEMO**: _string_= 'https://demo-api.ig.com/gateway/deal/'
+▪ `Static` **URL_DEMO**: `string` = `'https://demo-api.ig.com/gateway/deal/'`
 
-Defined in: [APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L8)
+#### Defined in
+
+[APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L8)
 
 ---
 
 ### URL_LIVE
 
-▪ `Static` **URL_LIVE**: _string_= 'https://api.ig.com/gateway/deal/'
+▪ `Static` **URL_LIVE**: `string` = `'https://api.ig.com/gateway/deal/'`
 
-Defined in: [APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L9)
+#### Defined in
+
+[APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L9)
 
 ## Accessors
 
 ### isLive
 
-• get **isLive**(): _boolean_
+• `get` **isLive**(): `boolean`
 
-**Returns:** _boolean_
+#### Returns
 
-Defined in: [APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/APIClient.ts#L16)
+`boolean`
+
+#### Defined in
+
+[APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L16)

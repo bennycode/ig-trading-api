@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_dealingapi.md) / OrderTimeInForce
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_DealingAPI.md) / OrderTimeInForce
 
 # Enumeration: OrderTimeInForce
 
-[dealing/DealingAPI](../modules/dealing_dealingapi.md).OrderTimeInForce
+[dealing/DealingAPI](../modules/dealing_DealingAPI.md).OrderTimeInForce
 
 ## Table of contents
 
 ### Enumeration members
 
-- [GOOD_TILL_CANCELLED](dealing_dealingapi.ordertimeinforce.md#good_till_cancelled)
-- [GOOD_TILL_DATE](dealing_dealingapi.ordertimeinforce.md#good_till_date)
+- [GOOD_TILL_CANCELLED](dealing_DealingAPI.OrderTimeInForce.md#good_till_cancelled)
+- [GOOD_TILL_DATE](dealing_DealingAPI.OrderTimeInForce.md#good_till_date)
 
 ## Enumeration members
 
 ### GOOD_TILL_CANCELLED
 
-• **GOOD_TILL_CANCELLED**: = "GOOD_TILL_CANCELLED"
+• **GOOD_TILL_CANCELLED** = `"GOOD_TILL_CANCELLED"`
 
-Defined in: [dealing/DealingAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L26)
+#### Defined in
+
+[dealing/DealingAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L26)
 
 ---
 
 ### GOOD_TILL_DATE
 
-• **GOOD_TILL_DATE**: = "GOOD_TILL_DATE"
+• **GOOD_TILL_DATE** = `"GOOD_TILL_DATE"`
 
-Defined in: [dealing/DealingAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L27)
+#### Defined in
+
+[dealing/DealingAPI.ts:27](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L27)

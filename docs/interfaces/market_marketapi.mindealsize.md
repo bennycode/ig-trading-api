@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MinDealSize
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MinDealSize
 
 # Interface: MinDealSize
 
-[market/MarketAPI](../modules/market_marketapi.md).MinDealSize
+[market/MarketAPI](../modules/market_MarketAPI.md).MinDealSize
 
 ## Table of contents
 
 ### Properties
 
-- [unit](market_marketapi.mindealsize.md#unit)
-- [value](market_marketapi.mindealsize.md#value)
+- [unit](market_MarketAPI.MinDealSize.md#unit)
+- [value](market_MarketAPI.MinDealSize.md#value)
 
 ## Properties
 
 ### unit
 
-• **unit**: _string_
+• **unit**: `string`
 
-Defined in: [market/MarketAPI.ts:107](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L107)
+#### Defined in
+
+[market/MarketAPI.ts:107](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L107)
 
 ---
 
 ### value
 
-• **value**: _number_
+• **value**: `number`
 
-Defined in: [market/MarketAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L108)
+#### Defined in
+
+[market/MarketAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L108)

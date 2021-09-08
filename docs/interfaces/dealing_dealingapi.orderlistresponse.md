@@ -1,19 +1,21 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_dealingapi.md) / OrderListResponse
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_DealingAPI.md) / OrderListResponse
 
 # Interface: OrderListResponse
 
-[dealing/DealingAPI](../modules/dealing_dealingapi.md).OrderListResponse
+[dealing/DealingAPI](../modules/dealing_DealingAPI.md).OrderListResponse
 
 ## Table of contents
 
 ### Properties
 
-- [workingOrders](dealing_dealingapi.orderlistresponse.md#workingorders)
+- [workingOrders](dealing_DealingAPI.OrderListResponse.md#workingorders)
 
 ## Properties
 
 ### workingOrders
 
-• **workingOrders**: [_OrderResponse_](dealing_dealingapi.orderresponse.md)[]
+• **workingOrders**: [`OrderResponse`](dealing_DealingAPI.OrderResponse.md)[]
 
-Defined in: [dealing/DealingAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L140)
+#### Defined in
+
+[dealing/DealingAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L140)

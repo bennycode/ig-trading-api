@@ -1,37 +1,43 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / TransactionPaging
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / TransactionPaging
 
 # Interface: TransactionPaging
 
-[account/AccountAPI](../modules/account_accountapi.md).TransactionPaging
+[account/AccountAPI](../modules/account_AccountAPI.md).TransactionPaging
 
 ## Table of contents
 
 ### Properties
 
-- [pageNumber](account_accountapi.transactionpaging.md#pagenumber)
-- [pageSize](account_accountapi.transactionpaging.md#pagesize)
-- [totalPages](account_accountapi.transactionpaging.md#totalpages)
+- [pageNumber](account_AccountAPI.TransactionPaging.md#pagenumber)
+- [pageSize](account_AccountAPI.TransactionPaging.md#pagesize)
+- [totalPages](account_AccountAPI.TransactionPaging.md#totalpages)
 
 ## Properties
 
 ### pageNumber
 
-• **pageNumber**: _number_
+• **pageNumber**: `number`
 
-Defined in: [account/AccountAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L165)
+#### Defined in
+
+[account/AccountAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L165)
 
 ---
 
 ### pageSize
 
-• **pageSize**: _number_
+• **pageSize**: `number`
 
-Defined in: [account/AccountAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L166)
+#### Defined in
+
+[account/AccountAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L166)
 
 ---
 
 ### totalPages
 
-• **totalPages**: _number_
+• **totalPages**: `number`
 
-Defined in: [account/AccountAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L167)
+#### Defined in
+
+[account/AccountAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L167)

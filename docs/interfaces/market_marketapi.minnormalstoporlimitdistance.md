@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MinNormalStopOrLimitDistance
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MinNormalStopOrLimitDistance
 
 # Interface: MinNormalStopOrLimitDistance
 
-[market/MarketAPI](../modules/market_marketapi.md).MinNormalStopOrLimitDistance
+[market/MarketAPI](../modules/market_MarketAPI.md).MinNormalStopOrLimitDistance
 
 ## Table of contents
 
 ### Properties
 
-- [unit](market_marketapi.minnormalstoporlimitdistance.md#unit)
-- [value](market_marketapi.minnormalstoporlimitdistance.md#value)
+- [unit](market_MarketAPI.MinNormalStopOrLimitDistance.md#unit)
+- [value](market_MarketAPI.MinNormalStopOrLimitDistance.md#value)
 
 ## Properties
 
 ### unit
 
-• **unit**: _string_
+• **unit**: `string`
 
-Defined in: [market/MarketAPI.ts:117](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L117)
+#### Defined in
+
+[market/MarketAPI.ts:117](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L117)
 
 ---
 
 ### value
 
-• **value**: _number_
+• **value**: `number`
 
-Defined in: [market/MarketAPI.ts:118](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L118)
+#### Defined in
+
+[market/MarketAPI.ts:118](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L118)

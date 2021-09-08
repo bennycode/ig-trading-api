@@ -1,19 +1,21 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_dealingapi.md) / PositionListResponse
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_DealingAPI.md) / PositionListResponse
 
 # Interface: PositionListResponse
 
-[dealing/DealingAPI](../modules/dealing_dealingapi.md).PositionListResponse
+[dealing/DealingAPI](../modules/dealing_DealingAPI.md).PositionListResponse
 
 ## Table of contents
 
 ### Properties
 
-- [positions](dealing_dealingapi.positionlistresponse.md#positions)
+- [positions](dealing_DealingAPI.PositionListResponse.md#positions)
 
 ## Properties
 
 ### positions
 
-• **positions**: [_PositionResponse_](dealing_dealingapi.positionresponse.md)[]
+• **positions**: [`PositionResponse`](dealing_DealingAPI.PositionResponse.md)[]
 
-Defined in: [dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L74)
+#### Defined in
+
+[dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L74)

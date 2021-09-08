@@ -1,19 +1,21 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / ActivityMetadata
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / ActivityMetadata
 
 # Interface: ActivityMetadata
 
-[account/AccountAPI](../modules/account_accountapi.md).ActivityMetadata
+[account/AccountAPI](../modules/account_AccountAPI.md).ActivityMetadata
 
 ## Table of contents
 
 ### Properties
 
-- [paging](account_accountapi.activitymetadata.md#paging)
+- [paging](account_AccountAPI.ActivityMetadata.md#paging)
 
 ## Properties
 
 ### paging
 
-• **paging**: [_ActivityPaging_](account_accountapi.activitypaging.md)
+• **paging**: [`ActivityPaging`](account_AccountAPI.ActivityPaging.md)
 
-Defined in: [account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L131)
+#### Defined in
+
+[account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L131)
