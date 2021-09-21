@@ -1,3 +1,18 @@
+#### 0.13.2 (2021-09-21)
+
+##### Chores
+
+- Upgrade dependencies ([8ecaa940](https://github.com/bennycode/ig-trading-api/commit/8ecaa940109eaba4361f6689455d4d03b6686f1a))
+- Run dependency updates once each month ([435e155d](https://github.com/bennycode/ig-trading-api/commit/435e155d06e22d2883bd0ff539d9441d7d19e743))
+- **deps-dev:**
+  - bump typedoc from 0.21.9 to 0.22.0 ([#283](https://github.com/bennycode/ig-trading-api/pull/283)) ([e8cd1806](https://github.com/bennycode/ig-trading-api/commit/e8cd18069282ff800e8f425f5a07641aeb2341c2))
+  - bump prettier from 2.3.2 to 2.4.0 ([#282](https://github.com/bennycode/ig-trading-api/pull/282)) ([8c156071](https://github.com/bennycode/ig-trading-api/commit/8c156071f6f37de99fc2c1bc5709523d9a397e6c))
+- **deps:** bump @types/node from 15.12.4 to 15.14.9 ([#281](https://github.com/bennycode/ig-trading-api/pull/281)) ([6b05b105](https://github.com/bennycode/ig-trading-api/commit/6b05b1058be3099d4b4229a161afb98129e7d03a))
+
+##### Other Changes
+
+- **deps-dev:** bump typedoc from 0.21.9 to 0.22.0 ([#283](https://github.com/bennycode/ig-trading-api/pull/283))" ([42d7e3d9](https://github.com/bennycode/ig-trading-api/commit/42d7e3d93b10d011c9a62207b016616c416be91d))
+
 #### 0.13.1 (2021-09-08)
 
 ##### Chores
