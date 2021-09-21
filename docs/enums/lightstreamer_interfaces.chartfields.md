@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:9](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L9)
+[lightstreamer/interfaces.ts:9](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L9)
 
 ---
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:10](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L10)
+[lightstreamer/interfaces.ts:10](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L10)
 
 ---
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:11](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L11)
+[lightstreamer/interfaces.ts:11](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L11)
 
 ---
 
@@ -69,7 +69,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:12](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L12)
+[lightstreamer/interfaces.ts:12](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L12)
 
 ---
 
@@ -79,7 +79,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:13](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L13)
+[lightstreamer/interfaces.ts:13](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L13)
 
 ---
 
@@ -89,7 +89,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:14](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L14)
+[lightstreamer/interfaces.ts:14](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L14)
 
 ---
 
@@ -99,7 +99,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:15](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L15)
+[lightstreamer/interfaces.ts:15](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L15)
 
 ---
 
@@ -109,7 +109,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:16](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L16)
+[lightstreamer/interfaces.ts:16](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L16)
 
 ---
 
@@ -119,7 +119,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:17](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L17)
+[lightstreamer/interfaces.ts:17](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L17)
 
 ---
 
@@ -129,7 +129,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:18](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L18)
+[lightstreamer/interfaces.ts:18](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L18)
 
 ---
 
@@ -139,7 +139,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:19](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L19)
+[lightstreamer/interfaces.ts:19](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L19)
 
 ---
 
@@ -149,7 +149,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:20](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L20)
+[lightstreamer/interfaces.ts:20](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L20)
 
 ---
 
@@ -159,7 +159,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:21](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L21)
+[lightstreamer/interfaces.ts:21](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L21)
 
 ---
 
@@ -169,7 +169,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:22](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L22)
+[lightstreamer/interfaces.ts:22](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L22)
 
 ---
 
@@ -179,7 +179,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:23](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L23)
+[lightstreamer/interfaces.ts:23](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L23)
 
 ---
 
@@ -189,7 +189,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:24](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L24)
+[lightstreamer/interfaces.ts:24](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L24)
 
 ---
 
@@ -199,7 +199,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:25](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L25)
+[lightstreamer/interfaces.ts:25](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L25)
 
 ---
 
@@ -209,7 +209,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:26](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L26)
+[lightstreamer/interfaces.ts:26](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L26)
 
 ---
 
@@ -219,7 +219,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:27](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L27)
+[lightstreamer/interfaces.ts:27](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L27)
 
 ---
 
@@ -229,7 +229,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:28](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L28)
+[lightstreamer/interfaces.ts:28](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L28)
 
 ---
 
@@ -239,7 +239,7 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:29](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L29)
+[lightstreamer/interfaces.ts:29](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L29)
 
 ---
 
@@ -249,4 +249,4 @@
 
 #### Defined in
 
-[lightstreamer/interfaces.ts:30](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/interfaces.ts#L30)
+[lightstreamer/interfaces.ts:30](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/interfaces.ts#L30)

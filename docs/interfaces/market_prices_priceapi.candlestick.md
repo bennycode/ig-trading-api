@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L12)
+[market/prices/PriceAPI.ts:12](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L12)
 
 ---
 
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L13)
+[market/prices/PriceAPI.ts:13](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L13)
 
 ---
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L14)
+[market/prices/PriceAPI.ts:14](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L14)
 
 ---
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L15)
+[market/prices/PriceAPI.ts:15](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L15)
 
 ---
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L16)
+[market/prices/PriceAPI.ts:16](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L16)
 
 ---
 
@@ -74,7 +74,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L17)
+[market/prices/PriceAPI.ts:17](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L17)
 
 ---
 
@@ -84,4 +84,4 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:18](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L18)
+[market/prices/PriceAPI.ts:18](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L18)

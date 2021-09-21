@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L74)
+[dealing/DealingAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L74)

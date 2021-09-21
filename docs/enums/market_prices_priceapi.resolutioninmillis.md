@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L64)
+[market/prices/PriceAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L64)
 
 ---
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L65)
+[market/prices/PriceAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L65)
 
 ---
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:66](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L66)
+[market/prices/PriceAPI.ts:66](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L66)
 
 ---
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L67)
+[market/prices/PriceAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L67)
 
 ---
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L68)
+[market/prices/PriceAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L68)
 
 ---
 
@@ -82,7 +82,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L69)
+[market/prices/PriceAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L69)
 
 ---
 
@@ -92,7 +92,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L70)
+[market/prices/PriceAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L70)
 
 ---
 
@@ -102,7 +102,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:71](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L71)
+[market/prices/PriceAPI.ts:71](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L71)
 
 ---
 
@@ -112,7 +112,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:72](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L72)
+[market/prices/PriceAPI.ts:72](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L72)
 
 ---
 
@@ -122,7 +122,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:73](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L73)
+[market/prices/PriceAPI.ts:73](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L73)
 
 ---
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L74)
+[market/prices/PriceAPI.ts:74](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L74)
 
 ---
 
@@ -142,7 +142,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:75](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L75)
+[market/prices/PriceAPI.ts:75](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L75)
 
 ---
 
@@ -152,7 +152,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:76](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L76)
+[market/prices/PriceAPI.ts:76](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L76)
 
 ---
 
@@ -162,7 +162,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:77](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L77)
+[market/prices/PriceAPI.ts:77](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L77)
 
 ---
 
@@ -172,4 +172,4 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:78](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L78)
+[market/prices/PriceAPI.ts:78](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L78)

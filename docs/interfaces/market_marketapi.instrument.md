@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L40)
+[market/MarketAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L40)
 
 ---
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L41)
+[market/MarketAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L41)
 
 ---
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L42)
+[market/MarketAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L42)
 
 ---
 
@@ -76,7 +76,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:43](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L43)
+[market/MarketAPI.ts:43](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L43)
 
 ---
 
@@ -86,7 +86,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L44)
+[market/MarketAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L44)
 
 ---
 
@@ -96,7 +96,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L45)
+[market/MarketAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L45)
 
 ---
 
@@ -106,7 +106,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L46)
+[market/MarketAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L46)
 
 ---
 
@@ -116,7 +116,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L47)
+[market/MarketAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L47)
 
 ---
 
@@ -126,7 +126,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L48)
+[market/MarketAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L48)
 
 ---
 
@@ -136,7 +136,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L49)
+[market/MarketAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L49)
 
 ---
 
@@ -146,7 +146,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L50)
+[market/MarketAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L50)
 
 ---
 
@@ -156,7 +156,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L51)
+[market/MarketAPI.ts:51](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L51)
 
 ---
 
@@ -166,7 +166,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L52)
+[market/MarketAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L52)
 
 ---
 
@@ -176,7 +176,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L53)
+[market/MarketAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L53)
 
 ---
 
@@ -186,7 +186,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L54)
+[market/MarketAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L54)
 
 ---
 
@@ -196,7 +196,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L55)
+[market/MarketAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L55)
 
 ---
 
@@ -206,7 +206,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L56)
+[market/MarketAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L56)
 
 ---
 
@@ -216,7 +216,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L57)
+[market/MarketAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L57)
 
 ---
 
@@ -232,7 +232,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L58)
+[market/MarketAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L58)
 
 ---
 
@@ -242,7 +242,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L61)
+[market/MarketAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L61)
 
 ---
 
@@ -252,7 +252,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L62)
+[market/MarketAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L62)
 
 ---
 
@@ -262,7 +262,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L63)
+[market/MarketAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L63)
 
 ---
 
@@ -274,7 +274,7 @@ For sprint markets only, the maximum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L65)
+[market/MarketAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L65)
 
 ---
 
@@ -286,7 +286,7 @@ For sprint markets only, the minimum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L67)
+[market/MarketAPI.ts:67](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L67)
 
 ---
 
@@ -296,7 +296,7 @@ For sprint markets only, the minimum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L68)
+[market/MarketAPI.ts:68](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L68)
 
 ---
 
@@ -306,7 +306,7 @@ For sprint markets only, the minimum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L69)
+[market/MarketAPI.ts:69](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L69)
 
 ---
 
@@ -316,7 +316,7 @@ For sprint markets only, the minimum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L70)
+[market/MarketAPI.ts:70](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L70)
 
 ---
 
@@ -326,7 +326,7 @@ For sprint markets only, the minimum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:71](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L71)
+[market/MarketAPI.ts:71](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L71)
 
 ---
 
@@ -336,4 +336,4 @@ For sprint markets only, the minimum value to be specified as the expiry of a sp
 
 #### Defined in
 
-[market/MarketAPI.ts:72](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L72)
+[market/MarketAPI.ts:72](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L72)

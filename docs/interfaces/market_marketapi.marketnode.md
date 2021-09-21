@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L182)
+[market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L182)
 
 ---
 
@@ -29,4 +29,4 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L183)
+[market/MarketAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L183)

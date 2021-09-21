@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L96)
+[account/AccountAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L96)
 
 ---
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L97)
+[account/AccountAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L97)
 
 ---
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L98)
+[account/AccountAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L98)
 
 ---
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:99](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L99)
+[account/AccountAPI.ts:99](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L99)
 
 ---
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L100)
+[account/AccountAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L100)
 
 ---
 
@@ -82,7 +82,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:101](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L101)
+[account/AccountAPI.ts:101](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L101)
 
 ---
 
@@ -92,7 +92,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L102)
+[account/AccountAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L102)
 
 ---
 
@@ -102,7 +102,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L103)
+[account/AccountAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L103)
 
 ---
 
@@ -112,7 +112,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:104](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L104)
+[account/AccountAPI.ts:104](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L104)
 
 ---
 
@@ -122,7 +122,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:105](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L105)
+[account/AccountAPI.ts:105](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L105)
 
 ---
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:106](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L106)
+[account/AccountAPI.ts:106](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L106)
 
 ---
 
@@ -142,7 +142,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:107](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L107)
+[account/AccountAPI.ts:107](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L107)
 
 ---
 
@@ -152,7 +152,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L108)
+[account/AccountAPI.ts:108](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L108)
 
 ---
 
@@ -162,7 +162,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L109)
+[account/AccountAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L109)
 
 ---
 
@@ -172,4 +172,4 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L110)
+[account/AccountAPI.ts:110](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L110)

@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:40](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L40)
+[client/RESTClient.ts:40](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L40)
 
 ## Properties
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L35)
+[client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L35)
 
 ---
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:38](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L38)
+[client/RESTClient.ts:38](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L38)
 
 ---
 
@@ -69,7 +69,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L34)
+[client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L34)
 
 ---
 
@@ -79,7 +79,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:37](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L37)
+[client/RESTClient.ts:37](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L37)
 
 ---
 
@@ -89,7 +89,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L32)
+[client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L32)
 
 ---
 
@@ -99,7 +99,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:33](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L33)
+[client/RESTClient.ts:33](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L33)
 
 ## Accessors
 
@@ -113,7 +113,7 @@
 
 #### Defined in
 
-[client/RESTClient.ts:21](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L21)
+[client/RESTClient.ts:21](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L21)
 
 ---
 
@@ -132,4 +132,4 @@
 
 #### Defined in
 
-[client/RESTClient.ts:25](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/client/RESTClient.ts#L25)
+[client/RESTClient.ts:25](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L25)

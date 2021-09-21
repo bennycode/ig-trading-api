@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:211](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L211)
+[market/MarketAPI.ts:211](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L211)

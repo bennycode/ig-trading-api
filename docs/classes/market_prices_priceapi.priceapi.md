@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:86](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L86)
+[market/prices/PriceAPI.ts:86](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L86)
 
 ## Properties
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L82)
+[market/prices/PriceAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L82)
 
 ## Methods
 
@@ -75,7 +75,7 @@ Returns historical prices for a particular instrument.
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L130)
+[market/prices/PriceAPI.ts:130](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L130)
 
 ---
 
@@ -106,4 +106,4 @@ Returns historical prices between given dates.
 
 #### Defined in
 
-[market/prices/PriceAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/prices/PriceAPI.ts#L100)
+[market/prices/PriceAPI.ts:100](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L100)

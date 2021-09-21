@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/account/AccountAPI.ts#L131)
+[account/AccountAPI.ts:131](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L131)

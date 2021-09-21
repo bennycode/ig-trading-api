@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[APIClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L11)
+[APIClient.ts:11](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/APIClient.ts#L11)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L5)
+[APIClient.ts:5](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/APIClient.ts#L5)
 
 ---
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L6)
+[APIClient.ts:6](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/APIClient.ts#L6)
 
 ---
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L8)
+[APIClient.ts:8](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/APIClient.ts#L8)
 
 ---
 
@@ -76,7 +76,7 @@
 
 #### Defined in
 
-[APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L9)
+[APIClient.ts:9](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/APIClient.ts#L9)
 
 ## Accessors
 
@@ -90,4 +90,4 @@
 
 #### Defined in
 
-[APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/APIClient.ts#L16)
+[APIClient.ts:16](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/APIClient.ts#L16)

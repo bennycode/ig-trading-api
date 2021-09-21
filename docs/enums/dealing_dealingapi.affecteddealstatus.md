@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L31)
+[dealing/DealingAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L31)
 
 ---
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L32)
+[dealing/DealingAPI.ts:32](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L32)
 
 ---
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L33)
+[dealing/DealingAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L33)
 
 ---
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L34)
+[dealing/DealingAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L34)
 
 ---
 
@@ -62,4 +62,4 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/dealing/DealingAPI.ts#L35)
+[dealing/DealingAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L35)

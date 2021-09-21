@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[lightstreamer/LightstreamerAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/LightstreamerAPI.ts#L11)
+[lightstreamer/LightstreamerAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L11)
 
 ## Properties
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/LightstreamerAPI.ts#L9)
+[lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L9)
 
 ---
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/LightstreamerAPI.ts#L8)
+[lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L8)
 
 ## Methods
 
@@ -75,4 +75,4 @@
 
 #### Defined in
 
-[lightstreamer/LightstreamerAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/lightstreamer/LightstreamerAPI.ts#L25)
+[lightstreamer/LightstreamerAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L25)

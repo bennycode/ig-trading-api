@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:221](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L221)
+[market/MarketAPI.ts:221](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L221)
 
 ## Properties
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:219](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L219)
+[market/MarketAPI.ts:219](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L219)
 
 ---
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L215)
+[market/MarketAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L215)
 
 ## Methods
 
@@ -88,7 +88,7 @@ Returns all nodes (market categories) in the market navigation hierarchy.
 
 #### Defined in
 
-[market/MarketAPI.ts:244](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L244)
+[market/MarketAPI.ts:244](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L244)
 
 ---
 
@@ -112,7 +112,7 @@ Returns the details of the given market(s).
 
 #### Defined in
 
-[market/MarketAPI.ts:256](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L256)
+[market/MarketAPI.ts:256](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L256)
 
 ▸ **getMarketDetails**(`epic`): `Promise`<[`MarketDetails`](../modules/market_MarketAPI.md#marketdetails)\>
 
@@ -128,7 +128,7 @@ Returns the details of the given market(s).
 
 #### Defined in
 
-[market/MarketAPI.ts:257](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L257)
+[market/MarketAPI.ts:257](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L257)
 
 ---
 
@@ -152,4 +152,4 @@ Returns all markets matching the search term.
 
 #### Defined in
 
-[market/MarketAPI.ts:231](https://github.com/bennycode/ig-trading-api/blob/98182c7/src/market/MarketAPI.ts#L231)
+[market/MarketAPI.ts:231](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L231)
