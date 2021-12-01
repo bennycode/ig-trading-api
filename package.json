@@ -26,7 +26,7 @@
     "husky": "4.3.8",
     "jasmine": "3.10.0",
     "lint-staged": "11.2.6",
-    "nock": "13.1.4",
+    "nock": "13.2.1",
     "nyc": "15.1.0",
     "prettier": "2.4.1",
     "pretty-quick": "3.1.2",
