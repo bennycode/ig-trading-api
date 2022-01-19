@@ -289,10 +289,10 @@
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
-"@types/luxon@2.0.8":
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/@types/luxon/-/luxon-2.0.8.tgz#a0fdd7ab0b67e08bf1d301232a7fef79b74ded69"
-  integrity sha512-lGmxL6hMEVqXr8w9bL52RUWXVu90o7vH8WQSutQssr2e+w0TNttXx2Zfw2V2lHHHWfW6OGqB8bXDvtKocv19qQ==
+"@types/luxon@2.0.9":
+  version "2.0.9"
+  resolved "https://registry.npmjs.org/@types/luxon/-/luxon-2.0.9.tgz#782a0edfa6d699191292c13168bd496cd66b87c6"
+  integrity sha512-ZuzIc7aN+i2ZDMWIiSmMdubR9EMMSTdEzF6R+FckP4p6xdnOYKqknTo/k+xXQvciSXlNGIwA4OPU5X7JIFzYdA==
 
 "@types/minimatch@^3.0.3":
   version "3.0.3"
