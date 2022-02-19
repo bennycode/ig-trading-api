@@ -1,3 +1,61 @@
+#### 0.13.3 (2022-02-19)
+
+##### Chores
+
+- Update dependencies ([1631bb0b](https://github.com/bennycode/ig-trading-api/commit/1631bb0bb93cf5c6d94c882bee585d3489794582))
+- Automatically update GitHub Actions ([fe2f408a](https://github.com/bennycode/ig-trading-api/commit/fe2f408a2bf77c8fc451c8a922078214758c1898))
+- **deps:**
+  - bump actions/setup-node from 1 to 2.5.1 ([#322](https://github.com/bennycode/ig-trading-api/pull/322)) ([e9f1908f](https://github.com/bennycode/ig-trading-api/commit/e9f1908f7c2b5a49edabe440fe9fdec619923b32))
+  - bump ahmadnassri/action-dependabot-auto-merge ([#324](https://github.com/bennycode/ig-trading-api/pull/324)) ([bec0f320](https://github.com/bennycode/ig-trading-api/commit/bec0f32021792a763c3791ef437b914ee8e19aa1))
+  - bump luxon from 2.2.0 to 2.3.0 ([#325](https://github.com/bennycode/ig-trading-api/pull/325)) ([d6e928b0](https://github.com/bennycode/ig-trading-api/commit/d6e928b02efc9a99a98d80d27d7fa17d33ababab))
+  - bump codecov/codecov-action from 1.3.2 to 2.1.0 ([#323](https://github.com/bennycode/ig-trading-api/pull/323)) ([fa1701ee](https://github.com/bennycode/ig-trading-api/commit/fa1701ee8d4189b67c1ffbe1ceec18d06c95074f))
+  - bump luxon from 2.1.1 to 2.2.0 ([#315](https://github.com/bennycode/ig-trading-api/pull/315)) ([c3c47d2c](https://github.com/bennycode/ig-trading-api/commit/c3c47d2c12b42dac3d79aa17d9038c017fe6ea0c))
+  - bump luxon from 2.0.2 to 2.1.1 ([#312](https://github.com/bennycode/ig-trading-api/pull/312)) ([c7dc81ca](https://github.com/bennycode/ig-trading-api/commit/c7dc81ca585640bc650aa465da0eb25889308e0a))
+- **deps-dev:**
+  - bump typescript from 4.5.4 to 4.5.5 ([#338](https://github.com/bennycode/ig-trading-api/pull/338)) ([61cefb8d](https://github.com/bennycode/ig-trading-api/commit/61cefb8de243fa44f44ec171aac2d7f9679819ba))
+  - bump lint-staged from 12.2.1 to 12.3.2 ([#336](https://github.com/bennycode/ig-trading-api/pull/336)) ([86001663](https://github.com/bennycode/ig-trading-api/commit/86001663246e19ab0518dbe38e4a25d1491c49e0))
+  - bump jasmine from 3.10.0 to 4.0.2 ([#332](https://github.com/bennycode/ig-trading-api/pull/332)) ([6db9798d](https://github.com/bennycode/ig-trading-api/commit/6db9798ddefaf82d7fd93272195ea3dd58b07ad2))
+  - bump typedoc-plugin-markdown from 3.11.8 to 3.11.12 ([#335](https://github.com/bennycode/ig-trading-api/pull/335)) ([cbfc8056](https://github.com/bennycode/ig-trading-api/commit/cbfc80565e50a6909588862c34a0cc30357ae470))
+  - bump lint-staged from 12.1.4 to 12.2.1 ([#327](https://github.com/bennycode/ig-trading-api/pull/327)) ([ec764e62](https://github.com/bennycode/ig-trading-api/commit/ec764e6215792afffde7439acb0b2e9338cc671a))
+  - bump @types/luxon from 2.0.8 to 2.0.9 ([#330](https://github.com/bennycode/ig-trading-api/pull/330)) ([6b8edf06](https://github.com/bennycode/ig-trading-api/commit/6b8edf06b63f5931e75bfa42216930d0b48b1268))
+  - bump typedoc from 0.22.10 to 0.22.11 ([#329](https://github.com/bennycode/ig-trading-api/pull/329)) ([2cc25692](https://github.com/bennycode/ig-trading-api/commit/2cc25692a3ed3bf3a91214f7fcbe6ab24554ac7c))
+  - bump nock from 13.2.1 to 13.2.2 ([#328](https://github.com/bennycode/ig-trading-api/pull/328)) ([e2abd6a9](https://github.com/bennycode/ig-trading-api/commit/e2abd6a949c611c17fd3f80ec37cc9ad5136f6bf))
+  - bump @types/jasmine from 3.10.2 to 3.10.3 ([#326](https://github.com/bennycode/ig-trading-api/pull/326)) ([a2341c10](https://github.com/bennycode/ig-trading-api/commit/a2341c109c2d49c9e2d5fe700eceba2ca3a8cb1a))
+  - bump pretty-quick from 3.1.2 to 3.1.3 ([#319](https://github.com/bennycode/ig-trading-api/pull/319)) ([0beb7380](https://github.com/bennycode/ig-trading-api/commit/0beb7380ac91eee3500254ec756ba588faf8d2e2))
+  - bump typedoc-plugin-markdown from 3.11.7 to 3.11.8 ([#316](https://github.com/bennycode/ig-trading-api/pull/316)) ([18891f45](https://github.com/bennycode/ig-trading-api/commit/18891f4578b99e793f11df85ac1577fce35521ad))
+  - bump lint-staged from 12.1.2 to 12.1.4 ([#320](https://github.com/bennycode/ig-trading-api/pull/320)) ([00190250](https://github.com/bennycode/ig-trading-api/commit/001902506fd62ae4ba2727f76344efb501e078cd))
+  - bump prettier from 2.5.0 to 2.5.1 ([#318](https://github.com/bennycode/ig-trading-api/pull/318)) ([539fe7c2](https://github.com/bennycode/ig-trading-api/commit/539fe7c2fc4762f0f9a79868311a1e840b32828a))
+  - bump @types/luxon from 2.0.7 to 2.0.8 ([#317](https://github.com/bennycode/ig-trading-api/pull/317)) ([ae2279ac](https://github.com/bennycode/ig-trading-api/commit/ae2279acd8e137c2dc8d79757e85e63048cedf2b))
+  - bump typescript from 4.4.4 to 4.5.4 ([#314](https://github.com/bennycode/ig-trading-api/pull/314)) ([8a8f030d](https://github.com/bennycode/ig-trading-api/commit/8a8f030db8cb5d2e1107a0438622bf6009347b45))
+  - bump lint-staged from 11.2.6 to 12.1.2 ([#310](https://github.com/bennycode/ig-trading-api/pull/310)) ([3662c339](https://github.com/bennycode/ig-trading-api/commit/3662c3390bf5d8c710eeb2b8c3165c0060902759))
+  - bump typedoc from 0.22.7 to 0.22.10 ([#308](https://github.com/bennycode/ig-trading-api/pull/308)) ([5bf7f925](https://github.com/bennycode/ig-trading-api/commit/5bf7f92555affe5c474b0d8d69ab642031f8fa54))
+  - bump prettier from 2.4.1 to 2.5.0 ([#309](https://github.com/bennycode/ig-trading-api/pull/309)) ([b9e4121f](https://github.com/bennycode/ig-trading-api/commit/b9e4121f1b6bebd92efc9a1a3e01398609dbdb4f))
+  - bump @types/luxon from 2.0.5 to 2.0.7 ([#311](https://github.com/bennycode/ig-trading-api/pull/311)) ([3f3bf7af](https://github.com/bennycode/ig-trading-api/commit/3f3bf7afb610f72dc13d8d2123754ac54fcfffc6))
+  - bump nock from 13.1.4 to 13.2.1 ([#313](https://github.com/bennycode/ig-trading-api/pull/313)) ([d9eb7bb0](https://github.com/bennycode/ig-trading-api/commit/d9eb7bb00bffe2d64d483296ed7fa89f6d1a8a07))
+  - bump typedoc-plugin-markdown from 3.11.3 to 3.11.7 ([#306](https://github.com/bennycode/ig-trading-api/pull/306)) ([48912d2f](https://github.com/bennycode/ig-trading-api/commit/48912d2f63ea156ea8c4cb1aff9023f08cf14cbd))
+  - bump @types/jasmine from 3.10.1 to 3.10.2 ([#307](https://github.com/bennycode/ig-trading-api/pull/307)) ([9c15b7c2](https://github.com/bennycode/ig-trading-api/commit/9c15b7c2121401aec7428f6ee17464601cbe0f14))
+  - bump pretty-quick from 3.1.1 to 3.1.2 ([#305](https://github.com/bennycode/ig-trading-api/pull/305)) ([a8a08dbf](https://github.com/bennycode/ig-trading-api/commit/a8a08dbfb0ab66155444af9933ed33f49d43cedc))
+  - bump eslint-plugin-typescript-sort-keys ([#304](https://github.com/bennycode/ig-trading-api/pull/304)) ([e1085f8e](https://github.com/bennycode/ig-trading-api/commit/e1085f8e308c82d03a9edb73d00571aac35eb027))
+  - bump nock from 13.1.3 to 13.1.4 ([#300](https://github.com/bennycode/ig-trading-api/pull/300)) ([22850114](https://github.com/bennycode/ig-trading-api/commit/2285011438e0a62639ccd50f8f0454a66088903a))
+  - bump @typescript-eslint/parser from 4.32.0 to 4.33.0 ([#298](https://github.com/bennycode/ig-trading-api/pull/298)) ([f1b02dc5](https://github.com/bennycode/ig-trading-api/commit/f1b02dc56c833fbfa54c5ddb23e55380a4f8471e))
+  - bump ts-node from 10.2.1 to 10.4.0 ([#301](https://github.com/bennycode/ig-trading-api/pull/301)) ([189a33a5](https://github.com/bennycode/ig-trading-api/commit/189a33a5ad12436a120530d583bd6893e2913b83))
+  - bump eslint-plugin-typescript-sort-keys ([#302](https://github.com/bennycode/ig-trading-api/pull/302)) ([b08190c5](https://github.com/bennycode/ig-trading-api/commit/b08190c5ae26d42a060b18ad88b5fedbefcbc0e5))
+  - bump @types/jasmine from 3.9.1 to 3.10.1 ([#293](https://github.com/bennycode/ig-trading-api/pull/293)) ([b417e4b6](https://github.com/bennycode/ig-trading-api/commit/b417e4b6eec00a922281ba95b5396ae608e6bbfa))
+  - bump typedoc-plugin-markdown from 3.10.4 to 3.11.3 ([#296](https://github.com/bennycode/ig-trading-api/pull/296)) ([885fc706](https://github.com/bennycode/ig-trading-api/commit/885fc706b3be99e4a7e0abfbf7159804005faa7a))
+  - bump @types/luxon from 2.0.4 to 2.0.5 ([#297](https://github.com/bennycode/ig-trading-api/pull/297)) ([0f3da34b](https://github.com/bennycode/ig-trading-api/commit/0f3da34ba255aab84632ef493ed539ee167ea2a9))
+  - bump jasmine from 3.9.0 to 3.10.0 ([#299](https://github.com/bennycode/ig-trading-api/pull/299)) ([75ee436b](https://github.com/bennycode/ig-trading-api/commit/75ee436b562a279b4ed53a8c8095aa7dd801eaeb))
+  - bump typescript from 4.4.3 to 4.4.4 ([#295](https://github.com/bennycode/ig-trading-api/pull/295)) ([e11d3db6](https://github.com/bennycode/ig-trading-api/commit/e11d3db65d63374f289ae73c23b73812281c85e4))
+  - bump typedoc from 0.22.4 to 0.22.7 ([#292](https://github.com/bennycode/ig-trading-api/pull/292)) ([72816046](https://github.com/bennycode/ig-trading-api/commit/728160467f1bc42dc63fd2140708033aae0997ae))
+  - bump lint-staged from 11.1.2 to 11.2.6 ([#291](https://github.com/bennycode/ig-trading-api/pull/291)) ([9226aa96](https://github.com/bennycode/ig-trading-api/commit/9226aa964d480ea061232f04eddbcd01b3b4bfca))
+  - bump @typescript-eslint/eslint-plugin ([#290](https://github.com/bennycode/ig-trading-api/pull/290)) ([12b48192](https://github.com/bennycode/ig-trading-api/commit/12b48192a50cec6a2ff3cbec42c2b73817e9861a))
+  - bump @typescript-eslint/eslint-plugin ([#287](https://github.com/bennycode/ig-trading-api/pull/287)) ([acdfef47](https://github.com/bennycode/ig-trading-api/commit/acdfef477e4f4e629ba12ad55db9c4b337abb8a6))
+  - bump typedoc from 0.21.9 to 0.22.4 ([#285](https://github.com/bennycode/ig-trading-api/pull/285)) ([eacccaf4](https://github.com/bennycode/ig-trading-api/commit/eacccaf4945ed5c656dd93f8c6d8eee92e8bc1ea))
+  - bump @typescript-eslint/parser from 4.31.2 to 4.32.0 ([#286](https://github.com/bennycode/ig-trading-api/pull/286)) ([b40c08b4](https://github.com/bennycode/ig-trading-api/commit/b40c08b4184dd1f29862c3b2825ccc47861717b6))
+
+##### Bug Fixes
+
+- Formatting of timestamps on streamed market prices ([#339](https://github.com/bennycode/ig-trading-api/pull/339)) ([c6388077](https://github.com/bennycode/ig-trading-api/commit/c638807717286099c807a5ad126c0d175b9c6ea2))
+
 #### 0.13.2 (2021-09-21)
 
 ##### Chores
