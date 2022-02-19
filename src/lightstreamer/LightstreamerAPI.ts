@@ -78,8 +78,8 @@ export class LightstreamerAPI {
             bid: parseFloat(item.getValue(ChartFields.BID_OPEN)),
             lastTraded: parseFloat(item.getValue(ChartFields.LTP_OPEN)),
           },
-          snapshotTime: dt.toFormat('yyyy/LL/dd hh:mm:ss'),
-          snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'hh:mm:ss"),
+          snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
+          snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
         };
 
         onCandleUpdate(epic, candle);
