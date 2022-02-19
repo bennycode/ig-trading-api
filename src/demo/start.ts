@@ -2,11 +2,7 @@ import {initClient} from './initClient';
 import {APIClient} from '../APIClient';
 
 declare global {
-  namespace NodeJS {
-    interface Global {
-      IGClient: APIClient;
-    }
-  }
+  var IGClient: APIClient;
 }
 
 async function main(): Promise<void> {
