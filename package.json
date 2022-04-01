@@ -11,7 +11,7 @@
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
   "devDependencies": {
-    "@types/jasmine": "3.10.3",
+    "@types/jasmine": "4.0.2",
     "@types/luxon": "2.0.9",
     "@typescript-eslint/eslint-plugin": "5.13.0",
     "@typescript-eslint/parser": "5.13.0",
