@@ -1636,10 +1636,10 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-lightstreamer-client-node@8.0.3:
-  version "8.0.3"
-  resolved "https://registry.npmjs.org/lightstreamer-client-node/-/lightstreamer-client-node-8.0.3.tgz#e04213d06e8484f6a2764e0fc2dfc01cbfb25743"
-  integrity sha512-dxq3MR2f+K9G74JBnQ6epvejfjmorS4chgBv4evqwyxMewyTRgUqaphCB900skBadpV0Jqh6FsI1WdnLSJRhtg==
+lightstreamer-client-node@8.0.4:
+  version "8.0.4"
+  resolved "https://registry.npmjs.org/lightstreamer-client-node/-/lightstreamer-client-node-8.0.4.tgz#55f4b19153b63bde208bf8c0602a4f7c18bc5ede"
+  integrity sha512-0di889kdIQfIjgRcxtkMx18faf9y8t3/DNUL/toLq1Y6FePEOahDhKjnPBfZqH9GGcLVeDmsXe5kAPpENYVznw==
   dependencies:
     faye-websocket "^0.11.0"
     xmlhttprequest-cookie "^0.9.4"
