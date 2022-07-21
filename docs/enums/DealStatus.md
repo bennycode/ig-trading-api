@@ -4,27 +4,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [ACCEPTED](DealStatus.md#accepted)
 - [REJECTED](DealStatus.md#rejected)
 
-## Enumeration members
+## Enumeration Members
 
 ### ACCEPTED
 
-• **ACCEPTED** = `"ACCEPTED"`
+• **ACCEPTED**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L39)
+[dealing/DealingAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L39)
 
 ---
 
 ### REJECTED
 
-• **REJECTED** = `"REJECTED"`
+• **REJECTED**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L40)
+[dealing/DealingAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L40)

@@ -4,27 +4,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [LIMIT](OrderType.md#limit)
 - [STOP](OrderType.md#stop)
 
-## Enumeration members
+## Enumeration Members
 
 ### LIMIT
 
-• **LIMIT** = `"LIMIT"`
+• **LIMIT**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L21)
+[dealing/DealingAPI.ts:21](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L21)
 
 ---
 
 ### STOP
 
-• **STOP** = `"STOP"`
+• **STOP**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L22)
+[dealing/DealingAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L22)

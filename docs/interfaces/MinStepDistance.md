@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L102)
+[market/MarketAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L102)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L103)
+[market/MarketAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L103)

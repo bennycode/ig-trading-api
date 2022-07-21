@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:213](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L213)
+[dealing/DealingAPI.ts:213](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L213)
 
 ## Properties
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:205](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L205)
+[dealing/DealingAPI.ts:205](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L205)
 
 ## Methods
 
@@ -83,7 +83,7 @@ Closes an OTC position.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:267](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L267)
+[dealing/DealingAPI.ts:267](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L267)
 
 ---
 
@@ -107,7 +107,7 @@ Returns a deal confirmation for the given deal reference.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:299](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L299)
+[dealing/DealingAPI.ts:299](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L299)
 
 ---
 
@@ -131,7 +131,7 @@ Creates an OTC working order.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:326](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L326)
+[dealing/DealingAPI.ts:326](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L326)
 
 ---
 
@@ -155,7 +155,7 @@ Creates an OTC position.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:251](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L251)
+[dealing/DealingAPI.ts:251](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L251)
 
 ---
 
@@ -179,7 +179,7 @@ Deletes an OTC working order.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:342](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L342)
+[dealing/DealingAPI.ts:342](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L342)
 
 ---
 
@@ -197,7 +197,7 @@ Returns all open positions for the active account.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:220](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L220)
+[dealing/DealingAPI.ts:220](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L220)
 
 ---
 
@@ -215,7 +215,7 @@ Returns all open working orders for the active account.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:310](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L310)
+[dealing/DealingAPI.ts:310](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L310)
 
 ---
 
@@ -239,7 +239,7 @@ Returns an open position for the active account by deal identifier.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:235](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L235)
+[dealing/DealingAPI.ts:235](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L235)
 
 ---
 
@@ -264,7 +264,7 @@ Updates an OTC working order.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:364](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L364)
+[dealing/DealingAPI.ts:364](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L364)
 
 ---
 
@@ -289,4 +289,4 @@ Updates an OTC position.
 
 #### Defined in
 
-[dealing/DealingAPI.ts:283](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L283)
+[dealing/DealingAPI.ts:283](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L283)

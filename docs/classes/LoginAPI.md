@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L34)
+[login/LoginAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L34)
 
 ## Properties
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L29)
+[login/LoginAPI.ts:29](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L29)
 
 ## Methods
 
@@ -81,7 +81,7 @@ Creates a trading session, obtaining session tokens for subsequent API access. P
 
 #### Defined in
 
-[login/LoginAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L44)
+[login/LoginAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L44)
 
 ---
 
@@ -106,7 +106,7 @@ WARNING: This endpoint only works with a production environment.
 
 #### Defined in
 
-[login/LoginAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L132)
+[login/LoginAPI.ts:132](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L132)
 
 ---
 
@@ -131,7 +131,7 @@ Creates a session from predefined token values.
 
 #### Defined in
 
-[login/LoginAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L120)
+[login/LoginAPI.ts:120](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L120)
 
 ---
 
@@ -149,7 +149,7 @@ Returns the user's session details.
 
 #### Defined in
 
-[login/LoginAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L163)
+[login/LoginAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L163)
 
 ---
 
@@ -167,7 +167,7 @@ Saves the user's session details.
 
 #### Defined in
 
-[login/LoginAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L109)
+[login/LoginAPI.ts:109](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L109)
 
 ---
 
@@ -188,7 +188,7 @@ Saves the user's session details.
 
 #### Defined in
 
-[login/LoginAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L169)
+[login/LoginAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L169)
 
 ---
 
@@ -206,7 +206,7 @@ Log out of the current session.
 
 #### Defined in
 
-[login/LoginAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L183)
+[login/LoginAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L183)
 
 ---
 
@@ -224,7 +224,7 @@ Refreshes a trading session, obtaining new session tokens for subsequent API acc
 
 #### Defined in
 
-[login/LoginAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L197)
+[login/LoginAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L197)
 
 ---
 
@@ -248,4 +248,4 @@ Switches active accounts, optionally setting the default IG account (of type CFD
 
 #### Defined in
 
-[login/LoginAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L81)
+[login/LoginAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L81)

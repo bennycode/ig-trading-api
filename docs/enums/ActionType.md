@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [LIMIT_ORDER_AMENDED](ActionType.md#limit_order_amended)
 - [LIMIT_ORDER_DELETED](ActionType.md#limit_order_deleted)
@@ -25,182 +25,182 @@
 - [UNKNOWN](ActionType.md#unknown)
 - [WORKING_ORDER_DELETED](ActionType.md#working_order_deleted)
 
-## Enumeration members
+## Enumeration Members
 
 ### LIMIT_ORDER_AMENDED
 
-• **LIMIT_ORDER_AMENDED** = `"LIMIT_ORDER_AMENDED"`
+• **LIMIT_ORDER_AMENDED**
 
 #### Defined in
 
-[account/AccountAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L33)
+[account/AccountAPI.ts:33](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L33)
 
 ---
 
 ### LIMIT_ORDER_DELETED
 
-• **LIMIT_ORDER_DELETED** = `"LIMIT_ORDER_DELETED"`
+• **LIMIT_ORDER_DELETED**
 
 #### Defined in
 
-[account/AccountAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L34)
+[account/AccountAPI.ts:34](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L34)
 
 ---
 
 ### LIMIT_ORDER_FILLED
 
-• **LIMIT_ORDER_FILLED** = `"LIMIT_ORDER_FILLED"`
+• **LIMIT_ORDER_FILLED**
 
 #### Defined in
 
-[account/AccountAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L35)
+[account/AccountAPI.ts:35](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L35)
 
 ---
 
 ### LIMIT_ORDER_OPENED
 
-• **LIMIT_ORDER_OPENED** = `"LIMIT_ORDER_OPENED"`
+• **LIMIT_ORDER_OPENED**
 
 #### Defined in
 
-[account/AccountAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L36)
+[account/AccountAPI.ts:36](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L36)
 
 ---
 
 ### LIMIT_ORDER_ROLLED
 
-• **LIMIT_ORDER_ROLLED** = `"LIMIT_ORDER_ROLLED"`
+• **LIMIT_ORDER_ROLLED**
 
 #### Defined in
 
-[account/AccountAPI.ts:37](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L37)
+[account/AccountAPI.ts:37](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L37)
 
 ---
 
 ### POSITION_CLOSED
 
-• **POSITION_CLOSED** = `"POSITION_CLOSED"`
+• **POSITION_CLOSED**
 
 #### Defined in
 
-[account/AccountAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L38)
+[account/AccountAPI.ts:38](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L38)
 
 ---
 
 ### POSITION_DELETED
 
-• **POSITION_DELETED** = `"POSITION_DELETED"`
+• **POSITION_DELETED**
 
 #### Defined in
 
-[account/AccountAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L39)
+[account/AccountAPI.ts:39](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L39)
 
 ---
 
 ### POSITION_OPENED
 
-• **POSITION_OPENED** = `"POSITION_OPENED"`
+• **POSITION_OPENED**
 
 #### Defined in
 
-[account/AccountAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L40)
+[account/AccountAPI.ts:40](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L40)
 
 ---
 
 ### POSITION_PARTIALLY_CLOSED
 
-• **POSITION_PARTIALLY_CLOSED** = `"POSITION_PARTIALLY_CLOSED"`
+• **POSITION_PARTIALLY_CLOSED**
 
 #### Defined in
 
-[account/AccountAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L41)
+[account/AccountAPI.ts:41](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L41)
 
 ---
 
 ### POSITION_ROLLED
 
-• **POSITION_ROLLED** = `"POSITION_ROLLED"`
+• **POSITION_ROLLED**
 
 #### Defined in
 
-[account/AccountAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L42)
+[account/AccountAPI.ts:42](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L42)
 
 ---
 
 ### STOP_LIMIT_AMENDED
 
-• **STOP_LIMIT_AMENDED** = `"STOP_LIMIT_AMENDED"`
+• **STOP_LIMIT_AMENDED**
 
 #### Defined in
 
-[account/AccountAPI.ts:43](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L43)
+[account/AccountAPI.ts:43](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L43)
 
 ---
 
 ### STOP_ORDER_AMENDED
 
-• **STOP_ORDER_AMENDED** = `"STOP_ORDER_AMENDED"`
+• **STOP_ORDER_AMENDED**
 
 #### Defined in
 
-[account/AccountAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L44)
+[account/AccountAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L44)
 
 ---
 
 ### STOP_ORDER_DELETED
 
-• **STOP_ORDER_DELETED** = `"STOP_ORDER_DELETED"`
+• **STOP_ORDER_DELETED**
 
 #### Defined in
 
-[account/AccountAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L45)
+[account/AccountAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L45)
 
 ---
 
 ### STOP_ORDER_FILLED
 
-• **STOP_ORDER_FILLED** = `"STOP_ORDER_FILLED"`
+• **STOP_ORDER_FILLED**
 
 #### Defined in
 
-[account/AccountAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L46)
+[account/AccountAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L46)
 
 ---
 
 ### STOP_ORDER_OPENED
 
-• **STOP_ORDER_OPENED** = `"STOP_ORDER_OPENED"`
+• **STOP_ORDER_OPENED**
 
 #### Defined in
 
-[account/AccountAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L47)
+[account/AccountAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L47)
 
 ---
 
 ### STOP_ORDER_ROLLED
 
-• **STOP_ORDER_ROLLED** = `"STOP_ORDER_ROLLED"`
+• **STOP_ORDER_ROLLED**
 
 #### Defined in
 
-[account/AccountAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L48)
+[account/AccountAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L48)
 
 ---
 
 ### UNKNOWN
 
-• **UNKNOWN** = `"UNKNOWN"`
+• **UNKNOWN**
 
 #### Defined in
 
-[account/AccountAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L49)
+[account/AccountAPI.ts:49](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L49)
 
 ---
 
 ### WORKING_ORDER_DELETED
 
-• **WORKING_ORDER_DELETED** = `"WORKING_ORDER_DELETED"`
+• **WORKING_ORDER_DELETED**
 
 #### Defined in
 
-[account/AccountAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L50)
+[account/AccountAPI.ts:50](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L50)

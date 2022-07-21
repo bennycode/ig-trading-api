@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L140)
+[dealing/DealingAPI.ts:140](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L140)

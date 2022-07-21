@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L91)
+[account/AccountAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L91)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:92](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L92)
+[account/AccountAPI.ts:92](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L92)

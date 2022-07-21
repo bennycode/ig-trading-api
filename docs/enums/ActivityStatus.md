@@ -4,38 +4,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [ACCEPTED](ActivityStatus.md#accepted)
 - [REJECTED](ActivityStatus.md#rejected)
 - [UNKNOWN](ActivityStatus.md#unknown)
 
-## Enumeration members
+## Enumeration Members
 
 ### ACCEPTED
 
-• **ACCEPTED** = `"ACCEPTED"`
+• **ACCEPTED**
 
 #### Defined in
 
-[account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L54)
+[account/AccountAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L54)
 
 ---
 
 ### REJECTED
 
-• **REJECTED** = `"REJECTED"`
+• **REJECTED**
 
 #### Defined in
 
-[account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L55)
+[account/AccountAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L55)
 
 ---
 
 ### UNKNOWN
 
-• **UNKNOWN** = `"UNKNOWN"`
+• **UNKNOWN**
 
 #### Defined in
 
-[account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L56)
+[account/AccountAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L56)

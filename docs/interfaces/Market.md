@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:192](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L192)
+[market/MarketAPI.ts:192](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L192)
 
 ---
 
@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:193](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L193)
+[market/MarketAPI.ts:193](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L193)
 
 ---
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:194](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L194)
+[market/MarketAPI.ts:194](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L194)
 
 ---
 
@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:195](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L195)
+[market/MarketAPI.ts:195](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L195)
 
 ---
 
@@ -71,7 +71,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:196](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L196)
+[market/MarketAPI.ts:196](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L196)
 
 ---
 
@@ -81,7 +81,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L197)
+[market/MarketAPI.ts:197](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L197)
 
 ---
 
@@ -91,7 +91,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:198](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L198)
+[market/MarketAPI.ts:198](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L198)
 
 ---
 
@@ -101,7 +101,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:199](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L199)
+[market/MarketAPI.ts:199](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L199)
 
 ---
 
@@ -111,7 +111,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:200](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L200)
+[market/MarketAPI.ts:200](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L200)
 
 ---
 
@@ -121,7 +121,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:201](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L201)
+[market/MarketAPI.ts:201](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L201)
 
 ---
 
@@ -131,7 +131,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:202](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L202)
+[market/MarketAPI.ts:202](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L202)
 
 ---
 
@@ -141,7 +141,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L203)
+[market/MarketAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L203)
 
 ---
 
@@ -151,7 +151,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:204](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L204)
+[market/MarketAPI.ts:204](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L204)
 
 ---
 
@@ -161,7 +161,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:205](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L205)
+[market/MarketAPI.ts:205](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L205)
 
 ---
 
@@ -171,7 +171,7 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:206](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L206)
+[market/MarketAPI.ts:206](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L206)
 
 ---
 
@@ -181,4 +181,4 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:207](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L207)
+[market/MarketAPI.ts:207](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L207)

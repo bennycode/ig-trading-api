@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L6)
+[login/LoginAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L6)
 
 ---
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L7)
+[login/LoginAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L7)
 
 ---
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L8)
+[login/LoginAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L8)
 
 ---
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L9)
+[login/LoginAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L9)
 
 ---
 
@@ -60,4 +60,4 @@
 
 #### Defined in
 
-[login/LoginAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/login/LoginAPI.ts#L10)
+[login/LoginAPI.ts:10](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/login/LoginAPI.ts#L10)

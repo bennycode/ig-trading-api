@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [AMENDED](Status.md#amended)
 - [CLOSED](Status.md#closed)
@@ -12,52 +12,52 @@
 - [OPEN](Status.md#open)
 - [PARTIALLY_CLOSED](Status.md#partially_closed)
 
-## Enumeration members
+## Enumeration Members
 
 ### AMENDED
 
-• **AMENDED** = `"AMENDED"`
+• **AMENDED**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L44)
+[dealing/DealingAPI.ts:44](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L44)
 
 ---
 
 ### CLOSED
 
-• **CLOSED** = `"CLOSED"`
+• **CLOSED**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L45)
+[dealing/DealingAPI.ts:45](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L45)
 
 ---
 
 ### DELETED
 
-• **DELETED** = `"DELETED"`
+• **DELETED**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L46)
+[dealing/DealingAPI.ts:46](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L46)
 
 ---
 
 ### OPEN
 
-• **OPEN** = `"OPEN"`
+• **OPEN**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L47)
+[dealing/DealingAPI.ts:47](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L47)
 
 ---
 
 ### PARTIALLY_CLOSED
 
-• **PARTIALLY_CLOSED** = `"PARTIALLY_CLOSED"`
+• **PARTIALLY_CLOSED**
 
 #### Defined in
 
-[dealing/DealingAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L48)
+[dealing/DealingAPI.ts:48](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L48)

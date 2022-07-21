@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:196](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L196)
+[account/AccountAPI.ts:196](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L196)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[account/AccountAPI.ts:190](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L190)
+[account/AccountAPI.ts:190](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L190)
 
 ## Methods
 
@@ -68,7 +68,7 @@ Returns a list of accounts belonging to the logged-in client.
 
 #### Defined in
 
-[account/AccountAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L203)
+[account/AccountAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L203)
 
 ---
 
@@ -92,7 +92,7 @@ Returns the account activity history. The first element in the array is the late
 
 #### Defined in
 
-[account/AccountAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L215)
+[account/AccountAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L215)
 
 ---
 
@@ -116,4 +116,4 @@ Returns the account transaction history.
 
 #### Defined in
 
-[account/AccountAPI.ts:232](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/account/AccountAPI.ts#L232)
+[account/AccountAPI.ts:232](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/account/AccountAPI.ts#L232)

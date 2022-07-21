@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [BUNGEE_COMMODITIES](InstrumentType.md#bungee_commodities)
 - [BUNGEE_CURRENCIES](InstrumentType.md#bungee_currencies)
@@ -24,172 +24,172 @@
 - [TEST_MARKET](InstrumentType.md#test_market)
 - [UNKNOWN](InstrumentType.md#unknown)
 
-## Enumeration members
+## Enumeration Members
 
 ### BUNGEE_COMMODITIES
 
-• **BUNGEE_COMMODITIES** = `"BUNGEE_COMMODITIES"`
+• **BUNGEE_COMMODITIES**
 
 #### Defined in
 
-[market/MarketAPI.ts:76](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L76)
+[market/MarketAPI.ts:76](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L76)
 
 ---
 
 ### BUNGEE_CURRENCIES
 
-• **BUNGEE_CURRENCIES** = `"BUNGEE_CURRENCIES"`
+• **BUNGEE_CURRENCIES**
 
 #### Defined in
 
-[market/MarketAPI.ts:77](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L77)
+[market/MarketAPI.ts:77](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L77)
 
 ---
 
 ### BUNGEE_INDICES
 
-• **BUNGEE_INDICES** = `"BUNGEE_INDICES"`
+• **BUNGEE_INDICES**
 
 #### Defined in
 
-[market/MarketAPI.ts:78](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L78)
+[market/MarketAPI.ts:78](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L78)
 
 ---
 
 ### COMMODITIES
 
-• **COMMODITIES** = `"COMMODITIES"`
+• **COMMODITIES**
 
 #### Defined in
 
-[market/MarketAPI.ts:79](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L79)
+[market/MarketAPI.ts:79](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L79)
 
 ---
 
 ### CURRENCIES
 
-• **CURRENCIES** = `"CURRENCIES"`
+• **CURRENCIES**
 
 #### Defined in
 
-[market/MarketAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L80)
+[market/MarketAPI.ts:80](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L80)
 
 ---
 
 ### INDICES
 
-• **INDICES** = `"INDICES"`
+• **INDICES**
 
 #### Defined in
 
-[market/MarketAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L81)
+[market/MarketAPI.ts:81](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L81)
 
 ---
 
 ### OPT_COMMODITIES
 
-• **OPT_COMMODITIES** = `"OPT_COMMODITIES"`
+• **OPT_COMMODITIES**
 
 #### Defined in
 
-[market/MarketAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L82)
+[market/MarketAPI.ts:82](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L82)
 
 ---
 
 ### OPT_CURRENCIES
 
-• **OPT_CURRENCIES** = `"OPT_CURRENCIES"`
+• **OPT_CURRENCIES**
 
 #### Defined in
 
-[market/MarketAPI.ts:83](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L83)
+[market/MarketAPI.ts:83](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L83)
 
 ---
 
 ### OPT_INDICES
 
-• **OPT_INDICES** = `"OPT_INDICES"`
+• **OPT_INDICES**
 
 #### Defined in
 
-[market/MarketAPI.ts:84](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L84)
+[market/MarketAPI.ts:84](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L84)
 
 ---
 
 ### OPT_RATES
 
-• **OPT_RATES** = `"OPT_RATES"`
+• **OPT_RATES**
 
 #### Defined in
 
-[market/MarketAPI.ts:85](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L85)
+[market/MarketAPI.ts:85](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L85)
 
 ---
 
 ### OPT_SHARES
 
-• **OPT_SHARES** = `"OPT_SHARES"`
+• **OPT_SHARES**
 
 #### Defined in
 
-[market/MarketAPI.ts:86](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L86)
+[market/MarketAPI.ts:86](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L86)
 
 ---
 
 ### RATES
 
-• **RATES** = `"RATES"`
+• **RATES**
 
 #### Defined in
 
-[market/MarketAPI.ts:87](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L87)
+[market/MarketAPI.ts:87](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L87)
 
 ---
 
 ### SECTORS
 
-• **SECTORS** = `"SECTORS"`
+• **SECTORS**
 
 #### Defined in
 
-[market/MarketAPI.ts:88](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L88)
+[market/MarketAPI.ts:88](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L88)
 
 ---
 
 ### SHARES
 
-• **SHARES** = `"SHARES"`
+• **SHARES**
 
 #### Defined in
 
-[market/MarketAPI.ts:89](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L89)
+[market/MarketAPI.ts:89](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L89)
 
 ---
 
 ### SPRINT_MARKET
 
-• **SPRINT_MARKET** = `"SPRINT_MARKET"`
+• **SPRINT_MARKET**
 
 #### Defined in
 
-[market/MarketAPI.ts:90](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L90)
+[market/MarketAPI.ts:90](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L90)
 
 ---
 
 ### TEST_MARKET
 
-• **TEST_MARKET** = `"TEST_MARKET"`
+• **TEST_MARKET**
 
 #### Defined in
 
-[market/MarketAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L91)
+[market/MarketAPI.ts:91](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L91)
 
 ---
 
 ### UNKNOWN
 
-• **UNKNOWN** = `"UNKNOWN"`
+• **UNKNOWN**
 
 #### Defined in
 
-[market/MarketAPI.ts:92](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L92)
+[market/MarketAPI.ts:92](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L92)

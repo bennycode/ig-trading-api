@@ -98,11 +98,11 @@
 - [TransactionMetadata](interfaces/TransactionMetadata.md)
 - [TransactionPaging](interfaces/TransactionPaging.md)
 
-### Type aliases
+### Type Aliases
 
 - [MarketDetails](modules.md#marketdetails)
 
-## Type aliases
+## Type Aliases
 
 ### MarketDetails
 
@@ -116,4 +116,4 @@
 
 #### Defined in
 
-[market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L179)
+[market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L179)

@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:162](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L162)
+[dealing/DealingAPI.ts:162](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L162)
 
 ---
 
@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L163)
+[dealing/DealingAPI.ts:163](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L163)
 
 ---
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:164](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L164)
+[dealing/DealingAPI.ts:164](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L164)
 
 ---
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L165)
+[dealing/DealingAPI.ts:165](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L165)
 
 ---
 
@@ -63,7 +63,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L166)
+[dealing/DealingAPI.ts:166](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L166)
 
 ---
 
@@ -73,7 +73,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L167)
+[dealing/DealingAPI.ts:167](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L167)
 
 ---
 
@@ -83,7 +83,7 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:168](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L168)
+[dealing/DealingAPI.ts:168](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L168)
 
 ---
 
@@ -93,4 +93,4 @@
 
 #### Defined in
 
-[dealing/DealingAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/dealing/DealingAPI.ts#L169)
+[dealing/DealingAPI.ts:169](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/dealing/DealingAPI.ts#L169)

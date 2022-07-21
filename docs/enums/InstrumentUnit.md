@@ -4,38 +4,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [AMOUNT](InstrumentUnit.md#amount)
 - [CONTRACTS](InstrumentUnit.md#contracts)
 - [SHARES](InstrumentUnit.md#shares)
 
-## Enumeration members
+## Enumeration Members
 
 ### AMOUNT
 
-• **AMOUNT** = `"AMOUNT"`
+• **AMOUNT**
 
 #### Defined in
 
-[market/MarketAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L96)
+[market/MarketAPI.ts:96](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L96)
 
 ---
 
 ### CONTRACTS
 
-• **CONTRACTS** = `"CONTRACTS"`
+• **CONTRACTS**
 
 #### Defined in
 
-[market/MarketAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L97)
+[market/MarketAPI.ts:97](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L97)
 
 ---
 
 ### SHARES
 
-• **SHARES** = `"SHARES"`
+• **SHARES**
 
 #### Defined in
 
-[market/MarketAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/c7d6810/src/market/MarketAPI.ts#L98)
+[market/MarketAPI.ts:98](https://github.com/bennycode/ig-trading-api/blob/0c7d281/src/market/MarketAPI.ts#L98)
