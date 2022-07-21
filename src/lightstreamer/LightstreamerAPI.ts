@@ -46,7 +46,7 @@ export class LightstreamerAPI {
       ChartFields.LTV,
     ];
 
-    if (this.candleSubscription && this.candleSubscription.isSubscribed) {
+    if (this.candleSubscription) {
       lightstream.unsubscribe(this.candleSubscription);
     }
     const epics = epicList.map(x => `CHART:${x}:${resolution}`);
