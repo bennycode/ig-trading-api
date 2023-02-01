@@ -5,7 +5,7 @@
   "dependencies": {
     "@types/node": "16.11.45",
     "axios": "0.26.1",
-    "axios-retry": "3.1.9",
+    "axios-retry": "3.4.0",
     "lightstreamer-client-node": "8.0.4",
     "luxon": "3.0.1"
   },
