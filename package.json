@@ -81,7 +81,6 @@
     "fix": "yarn fix:other && yarn fix:code",
     "fix:code": "yarn lint:code --fix",
     "fix:other": "yarn prettier --write",
-    "install": "yarn build",
     "lint": "yarn lint:types && yarn lint:code && yarn lint:other",
     "lint:code": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
     "lint:other": "yarn prettier --list-different",
