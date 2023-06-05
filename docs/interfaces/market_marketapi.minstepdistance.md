@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MinStepDistance
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MinStepDistance
 
 # Interface: MinStepDistance
 
-[market/MarketAPI](../modules/market_marketapi.md).MinStepDistance
+[market/MarketAPI](../modules/market_MarketAPI.md).MinStepDistance
 
 ## Table of contents
 
 ### Properties
 
-- [unit](market_marketapi.minstepdistance.md#unit)
-- [value](market_marketapi.minstepdistance.md#value)
+- [unit](market_MarketAPI.MinStepDistance.md#unit)
+- [value](market_MarketAPI.MinStepDistance.md#value)
 
 ## Properties
 
 ### unit
 
-• **unit**: _string_
+• **unit**: `string`
 
-Defined in: [market/MarketAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L102)
+#### Defined in
+
+[market/MarketAPI.ts:102](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L102)
 
 ---
 
 ### value
 
-• **value**: _number_
+• **value**: `number`
 
-Defined in: [market/MarketAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L103)
+#### Defined in
+
+[market/MarketAPI.ts:103](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L103)

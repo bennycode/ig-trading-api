@@ -1,37 +1,43 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/prices/PriceAPI](../modules/market_prices_priceapi.md) / HistoricalPricesAllowance
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/prices/PriceAPI](../modules/market_prices_PriceAPI.md) / HistoricalPricesAllowance
 
 # Interface: HistoricalPricesAllowance
 
-[market/prices/PriceAPI](../modules/market_prices_priceapi.md).HistoricalPricesAllowance
+[market/prices/PriceAPI](../modules/market_prices_PriceAPI.md).HistoricalPricesAllowance
 
 ## Table of contents
 
 ### Properties
 
-- [allowanceExpiry](market_prices_priceapi.historicalpricesallowance.md#allowanceexpiry)
-- [remainingAllowance](market_prices_priceapi.historicalpricesallowance.md#remainingallowance)
-- [totalAllowance](market_prices_priceapi.historicalpricesallowance.md#totalallowance)
+- [allowanceExpiry](market_prices_PriceAPI.HistoricalPricesAllowance.md#allowanceexpiry)
+- [remainingAllowance](market_prices_PriceAPI.HistoricalPricesAllowance.md#remainingallowance)
+- [totalAllowance](market_prices_PriceAPI.HistoricalPricesAllowance.md#totalallowance)
 
 ## Properties
 
 ### allowanceExpiry
 
-• **allowanceExpiry**: _number_
+• **allowanceExpiry**: `number`
 
-Defined in: [market/prices/PriceAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/prices/PriceAPI.ts#L22)
+#### Defined in
+
+[market/prices/PriceAPI.ts:22](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L22)
 
 ---
 
 ### remainingAllowance
 
-• **remainingAllowance**: _number_
+• **remainingAllowance**: `number`
 
-Defined in: [market/prices/PriceAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/prices/PriceAPI.ts#L23)
+#### Defined in
+
+[market/prices/PriceAPI.ts:23](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L23)
 
 ---
 
 ### totalAllowance
 
-• **totalAllowance**: _number_
+• **totalAllowance**: `number`
 
-Defined in: [market/prices/PriceAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/prices/PriceAPI.ts#L24)
+#### Defined in
+
+[market/prices/PriceAPI.ts:24](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L24)

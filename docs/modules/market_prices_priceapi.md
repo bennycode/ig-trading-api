@@ -6,18 +6,18 @@
 
 ### Enumerations
 
-- [Resolution](../enums/market_prices_priceapi.resolution.md)
-- [ResolutionInMillis](../enums/market_prices_priceapi.resolutioninmillis.md)
+- [Resolution](../enums/market_prices_PriceAPI.Resolution.md)
+- [ResolutionInMillis](../enums/market_prices_PriceAPI.ResolutionInMillis.md)
 
 ### Classes
 
-- [PriceAPI](../classes/market_prices_priceapi.priceapi.md)
+- [PriceAPI](../classes/market_prices_PriceAPI.PriceAPI.md)
 
 ### Interfaces
 
-- [BidAsk](../interfaces/market_prices_priceapi.bidask.md)
-- [CandleStick](../interfaces/market_prices_priceapi.candlestick.md)
-- [HistoricalPricesAllowance](../interfaces/market_prices_priceapi.historicalpricesallowance.md)
-- [HistoricalPricesMetadata](../interfaces/market_prices_priceapi.historicalpricesmetadata.md)
-- [HistoricalPricesPagination](../interfaces/market_prices_priceapi.historicalpricespagination.md)
-- [HistoricalPricesResponse](../interfaces/market_prices_priceapi.historicalpricesresponse.md)
+- [BidAsk](../interfaces/market_prices_PriceAPI.BidAsk.md)
+- [CandleStick](../interfaces/market_prices_PriceAPI.CandleStick.md)
+- [HistoricalPricesAllowance](../interfaces/market_prices_PriceAPI.HistoricalPricesAllowance.md)
+- [HistoricalPricesMetadata](../interfaces/market_prices_PriceAPI.HistoricalPricesMetadata.md)
+- [HistoricalPricesPagination](../interfaces/market_prices_PriceAPI.HistoricalPricesPagination.md)
+- [HistoricalPricesResponse](../interfaces/market_prices_PriceAPI.HistoricalPricesResponse.md)

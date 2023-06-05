@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / LimitedRiskPremium
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / LimitedRiskPremium
 
 # Interface: LimitedRiskPremium
 
-[market/MarketAPI](../modules/market_marketapi.md).LimitedRiskPremium
+[market/MarketAPI](../modules/market_MarketAPI.md).LimitedRiskPremium
 
 ## Table of contents
 
 ### Properties
 
-- [unit](market_marketapi.limitedriskpremium.md#unit)
-- [value](market_marketapi.limitedriskpremium.md#value)
+- [unit](market_MarketAPI.LimitedRiskPremium.md#unit)
+- [value](market_MarketAPI.LimitedRiskPremium.md#value)
 
 ## Properties
 
 ### unit
 
-• **unit**: _string_
+• **unit**: `string`
 
-Defined in: [market/MarketAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L25)
+#### Defined in
+
+[market/MarketAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L25)
 
 ---
 
 ### value
 
-• **value**: _number_
+• **value**: `number`
 
-Defined in: [market/MarketAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L26)
+#### Defined in
+
+[market/MarketAPI.ts:26](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L26)

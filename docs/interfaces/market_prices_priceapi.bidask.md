@@ -1,37 +1,43 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/prices/PriceAPI](../modules/market_prices_priceapi.md) / BidAsk
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/prices/PriceAPI](../modules/market_prices_PriceAPI.md) / BidAsk
 
 # Interface: BidAsk
 
-[market/prices/PriceAPI](../modules/market_prices_priceapi.md).BidAsk
+[market/prices/PriceAPI](../modules/market_prices_PriceAPI.md).BidAsk
 
 ## Table of contents
 
 ### Properties
 
-- [ask](market_prices_priceapi.bidask.md#ask)
-- [bid](market_prices_priceapi.bidask.md#bid)
-- [lastTraded](market_prices_priceapi.bidask.md#lasttraded)
+- [ask](market_prices_PriceAPI.BidAsk.md#ask)
+- [bid](market_prices_PriceAPI.BidAsk.md#bid)
+- [lastTraded](market_prices_PriceAPI.BidAsk.md#lasttraded)
 
 ## Properties
 
 ### ask
 
-• **ask**: _number_
+• **ask**: `number`
 
-Defined in: [market/prices/PriceAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/prices/PriceAPI.ts#L6)
+#### Defined in
+
+[market/prices/PriceAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L6)
 
 ---
 
 ### bid
 
-• **bid**: _number_
+• **bid**: `number`
 
-Defined in: [market/prices/PriceAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/prices/PriceAPI.ts#L7)
+#### Defined in
+
+[market/prices/PriceAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L7)
 
 ---
 
 ### lastTraded
 
-• **lastTraded**: `null` \| _number_
+• **lastTraded**: `null` \| `number`
 
-Defined in: [market/prices/PriceAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/prices/PriceAPI.ts#L8)
+#### Defined in
+
+[market/prices/PriceAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/prices/PriceAPI.ts#L8)

@@ -6,5 +6,5 @@
 
 ### Enumerations
 
-- [ChartFields](../enums/lightstreamer_interfaces.chartfields.md)
-- [ChartResolution](../enums/lightstreamer_interfaces.chartresolution.md)
+- [ChartFields](../enums/lightstreamer_interfaces.ChartFields.md)
+- [ChartResolution](../enums/lightstreamer_interfaces.ChartResolution.md)

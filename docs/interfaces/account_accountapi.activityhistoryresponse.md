@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / ActivityHistoryResponse
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / ActivityHistoryResponse
 
 # Interface: ActivityHistoryResponse
 
-[account/AccountAPI](../modules/account_accountapi.md).ActivityHistoryResponse
+[account/AccountAPI](../modules/account_AccountAPI.md).ActivityHistoryResponse
 
 ## Table of contents
 
 ### Properties
 
-- [activities](account_accountapi.activityhistoryresponse.md#activities)
-- [metadata](account_accountapi.activityhistoryresponse.md#metadata)
+- [activities](account_AccountAPI.ActivityHistoryResponse.md#activities)
+- [metadata](account_AccountAPI.ActivityHistoryResponse.md#metadata)
 
 ## Properties
 
 ### activities
 
-• **activities**: [_Activity_](account_accountapi.activity.md)[]
+• **activities**: [`Activity`](account_AccountAPI.Activity.md)[]
 
-Defined in: [account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L144)
+#### Defined in
+
+[account/AccountAPI.ts:144](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L144)
 
 ---
 
 ### metadata
 
-• **metadata**: [_ActivityMetadata_](account_accountapi.activitymetadata.md)
+• **metadata**: [`ActivityMetadata`](account_AccountAPI.ActivityMetadata.md)
 
-Defined in: [account/AccountAPI.ts:145](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L145)
+#### Defined in
+
+[account/AccountAPI.ts:145](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L145)

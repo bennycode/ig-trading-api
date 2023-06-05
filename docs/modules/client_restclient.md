@@ -6,8 +6,8 @@
 
 ### Classes
 
-- [RESTClient](../classes/client_restclient.restclient.md)
+- [RESTClient](../classes/client_RESTClient.RESTClient.md)
 
 ### Interfaces
 
-- [Authorization](../interfaces/client_restclient.authorization.md)
+- [Authorization](../interfaces/client_RESTClient.Authorization.md)

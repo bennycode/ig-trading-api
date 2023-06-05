@@ -6,52 +6,54 @@
 
 ### Enumerations
 
-- [InstrumentType](../enums/market_marketapi.instrumenttype.md)
-- [InstrumentUnit](../enums/market_marketapi.instrumentunit.md)
-- [MarketOrderPreference](../enums/market_marketapi.marketorderpreference.md)
-- [MarketStatus](../enums/market_marketapi.marketstatus.md)
-- [TrailingStopPreference](../enums/market_marketapi.trailingstoppreference.md)
+- [InstrumentType](../enums/market_MarketAPI.InstrumentType.md)
+- [InstrumentUnit](../enums/market_MarketAPI.InstrumentUnit.md)
+- [MarketOrderPreference](../enums/market_MarketAPI.MarketOrderPreference.md)
+- [MarketStatus](../enums/market_MarketAPI.MarketStatus.md)
+- [TrailingStopPreference](../enums/market_MarketAPI.TrailingStopPreference.md)
 
 ### Classes
 
-- [MarketAPI](../classes/market_marketapi.marketapi.md)
+- [MarketAPI](../classes/market_MarketAPI.MarketAPI.md)
 
 ### Interfaces
 
-- [Currency](../interfaces/market_marketapi.currency.md)
-- [DealingRules](../interfaces/market_marketapi.dealingrules.md)
-- [ExpiryDetail](../interfaces/market_marketapi.expirydetail.md)
-- [Instrument](../interfaces/market_marketapi.instrument.md)
-- [LimitedRiskPremium](../interfaces/market_marketapi.limitedriskpremium.md)
-- [MarginDepositBand](../interfaces/market_marketapi.margindepositband.md)
-- [Market](../interfaces/market_marketapi.market.md)
-- [MarketDetail](../interfaces/market_marketapi.marketdetail.md)
-- [MarketNavigation](../interfaces/market_marketapi.marketnavigation.md)
-- [MarketNode](../interfaces/market_marketapi.marketnode.md)
-- [MarketSearch](../interfaces/market_marketapi.marketsearch.md)
-- [MaxStopOrLimitDistance](../interfaces/market_marketapi.maxstoporlimitdistance.md)
-- [MinControlledRiskStopDistance](../interfaces/market_marketapi.mincontrolledriskstopdistance.md)
-- [MinDealSize](../interfaces/market_marketapi.mindealsize.md)
-- [MinNormalStopOrLimitDistance](../interfaces/market_marketapi.minnormalstoporlimitdistance.md)
-- [MinStepDistance](../interfaces/market_marketapi.minstepdistance.md)
-- [RolloverDetail](../interfaces/market_marketapi.rolloverdetail.md)
-- [SlippageFactor](../interfaces/market_marketapi.slippagefactor.md)
-- [Snapshot](../interfaces/market_marketapi.snapshot.md)
+- [Currency](../interfaces/market_MarketAPI.Currency.md)
+- [DealingRules](../interfaces/market_MarketAPI.DealingRules.md)
+- [ExpiryDetail](../interfaces/market_MarketAPI.ExpiryDetail.md)
+- [Instrument](../interfaces/market_MarketAPI.Instrument.md)
+- [LimitedRiskPremium](../interfaces/market_MarketAPI.LimitedRiskPremium.md)
+- [MarginDepositBand](../interfaces/market_MarketAPI.MarginDepositBand.md)
+- [Market](../interfaces/market_MarketAPI.Market.md)
+- [MarketDetail](../interfaces/market_MarketAPI.MarketDetail.md)
+- [MarketNavigation](../interfaces/market_MarketAPI.MarketNavigation.md)
+- [MarketNode](../interfaces/market_MarketAPI.MarketNode.md)
+- [MarketSearch](../interfaces/market_MarketAPI.MarketSearch.md)
+- [MaxStopOrLimitDistance](../interfaces/market_MarketAPI.MaxStopOrLimitDistance.md)
+- [MinControlledRiskStopDistance](../interfaces/market_MarketAPI.MinControlledRiskStopDistance.md)
+- [MinDealSize](../interfaces/market_MarketAPI.MinDealSize.md)
+- [MinNormalStopOrLimitDistance](../interfaces/market_MarketAPI.MinNormalStopOrLimitDistance.md)
+- [MinStepDistance](../interfaces/market_MarketAPI.MinStepDistance.md)
+- [RolloverDetail](../interfaces/market_MarketAPI.RolloverDetail.md)
+- [SlippageFactor](../interfaces/market_MarketAPI.SlippageFactor.md)
+- [Snapshot](../interfaces/market_MarketAPI.Snapshot.md)
 
 ### Type aliases
 
-- [MarketDetails](market_marketapi.md#marketdetails)
+- [MarketDetails](market_MarketAPI.md#marketdetails)
 
 ## Type aliases
 
 ### MarketDetails
 
-Ƭ **MarketDetails**: _object_
+Ƭ **MarketDetails**: `Object`
 
 #### Type declaration
 
 | Name            | Type                                                               |
 | :-------------- | :----------------------------------------------------------------- |
-| `marketDetails` | [_MarketDetail_](../interfaces/market_marketapi.marketdetail.md)[] |
+| `marketDetails` | [`MarketDetail`](../interfaces/market_MarketAPI.MarketDetail.md)[] |
 
-Defined in: [market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L179)
+#### Defined in
+
+[market/MarketAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L179)

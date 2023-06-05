@@ -6,4 +6,4 @@
 
 ### Classes
 
-- [LightstreamerAPI](../classes/lightstreamer_lightstreamerapi.lightstreamerapi.md)
+- [LightstreamerAPI](../classes/lightstreamer_LightstreamerAPI.LightstreamerAPI.md)

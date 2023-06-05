@@ -1,70 +1,78 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [lightstreamer/LightstreamerAPI](../modules/lightstreamer_lightstreamerapi.md) / LightstreamerAPI
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [lightstreamer/LightstreamerAPI](../modules/lightstreamer_LightstreamerAPI.md) / LightstreamerAPI
 
 # Class: LightstreamerAPI
 
-[lightstreamer/LightstreamerAPI](../modules/lightstreamer_lightstreamerapi.md).LightstreamerAPI
+[lightstreamer/LightstreamerAPI](../modules/lightstreamer_LightstreamerAPI.md).LightstreamerAPI
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](lightstreamer_lightstreamerapi.lightstreamerapi.md#constructor)
+- [constructor](lightstreamer_LightstreamerAPI.LightstreamerAPI.md#constructor)
 
 ### Properties
 
-- [candleSubscription](lightstreamer_lightstreamerapi.lightstreamerapi.md#candlesubscription)
-- [lightstream](lightstreamer_lightstreamerapi.lightstreamerapi.md#lightstream)
+- [candleSubscription](lightstreamer_LightstreamerAPI.LightstreamerAPI.md#candlesubscription)
+- [lightstream](lightstreamer_LightstreamerAPI.LightstreamerAPI.md#lightstream)
 
 ### Methods
 
-- [subscribeCandles](lightstreamer_lightstreamerapi.lightstreamerapi.md#subscribecandles)
+- [subscribeCandles](lightstreamer_LightstreamerAPI.LightstreamerAPI.md#subscribecandles)
 
 ## Constructors
 
 ### constructor
 
-\+ **new LightstreamerAPI**(`auth`: [_Authorization_](../interfaces/client_restclient.authorization.md)): [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
+• **new LightstreamerAPI**(`auth`)
 
 #### Parameters
 
 | Name   | Type                                                                |
 | :----- | :------------------------------------------------------------------ |
-| `auth` | [_Authorization_](../interfaces/client_restclient.authorization.md) |
+| `auth` | [`Authorization`](../interfaces/client_RESTClient.Authorization.md) |
 
-**Returns:** [_LightstreamerAPI_](lightstreamer_lightstreamerapi.lightstreamerapi.md)
+#### Defined in
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/lightstreamer/LightstreamerAPI.ts#L9)
+[lightstreamer/LightstreamerAPI.ts:11](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L11)
 
 ## Properties
 
 ### candleSubscription
 
-• `Optional` **candleSubscription**: _Subscription_
+• `Optional` **candleSubscription**: `Subscription`
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/lightstreamer/LightstreamerAPI.ts#L9)
+#### Defined in
+
+[lightstreamer/LightstreamerAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L9)
 
 ---
 
 ### lightstream
 
-• `Optional` **lightstream**: _LightstreamerClient_
+• `Optional` **lightstream**: `LightstreamerClient`
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/lightstreamer/LightstreamerAPI.ts#L8)
+#### Defined in
+
+[lightstreamer/LightstreamerAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L8)
 
 ## Methods
 
 ### subscribeCandles
 
-▸ **subscribeCandles**(`epicList`: _string_[], `resolution`: [_ChartResolution_](../enums/lightstreamer_interfaces.chartresolution.md), `onCandleUpdate`: (`epic`: _string_, `candle`: [_CandleStick_](../interfaces/market_prices_priceapi.candlestick.md)) => _void_): _LightstreamerClient_
+▸ **subscribeCandles**(`epicList`, `resolution`, `onCandleUpdate`): `LightstreamerClient`
 
 #### Parameters
 
 | Name | Type |
 | :-- | :-- |
-| `epicList` | _string_[] |
-| `resolution` | [_ChartResolution_](../enums/lightstreamer_interfaces.chartresolution.md) |
-| `onCandleUpdate` | (`epic`: _string_, `candle`: [_CandleStick_](../interfaces/market_prices_priceapi.candlestick.md)) => _void_ |
+| `epicList` | `string`[] |
+| `resolution` | [`ChartResolution`](../enums/lightstreamer_interfaces.ChartResolution.md) |
+| `onCandleUpdate` | (`epic`: `string`, `candle`: [`CandleStick`](../interfaces/market_prices_PriceAPI.CandleStick.md)) => `void` |
 
-**Returns:** _LightstreamerClient_
+#### Returns
 
-Defined in: [lightstreamer/LightstreamerAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/lightstreamer/LightstreamerAPI.ts#L25)
+`LightstreamerClient`
+
+#### Defined in
+
+[lightstreamer/LightstreamerAPI.ts:25](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/lightstreamer/LightstreamerAPI.ts#L25)

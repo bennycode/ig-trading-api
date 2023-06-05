@@ -1,136 +1,164 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_dealingapi.md) / Position
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [dealing/DealingAPI](../modules/dealing_DealingAPI.md) / Position
 
 # Interface: Position
 
-[dealing/DealingAPI](../modules/dealing_dealingapi.md).Position
+[dealing/DealingAPI](../modules/dealing_DealingAPI.md).Position
 
 ## Table of contents
 
 ### Properties
 
-- [contractSize](dealing_dealingapi.position.md#contractsize)
-- [controlledRisk](dealing_dealingapi.position.md#controlledrisk)
-- [createdDate](dealing_dealingapi.position.md#createddate)
-- [createdDateUTC](dealing_dealingapi.position.md#createddateutc)
-- [currency](dealing_dealingapi.position.md#currency)
-- [dealId](dealing_dealingapi.position.md#dealid)
-- [dealReference](dealing_dealingapi.position.md#dealreference)
-- [direction](dealing_dealingapi.position.md#direction)
-- [level](dealing_dealingapi.position.md#level)
-- [limitLevel](dealing_dealingapi.position.md#limitlevel)
-- [size](dealing_dealingapi.position.md#size)
-- [stopLevel](dealing_dealingapi.position.md#stoplevel)
-- [trailingStep](dealing_dealingapi.position.md#trailingstep)
-- [trailingStopDistance](dealing_dealingapi.position.md#trailingstopdistance)
+- [contractSize](dealing_DealingAPI.Position.md#contractsize)
+- [controlledRisk](dealing_DealingAPI.Position.md#controlledrisk)
+- [createdDate](dealing_DealingAPI.Position.md#createddate)
+- [createdDateUTC](dealing_DealingAPI.Position.md#createddateutc)
+- [currency](dealing_DealingAPI.Position.md#currency)
+- [dealId](dealing_DealingAPI.Position.md#dealid)
+- [dealReference](dealing_DealingAPI.Position.md#dealreference)
+- [direction](dealing_DealingAPI.Position.md#direction)
+- [level](dealing_DealingAPI.Position.md#level)
+- [limitLevel](dealing_DealingAPI.Position.md#limitlevel)
+- [size](dealing_DealingAPI.Position.md#size)
+- [stopLevel](dealing_DealingAPI.Position.md#stoplevel)
+- [trailingStep](dealing_DealingAPI.Position.md#trailingstep)
+- [trailingStopDistance](dealing_DealingAPI.Position.md#trailingstopdistance)
 
 ## Properties
 
 ### contractSize
 
-• **contractSize**: _number_
+• **contractSize**: `number`
 
-Defined in: [dealing/DealingAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L52)
+#### Defined in
+
+[dealing/DealingAPI.ts:52](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L52)
 
 ---
 
 ### controlledRisk
 
-• **controlledRisk**: _boolean_
+• **controlledRisk**: `boolean`
 
-Defined in: [dealing/DealingAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L53)
+#### Defined in
+
+[dealing/DealingAPI.ts:53](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L53)
 
 ---
 
 ### createdDate
 
-• **createdDate**: Date
+• **createdDate**: `Date`
 
-Defined in: [dealing/DealingAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L54)
+#### Defined in
+
+[dealing/DealingAPI.ts:54](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L54)
 
 ---
 
 ### createdDateUTC
 
-• **createdDateUTC**: Date
+• **createdDateUTC**: `Date`
 
-Defined in: [dealing/DealingAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L55)
+#### Defined in
+
+[dealing/DealingAPI.ts:55](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L55)
 
 ---
 
 ### currency
 
-• **currency**: _string_
+• **currency**: `string`
 
-Defined in: [dealing/DealingAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L56)
+#### Defined in
+
+[dealing/DealingAPI.ts:56](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L56)
 
 ---
 
 ### dealId
 
-• **dealId**: _string_
+• **dealId**: `string`
 
-Defined in: [dealing/DealingAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L57)
+#### Defined in
+
+[dealing/DealingAPI.ts:57](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L57)
 
 ---
 
 ### dealReference
 
-• **dealReference**: _string_
+• **dealReference**: `string`
 
-Defined in: [dealing/DealingAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L58)
+#### Defined in
+
+[dealing/DealingAPI.ts:58](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L58)
 
 ---
 
 ### direction
 
-• **direction**: [_Direction_](../enums/dealing_dealingapi.direction.md)
+• **direction**: [`Direction`](../enums/dealing_DealingAPI.Direction.md)
 
-Defined in: [dealing/DealingAPI.ts:59](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L59)
+#### Defined in
+
+[dealing/DealingAPI.ts:59](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L59)
 
 ---
 
 ### level
 
-• **level**: _number_
+• **level**: `number`
 
-Defined in: [dealing/DealingAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L60)
+#### Defined in
+
+[dealing/DealingAPI.ts:60](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L60)
 
 ---
 
 ### limitLevel
 
-• `Optional` **limitLevel**: _number_
+• `Optional` **limitLevel**: `number`
 
-Defined in: [dealing/DealingAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L61)
+#### Defined in
+
+[dealing/DealingAPI.ts:61](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L61)
 
 ---
 
 ### size
 
-• **size**: _number_
+• **size**: `number`
 
-Defined in: [dealing/DealingAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L62)
+#### Defined in
+
+[dealing/DealingAPI.ts:62](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L62)
 
 ---
 
 ### stopLevel
 
-• `Optional` **stopLevel**: _number_
+• `Optional` **stopLevel**: `number`
 
-Defined in: [dealing/DealingAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L63)
+#### Defined in
+
+[dealing/DealingAPI.ts:63](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L63)
 
 ---
 
 ### trailingStep
 
-• `Optional` **trailingStep**: _number_
+• `Optional` **trailingStep**: `number`
 
-Defined in: [dealing/DealingAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L64)
+#### Defined in
+
+[dealing/DealingAPI.ts:64](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L64)
 
 ---
 
 ### trailingStopDistance
 
-• `Optional` **trailingStopDistance**: _number_
+• `Optional` **trailingStopDistance**: `number`
 
-Defined in: [dealing/DealingAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/dealing/DealingAPI.ts#L65)
+#### Defined in
+
+[dealing/DealingAPI.ts:65](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/dealing/DealingAPI.ts#L65)

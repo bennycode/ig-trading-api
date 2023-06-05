@@ -1,64 +1,76 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / TransactionHistoryRequest
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / TransactionHistoryRequest
 
 # Interface: TransactionHistoryRequest
 
-[account/AccountAPI](../modules/account_accountapi.md).TransactionHistoryRequest
+[account/AccountAPI](../modules/account_AccountAPI.md).TransactionHistoryRequest
 
 ## Table of contents
 
 ### Properties
 
-- [from](account_accountapi.transactionhistoryrequest.md#from)
-- [maxSpanSeconds](account_accountapi.transactionhistoryrequest.md#maxspanseconds)
-- [pageNumber](account_accountapi.transactionhistoryrequest.md#pagenumber)
-- [pageSize](account_accountapi.transactionhistoryrequest.md#pagesize)
-- [to](account_accountapi.transactionhistoryrequest.md#to)
-- [type](account_accountapi.transactionhistoryrequest.md#type)
+- [from](account_AccountAPI.TransactionHistoryRequest.md#from)
+- [maxSpanSeconds](account_AccountAPI.TransactionHistoryRequest.md#maxspanseconds)
+- [pageNumber](account_AccountAPI.TransactionHistoryRequest.md#pagenumber)
+- [pageSize](account_AccountAPI.TransactionHistoryRequest.md#pagesize)
+- [to](account_AccountAPI.TransactionHistoryRequest.md#to)
+- [type](account_AccountAPI.TransactionHistoryRequest.md#type)
 
 ## Properties
 
 ### from
 
-• `Optional` **from**: _string_
+• `Optional` **from**: `string`
 
-Defined in: [account/AccountAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L176)
+#### Defined in
+
+[account/AccountAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L176)
 
 ---
 
 ### maxSpanSeconds
 
-• `Optional` **maxSpanSeconds**: _number_
+• `Optional` **maxSpanSeconds**: `number`
 
-Defined in: [account/AccountAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L177)
+#### Defined in
+
+[account/AccountAPI.ts:177](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L177)
 
 ---
 
 ### pageNumber
 
-• `Optional` **pageNumber**: _number_
+• `Optional` **pageNumber**: `number`
 
-Defined in: [account/AccountAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L178)
+#### Defined in
+
+[account/AccountAPI.ts:178](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L178)
 
 ---
 
 ### pageSize
 
-• `Optional` **pageSize**: _number_
+• `Optional` **pageSize**: `number`
 
-Defined in: [account/AccountAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L179)
+#### Defined in
+
+[account/AccountAPI.ts:179](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L179)
 
 ---
 
 ### to
 
-• `Optional` **to**: _string_
+• `Optional` **to**: `string`
 
-Defined in: [account/AccountAPI.ts:180](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L180)
+#### Defined in
+
+[account/AccountAPI.ts:180](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L180)
 
 ---
 
 ### type
 
-• `Optional` **type**: [_TransactionType_](../enums/account_accountapi.transactiontype.md)
+• `Optional` **type**: [`TransactionType`](../enums/account_AccountAPI.TransactionType.md)
 
-Defined in: [account/AccountAPI.ts:181](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L181)
+#### Defined in
+
+[account/AccountAPI.ts:181](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L181)

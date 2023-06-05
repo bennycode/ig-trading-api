@@ -1,115 +1,135 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [client/RESTClient](../modules/client_restclient.md) / RESTClient
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [client/RESTClient](../modules/client_RESTClient.md) / RESTClient
 
 # Class: RESTClient
 
-[client/RESTClient](../modules/client_restclient.md).RESTClient
+[client/RESTClient](../modules/client_RESTClient.md).RESTClient
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](client_restclient.restclient.md#constructor)
+- [constructor](client_RESTClient.RESTClient.md#constructor)
 
 ### Properties
 
-- [account](client_restclient.restclient.md#account)
-- [auth](client_restclient.restclient.md#auth)
-- [dealing](client_restclient.restclient.md#dealing)
-- [httpClient](client_restclient.restclient.md#httpclient)
-- [login](client_restclient.restclient.md#login)
-- [market](client_restclient.restclient.md#market)
+- [account](client_RESTClient.RESTClient.md#account)
+- [auth](client_RESTClient.RESTClient.md#auth)
+- [dealing](client_RESTClient.RESTClient.md#dealing)
+- [httpClient](client_RESTClient.RESTClient.md#httpclient)
+- [login](client_RESTClient.RESTClient.md#login)
+- [market](client_RESTClient.RESTClient.md#market)
 
 ### Accessors
 
-- [defaults](client_restclient.restclient.md#defaults)
-- [interceptors](client_restclient.restclient.md#interceptors)
+- [defaults](client_RESTClient.RESTClient.md#defaults)
+- [interceptors](client_RESTClient.RESTClient.md#interceptors)
 
 ## Constructors
 
 ### constructor
 
-\+ **new RESTClient**(`baseURL`: _string_, `apiKey`: _string_ \| [_Authorization_](../interfaces/client_restclient.authorization.md)): [_RESTClient_](client_restclient.restclient.md)
+• **new RESTClient**(`baseURL`, `apiKey`)
 
 #### Parameters
 
 | Name      | Type                                                                            |
 | :-------- | :------------------------------------------------------------------------------ |
-| `baseURL` | _string_                                                                        |
-| `apiKey`  | _string_ \| [_Authorization_](../interfaces/client_restclient.authorization.md) |
+| `baseURL` | `string`                                                                        |
+| `apiKey`  | `string` \| [`Authorization`](../interfaces/client_RESTClient.Authorization.md) |
 
-**Returns:** [_RESTClient_](client_restclient.restclient.md)
+#### Defined in
 
-Defined in: [client/RESTClient.ts:38](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L38)
+[client/RESTClient.ts:40](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L40)
 
 ## Properties
 
 ### account
 
-• `Readonly` **account**: [_AccountAPI_](account_accountapi.accountapi.md)
+• `Readonly` **account**: [`AccountAPI`](account_AccountAPI.AccountAPI.md)
 
-Defined in: [client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L35)
+#### Defined in
+
+[client/RESTClient.ts:35](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L35)
 
 ---
 
 ### auth
 
-• `Readonly` **auth**: [_Authorization_](../interfaces/client_restclient.authorization.md)= {}
+• `Readonly` **auth**: [`Authorization`](../interfaces/client_RESTClient.Authorization.md) = `{}`
 
-Defined in: [client/RESTClient.ts:38](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L38)
+#### Defined in
+
+[client/RESTClient.ts:38](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L38)
 
 ---
 
 ### dealing
 
-• `Readonly` **dealing**: [_DealingAPI_](dealing_dealingapi.dealingapi.md)
+• `Readonly` **dealing**: [`DealingAPI`](dealing_DealingAPI.DealingAPI.md)
 
-Defined in: [client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L34)
+#### Defined in
+
+[client/RESTClient.ts:34](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L34)
 
 ---
 
 ### httpClient
 
-• `Readonly` **httpClient**: AxiosInstance
+• `Readonly` **httpClient**: `AxiosInstance`
 
-Defined in: [client/RESTClient.ts:37](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L37)
+#### Defined in
+
+[client/RESTClient.ts:37](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L37)
 
 ---
 
 ### login
 
-• `Readonly` **login**: [_LoginAPI_](login_loginapi.loginapi.md)
+• `Readonly` **login**: [`LoginAPI`](login_LoginAPI.LoginAPI.md)
 
-Defined in: [client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L32)
+#### Defined in
+
+[client/RESTClient.ts:32](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L32)
 
 ---
 
 ### market
 
-• `Readonly` **market**: [_MarketAPI_](market_marketapi.marketapi.md)
+• `Readonly` **market**: [`MarketAPI`](market_MarketAPI.MarketAPI.md)
 
-Defined in: [client/RESTClient.ts:33](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L33)
+#### Defined in
+
+[client/RESTClient.ts:33](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L33)
 
 ## Accessors
 
 ### defaults
 
-• get **defaults**(): AxiosRequestConfig
+• `get` **defaults**(): `AxiosRequestConfig`
 
-**Returns:** AxiosRequestConfig
+#### Returns
 
-Defined in: [client/RESTClient.ts:21](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L21)
+`AxiosRequestConfig`
+
+#### Defined in
+
+[client/RESTClient.ts:21](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L21)
 
 ---
 
 ### interceptors
 
-• get **interceptors**(): _object_
+• `get` **interceptors**(): `Object`
 
-**Returns:** _object_
+#### Returns
 
-| Name       | Type                                            |
-| :--------- | :---------------------------------------------- |
-| `request`  | _AxiosInterceptorManager_<AxiosRequestConfig\>  |
-| `response` | _AxiosInterceptorManager_<AxiosResponse<any\>\> |
+`Object`
 
-Defined in: [client/RESTClient.ts:25](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/client/RESTClient.ts#L25)
+| Name       | Type                                                |
+| :--------- | :-------------------------------------------------- |
+| `request`  | `AxiosInterceptorManager`<`AxiosRequestConfig`\>    |
+| `response` | `AxiosInterceptorManager`<`AxiosResponse`<`any`\>\> |
+
+#### Defined in
+
+[client/RESTClient.ts:25](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/client/RESTClient.ts#L25)

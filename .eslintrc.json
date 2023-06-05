@@ -49,7 +49,7 @@
     "no-unused-expressions": "error",
     "no-unused-vars": "off",
     "no-useless-return": "error",
-    "no-var": "error",
+    "no-var": "off",
     "one-var": ["error", "never"],
     "prefer-arrow-callback": "error",
     "prefer-const": "error",

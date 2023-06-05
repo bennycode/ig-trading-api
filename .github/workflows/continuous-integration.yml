@@ -8,12 +8,12 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [12.x]
+        node-version: [16.x]
     steps:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 'Use Node.js v${{ matrix.node-version }}'
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - name: 'Install, lint, and test'
@@ -25,7 +25,7 @@ jobs:
           contains(github.event.commits[0].message, '[skip ci]') == false &&
           contains(github.event.commits[0].message, '[ci skip]') == false
       - name: 'Upload coverage reports to Codecov'
-        uses: codecov/codecov-action@v1.3.2
+        uses: codecov/codecov-action@v3.1.0
         with:
           fail_ci_if_error: false
           file: ./coverage/lcov.info

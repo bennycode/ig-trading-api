@@ -1,76 +1,82 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_accountapi.md) / AccountAPI
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [account/AccountAPI](../modules/account_AccountAPI.md) / AccountAPI
 
 # Class: AccountAPI
 
-[account/AccountAPI](../modules/account_accountapi.md).AccountAPI
+[account/AccountAPI](../modules/account_AccountAPI.md).AccountAPI
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](account_accountapi.accountapi.md#constructor)
+- [constructor](account_AccountAPI.AccountAPI.md#constructor)
 
 ### Properties
 
-- [URL](account_accountapi.accountapi.md#url)
+- [URL](account_AccountAPI.AccountAPI.md#url)
 
 ### Methods
 
-- [getAccounts](account_accountapi.accountapi.md#getaccounts)
-- [getActivityHistory](account_accountapi.accountapi.md#getactivityhistory)
-- [getTransactionHistory](account_accountapi.accountapi.md#gettransactionhistory)
+- [getAccounts](account_AccountAPI.AccountAPI.md#getaccounts)
+- [getActivityHistory](account_AccountAPI.AccountAPI.md#getactivityhistory)
+- [getTransactionHistory](account_AccountAPI.AccountAPI.md#gettransactionhistory)
 
 ## Constructors
 
 ### constructor
 
-\+ **new AccountAPI**(`apiClient`: AxiosInstance): [_AccountAPI_](account_accountapi.accountapi.md)
+• **new AccountAPI**(`apiClient`)
 
 #### Parameters
 
-| Name        | Type          |
-| :---------- | :------------ |
-| `apiClient` | AxiosInstance |
+| Name        | Type            |
+| :---------- | :-------------- |
+| `apiClient` | `AxiosInstance` |
 
-**Returns:** [_AccountAPI_](account_accountapi.accountapi.md)
+#### Defined in
 
-Defined in: [account/AccountAPI.ts:194](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L194)
+[account/AccountAPI.ts:196](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L196)
 
 ## Properties
 
 ### URL
 
-▪ `Static` `Readonly` **URL**: _object_
+▪ `Static` `Readonly` **URL**: `Object`
 
 #### Type declaration
 
 | Name                   | Type     |
 | :--------------------- | :------- |
-| `ACCOUNTS`             | _string_ |
-| `HISTORY_ACTIVITY`     | _string_ |
-| `HISTORY_TRANSACTIONS` | _string_ |
+| `ACCOUNTS`             | `string` |
+| `HISTORY_ACTIVITY`     | `string` |
+| `HISTORY_TRANSACTIONS` | `string` |
 
-Defined in: [account/AccountAPI.ts:190](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L190)
+#### Defined in
+
+[account/AccountAPI.ts:190](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L190)
 
 ## Methods
 
 ### getAccounts
 
-▸ **getAccounts**(): _Promise_<[_AccountsResponse_](../interfaces/account_accountapi.accountsresponse.md)\>
+▸ **getAccounts**(): `Promise`<[`AccountsResponse`](../interfaces/account_AccountAPI.AccountsResponse.md)\>
 
 Returns a list of accounts belonging to the logged-in client.
 
 **`see`** https://labs.ig.com/rest-trading-api-reference/service-detail?id=553
 
-**Returns:** _Promise_<[_AccountsResponse_](../interfaces/account_accountapi.accountsresponse.md)\>
+#### Returns
 
-Defined in: [account/AccountAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L203)
+`Promise`<[`AccountsResponse`](../interfaces/account_AccountAPI.AccountsResponse.md)\>
+
+#### Defined in
+
+[account/AccountAPI.ts:203](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L203)
 
 ---
 
 ### getActivityHistory
 
-▸ **getActivityHistory**(`activityHistoryRequest`: [_ActivityHistoryRequest_](../interfaces/account_accountapi.activityhistoryrequest.md)): _Promise_<[_ActivityHistoryResponse_](../interfaces/account_accountapi.activityhistoryresponse.md)\>
+▸ **getActivityHistory**(`activityHistoryRequest`): `Promise`<[`ActivityHistoryResponse`](../interfaces/account_AccountAPI.ActivityHistoryResponse.md)\>
 
 Returns the account activity history. The first element in the array is the latest activity. The last element is the oldest activity.
 
@@ -80,17 +86,21 @@ Returns the account activity history. The first element in the array is the late
 
 | Name                     | Type                                                                                   |
 | :----------------------- | :------------------------------------------------------------------------------------- |
-| `activityHistoryRequest` | [_ActivityHistoryRequest_](../interfaces/account_accountapi.activityhistoryrequest.md) |
+| `activityHistoryRequest` | [`ActivityHistoryRequest`](../interfaces/account_AccountAPI.ActivityHistoryRequest.md) |
 
-**Returns:** _Promise_<[_ActivityHistoryResponse_](../interfaces/account_accountapi.activityhistoryresponse.md)\>
+#### Returns
 
-Defined in: [account/AccountAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L215)
+`Promise`<[`ActivityHistoryResponse`](../interfaces/account_AccountAPI.ActivityHistoryResponse.md)\>
+
+#### Defined in
+
+[account/AccountAPI.ts:215](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L215)
 
 ---
 
 ### getTransactionHistory
 
-▸ **getTransactionHistory**(`transactionHistoryRequest`: [_TransactionHistoryRequest_](../interfaces/account_accountapi.transactionhistoryrequest.md)): _Promise_<[_TransactionHistoryResponse_](../interfaces/account_accountapi.transactionhistoryresponse.md)\>
+▸ **getTransactionHistory**(`transactionHistoryRequest`): `Promise`<[`TransactionHistoryResponse`](../interfaces/account_AccountAPI.TransactionHistoryResponse.md)\>
 
 Returns the account transaction history.
 
@@ -100,8 +110,12 @@ Returns the account transaction history.
 
 | Name | Type |
 | :-- | :-- |
-| `transactionHistoryRequest` | [_TransactionHistoryRequest_](../interfaces/account_accountapi.transactionhistoryrequest.md) |
+| `transactionHistoryRequest` | [`TransactionHistoryRequest`](../interfaces/account_AccountAPI.TransactionHistoryRequest.md) |
 
-**Returns:** _Promise_<[_TransactionHistoryResponse_](../interfaces/account_accountapi.transactionhistoryresponse.md)\>
+#### Returns
 
-Defined in: [account/AccountAPI.ts:232](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/account/AccountAPI.ts#L232)
+`Promise`<[`TransactionHistoryResponse`](../interfaces/account_AccountAPI.TransactionHistoryResponse.md)\>
+
+#### Defined in
+
+[account/AccountAPI.ts:232](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/account/AccountAPI.ts#L232)

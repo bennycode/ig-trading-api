@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / ExpiryDetail
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / ExpiryDetail
 
 # Interface: ExpiryDetail
 
-[market/MarketAPI](../modules/market_marketapi.md).ExpiryDetail
+[market/MarketAPI](../modules/market_MarketAPI.md).ExpiryDetail
 
 ## Table of contents
 
 ### Properties
 
-- [lastDealingDate](market_marketapi.expirydetail.md#lastdealingdate)
-- [settlementInfo](market_marketapi.expirydetail.md#settlementinfo)
+- [lastDealingDate](market_MarketAPI.ExpiryDetail.md#lastdealingdate)
+- [settlementInfo](market_MarketAPI.ExpiryDetail.md#settlementinfo)
 
 ## Properties
 
 ### lastDealingDate
 
-• **lastDealingDate**: _string_
+• **lastDealingDate**: `string`
 
-Defined in: [market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L30)
+#### Defined in
+
+[market/MarketAPI.ts:30](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L30)
 
 ---
 
 ### settlementInfo
 
-• **settlementInfo**: _string_
+• **settlementInfo**: `string`
 
-Defined in: [market/MarketAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L31)
+#### Defined in
+
+[market/MarketAPI.ts:31](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L31)

@@ -1,28 +1,32 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MarketNode
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MarketNode
 
 # Interface: MarketNode
 
-[market/MarketAPI](../modules/market_marketapi.md).MarketNode
+[market/MarketAPI](../modules/market_MarketAPI.md).MarketNode
 
 ## Table of contents
 
 ### Properties
 
-- [id](market_marketapi.marketnode.md#id)
-- [name](market_marketapi.marketnode.md#name)
+- [id](market_MarketAPI.MarketNode.md#id)
+- [name](market_MarketAPI.MarketNode.md#name)
 
 ## Properties
 
 ### id
 
-• **id**: _string_
+• **id**: `string`
 
-Defined in: [market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L182)
+#### Defined in
+
+[market/MarketAPI.ts:182](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L182)
 
 ---
 
 ### name
 
-• **name**: _string_
+• **name**: `string`
 
-Defined in: [market/MarketAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L183)
+#### Defined in
+
+[market/MarketAPI.ts:183](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L183)

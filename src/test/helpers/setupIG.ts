@@ -2,11 +2,7 @@ import {APIClient} from '../../APIClient';
 import nock from 'nock';
 
 declare global {
-  module NodeJS {
-    interface Global {
-      client: APIClient;
-    }
-  }
+  var client: APIClient;
 }
 
 beforeEach(() => {

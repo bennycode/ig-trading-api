@@ -1,37 +1,43 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / MarketDetail
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / MarketDetail
 
 # Interface: MarketDetail
 
-[market/MarketAPI](../modules/market_marketapi.md).MarketDetail
+[market/MarketAPI](../modules/market_MarketAPI.md).MarketDetail
 
 ## Table of contents
 
 ### Properties
 
-- [dealingRules](market_marketapi.marketdetail.md#dealingrules)
-- [instrument](market_marketapi.marketdetail.md#instrument)
-- [snapshot](market_marketapi.marketdetail.md#snapshot)
+- [dealingRules](market_MarketAPI.MarketDetail.md#dealingrules)
+- [instrument](market_MarketAPI.MarketDetail.md#instrument)
+- [snapshot](market_MarketAPI.MarketDetail.md#snapshot)
 
 ## Properties
 
 ### dealingRules
 
-• **dealingRules**: [_DealingRules_](market_marketapi.dealingrules.md)
+• **dealingRules**: [`DealingRules`](market_MarketAPI.DealingRules.md)
 
-Defined in: [market/MarketAPI.ts:174](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L174)
+#### Defined in
+
+[market/MarketAPI.ts:174](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L174)
 
 ---
 
 ### instrument
 
-• **instrument**: [_Instrument_](market_marketapi.instrument.md)
+• **instrument**: [`Instrument`](market_MarketAPI.Instrument.md)
 
-Defined in: [market/MarketAPI.ts:175](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L175)
+#### Defined in
+
+[market/MarketAPI.ts:175](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L175)
 
 ---
 
 ### snapshot
 
-• **snapshot**: [_Snapshot_](market_marketapi.snapshot.md)
+• **snapshot**: [`Snapshot`](market_MarketAPI.Snapshot.md)
 
-Defined in: [market/MarketAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L176)
+#### Defined in
+
+[market/MarketAPI.ts:176](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L176)

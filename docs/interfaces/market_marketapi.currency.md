@@ -1,55 +1,65 @@
-[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_marketapi.md) / Currency
+[ig-trading-api](../README.md) / [Exports](../modules.md) / [market/MarketAPI](../modules/market_MarketAPI.md) / Currency
 
 # Interface: Currency
 
-[market/MarketAPI](../modules/market_marketapi.md).Currency
+[market/MarketAPI](../modules/market_MarketAPI.md).Currency
 
 ## Table of contents
 
 ### Properties
 
-- [baseExchangeRate](market_marketapi.currency.md#baseexchangerate)
-- [code](market_marketapi.currency.md#code)
-- [exchangeRate](market_marketapi.currency.md#exchangerate)
-- [isDefault](market_marketapi.currency.md#isdefault)
-- [symbol](market_marketapi.currency.md#symbol)
+- [baseExchangeRate](market_MarketAPI.Currency.md#baseexchangerate)
+- [code](market_MarketAPI.Currency.md#code)
+- [exchangeRate](market_MarketAPI.Currency.md#exchangerate)
+- [isDefault](market_MarketAPI.Currency.md#isdefault)
+- [symbol](market_MarketAPI.Currency.md#symbol)
 
 ## Properties
 
 ### baseExchangeRate
 
-• **baseExchangeRate**: _number_
+• **baseExchangeRate**: `number`
 
-Defined in: [market/MarketAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L5)
+#### Defined in
+
+[market/MarketAPI.ts:5](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L5)
 
 ---
 
 ### code
 
-• **code**: _string_
+• **code**: `string`
 
-Defined in: [market/MarketAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L6)
+#### Defined in
+
+[market/MarketAPI.ts:6](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L6)
 
 ---
 
 ### exchangeRate
 
-• **exchangeRate**: _number_
+• **exchangeRate**: `number`
 
-Defined in: [market/MarketAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L7)
+#### Defined in
+
+[market/MarketAPI.ts:7](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L7)
 
 ---
 
 ### isDefault
 
-• **isDefault**: _boolean_
+• **isDefault**: `boolean`
 
-Defined in: [market/MarketAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L8)
+#### Defined in
+
+[market/MarketAPI.ts:8](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L8)
 
 ---
 
 ### symbol
 
-• **symbol**: _string_
+• **symbol**: `string`
 
-Defined in: [market/MarketAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/362f41a/src/market/MarketAPI.ts#L9)
+#### Defined in
+
+[market/MarketAPI.ts:9](https://github.com/bennycode/ig-trading-api/blob/f7fd8d0/src/market/MarketAPI.ts#L9)

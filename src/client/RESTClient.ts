@@ -1,4 +1,12 @@
-import axios, {AxiosError, AxiosInstance, AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse} from 'axios';
+import axios, {
+  AxiosDefaults,
+  AxiosError,
+  AxiosInstance,
+  AxiosInterceptorManager,
+  AxiosRequestConfig,
+  AxiosRequestHeaders,
+  AxiosResponse,
+} from 'axios';
 import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
 import {DealingAPI} from '../dealing';
@@ -18,7 +26,7 @@ export interface Authorization {
 }
 
 export class RESTClient {
-  get defaults(): AxiosRequestConfig {
+  get defaults(): AxiosDefaults {
     return this.httpClient.defaults;
   }
 
@@ -81,17 +89,17 @@ export class RESTClient {
     });
 
     this.httpClient.interceptors.request.use(async config => {
-      const updatedHeaders = {
+      const updatedHeaders: AxiosRequestHeaders = {
         ...config.headers,
-        'X-IG-API-KEY': isAuthorization(this.apiKey) ? this.apiKey.apiKey : this.apiKey,
+        'X-IG-API-KEY': isAuthorization(this.apiKey) ? `${this.apiKey.apiKey}` : this.apiKey,
       };
 
       const {accessToken, accountId, securityToken, clientSessionToken} = this.auth;
 
       if (config.url === LoginAPI.URL.SESSION && config.method === 'put') {
         // Edge case to switch accounts which doesn't work with Bearer tokens
-        updatedHeaders['X-SECURITY-TOKEN'] = securityToken;
-        updatedHeaders.CST = clientSessionToken;
+        updatedHeaders['X-SECURITY-TOKEN'] = `${securityToken}`;
+        updatedHeaders.CST = `${clientSessionToken}`;
       } else {
         if (accessToken) {
           updatedHeaders.Authorization = `Bearer ${accessToken}`;
