@@ -425,7 +425,7 @@ describe('DealingAPI', () => {
         const axiosError = error as AxiosError;
         expect(axiosError.isAxiosError).toBe(true);
         // Any typing because of: https://github.com/softonic/axios-retry/pull/174
-        expect((axiosError.config['axios-retry'] as any).retryCount).toBe(amountOfRetries);
+        expect((axiosError.config!['axios-retry'] as any).retryCount).toBe(amountOfRetries);
       }
     }, 10_000);
 

@@ -31,7 +31,10 @@ export class LoginAPI {
     SESSION: `/session`,
   };
 
-  constructor(private readonly apiClient: AxiosInstance, private auth: Authorization) {}
+  constructor(
+    private readonly apiClient: AxiosInstance,
+    private readonly auth: Authorization
+  ) {}
 
   /**
    * Creates a trading session, obtaining session tokens for subsequent API access. Please note that region-specific

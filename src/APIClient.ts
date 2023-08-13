@@ -8,7 +8,10 @@ export class APIClient {
   static URL_DEMO = 'https://demo-api.ig.com/gateway/deal/';
   static URL_LIVE = 'https://api.ig.com/gateway/deal/';
 
-  constructor(private readonly baseUrl: string, apiKey: string | Authorization) {
+  constructor(
+    private readonly baseUrl: string,
+    apiKey: string | Authorization
+  ) {
     this.rest = new RESTClient(baseUrl, apiKey);
     this.stream = new LightstreamerAPI(this.rest.auth);
   }
