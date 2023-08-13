@@ -6,12 +6,14 @@ import axios, {
   AxiosRequestConfig,
   AxiosRequestHeaders,
   AxiosResponse,
+  RawAxiosRequestHeaders,
 } from 'axios';
 import {LoginAPI} from '../login';
 import {MarketAPI} from '../market';
 import {DealingAPI} from '../dealing';
 import {AccountAPI} from '../account';
 import axiosRetry from 'axios-retry';
+import {hasErrorCode} from './hasErrorCode';
 
 export interface Authorization {
   accessToken?: string;
@@ -64,7 +66,7 @@ export class RESTClient {
     axiosRetry(this.httpClient, {
       retries: Infinity,
       retryCondition: (error: AxiosError) => {
-        const errorCode = error.response?.data?.errorCode;
+        const errorCode = hasErrorCode(error) ? error.response!.data.errorCode : undefined;
 
         switch (errorCode) {
           case 'error.public-api.exceeded-api-key-allowance':
@@ -92,7 +94,7 @@ export class RESTClient {
     });
 
     this.httpClient.interceptors.request.use(async config => {
-      const updatedHeaders: AxiosRequestHeaders = {
+      const updatedHeaders: RawAxiosRequestHeaders = {
         ...config.headers,
         'X-IG-API-KEY': isAuthorization(this.apiKey) ? `${this.apiKey.apiKey}` : this.apiKey,
       };
@@ -116,7 +118,7 @@ export class RESTClient {
         }
       }
 
-      config.headers = updatedHeaders;
+      config.headers = updatedHeaders as AxiosRequestHeaders;
 
       return config;
     });
