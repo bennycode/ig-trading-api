@@ -65,7 +65,7 @@
   "scripts": {
     "build": "tsc",
     "changelog:commit": "git add CHANGELOG.md && git commit -m \"docs: Updated changelog\" && git push origin",
-    "clean": "rimraf .nyc_output coverage docs dist",
+    "clean": "rimraf .nyc_output coverage dist",
     "demo:account": "ts-node ./src/demo/account.ts",
     "demo:login": "ts-node ./src/demo/login.ts",
     "demo:order": "ts-node ./src/demo/order.ts",
