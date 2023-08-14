@@ -6,4 +6,4 @@ pre-commit:
       run: npx prettier --write --log-level error {staged_files}
     lint:
       glob: '*.{js,jsx,ts,tsx}'
-      run: npx eslint {staged_files} --fix
+      run: npx eslint --ignore-path .gitignore --ignore-pattern \"/docs/\" --no-error-on-unmatched-pattern {staged_files} --fix
