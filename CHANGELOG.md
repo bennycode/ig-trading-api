@@ -19,6 +19,31 @@
   *  bump semver from 5.7.1 to 5.7.2 ([#499](https://github.com/bennycode/ig-trading-api/pull/499)) ([8cd0ef6e](https://github.com/bennycode/ig-trading-api/commit/8cd0ef6e5711b79d2f21e1c805072f8431c3fa9b))
   *  bump json5 from 2.2.0 to 2.2.3 ([#471](https://github.com/bennycode/ig-trading-api/pull/471)) ([c64196ed](https://github.com/bennycode/ig-trading-api/commit/c64196ed01defb8ff29480b1f3a7c6c2b88b0256))
 
+##### Documentation Changes
+
+*  Updated changelog ([47929dff](https://github.com/bennycode/ig-trading-api/commit/47929dffe0889679303932946a775e2dab89fa09))
+
+#### 0.13.5 (2023-08-14)
+
+##### Chores
+
+*  Allow multiple ignore paths in ESLint ([49f67657](https://github.com/bennycode/ig-trading-api/commit/49f67657609883a19248f7b2e410b7c891c67928))
+*  Clean docs ([156c05d8](https://github.com/bennycode/ig-trading-api/commit/156c05d8c2a2ec2ece0bac29979f66eb2002429b))
+*  Allow multiple ignore paths in ESLint ([c021a32d](https://github.com/bennycode/ig-trading-api/commit/c021a32d0c890385b41e057927b22d939d64c677))
+*  Remove vulnerable docsify-cli ([38abda54](https://github.com/bennycode/ig-trading-api/commit/38abda5495487ca3f74c3027d85db2f399590176))
+*  Update axios ([73b4364d](https://github.com/bennycode/ig-trading-api/commit/73b4364d6723d8233cfede5df2c4127931d66917))
+*  Update luxon ([887c0584](https://github.com/bennycode/ig-trading-api/commit/887c058488fe601cdac22d11d35f78dd824774d5))
+* **deps-dev:**
+  *  bump nock from 13.2.9 to 13.3.2 ([#509](https://github.com/bennycode/ig-trading-api/pull/509)) ([bb82abfe](https://github.com/bennycode/ig-trading-api/commit/bb82abfea0666c6e49e0dc9dd2a33ca80db5df97))
+  *  bump eslint-config-prettier from 8.5.0 to 9.0.0 ([#511](https://github.com/bennycode/ig-trading-api/pull/511)) ([6d8daa30](https://github.com/bennycode/ig-trading-api/commit/6d8daa30e6f67cbb190b23eba39b141bbd016512))
+  *  bump eslint from 8.20.0 to 8.47.0 ([#510](https://github.com/bennycode/ig-trading-api/pull/510)) ([9921ae17](https://github.com/bennycode/ig-trading-api/commit/9921ae17d4ff932a30ffd5afdf8fa48a17cf83c4))
+  *  bump @typescript-eslint/parser from 5.30.7 to 5.62.0 ([#506](https://github.com/bennycode/ig-trading-api/pull/506)) ([4c08fd58](https://github.com/bennycode/ig-trading-api/commit/4c08fd58cf2f65cd8c557f2799c2d2018456fae3))
+  *  bump jasmine from 4.2.1 to 5.1.0 ([#505](https://github.com/bennycode/ig-trading-api/pull/505)) ([24aba169](https://github.com/bennycode/ig-trading-api/commit/24aba16943553a8575c2cbb0c6cf62da9eed36d1))
+* **deps:**
+  *  bump lightstreamer-client-node from 8.0.4 to 9.0.0 ([#504](https://github.com/bennycode/ig-trading-api/pull/504)) ([ad58883e](https://github.com/bennycode/ig-trading-api/commit/ad58883ee2499f95cbb6a77314be3f766d1c5c5c))
+  *  bump semver from 5.7.1 to 5.7.2 ([#499](https://github.com/bennycode/ig-trading-api/pull/499)) ([8cd0ef6e](https://github.com/bennycode/ig-trading-api/commit/8cd0ef6e5711b79d2f21e1c805072f8431c3fa9b))
+  *  bump json5 from 2.2.0 to 2.2.3 ([#471](https://github.com/bennycode/ig-trading-api/pull/471)) ([c64196ed](https://github.com/bennycode/ig-trading-api/commit/c64196ed01defb8ff29480b1f3a7c6c2b88b0256))
+
 #### 0.13.4 (2022-07-21)
 
 ##### Chores
