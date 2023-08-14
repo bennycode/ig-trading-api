@@ -2,6 +2,41 @@
 
 ##### Documentation Changes
 
+*  Updated changelog ([a7161f64](https://github.com/bennycode/ig-trading-api/commit/a7161f643f5acf380728a846218b8fb1907a841e))
+*  Updated API ([26686bec](https://github.com/bennycode/ig-trading-api/commit/26686bec2f2fc89042709ff02b5f895f6b84a991))
+*  Updated changelog ([36937c49](https://github.com/bennycode/ig-trading-api/commit/36937c4946abb7a153aa20a98724a67e611ee559))
+*  Updated API ([dc626bce](https://github.com/bennycode/ig-trading-api/commit/dc626bce12bbbc4b730f45156124e3762dffe86e))
+*  Updated API ([b9174988](https://github.com/bennycode/ig-trading-api/commit/b9174988a4f16bb59f0ab53b9dd661f513f6a7a3))
+*  Update HTML ([754407a5](https://github.com/bennycode/ig-trading-api/commit/754407a59df2bae30e38b47bc62fe9e730a215a7))
+*  Updated API ([f97e7190](https://github.com/bennycode/ig-trading-api/commit/f97e7190fd22302e26a41dd542e30bc0bc92d4af))
+*  Updated changelog ([eb2d63ac](https://github.com/bennycode/ig-trading-api/commit/eb2d63ace99593d45f9ceffafcc9a517f15d85a7))
+*  Updated API ([7a5e171a](https://github.com/bennycode/ig-trading-api/commit/7a5e171af010285d9b0027c13f4bf13e2711735e))
+*  Updated changelog ([f73ea11d](https://github.com/bennycode/ig-trading-api/commit/f73ea11d313e19c052b3eefb658b6b5e449a0346))
+*  Updated API ([f7d50a8e](https://github.com/bennycode/ig-trading-api/commit/f7d50a8e6988a0115e3a1315d64581010fdf7961))
+*  Updated changelog ([16fe186d](https://github.com/bennycode/ig-trading-api/commit/16fe186d84f2cde6f2ec27d9aa80640314bfcf55))
+*  Updated API ([587881ad](https://github.com/bennycode/ig-trading-api/commit/587881ad86e59acebf276470a09c70798c58fb2f))
+*  Updated changelog ([eac9ebaa](https://github.com/bennycode/ig-trading-api/commit/eac9ebaa142c148de2f5b69cfcc9fd2ce4b97ce6))
+*  Updated API ([ac46027a](https://github.com/bennycode/ig-trading-api/commit/ac46027aa29988ff6a41751c248daf7224f76215))
+*  Updated changelog ([44efd0cb](https://github.com/bennycode/ig-trading-api/commit/44efd0cbe4e17943c2587d7760e5145d91f82318))
+*  Generate new docs ([7e39e652](https://github.com/bennycode/ig-trading-api/commit/7e39e652d6b9637c610c6e488d7f1e9b004a3bd7))
+*  Generate new docs ([00c1ede0](https://github.com/bennycode/ig-trading-api/commit/00c1ede04f670180433391a7df0994182a3a8746))
+*  Updated API ([f2cb93e1](https://github.com/bennycode/ig-trading-api/commit/f2cb93e17c988ea414e965bb1d64b94a2a4ef2c5))
+*  Updated changelog ([194b6d77](https://github.com/bennycode/ig-trading-api/commit/194b6d778b6b2a4f455fdcbc478400ae2193fdbb))
+*  Updated changelog ([47929dff](https://github.com/bennycode/ig-trading-api/commit/47929dffe0889679303932946a775e2dab89fa09))
+
+##### Bug Fixes
+
+*  Git working directory not clean ([a131afbf](https://github.com/bennycode/ig-trading-api/commit/a131afbf00be0105a520f064945744fbefaf42f9))
+*  Git working directory not clean ([9006407d](https://github.com/bennycode/ig-trading-api/commit/9006407df4adbf94a179aa49c8f6f072195507eb))
+
+##### Other Changes
+
+* release ([ed76f9b0](https://github.com/bennycode/ig-trading-api/commit/ed76f9b028a63cfff35310aeba7b7e28b2e35590))
+
+#### 0.13.5 (2023-08-14)
+
+##### Documentation Changes
+
 *  Updated changelog ([36937c49](https://github.com/bennycode/ig-trading-api/commit/36937c4946abb7a153aa20a98724a67e611ee559))
 *  Updated API ([dc626bce](https://github.com/bennycode/ig-trading-api/commit/dc626bce12bbbc4b730f45156124e3762dffe86e))
 *  Updated API ([b9174988](https://github.com/bennycode/ig-trading-api/commit/b9174988a4f16bb59f0ab53b9dd661f513f6a7a3))
