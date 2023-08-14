@@ -74,7 +74,7 @@
     "dist": "yarn clean && yarn build",
     "docs": "yarn docs:build",
     "docs:build": "typedoc",
-    "docs:release": "yarn docs:build && git add docs/* && git commit -m \"docs: Updated API\"",
+    "docs:release": "yarn docs:build && git add docs/* && git commit -m \"docs: Updated API\" && yarn changelog:commit",
     "fix": "yarn fix:other && yarn fix:code",
     "fix:code": "yarn lint:code --fix",
     "fix:other": "yarn prettier --write",
