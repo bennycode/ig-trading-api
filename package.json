@@ -6,7 +6,7 @@
     "@types/node": "^16.11.45",
     "axios": "^1.4.0",
     "axios-retry": "3.1.9",
-    "lightstreamer-client-node": "8.0.5",
+    "lightstreamer-client-node": "~8.0.5",
     "luxon": "^3.4.0"
   },
   "description": "IG Trading API for Node.js, written in TypeScript.",
@@ -93,5 +93,5 @@
     "test:dev": "nyc --nycrc-path=nyc.config.json jasmine --config=jasmine.json",
     "test:types": "yarn lint:types"
   },
-  "version": "0.13.6"
+  "version": "0.13.5"
 }
