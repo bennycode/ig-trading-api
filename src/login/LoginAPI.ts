@@ -1,5 +1,4 @@
 import axios, {AxiosInstance} from 'axios';
-import {APIClient} from '../APIClient';
 import {Authorization} from '../client';
 
 export interface OauthToken {
