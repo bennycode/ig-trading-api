@@ -1,5 +1,4 @@
 import axios, {AxiosInstance} from 'axios';
-import {APIClient} from '../APIClient';
 import {Authorization} from '../client';
 
 export interface OauthToken {
@@ -170,11 +169,6 @@ export class LoginAPI {
   }
 
   async login(username: string, password: string): Promise<TradingSession> {
-    const isLive = this.apiClient.defaults.baseURL === APIClient.URL_LIVE;
-
-    if (isLive) {
-      return this.createSessionFromMobileLogin(username, password);
-    }
     return this.createSession(username, password);
   }
 

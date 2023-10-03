@@ -250,22 +250,22 @@ describe('LoginAPI', () => {
   });
 
   describe('login', () => {
-    it('selects the mobile login when using a live account', async () => {
+    it('selects the standard login when using a live account', async () => {
       const apiClient = new APIClient(APIClient.URL_LIVE, '123');
-      const mobileLogin = spyOn<LoginAPI>(apiClient.rest.login, 'createSessionFromMobileLogin').and.callFake(() =>
+      const standardLoginLive = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.callFake(() =>
         Promise.resolve({} as TradingSession)
       );
       await apiClient.rest.login.login('username', 'password');
-      expect(mobileLogin).toHaveBeenCalledTimes(1);
+      expect(standardLoginLive).toHaveBeenCalledTimes(1);
     });
 
     it('selects the standard login when using a demo account', async () => {
       const apiClient = new APIClient(APIClient.URL_DEMO, '123');
-      const standardLogin = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.callFake(() =>
+      const standardLoginDemo = spyOn<LoginAPI>(apiClient.rest.login, 'createSession').and.callFake(() =>
         Promise.resolve({} as TradingSession)
       );
       await apiClient.rest.login.login('username', 'password');
-      expect(standardLogin).toHaveBeenCalledTimes(1);
+      expect(standardLoginDemo).toHaveBeenCalledTimes(1);
     });
   });
 });
