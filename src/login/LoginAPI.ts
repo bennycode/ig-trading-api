@@ -1,6 +1,6 @@
-import axios, {AxiosInstance} from 'axios';
-import {APIClient} from '../APIClient';
-import {Authorization} from '../client';
+import axios, { AxiosInstance } from 'axios';
+import { APIClient } from '../APIClient';
+import { Authorization } from '../client';
 
 export interface OauthToken {
   access_token: string;
@@ -34,7 +34,7 @@ export class LoginAPI {
   constructor(
     private readonly apiClient: AxiosInstance,
     private readonly auth: Authorization
-  ) {}
+  ) { }
 
   /**
    * Creates a trading session, obtaining session tokens for subsequent API access. Please note that region-specific
@@ -170,11 +170,6 @@ export class LoginAPI {
   }
 
   async login(username: string, password: string): Promise<TradingSession> {
-    const isLive = this.apiClient.defaults.baseURL === APIClient.URL_LIVE;
-
-    if (isLive) {
-      return this.createSessionFromMobileLogin(username, password);
-    }
     return this.createSession(username, password);
   }
 
