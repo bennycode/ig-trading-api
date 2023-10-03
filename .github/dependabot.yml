@@ -26,6 +26,14 @@ updates:
       - dependency-name: 'husky'
         versions:
           - '>= 5'
+      # @see https://github.com/bennycode/ig-trading-api/pull/514
+      - dependency-name: 'lightstreamer-client-node'
+        versions:
+          - '>= 9'
+      # @see https://github.com/softonic/axios-retry/issues/240
+      - dependency-name: 'axios-retry'
+        versions:
+          - '>= 3.2'
       - dependency-name: '@types/node'
         versions:
           - '>= 17'
