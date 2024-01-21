@@ -1,5 +1,6 @@
 import {AxiosInstance} from 'axios';
 import {Market} from '../market';
+import { DateTime } from 'luxon';
 
 export enum Direction {
   BUY = 'BUY',
@@ -200,6 +201,78 @@ export interface DealConfirmation {
   stopLevel?: number;
   trailingStop: boolean;
 }
+
+
+export interface TradeConfirmation {
+    accountIdentifier: string;
+    direction: Direction;
+    limitLevel: number;
+    dealId: string;
+    affectedDeals: AffectedDeal[];
+    status: Status;
+    stopLevel: number;
+    expiry: string;
+    size: number;
+    resultantStatus: Status;
+    epic: string;
+    level: number;
+    guaranteedStop: boolean;
+    dealReference: string;
+    dealStatus: DealStatus
+  
+}
+
+
+export interface OpenPositionUpdate {
+  direction: Direction;
+  limitLevel: number;
+  dealId: string;
+  dealIdOrigin: string;
+  stopLevel: number;
+  expiry: string;
+  timestamp: Date;
+  size: number;
+  status: AffectedDealStatus;
+  epic: string;
+  level: number;
+  guaranteedStop: boolean;
+  dealReference: string;
+  dealStatus: DealStatus;
+  channel: string;
+  currency: string;
+}
+
+export interface WorkingOrderUpdate {
+  direction: Direction
+  limitDistance: number;
+  dealId: string;
+  stopDistance: number;
+  expiry: string;
+  timestamp: Date;
+  size: number;
+  status: Status;
+  epic: string;
+  level: number;
+  guaranteedStop: boolean;
+  dealReference: string;
+  dealStatus: DealStatus;
+  currency: string;
+  orderType: OrderType;
+  timeInForce: OrderTimeInForce;
+  goodTillDate?: Date;
+  channel: string;
+}
+
+export interface tradeSubscriptionUpdate {
+  timestamp: DateTime;
+  CONFIRMS: TradeConfirmation;
+  OPU: OpenPositionUpdate;
+  WOU: WorkingOrderUpdate;
+  snapshotTime: string;
+  snapshotTimeUTC: string;
+}
+
+
 
 export class DealingAPI {
   static readonly URL = {

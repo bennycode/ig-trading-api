@@ -1,12 +1,19 @@
 import {ItemUpdate, LightstreamerClient, Subscription} from 'lightstreamer-client-node';
 import {DateTime} from 'luxon';
 import {Authorization} from '../client';
-import {CandleStick} from '../market';
-import {ChartFields, ChartResolution} from './interfaces';
+import {CandleStick, TickPrice} from '../market';
+import {AccountUpdate} from '../account';
+import {ChartFields, ChartResolution, AccountFields, ChartTickFields, TradeSubTypes} from './interfaces';
+import {tradeSubscriptionUpdate } from '../dealing';
 
 export class LightstreamerAPI {
   lightstream?: LightstreamerClient;
   candleSubscription?: Subscription;
+
+  tickSubscription?: Subscription;
+  accountSubscription?: Subscription;
+  orderSubscription?: Subscription;
+  tradeSubscription?: Subscription;
 
   constructor(private readonly auth: Authorization) {}
 
@@ -88,6 +95,152 @@ export class LightstreamerAPI {
 
     lightstream.connect();
     lightstream.subscribe(this.candleSubscription);
+    return lightstream;
+  }
+  subscribeTicks(epicList: string[], onTickUpdate: (epic: string, tick: TickPrice) => void): LightstreamerClient {
+    const lightstream = this.createLightStream();
+
+    const fields = [
+      ChartTickFields.BID,
+      ChartTickFields.OFR,
+      ChartTickFields.LTP,
+      ChartTickFields.LTV,
+      ChartTickFields.TTV,
+      ChartTickFields.UTM,
+      ChartTickFields.DAY_OPEN_MID,
+      ChartTickFields.DAY_NET_CHG_MID,
+      ChartTickFields.DAY_PERC_CHG_MID,
+      ChartTickFields.DAY_HIGH,
+      ChartTickFields.DAY_LOW,
+    ];
+
+    if (this.tickSubscription) {
+      lightstream.unsubscribe(this.tickSubscription);
+    }
+    const epics = epicList.map(x => `CHART:${x}:TICK`);
+    this.tickSubscription = new Subscription('DISTINCT', epics, fields);
+
+    this.tickSubscription.addListener({
+      onItemUpdate: (item: ItemUpdate) => {
+        const dt = DateTime.fromMillis(parseInt(item.getValue(ChartTickFields.UTM)));
+        const epic = item.getItemName().split(':')[1];
+        const tick: TickPrice = {
+          BID: parseFloat(item.getValue(ChartTickFields.BID)),
+          OFR: parseFloat(item.getValue(ChartTickFields.OFR)),
+          LTP: parseFloat(item.getValue(ChartTickFields.LTP)),
+          LTV: parseFloat(item.getValue(ChartTickFields.LTV)),
+          TTV: parseFloat(item.getValue(ChartTickFields.TTV)),
+          UTM: parseFloat(item.getValue(ChartTickFields.UTM)),
+          DAY_OPEN_MID: parseFloat(item.getValue(ChartTickFields.DAY_OPEN_MID)),
+          DAY_NET_CHG_MID: parseFloat(item.getValue(ChartTickFields.DAY_NET_CHG_MID)),
+          DAY_PERC_CHG_MID: parseFloat(item.getValue(ChartTickFields.DAY_PERC_CHG_MID)),
+          DAY_HIGH: parseFloat(item.getValue(ChartTickFields.DAY_HIGH)),
+          DAY_LOW: parseFloat(item.getValue(ChartTickFields.DAY_LOW)),
+
+          snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
+          snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
+        };
+
+        onTickUpdate(epic, tick);
+      },
+    });
+
+    lightstream.connect();
+    lightstream.subscribe(this.tickSubscription);
+    return lightstream;
+  }
+  subscribeAccount(onAccountUpdate: (accountId: string, AccountUpdate: AccountUpdate) => void): LightstreamerClient {
+    const lightstream = this.createLightStream();
+
+    const fields = [
+      AccountFields.PNL,
+      AccountFields.DEPOSIT,
+      AccountFields.AVAILABLE_CASH,
+      AccountFields.PNL_LR,
+      AccountFields.PNL_NLR,
+      AccountFields.FUNDS,
+      AccountFields.MARGIN,
+      AccountFields.MARGIN_LR,
+      AccountFields.MARGIN_NLR,
+      AccountFields.AVAILABLE_TO_DEAL,
+      AccountFields.EQUITY,
+      AccountFields.EQUITY_USED,
+    ];
+
+    if (this.accountSubscription) {
+      lightstream.unsubscribe(this.accountSubscription);
+    }
+
+    const account = [`ACCOUNT:${this.auth.accountId}`];
+    this.accountSubscription = new Subscription('MERGE', account, fields);
+
+    this.accountSubscription.addListener({
+      onItemUpdate: (item: ItemUpdate) => {
+        const dt = DateTime.fromMillis(new Date().getTime());
+        const accountId = item.getItemName().split(':')[1];
+        const AccountResponse = {
+          PNL: parseFloat(item.getValue(AccountFields.PNL)),
+          PNL_LR: parseFloat(item.getValue(AccountFields.PNL_LR)),
+          PNL_NLR: parseFloat(item.getValue(AccountFields.PNL_NLR)),
+          DEPOSIT: parseFloat(item.getValue(AccountFields.DEPOSIT)),
+          MARGIN: parseFloat(item.getValue(AccountFields.MARGIN)),
+          MARGIN_LR: parseFloat(item.getValue(AccountFields.MARGIN_LR)),
+          MARGIN_NLR: parseFloat(item.getValue(AccountFields.MARGIN_NLR)),
+          AVAILABLE_TO_DEAL: parseFloat(item.getValue(AccountFields.AVAILABLE_TO_DEAL)),
+          EQUITY: parseFloat(item.getValue(AccountFields.EQUITY)),
+          EQUTY_USED: parseFloat(item.getValue(AccountFields.EQUITY_USED)),
+          FUNDS: parseFloat(item.getValue(AccountFields.FUNDS)),
+          AVAILABLE_CASH: parseFloat(item.getValue(AccountFields.AVAILABLE_CASH)),
+
+          snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
+          snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
+        };
+        onAccountUpdate(accountId, AccountResponse);
+      },
+    });
+    lightstream.connect();
+    lightstream.subscribe(this.accountSubscription);
+    return lightstream;
+  }
+ 
+  subscribeTrade(onTradeUpdate: (accountId: string,  tradeSubscriptionUpdate: tradeSubscriptionUpdate) => void): LightstreamerClient {
+    const lightstream = this.createLightStream();
+
+    const fields = [
+      TradeSubTypes.CONFIRMS,
+      TradeSubTypes.OPU,
+      TradeSubTypes.WOU
+    ];
+
+    if (this.tradeSubscription) {
+      lightstream.unsubscribe(this.tradeSubscription);
+    }
+
+    const account = [`ACCOUNT:${this.auth.accountId}`];
+    this.tradeSubscription = new Subscription('DISTINCT', account, fields);
+
+    this.tradeSubscription.addListener({
+      onItemUpdate: (item: ItemUpdate) => {
+        const dt = DateTime.fromMillis(new Date().getTime());
+        const accountId = item.getItemName().split(':')[1];
+
+        const CONFIRM = JSON.parse(item.getValue(TradeSubTypes.CONFIRMS));
+        const OPU = JSON.parse(item.getValue(TradeSubTypes.OPU));
+        const WPU  = JSON.parse(item.getValue(TradeSubTypes.WOU));
+          
+        const tradeSubscriptionUpdate: tradeSubscriptionUpdate = {
+          timestamp: dt,
+          CONFIRMS: CONFIRM,
+          OPU: OPU,
+          WOU: WPU,
+          snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
+          snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
+        }          
+        onTradeUpdate(accountId, tradeSubscriptionUpdate);
+      },
+    });
+    lightstream.connect();
+    lightstream.subscribe(this.tradeSubscription); 
     return lightstream;
   }
 }
