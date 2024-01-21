@@ -17,7 +17,7 @@ async function main(): Promise<void> {
     console.info('Streaming API Event (subscribeTicks) : ', epic, tickPrice);
   });
   client.stream.subscribeTrade((accountId: string, tradeSubscriptionUpdate: tradeSubscriptionUpdate) => {
-    console.info('Streaming API Event (subscribeTrade) : ' , accountId, tradeSubscriptionUpdate);
+    console.info('Streaming API Event (subscribeTrade) : ', accountId, tradeSubscriptionUpdate);
   });
   client.stream.subscribeAccount((accountId: string, accountUpdate: AccountUpdate) => {
     console.info('Streaming API Event (subscribeAccount) : ', accountId, accountUpdate);
