@@ -22,7 +22,6 @@ async function main(): Promise<void> {
   client.stream.subscribeAccount((accountId: string, accountUpdate: AccountUpdate) => {
     console.info('Streaming API Event', accountId, accountUpdate);
   });
-
 }
 
 main().catch(error => {
