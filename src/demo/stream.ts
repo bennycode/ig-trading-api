@@ -10,17 +10,17 @@ async function main(): Promise<void> {
     ['CS.D.BITCOIN.TODAY.IP', 'CS.D.ETHXBT.TODAY.IP'],
     ChartResolution.MINUTE,
     (epic: string, candle: CandleStick) => {
-      console.info('Streaming API Event', epic, candle);
+      console.info('Streaming API Event  (subscribeCandles) : ', epic, candle);
     }
   );
   client.stream.subscribeTicks(['CS.D.EOSUSD.CFD.IP'], (epic: string, tickPrice: TickPrice) => {
-    console.info('Streaming API Event', epic, tickPrice);
+    console.info('Streaming API Event (subscribeTicks) : ', epic, tickPrice);
   });
   client.stream.subscribeTrade((accountId: string, tradeSubscriptionUpdate: tradeSubscriptionUpdate) => {
-    console.info('Streaming subscribeTrade Event', accountId, tradeSubscriptionUpdate);
+    console.info('Streaming API Event (subscribeTrade) : ' , accountId, tradeSubscriptionUpdate);
   });
   client.stream.subscribeAccount((accountId: string, accountUpdate: AccountUpdate) => {
-    console.info('Streaming API Event', accountId, accountUpdate);
+    console.info('Streaming API Event (subscribeAccount) : ', accountId, accountUpdate);
   });
 }
 
