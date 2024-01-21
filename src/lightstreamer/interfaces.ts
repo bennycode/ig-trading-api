@@ -44,7 +44,7 @@ export enum ChartTickFields {
   UTM = 'UTM',
 }
 
-export declare enum AccountFields {
+export enum AccountFields {
   AVAILABLE_CASH = 'AVAILABLE_CASH',
   AVAILABLE_TO_DEAL = 'AVAILABLE_TO_DEAL',
   DEPOSIT = 'DEPOSIT',
@@ -58,8 +58,6 @@ export declare enum AccountFields {
   PNL_LR = 'PNL_LR',
   PNL_NLR = 'PNL_NLR',
 }
-
-export declare enum TradeConfirms {}
 
 export enum TradeSubTypes {
   CONFIRMS = 'CONFIRMS',

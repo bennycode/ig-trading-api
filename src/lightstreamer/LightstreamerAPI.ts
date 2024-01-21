@@ -9,7 +9,6 @@ import {tradeSubscriptionUpdate} from '../dealing';
 export class LightstreamerAPI {
   lightstream?: LightstreamerClient;
   candleSubscription?: Subscription;
-
   tickSubscription?: Subscription;
   accountSubscription?: Subscription;
   orderSubscription?: Subscription;
@@ -214,7 +213,7 @@ export class LightstreamerAPI {
       lightstream.unsubscribe(this.tradeSubscription);
     }
 
-    const account = [`ACCOUNT:${this.auth.accountId}`];
+    const account = [`TRADE:${this.auth.accountId}`];
     this.tradeSubscription = new Subscription('DISTINCT', account, fields);
 
     this.tradeSubscription.addListener({
