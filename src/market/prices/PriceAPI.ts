@@ -19,18 +19,18 @@ export interface CandleStick {
 }
 export interface TickPrice {
   BID: number;
-  OFR: number;
+  DAY_HIGH: number;
+  DAY_LOW: number;
+  DAY_NET_CHG_MID: number;
+  DAY_OPEN_MID: number;
+  DAY_PERC_CHG_MID: number;
   LTP: number;
   LTV: number;
-  TTV: number;
-  UTM: number;
-  DAY_OPEN_MID: number;
-  DAY_NET_CHG_MID: number;
-  DAY_PERC_CHG_MID: number;
-  DAY_HIGH: number;
-  DAY_LOW: number; 
+  OFR: number;
   snapshotTime: string;
   snapshotTimeUTC: string;
+  TTV: number;
+  UTM: number;
 }
 
 export interface HistoricalPricesAllowance {

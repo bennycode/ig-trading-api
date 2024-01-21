@@ -30,68 +30,59 @@ export enum ChartFields {
   UTM = 'UTM',
 }
 
-export enum  ChartTickFields {
+export enum ChartTickFields {
   BID = 'BID',
-  OFR = 'OFR',
-  LTP = 'LTP',
-  LTV = 'LTV',
-  TTV = 'TTV',
-  UTM = 'UTM',
-  DAY_OPEN_MID = 'DAY_OPEN_MID',
-  DAY_NET_CHG_MID = 'DAY_NET_CHG_MID',
-  DAY_PERC_CHG_MID = 'DAY_PERC_CHG_MID',
   DAY_HIGH = 'DAY_HIGH',
   DAY_LOW = 'DAY_LOW',
-  
+  DAY_NET_CHG_MID = 'DAY_NET_CHG_MID',
+  DAY_OPEN_MID = 'DAY_OPEN_MID',
+  DAY_PERC_CHG_MID = 'DAY_PERC_CHG_MID',
+  LTP = 'LTP',
+  LTV = 'LTV',
+  OFR = 'OFR',
+  TTV = 'TTV',
+  UTM = 'UTM',
 }
 
 export declare enum AccountFields {
-  PNL = "PNL",
-  DEPOSIT = "DEPOSIT",
-  AVAILABLE_CASH = "AVAILABLE_CASH",
-  PNL_LR = "PNL_LR",
-  PNL_NLR = "PNL_NLR",
-  FUNDS = "FUNDS",
-  MARGIN = "MARGIN",
-  MARGIN_LR = "MARGIN_LR",
-  MARGIN_NLR = "MARGIN_NLR",
-  AVAILABLE_TO_DEAL = "AVAILABLE_TO_DEAL",
-  EQUITY = "EQUITY",
-  EQUITY_USED = "EQUITY_USED"
+  AVAILABLE_CASH = 'AVAILABLE_CASH',
+  AVAILABLE_TO_DEAL = 'AVAILABLE_TO_DEAL',
+  DEPOSIT = 'DEPOSIT',
+  EQUITY = 'EQUITY',
+  EQUITY_USED = 'EQUITY_USED',
+  FUNDS = 'FUNDS',
+  MARGIN = 'MARGIN',
+  MARGIN_LR = 'MARGIN_LR',
+  MARGIN_NLR = 'MARGIN_NLR',
+  PNL = 'PNL',
+  PNL_LR = 'PNL_LR',
+  PNL_NLR = 'PNL_NLR',
 }
 
-
-export declare enum TradeConfirms {
-
-
-
-
-}
+export declare enum TradeConfirms {}
 
 export enum TradeSubTypes {
-  CONFIRMS = "CONFIRMS",
-  OPU = "OPU",
-  WOU = "WOU"
+  CONFIRMS = 'CONFIRMS',
+  OPU = 'OPU',
+  WOU = 'WOU',
 }
-
 
 export enum WorkingOrderUpdate {
-  DIRECTION = "direction",
-  LIMIT_DISTANCE = "limitDistance",
-  DEAL_ID = "dealId",
-  STOP_DISTANCE = "stopDistance",
-  EXPIRY = "expiry",
-  TIMESTAMP = "timestamp",
-  SIZE = "size",
-  STATUS = "status",
-  EPIC = "epic",
-  LEVEL = "level",
-  GUARANTEED_STOP = "guaranteedStop",
-  DEAL_REFERENCE = "dealReference",
-  DEAL_STATUS = "dealStatus",
-  CURRENCY = "currency",
-  ORDER_TYPE = "orderType",
-  TIME_IN_FORCE = "timeInForce",
-  GOOD_TILL_DATE = "goodTillDate"
+  CURRENCY = 'currency',
+  DEAL_ID = 'dealId',
+  DEAL_REFERENCE = 'dealReference',
+  DEAL_STATUS = 'dealStatus',
+  DIRECTION = 'direction',
+  EPIC = 'epic',
+  EXPIRY = 'expiry',
+  GOOD_TILL_DATE = 'goodTillDate',
+  GUARANTEED_STOP = 'guaranteedStop',
+  LEVEL = 'level',
+  LIMIT_DISTANCE = 'limitDistance',
+  ORDER_TYPE = 'orderType',
+  SIZE = 'size',
+  STATUS = 'status',
+  STOP_DISTANCE = 'stopDistance',
+  TIME_IN_FORCE = 'timeInForce',
+  TIMESTAMP = 'timestamp',
 }
-

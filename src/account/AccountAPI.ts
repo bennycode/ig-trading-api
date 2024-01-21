@@ -187,20 +187,19 @@ export interface TransactionHistoryResponse {
 }
 
 export interface AccountUpdate {
-    PNL?: number;
-    DEPOSIT?: number;
-    AVAILABLE_CASH?: number;
-    PNL_LR?: number;
-    PNL_NLR?: number;
-    FUNDS?: number;
-    MARGIN?: number;
-    MARGIN_LR?: number;
-    MARGIN_NLR?: number;
-    AVAILABLE_TO_DEAL?: number;
-    EQUITY?: number;
-    EQUITY_USED?: number;
-};
-
+  AVAILABLE_CASH?: number;
+  AVAILABLE_TO_DEAL?: number;
+  DEPOSIT?: number;
+  EQUITY?: number;
+  EQUITY_USED?: number;
+  FUNDS?: number;
+  MARGIN?: number;
+  MARGIN_LR?: number;
+  MARGIN_NLR?: number;
+  PNL?: number;
+  PNL_LR?: number;
+  PNL_NLR?: number;
+}
 
 export class AccountAPI {
   static readonly URL = {

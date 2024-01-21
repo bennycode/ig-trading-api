@@ -4,7 +4,7 @@ import {Authorization} from '../client';
 import {CandleStick, TickPrice} from '../market';
 import {AccountUpdate} from '../account';
 import {ChartFields, ChartResolution, AccountFields, ChartTickFields, TradeSubTypes} from './interfaces';
-import {tradeSubscriptionUpdate } from '../dealing';
+import {tradeSubscriptionUpdate} from '../dealing';
 
 export class LightstreamerAPI {
   lightstream?: LightstreamerClient;
@@ -126,16 +126,16 @@ export class LightstreamerAPI {
         const epic = item.getItemName().split(':')[1];
         const tick: TickPrice = {
           BID: parseFloat(item.getValue(ChartTickFields.BID)),
-          OFR: parseFloat(item.getValue(ChartTickFields.OFR)),
-          LTP: parseFloat(item.getValue(ChartTickFields.LTP)),
-          LTV: parseFloat(item.getValue(ChartTickFields.LTV)),
-          TTV: parseFloat(item.getValue(ChartTickFields.TTV)),
-          UTM: parseFloat(item.getValue(ChartTickFields.UTM)),
-          DAY_OPEN_MID: parseFloat(item.getValue(ChartTickFields.DAY_OPEN_MID)),
-          DAY_NET_CHG_MID: parseFloat(item.getValue(ChartTickFields.DAY_NET_CHG_MID)),
-          DAY_PERC_CHG_MID: parseFloat(item.getValue(ChartTickFields.DAY_PERC_CHG_MID)),
           DAY_HIGH: parseFloat(item.getValue(ChartTickFields.DAY_HIGH)),
           DAY_LOW: parseFloat(item.getValue(ChartTickFields.DAY_LOW)),
+          DAY_NET_CHG_MID: parseFloat(item.getValue(ChartTickFields.DAY_NET_CHG_MID)),
+          DAY_OPEN_MID: parseFloat(item.getValue(ChartTickFields.DAY_OPEN_MID)),
+          DAY_PERC_CHG_MID: parseFloat(item.getValue(ChartTickFields.DAY_PERC_CHG_MID)),
+          LTP: parseFloat(item.getValue(ChartTickFields.LTP)),
+          LTV: parseFloat(item.getValue(ChartTickFields.LTV)),
+          OFR: parseFloat(item.getValue(ChartTickFields.OFR)),
+          TTV: parseFloat(item.getValue(ChartTickFields.TTV)),
+          UTM: parseFloat(item.getValue(ChartTickFields.UTM)),
 
           snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
           snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
@@ -179,18 +179,18 @@ export class LightstreamerAPI {
         const dt = DateTime.fromMillis(new Date().getTime());
         const accountId = item.getItemName().split(':')[1];
         const AccountResponse = {
-          PNL: parseFloat(item.getValue(AccountFields.PNL)),
-          PNL_LR: parseFloat(item.getValue(AccountFields.PNL_LR)),
-          PNL_NLR: parseFloat(item.getValue(AccountFields.PNL_NLR)),
-          DEPOSIT: parseFloat(item.getValue(AccountFields.DEPOSIT)),
-          MARGIN: parseFloat(item.getValue(AccountFields.MARGIN)),
-          MARGIN_LR: parseFloat(item.getValue(AccountFields.MARGIN_LR)),
-          MARGIN_NLR: parseFloat(item.getValue(AccountFields.MARGIN_NLR)),
+          AVAILABLE_CASH: parseFloat(item.getValue(AccountFields.AVAILABLE_CASH)),
           AVAILABLE_TO_DEAL: parseFloat(item.getValue(AccountFields.AVAILABLE_TO_DEAL)),
+          DEPOSIT: parseFloat(item.getValue(AccountFields.DEPOSIT)),
           EQUITY: parseFloat(item.getValue(AccountFields.EQUITY)),
           EQUTY_USED: parseFloat(item.getValue(AccountFields.EQUITY_USED)),
           FUNDS: parseFloat(item.getValue(AccountFields.FUNDS)),
-          AVAILABLE_CASH: parseFloat(item.getValue(AccountFields.AVAILABLE_CASH)),
+          MARGIN: parseFloat(item.getValue(AccountFields.MARGIN)),
+          MARGIN_LR: parseFloat(item.getValue(AccountFields.MARGIN_LR)),
+          MARGIN_NLR: parseFloat(item.getValue(AccountFields.MARGIN_NLR)),
+          PNL: parseFloat(item.getValue(AccountFields.PNL)),
+          PNL_LR: parseFloat(item.getValue(AccountFields.PNL_LR)),
+          PNL_NLR: parseFloat(item.getValue(AccountFields.PNL_NLR)),
 
           snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
           snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
@@ -202,15 +202,13 @@ export class LightstreamerAPI {
     lightstream.subscribe(this.accountSubscription);
     return lightstream;
   }
- 
-  subscribeTrade(onTradeUpdate: (accountId: string,  tradeSubscriptionUpdate: tradeSubscriptionUpdate) => void): LightstreamerClient {
+
+  subscribeTrade(
+    onTradeUpdate: (accountId: string, tradeSubscriptionUpdate: tradeSubscriptionUpdate) => void
+  ): LightstreamerClient {
     const lightstream = this.createLightStream();
 
-    const fields = [
-      TradeSubTypes.CONFIRMS,
-      TradeSubTypes.OPU,
-      TradeSubTypes.WOU
-    ];
+    const fields = [TradeSubTypes.CONFIRMS, TradeSubTypes.OPU, TradeSubTypes.WOU];
 
     if (this.tradeSubscription) {
       lightstream.unsubscribe(this.tradeSubscription);
@@ -226,21 +224,21 @@ export class LightstreamerAPI {
 
         const CONFIRM = JSON.parse(item.getValue(TradeSubTypes.CONFIRMS));
         const OPU = JSON.parse(item.getValue(TradeSubTypes.OPU));
-        const WPU  = JSON.parse(item.getValue(TradeSubTypes.WOU));
-          
+        const WPU = JSON.parse(item.getValue(TradeSubTypes.WOU));
+
         const tradeSubscriptionUpdate: tradeSubscriptionUpdate = {
-          timestamp: dt,
           CONFIRMS: CONFIRM,
           OPU: OPU,
           WOU: WPU,
           snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
           snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
-        }          
+          timestamp: dt,
+        };
         onTradeUpdate(accountId, tradeSubscriptionUpdate);
       },
     });
     lightstream.connect();
-    lightstream.subscribe(this.tradeSubscription); 
+    lightstream.subscribe(this.tradeSubscription);
     return lightstream;
   }
 }
