@@ -26,7 +26,7 @@ export class LightstreamerAPI {
     }
 
     return this.lightstream;
-  };
+  }
 
   subscribeCandles(
     epicList: string[],
@@ -95,13 +95,9 @@ export class LightstreamerAPI {
     lightstream.connect();
     lightstream.subscribe(this.candleSubscription);
     return lightstream;
-  };
+  }
 
-  subscribeTicks(
-    epicList: string[],
-    onTickUpdate: (epic: string, tick: TickPrice) => void
-  ): LightstreamerClient {
-
+  subscribeTicks(epicList: string[], onTickUpdate: (epic: string, tick: TickPrice) => void): LightstreamerClient {
     const lightstream = this.createLightStream();
 
     const fields = [
@@ -152,7 +148,7 @@ export class LightstreamerAPI {
     lightstream.connect();
     lightstream.subscribe(this.tickSubscription);
     return lightstream;
-  };
+  }
 
   subscribeAccount(onAccountUpdate: (accountId: string, AccountUpdate: AccountUpdate) => void): LightstreamerClient {
     const lightstream = this.createLightStream();
@@ -206,7 +202,7 @@ export class LightstreamerAPI {
     lightstream.connect();
     lightstream.subscribe(this.accountSubscription);
     return lightstream;
-  };
+  }
 
   subscribeTrade(
     onTradeUpdate: (accountId: string, tradeSubscriptionUpdate: tradeSubscriptionUpdate) => void
@@ -230,11 +226,11 @@ export class LightstreamerAPI {
         const CONFIRM_VALUE = item.getValue(TradeSubTypes.CONFIRMS);
         const OPU_VALUE = item.getValue(TradeSubTypes.OPU);
         const WPU_VALUE = item.getValue(TradeSubTypes.WOU);
-    
+
         const CONFIRM = CONFIRM_VALUE ? JSON.parse(CONFIRM_VALUE) : null;
         const OPU = OPU_VALUE ? JSON.parse(OPU_VALUE) : null;
         const WPU = WPU_VALUE ? JSON.parse(WPU_VALUE) : null;
-    
+
         const tradeSubscriptionUpdate: tradeSubscriptionUpdate = {
           CONFIRMS: CONFIRM,
           OPU: OPU,
@@ -249,5 +245,5 @@ export class LightstreamerAPI {
     lightstream.connect();
     lightstream.subscribe(this.tradeSubscription);
     return lightstream;
-  };
-};
+  }
+}

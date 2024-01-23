@@ -243,7 +243,7 @@ describe('LightstreamerAPI', () => {
 
       await global.client.rest.login.createSession('test-user', 'test-password');
 
-      global.client.stream.subscribeTrade((accountId) => {
+      global.client.stream.subscribeTrade(accountId => {
         expect(accountId).toBe('ABC123');
       });
 
@@ -255,7 +255,7 @@ describe('LightstreamerAPI', () => {
           },
           getValue() {
             return '1234';
-          }
+          },
         } as unknown as ItemUpdate);
       }
 
