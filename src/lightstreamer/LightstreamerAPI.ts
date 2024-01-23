@@ -227,14 +227,10 @@ export class LightstreamerAPI {
         const OPU_VALUE = item.getValue(TradeSubTypes.OPU);
         const WPU_VALUE = item.getValue(TradeSubTypes.WOU);
 
-        const CONFIRM = CONFIRM_VALUE ? JSON.parse(CONFIRM_VALUE) : null;
-        const OPU = OPU_VALUE ? JSON.parse(OPU_VALUE) : null;
-        const WPU = WPU_VALUE ? JSON.parse(WPU_VALUE) : null;
-
         const tradeSubscriptionUpdate: tradeSubscriptionUpdate = {
-          CONFIRMS: CONFIRM,
-          OPU: OPU,
-          WOU: WPU,
+          CONFIRMS: JSON.parse(CONFIRM_VALUE),
+          OPU: JSON.parse(OPU_VALUE),
+          WOU: JSON.parse(WPU_VALUE),
           snapshotTime: dt.toFormat('yyyy/LL/dd HH:mm:ss'),
           snapshotTimeUTC: dt.toFormat("yyyy-LL-dd'T'HH:mm:ss"),
           timestamp: dt,
