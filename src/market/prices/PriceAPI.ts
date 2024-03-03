@@ -17,6 +17,21 @@ export interface CandleStick {
   snapshotTime: string;
   snapshotTimeUTC: string;
 }
+export interface TickPrice {
+  BID: number;
+  DAY_HIGH: number;
+  DAY_LOW: number;
+  DAY_NET_CHG_MID: number;
+  DAY_OPEN_MID: number;
+  DAY_PERC_CHG_MID: number;
+  LTP: number;
+  LTV: number;
+  OFR: number;
+  snapshotTime: string;
+  snapshotTimeUTC: string;
+  TTV: number;
+  UTM: number;
+}
 
 export interface HistoricalPricesAllowance {
   allowanceExpiry: number;
