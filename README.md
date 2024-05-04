@@ -10,6 +10,7 @@ Unofficial [IG Trading API](https://labs.ig.com/rest-trading-api-guide) for Node
 - **Tested.** Code coverage is 100%. No surprises when using [ig-trading-api][1].
 - **Maintained.** Automated security updates. No threats from outdated dependencies.
 - **Documented.** Get started with the [generated documentation][2].
+- **Samples.** Get started with [some "HowTos"][3].
 
 ## Installation
 
@@ -107,5 +108,6 @@ This project is [MIT](./LICENSE) licensed.
 
 [1]: https://www.npmjs.com/package/ig-trading-api
 [2]: https://bennycode.com/ig-trading-api
+[3]: https://github.com/bennycode/ig-trading-api/blob/main/HOWTO.md
 [stack_exchange_bennyn_badge]: https://stackexchange.com/users/flair/203782.png?theme=default
 [stack_exchange_bennyn_url]: https://stackexchange.com/users/203782/benny-neugebauer?tab=accounts
