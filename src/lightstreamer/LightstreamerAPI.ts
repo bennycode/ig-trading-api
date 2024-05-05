@@ -1,9 +1,16 @@
 import {ItemUpdate, LightstreamerClient, Subscription} from 'lightstreamer-client-node';
 import {DateTime} from 'luxon';
 import {Authorization} from '../client';
-import {CandleStick, TickPrice} from '../market';
+import {CandleStick, TickPrice, MarketUpdates} from '../market';
 import {AccountUpdate} from '../account';
-import {ChartFields, ChartResolution, AccountFields, ChartTickFields, TradeSubTypes} from './interfaces';
+import {
+  ChartFields,
+  ChartResolution,
+  AccountFields,
+  ChartTickFields,
+  TradeSubTypes,
+  MarketUpdateFields,
+} from './interfaces';
 import {tradeSubscriptionUpdate} from '../dealing';
 
 export class LightstreamerAPI {
@@ -13,6 +20,7 @@ export class LightstreamerAPI {
   accountSubscription?: Subscription;
   orderSubscription?: Subscription;
   tradeSubscription?: Subscription;
+  marketUpdateSubscription?: Subscription;
 
   constructor(private readonly auth: Authorization) {}
 
@@ -240,6 +248,54 @@ export class LightstreamerAPI {
     });
     lightstream.connect();
     lightstream.subscribe(this.tradeSubscription);
+    return lightstream;
+  }
+  subscribeMarketUpdates(
+    epicList: string[],
+    onMarketUpdate: (epic: string, item: MarketUpdates) => void
+  ): LightstreamerClient {
+    const lightstream = this.createLightStream();
+
+    const fields = [
+      MarketUpdateFields.BID,
+      MarketUpdateFields.OFFER,
+      MarketUpdateFields.HIGH,
+      MarketUpdateFields.LOW,
+      MarketUpdateFields.MID_OPEN,
+      MarketUpdateFields.CHANGE,
+      MarketUpdateFields.CHANGE_PCT,
+      MarketUpdateFields.MARKET_DELAY,
+      MarketUpdateFields.MARKET_STATE,
+      MarketUpdateFields.UPDATE_TIME,
+    ];
+
+    if (this.marketUpdateSubscription) {
+      lightstream.unsubscribe(this.marketUpdateSubscription);
+    }
+    const epics = epicList.map(x => `MARKET:${x}`);
+    this.marketUpdateSubscription = new Subscription('MERGE', epics, fields);
+
+    this.marketUpdateSubscription.addListener({
+      onItemUpdate: (item: ItemUpdate) => {
+        const epic = item.getItemName().split(':')[1];
+        const UpdateResponse: MarketUpdates = {
+          BID: parseFloat(item.getValue(MarketUpdateFields.BID)),
+          CHANGE: parseFloat(item.getValue(MarketUpdateFields.CHANGE)),
+          CHANGE_PCT: parseFloat(item.getValue(MarketUpdateFields.CHANGE_PCT)),
+          HIGH: parseFloat(item.getValue(MarketUpdateFields.HIGH)),
+          LOW: parseFloat(item.getValue(MarketUpdateFields.LOW)),
+          MARKET_DELAY: item.getValue(MarketUpdateFields.MARKET_DELAY) === 'true',
+          MARKET_STATE: item.getValue(MarketUpdateFields.MARKET_STATE),
+          MID_OPEN: parseFloat(item.getValue(MarketUpdateFields.MID_OPEN)),
+          OFFER: parseFloat(item.getValue(MarketUpdateFields.OFFER)),
+          UPDATE_TIME: item.getValue(MarketUpdateFields.UPDATE_TIME),
+        };
+        onMarketUpdate(epic, UpdateResponse);
+      },
+    });
+
+    lightstream.connect();
+    lightstream.subscribe(this.marketUpdateSubscription);
     return lightstream;
   }
 }

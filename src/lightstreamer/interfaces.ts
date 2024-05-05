@@ -84,3 +84,16 @@ export enum WorkingOrderUpdate {
   TIME_IN_FORCE = 'timeInForce',
   TIMESTAMP = 'timestamp',
 }
+
+export enum MarketUpdateFields {
+  BID = 'BID',
+  CHANGE = 'CHANGE',
+  CHANGE_PCT = 'CHANGE_PCT',
+  HIGH = 'HIGH',
+  LOW = 'LOW',
+  MARKET_DELAY = 'MARKET_DELAY',
+  MARKET_STATE = 'MARKET_STATE',
+  MID_OPEN = 'MID_OPEN',
+  OFFER = 'OFFER',
+  UPDATE_TIME = 'UPDATE_TIME',
+}

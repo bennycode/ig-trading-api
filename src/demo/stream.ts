@@ -1,6 +1,6 @@
 import {initClient} from './initClient';
 import {ChartResolution} from '../lightstreamer/interfaces';
-import {CandleStick, TickPrice} from '../market';
+import {CandleStick, TickPrice, MarketUpdates} from '../market';
 import {tradeSubscriptionUpdate} from '../dealing';
 import {AccountUpdate} from '../account';
 
@@ -21,6 +21,9 @@ async function main(): Promise<void> {
   });
   client.stream.subscribeAccount((accountId: string, accountUpdate: AccountUpdate) => {
     console.info('Streaming API Event (subscribeAccount) : ', accountId, accountUpdate);
+  });
+  client.stream.subscribeMarketUpdates(['IX.D.NIKKEI.IFA.IP'], (epic: string, marketUpdate: MarketUpdates) => {
+    console.info('Streaming API Event (MarketUpdated) : ', epic, marketUpdate);
   });
 }
 

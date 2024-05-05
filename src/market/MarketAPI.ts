@@ -211,6 +211,19 @@ export interface MarketSearch {
   markets: Market[];
 }
 
+export interface MarketUpdates {
+  BID: number;
+  CHANGE: number;
+  CHANGE_PCT: number;
+  HIGH: number;
+  LOW: number;
+  MARKET_DELAY: boolean;
+  MARKET_STATE: string;
+  MID_OPEN: number;
+  OFFER: number;
+  UPDATE_TIME: string;
+}
+
 export class MarketAPI {
   static readonly URL = {
     MARKETNAVIGATION: `/marketnavigation`,
