@@ -1,3 +1,17 @@
+#### 0.13.8 (2024-05-09)
+
+##### Documentation Changes
+
+*  Refine live data example ([cfec5c90](https://github.com/bennycode/ig-trading-api/commit/cfec5c90a0be89e13cd0def7fa3c0244f8f7e26a))
+*  Use Microsoft epic code [ci skip] ([91e58cdc](https://github.com/bennycode/ig-trading-api/commit/91e58cdcfb6ea01347086c168518c35920bfc75f))
+*  Use IG API URLs from Google Cache ([39c9fadc](https://github.com/bennycode/ig-trading-api/commit/39c9fadc4ae29fec62e7cc2ad56355fc323948df))
+*  Use IG API URLs from Google Cache ([b5435ceb](https://github.com/bennycode/ig-trading-api/commit/b5435cebfaa13797c317b2125235ca45c5af3dbd))
+*  add code samples ([#614](https://github.com/bennycode/ig-trading-api/pull/614)) ([af0db983](https://github.com/bennycode/ig-trading-api/commit/af0db983695feb7c573e6a58b0c3bca29a240793))
+
+##### New Features
+
+*  Add subscriptions for Account, Trade and Ticks ([#581](https://github.com/bennycode/ig-trading-api/pull/581)) ([874586d9](https://github.com/bennycode/ig-trading-api/commit/874586d912d61a8abc0bccd5cedd8adc7dc2e98c))
+
 #### 0.13.7 (2023-10-03)
 
 #### 0.13.6 (2023-08-24)
