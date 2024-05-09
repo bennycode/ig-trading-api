@@ -56,8 +56,8 @@ console.log(response.markets[0].epic);
 Check the available intervals for retrieving data:
 
 ```ts
-import { APIClient, Resolution } from 'ig-trading-api';
-console.log(Resolution)
+import {APIClient, Resolution} from 'ig-trading-api';
+console.log(Resolution);
 ```
 
 ### Retrieve historical data
