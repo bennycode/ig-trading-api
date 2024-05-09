@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AffectedDeal | ig-trading-api</title><meta name="description" content="Documentation for ig-trading-api"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>MarketUpdates | ig-trading-api</title><meta name="description" content="Documentation for ig-trading-api"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,14 +13,14 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">ig-trading-api</a></li>
-<li><a href="AffectedDeal.html">AffectedDeal</a></li></ul>
-<h1>Interface AffectedDeal</h1></div>
+<li><a href="MarketUpdates.html">MarketUpdates</a></li></ul>
+<h1>Interface MarketUpdates</h1></div>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">AffectedDeal</span></li></ul></section><aside class="tsd-sources">
+<li><span class="target">MarketUpdates</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/dealing/DealingAPI.ts#L177">dealing/DealingAPI.ts:177</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L214">market/MarketAPI.ts:214</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -28,21 +28,69 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="AffectedDeal.html#dealId" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>deal<wbr/>Id</span></a>
-<a href="AffectedDeal.html#status" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>status</span></a>
+<div class="tsd-index-list"><a href="MarketUpdates.html#BID" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>BID</span></a>
+<a href="MarketUpdates.html#CHANGE" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>CHANGE</span></a>
+<a href="MarketUpdates.html#CHANGE_PCT" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>CHANGE_<wbr/>PCT</span></a>
+<a href="MarketUpdates.html#HIGH" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>HIGH</span></a>
+<a href="MarketUpdates.html#LOW" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>LOW</span></a>
+<a href="MarketUpdates.html#MARKET_DELAY" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>MARKET_<wbr/>DELAY</span></a>
+<a href="MarketUpdates.html#MARKET_STATE" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>MARKET_<wbr/>STATE</span></a>
+<a href="MarketUpdates.html#MID_OPEN" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>MID_<wbr/>OPEN</span></a>
+<a href="MarketUpdates.html#OFFER" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>OFFER</span></a>
+<a href="MarketUpdates.html#UPDATE_TIME" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>UPDATE_<wbr/>TIME</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="dealId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>deal<wbr/>Id</span><a href="#dealId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">deal<wbr/>Id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member"><a id="BID" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>BID</span><a href="#BID" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">BID</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/dealing/DealingAPI.ts#L178">dealing/DealingAPI.ts:178</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="status" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>status</span><a href="#status" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">:</span> <a href="../enums/AffectedDealStatus.html" class="tsd-signature-type tsd-kind-enum">AffectedDealStatus</a></div><aside class="tsd-sources">
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L215">market/MarketAPI.ts:215</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="CHANGE" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>CHANGE</span><a href="#CHANGE" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">CHANGE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/dealing/DealingAPI.ts#L179">dealing/DealingAPI.ts:179</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L216">market/MarketAPI.ts:216</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="CHANGE_PCT" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>CHANGE_<wbr/>PCT</span><a href="#CHANGE_PCT" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">CHANGE_<wbr/>PCT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L217">market/MarketAPI.ts:217</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="HIGH" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>HIGH</span><a href="#HIGH" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">HIGH</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L218">market/MarketAPI.ts:218</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="LOW" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>LOW</span><a href="#LOW" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">LOW</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L219">market/MarketAPI.ts:219</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="MARKET_DELAY" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>MARKET_<wbr/>DELAY</span><a href="#MARKET_DELAY" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">MARKET_<wbr/>DELAY</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L220">market/MarketAPI.ts:220</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="MARKET_STATE" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>MARKET_<wbr/>STATE</span><a href="#MARKET_STATE" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">MARKET_<wbr/>STATE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L221">market/MarketAPI.ts:221</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="MID_OPEN" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>MID_<wbr/>OPEN</span><a href="#MID_OPEN" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">MID_<wbr/>OPEN</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L222">market/MarketAPI.ts:222</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="OFFER" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>OFFER</span><a href="#OFFER" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">OFFER</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L223">market/MarketAPI.ts:223</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="UPDATE_TIME" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>UPDATE_<wbr/>TIME</span><a href="#UPDATE_TIME" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">UPDATE_<wbr/>TIME</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/bennycode/ig-trading-api/blob/cfec5c9/src/market/MarketAPI.ts#L224">market/MarketAPI.ts:224</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -59,8 +107,16 @@
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
-<li><a href="#dealId" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>deal<wbr/>Id</span></a></li>
-<li><a href="#status" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>status</span></a></li></ul></div></details></div>
+<li><a href="#BID" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>BID</span></a></li>
+<li><a href="#CHANGE" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>CHANGE</span></a></li>
+<li><a href="#CHANGE_PCT" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>CHANGE_<wbr/>PCT</span></a></li>
+<li><a href="#HIGH" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>HIGH</span></a></li>
+<li><a href="#LOW" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>LOW</span></a></li>
+<li><a href="#MARKET_DELAY" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>MARKET_<wbr/>DELAY</span></a></li>
+<li><a href="#MARKET_STATE" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>MARKET_<wbr/>STATE</span></a></li>
+<li><a href="#MID_OPEN" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>MID_<wbr/>OPEN</span></a></li>
+<li><a href="#OFFER" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>OFFER</span></a></li>
+<li><a href="#UPDATE_TIME" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>UPDATE_<wbr/>TIME</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>ig-trading-api</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
