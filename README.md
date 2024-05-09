@@ -67,16 +67,11 @@ const epic = 'UC.D.MSFT.CASH.IP';
 const prices = await client.rest.market.price.getPrices(epic, Resolution.DAY, 5);
 ```
 
-### Subscribe to candle updates
+### Subscribe to live data
 
-```ts
-const epics = ['UC.D.MSFT.CASH.IP'];
+Here is how you can subscribe to live candles and other updates from IG:
 
-client.stream.subscribeCandles(epics, Resolution.SECOND, (epic, candle) => {
-  console.log(epic);
-  console.log(candle);
-});
-```
+- [stream.ts](./src/demo/stream.ts)
 
 ### More Examples
 
