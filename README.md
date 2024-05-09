@@ -63,14 +63,14 @@ console.log(Resolution);
 ### Retrieve historical data
 
 ```ts
-const epic = 'CS.D.BITCOIN.OPTCALL.IP';
+const epic = 'UC.D.MSFT.CASH.IP';
 const prices = await client.rest.market.price.getPrices(epic, Resolution.DAY, 5);
 ```
 
 ### Subscribe to candle updates
 
 ```ts
-const epics = ['CS.D.BITCOIN.OPTCALL.IP'];
+const epics = ['UC.D.MSFT.CASH.IP'];
 
 client.stream.subscribeCandles(epics, Resolution.SECOND, (epic, candle) => {
   console.log(epic);
