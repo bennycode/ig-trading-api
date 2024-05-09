@@ -41,7 +41,7 @@ export class LoginAPI {
    *
    * @param username - Username
    * @param password - Password
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
   async createSession(username?: string, password?: string): Promise<TradingSession> {
     delete this.auth.accessToken;
@@ -78,7 +78,7 @@ export class LoginAPI {
    * Switches active accounts, optionally setting the default IG account (of type CFD or spreadbet), against which trades may be made.
    *
    * @param accountId - Account ID
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
   async switchAccount(accountId: string): Promise<SwitchAccountResponse> {
     const resource = LoginAPI.URL.SESSION;
@@ -106,7 +106,7 @@ export class LoginAPI {
   /**
    * Saves the user's session details.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
   async getSessionToken(): Promise<boolean> {
     const resource = LoginAPI.URL.SESSION + '?fetchSessionTokens=true';
@@ -160,7 +160,7 @@ export class LoginAPI {
   /**
    * Returns the user's session details.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=534
    */
   async getSession(): Promise<TradingSession> {
     const resource = LoginAPI.URL.SESSION + '?fetchSessionTokens=true';
@@ -175,7 +175,7 @@ export class LoginAPI {
   /**
    * Log out of the current session.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=600
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=600
    */
   async logout(): Promise<void> {
     const resource = LoginAPI.URL.SESSION;
@@ -189,7 +189,7 @@ export class LoginAPI {
   /**
    * Refreshes a trading session, obtaining new session tokens for subsequent API access.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=523
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=523
    */
   async refreshToken(): Promise<OauthToken> {
     delete this.auth.accessToken;

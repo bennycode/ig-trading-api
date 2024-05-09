@@ -283,7 +283,7 @@ export class DealingAPI {
   /**
    * Returns all open positions for the active account.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=545
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=545
    */
   async getAllOpenPositions(): Promise<PositionListResponse> {
     const resource = DealingAPI.URL.POSITIONS;
@@ -298,7 +298,7 @@ export class DealingAPI {
   /**
    * Returns an open position for the active account by deal identifier.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=541
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=541
    */
   async getPosition(dealId: String): Promise<Position> {
     const resource = DealingAPI.URL.POSITIONS + dealId;
@@ -314,7 +314,7 @@ export class DealingAPI {
    * Creates an OTC position.
    *
    * @param PositionCreateRequest - The Information to create the Position
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
    */
   async createPosition(createPositionRequest: PositionCreateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.POSITIONS_OTC;
@@ -330,7 +330,7 @@ export class DealingAPI {
    * Closes an OTC position.
    *
    * @param PositionCloseRequest - The Information to close the Position
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
    */
   async closePosition(closePositionRequest: PositionCloseRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.POSITIONS_OTC;
@@ -346,7 +346,7 @@ export class DealingAPI {
    * Updates an OTC position.
    *
    * @param PositionUpdateRequest - The Information to close the Position
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=542
    */
   async updatePosition(dealId: String, updatePositionRequest: PositionUpdateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.POSITIONS_OTC + dealId;
@@ -362,7 +362,7 @@ export class DealingAPI {
    * Returns a deal confirmation for the given deal reference.
    *
    * @param dealReference - The dealReference of the deal to be retrieved
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=546
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=546
    */
   async confirmTrade(dealReference: DealReferenceResponse): Promise<DealConfirmation> {
     const resource = DealingAPI.URL.CONFIRMS + dealReference.dealReference;
@@ -373,7 +373,7 @@ export class DealingAPI {
   /**
    * Returns all open working orders for the active account.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=555
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=555
    */
   async getAllOrders(): Promise<OrderListResponse> {
     const resource = DealingAPI.URL.WORKINGORDERS;
@@ -389,7 +389,7 @@ export class DealingAPI {
    * Creates an OTC working order.
    *
    * @param OrderCreateRequest - The Information to create the Order
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=533
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=533
    */
   async createOrder(createOrderRequest: OrderCreateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.WORKINGORDERS_OTC;
@@ -405,7 +405,7 @@ export class DealingAPI {
    * Deletes an OTC working order.
    *
    * @param DealId - The Id of the working order which should be deleted
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=526
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=526
    */
   async deleteOrder(dealId: String): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.WORKINGORDERS_OTC + dealId;
@@ -427,7 +427,7 @@ export class DealingAPI {
    *
    * @param DealId - The Id of the working order which should be updated
    * @param OrderUpdateRequest - The Information to update the Working Order
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=526
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=526
    */
   async updateOrder(dealId: String, orderRequest: OrderUpdateRequest): Promise<DealReferenceResponse> {
     const resource = DealingAPI.URL.WORKINGORDERS_OTC + dealId;

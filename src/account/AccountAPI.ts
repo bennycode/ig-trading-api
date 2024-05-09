@@ -213,7 +213,7 @@ export class AccountAPI {
   /**
    * Returns a list of accounts belonging to the logged-in client.
    *
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=553
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=553
    */
   async getAccounts(): Promise<AccountsResponse> {
     const resource = AccountAPI.URL.ACCOUNTS;
@@ -225,7 +225,7 @@ export class AccountAPI {
    * Returns the account activity history. The first element in the array is the latest activity. The last element is the oldest activity.
    *
    * @param PositionCreateRequest - The Information to create the Position
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=543
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=543
    */
   async getActivityHistory(activityHistoryRequest: ActivityHistoryRequest): Promise<ActivityHistoryResponse> {
     const resource = AccountAPI.URL.HISTORY_ACTIVITY;
@@ -242,7 +242,7 @@ export class AccountAPI {
    * Returns the account transaction history.
    *
    * @param PositionCreateRequest - The Information to create the Position
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=525
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=525
    */
   async getTransactionHistory(
     transactionHistoryRequest: TransactionHistoryRequest

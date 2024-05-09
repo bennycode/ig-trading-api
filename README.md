@@ -2,7 +2,7 @@
 
 ![Language Details](https://img.shields.io/github/languages/top/bennycode/ig-trading-api) ![Code Coverage](https://img.shields.io/codecov/c/github/bennycode/ig-trading-api/main) ![License](https://img.shields.io/npm/l/ig-trading-api.svg) ![Package Version](https://img.shields.io/npm/v/ig-trading-api.svg) ![Dependency Updates](https://img.shields.io/david/bennycode/ig-trading-api.svg)
 
-Unofficial [IG Trading API](https://labs.ig.com/rest-trading-api-guide) for Node.js, written in TypeScript and covered by tests.
+Unofficial [IG Trading API](https://labs.ig.com/rest-trading-api-guide.html) for Node.js, written in TypeScript and covered by tests.
 
 ## Features
 
@@ -29,21 +29,11 @@ yarn add ig-trading-api
 
 You can set the API gateway, when initializing the API client. Use `APIClient.URL_DEMO` (demo-api.ig.com) for demo accounts and `APIClient.URL_LIVE` (api.ig.com) for live account access.
 
-### TypeScript
+### Login
 
-Recommended:
-
-```typescript
+```ts
 import {APIClient} from 'ig-trading-api';
-const client = new APIClient(APIClient.URL_LIVE, 'your-api-key');
-const session = await client.rest.login.createSession('your-username', 'your-password');
-console.info(`Your client ID is "${session.clientId}".`);
-```
 
-Alternative:
-
-```typescript
-import {APIClient} from 'ig-trading-api';
 const client = new APIClient(APIClient.URL_LIVE, {
   apiKey: 'your-api-key',
   username: 'your-username',
@@ -51,44 +41,53 @@ const client = new APIClient(APIClient.URL_LIVE, {
 });
 ```
 
-Search for an IG epic code
+### Search Trading Symbol
 
-```
-const response = await client.rest.market.searchMarkets('BITCOIN');
-console.log(JSON.stringify(response, null, 4));
+Make sure to use [IG's Epic codes](https://trading-ig.readthedocs.io/en/latest/faq.html#how-do-i-find-the-epic-for-market-x) to find a trading symbol:
+
+```ts
+const query = 'BITCOIN';
+const response = await client.rest.market.searchMarkets(query);
 console.log(response.markets[0].epic);
 ```
 
-Subscribe to realtime candles updates with IG epic codes
+### Show available resolutions
 
-```
-const epics = [ 'CS.D.BITCOIN.OPTCALL.IP' ];
+Check the available intervals for retrieving data:
 
-client.stream.subscribeCandles(epics, Resolution.SECOND, (epic, candle) => {
-  console.log(epic);
-  console.log(candle)
-});
-```
-
-Retrieve historical data of an IG epic code
-
-```
-const prices = await client.rest.market.price.getPrices('CS.D.BITCOIN.OPTCALL.IP', Resolution.DAY, 5);
-console.log(JSON.stringify(prices, null, 4));
-
-```
-
-Show available resolutions
-```
+```ts
 import { APIClient, Resolution } from 'ig-trading-api';
 console.log(Resolution)
 ```
+
+### Retrieve historical data
+
+```ts
+const epic = 'CS.D.BITCOIN.OPTCALL.IP';
+const prices = await client.rest.market.price.getPrices(epic, Resolution.DAY, 5);
+```
+
+### Subscribe to candle updates
+
+```ts
+const epics = ['CS.D.BITCOIN.OPTCALL.IP'];
+
+client.stream.subscribeCandles(epics, Resolution.SECOND, (epic, candle) => {
+  console.log(epic);
+  console.log(candle);
+});
+```
+
+### More Examples
+
+More code examples can be found in the [demo directory](./src/demo/).
+
 ## Resources
 
-- [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference)
+- [IG REST Trading API Reference](https://labs.ig.com/rest-trading-api-reference.html)
 - [IG API Companion](https://labs.ig.com/sample-apps/api-companion/index.html)
 - [IG Streaming Companion](https://labs.ig.com/sample-apps/streaming-companion/index.html)
-- [IG REST Trading API Limits](https://labs.ig.com/faq)
+- [IG REST Trading API Limits](https://labs.ig.com/faq.html)
 - [Spreads, commissions and margins](https://www.ig.com/en/cfd-trading/charges-and-margins) ([in Germany](https://www.ig.com/de/hilfe-und-support/cfds/kosten-und-gebuehren/wie-lauten-die-produktinformationen-fuer-aktien-cfds#information-banner-dismiss))
 
 ### IG Instrument Identifier (Epic)

@@ -239,7 +239,7 @@ export class MarketAPI {
    * Returns all markets matching the search term.
    *
    * @param searchTerm - The term to be used in the search
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=547
+   * @see https://labs.ig.com/reference/markets-searchterm.html
    */
   async searchMarkets(searchTerm: string): Promise<MarketSearch> {
     const resource = `${MarketAPI.URL.MARKETS}?searchTerm=${searchTerm}`;
@@ -251,8 +251,8 @@ export class MarketAPI {
    * Returns all nodes (market categories) in the market navigation hierarchy.
    *
    * @param nodeId - The identifier of the node to browse
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=550
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=544
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=550
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=544
    */
   async getMarketCategories(nodeId?: string): Promise<MarketNavigation> {
     const resource = nodeId ? `${MarketAPI.URL.MARKETNAVIGATION}/${nodeId}` : MarketAPI.URL.MARKETNAVIGATION;
@@ -264,7 +264,7 @@ export class MarketAPI {
    * Returns the details of the given market(s).
    *
    * @param epic - The epic of the market to be retrieved
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=528
+   * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=528
    */
   async getMarketDetails(epic: string): Promise<MarketDetail>;
   async getMarketDetails(epic: string[]): Promise<MarketDetails>;

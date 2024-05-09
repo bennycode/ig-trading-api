@@ -110,7 +110,7 @@ export class PriceAPI {
    * @param endDate - End date as ISO 8601 string, i.e. "2021-01-16T00:00:00.000Z"
    * @param pageSize - Number of candles per page of results (defaults to 0, no pagination)
    * @param pageNumber - Page of results to return (pagination)
-   * @see https://labs.ig.com/rest-trading-api-reference/service-detail?id=521
+   * @see https://labs.ig.com/reference/prices-epic.html
    */
   async getPricesBetweenDates(
     epic: string,
