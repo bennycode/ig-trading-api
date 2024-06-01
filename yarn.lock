@@ -1673,59 +1673,59 @@ jsonc-parser@^3.2.0:
   resolved "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-3.2.0.tgz#31ff3f4c2b9793f89c67212627c51c6394f88e76"
   integrity sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==
 
-lefthook-darwin-arm64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-darwin-arm64/-/lefthook-darwin-arm64-1.6.10.tgz#31c6ba2f0e5c24a938b468f77bdff3b829bb528d"
-  integrity sha512-Hh11OkoKG7FEOByS1dcgNV7ETq45VmwBbw0VPTiBznyfOG4k+pi0fIdc1qbmbxvYqNE0r420QR/Q3bimaa4Kxg==
+lefthook-darwin-arm64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-darwin-arm64/-/lefthook-darwin-arm64-1.6.14.tgz#70c22be110365e873487b5d23971290c44e227d7"
+  integrity sha512-CpeLfErvVo7zv4cFMNFjB36OHXytj9H+DyOG1g62LbApMWIC7HOPMQZ0x0QzNIqeRuvpiMst4XOkspQTJ8QYiw==
 
-lefthook-darwin-x64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-darwin-x64/-/lefthook-darwin-x64-1.6.10.tgz#4d49622dccb0f3ff7a6a2c4d4a9af0c098e2595c"
-  integrity sha512-FiOB0t5OBcQ8OnG/LSdfUYj736SJdlLjWuOZ4wTlJ7EUrHditieap6VNAxwMmFVyQN0X2ZwKWytwY35y+Hflhw==
+lefthook-darwin-x64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-darwin-x64/-/lefthook-darwin-x64-1.6.14.tgz#33a2850b747fc637d59552570e7725990cf8a2bd"
+  integrity sha512-IUjs7IYuNuKw2pbZP9dLYk9T19qnYKCIBLN58hXkWWFbViiJa+n4vUG4fgw6oBceK6enkvJpa/ma02yqg5Pxsw==
 
-lefthook-freebsd-arm64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-freebsd-arm64/-/lefthook-freebsd-arm64-1.6.10.tgz#b3594d47582a2b90025c585ec6ec85a10b515294"
-  integrity sha512-IxGgS3RrNwk3Kr83o5SQhGxqppQi7fu2t//nsp6ocgnJeStrTtXZJOrel2VohzrFxpzQdJVXBGgUGLXtY8t8qw==
+lefthook-freebsd-arm64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-freebsd-arm64/-/lefthook-freebsd-arm64-1.6.14.tgz#6a9bf92ca6815653e9f038974a0ddf163bea2790"
+  integrity sha512-FWg2HR0X9NQ0vVTU2iO36llKqyFyB60CFm/4GIUVkAWs7rhmOS/FG7C9pcl2jTDrLyMYMQpEvwwMQBWe6qCfcw==
 
-lefthook-freebsd-x64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-freebsd-x64/-/lefthook-freebsd-x64-1.6.10.tgz#3eba68b410d4913038672404ed535b8fa5248eb1"
-  integrity sha512-sFSe+dGLa4iBblWAhAGTP9moarcbFtFAH6aaCeyqSX51O6p9VPdGjqNtcE8aGbGAk4lO6v1ScRjk5ogMSinJwQ==
+lefthook-freebsd-x64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-freebsd-x64/-/lefthook-freebsd-x64-1.6.14.tgz#58cd28bbc047feae3fc8b4528b5d954548cce123"
+  integrity sha512-qe/cgGUxMld1XcPhOBtthL/yVfP9KglBqFLXLkkpsg78wVo6nKCADEKWW+3+ofUZSnfpPVbx1435kWtp3NmfdA==
 
-lefthook-linux-arm64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-linux-arm64/-/lefthook-linux-arm64-1.6.10.tgz#4a39cc574ea05d742fc7765a03ccae66a01a634a"
-  integrity sha512-fXnKiNdRIW+FRvc1keVrvWX5EqIhVFfPjcy+PbsKdxiWRXgjtidi6LPmQ8eosH0DC9PxZ0mpdCMf40FHEZLbQA==
+lefthook-linux-arm64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-linux-arm64/-/lefthook-linux-arm64-1.6.14.tgz#298caca8a9f6055be00e27e892eb5b898378e80f"
+  integrity sha512-Iw1Av89sxkvxmi5WrHZkNB1lppzFlsRT7CdQ14ckN9xM6kTLnJLKoxKO/ez3WooSp9Yv3NROGAfUzMLCgok3cQ==
 
-lefthook-linux-x64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-linux-x64/-/lefthook-linux-x64-1.6.10.tgz#546e134afea574cb72ea9b0dd2829f45ae6fb309"
-  integrity sha512-bm6l2GOFnmYreZxmHb47QeOiFAItttOOxvCEX1okIRD7JbUC+lGC9evW5GJv/ltjZBoTDYEtQAUa+BpHTGuY2A==
+lefthook-linux-x64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-linux-x64/-/lefthook-linux-x64-1.6.14.tgz#3cc12b6f22cf388d9ff172c3314896752fca4e71"
+  integrity sha512-3taGa/Ge7SZMuG82Abu7YuYSWlbJBIT2ZIVA+YVA1lwI7kZsg9WQPAMvdob125EsS20Z6o0EfYAJPuALxD5Yww==
 
-lefthook-windows-arm64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-windows-arm64/-/lefthook-windows-arm64-1.6.10.tgz#4a3feeb23cf2118de5025f65b5c239ca05ed54d8"
-  integrity sha512-pFxT8KbOMzGxj6cz4glHYwQSNC7XCuy9RDqIO0AxPlpATsCpapkF4ngDxBT1iFv2VhdeweMa7RXUDsMAGQA4Qw==
+lefthook-windows-arm64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-windows-arm64/-/lefthook-windows-arm64-1.6.14.tgz#ce5635fe9fe9fc01db82eabac893c08fc8565786"
+  integrity sha512-XRwJ9wLcMZiXucsQhbuj0yzvX34fVQrYg4gGOVWeb+quO8yYURRInzoYiXGH0iAdQJOUs0WSR5gdZ6lImFgkHg==
 
-lefthook-windows-x64@1.6.10:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook-windows-x64/-/lefthook-windows-x64-1.6.10.tgz#fb775fbc14d6122cec5fb041c442951175dd8fc2"
-  integrity sha512-fcDnUSTv95AdLvm0NIrn3jBWXuRq8SlbDDjkkB5OHLiSmjz4eOr6wyD7xceDp33zZgZmWFzHebJngxxcIaUuHw==
+lefthook-windows-x64@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook-windows-x64/-/lefthook-windows-x64-1.6.14.tgz#bd040526dd4eecf06a25c05d36a1ec6377871c17"
+  integrity sha512-qhRBdgk6GgvwGKKojSUieeGgnOTbFyLwj6RyMa5vTYoO10h0e8CE8LWpnM2niyKmB1jTL8Nu128IH50Vp1UT9w==
 
 lefthook@^1.4.9:
-  version "1.6.10"
-  resolved "https://registry.npmjs.org/lefthook/-/lefthook-1.6.10.tgz#f0175c1042635d54a15687e6f2f7109fc6c40ce3"
-  integrity sha512-HeVjsDCrHLe9htQHbLuQJu2YdLK6Tl5bh36fOpmXqckEXTI0BDR0Y5JYc7G5Inj4YXQsc51a9dUDZMeniSnSag==
+  version "1.6.14"
+  resolved "https://registry.npmjs.org/lefthook/-/lefthook-1.6.14.tgz#981d9e4ba287e93926dba30c1b72beb7c310b376"
+  integrity sha512-IfnzdoZLRnQPm6OgwgH0JlwRK3Ojyn0dXL+JHqewbhDuGGIXqLrHAFK/29KvQK2knsGF4dzlajBvwjwPVY1aVA==
   optionalDependencies:
-    lefthook-darwin-arm64 "1.6.10"
-    lefthook-darwin-x64 "1.6.10"
-    lefthook-freebsd-arm64 "1.6.10"
-    lefthook-freebsd-x64 "1.6.10"
-    lefthook-linux-arm64 "1.6.10"
-    lefthook-linux-x64 "1.6.10"
-    lefthook-windows-arm64 "1.6.10"
-    lefthook-windows-x64 "1.6.10"
+    lefthook-darwin-arm64 "1.6.14"
+    lefthook-darwin-x64 "1.6.14"
+    lefthook-freebsd-arm64 "1.6.14"
+    lefthook-freebsd-x64 "1.6.14"
+    lefthook-linux-arm64 "1.6.14"
+    lefthook-linux-x64 "1.6.14"
+    lefthook-windows-arm64 "1.6.14"
+    lefthook-windows-x64 "1.6.14"
 
 levn@^0.4.1:
   version "0.4.1"
