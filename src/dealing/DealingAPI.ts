@@ -300,9 +300,9 @@ export class DealingAPI {
    *
    * @see cache:https://labs.ig.com/rest-trading-api-reference/service-detail?id=541
    */
-  async getPosition(dealId: String): Promise<Position> {
+  async getPosition(dealId: String): Promise<PositionResponse> {
     const resource = DealingAPI.URL.POSITIONS + dealId;
-    const response = await this.apiClient.get<Position>(resource, {
+    const response = await this.apiClient.get<PositionResponse>(resource, {
       headers: {
         VERSION: '2',
       },
