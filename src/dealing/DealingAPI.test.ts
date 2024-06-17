@@ -80,26 +80,48 @@ describe('DealingAPI', () => {
         .reply(
           200,
           JSON.stringify({
-            contractSize: 1,
-            controlledRisk: false,
-            createdDate: Date(),
-            createdDateUTC: Date(),
-            currency: 'EUR',
-            dealId: '12345',
-            dealReference: '54321',
-            direction: 'BUY',
-            level: 20.0,
-            limitLevel: null,
-            size: 1,
-            stopLevel: null,
-            trailingStep: null,
-            trailingStopDistance: null,
+            market: {
+              bid: 38455.5,
+              delayTime: 0,
+              epic: 'IX.D.NIKKEI.IFA.IP',
+              expiry: '-',
+              high: 38869,
+              instrumentName: 'Japan 225 Cash (A$1)',
+              instrumentType: 'INDICES',
+              lotSize: 1,
+              low: 38277,
+              marketStatus: 'EDITS_ONLY',
+              netChange: -372.5,
+              offer: 38485.5,
+              percentageChange: -0.96,
+              scalingFactor: 1,
+              streamingPricesAvailable: true,
+              updateTime: '22:00:09',
+              updateTimeUTC: '21:00:09',
+            },
+            position: {
+              contractSize: 1,
+              controlledRisk: false,
+              createdDate: '2024/06/15 01:41:01:000',
+              createdDateUTC: '2024-06-14T15:41:01',
+              currency: 'AUD',
+              dealId: '12345',
+              dealReference: '54321',
+              direction: 'BUY',
+              level: 38422,
+              limitLevel: 38522,
+              limitedRiskPremium: null,
+              size: 10,
+              stopLevel: 38322,
+              trailingStep: null,
+              trailingStopDistance: null,
+            },
           })
         );
       const getPosition = await global.client.rest.dealing.getPosition('12345');
-      expect(getPosition.dealId).toBe('12345');
-      expect(getPosition.dealReference).toBe('54321');
-      expect(getPosition.level).toBe(20.0);
+      expect(getPosition.position.dealId).toBe('12345');
+      expect(getPosition.position.dealReference).toBe('54321');
+      expect(getPosition.position.level).toBe(38422);
     });
   });
 
