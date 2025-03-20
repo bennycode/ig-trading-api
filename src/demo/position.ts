@@ -45,11 +45,9 @@ async function main(): Promise<void> {
 
   const closePositionRequest: PositionCloseRequest = {
     dealId: confirmSession.dealId,
-    direction: Direction.SELL,
-    expiry: createPositionRequest.expiry,
-    level: 860.4,
-    orderType: createPositionRequest.orderType,
-    size: createPositionRequest.size,
+    direction: Direction.SELL, //ensure opposite direction to close the position
+    orderType: PositionOrderType.MARKET, //seemingly have to use market otherwise it'll wait for the level
+    size: createPositionRequest.size, //size of existing position / partial size if you want to partially close
   };
 
   const closePositionSession = await client.rest.dealing.closePosition(closePositionRequest);

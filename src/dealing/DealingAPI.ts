@@ -94,11 +94,11 @@ export interface PositionCreateRequest {
 }
 
 export interface PositionCloseRequest {
-  dealId?: string;
+  dealId: string;
   direction: Direction;
   epic?: string;
-  expiry: string;
-  level: number;
+  expiry?: string;
+  level?: number;
   orderType: PositionOrderType;
   quoteId?: string;
   size: number;
